@@ -3,9 +3,6 @@ var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf, __hasOwnProp = Object.prototype.hasOwnProperty;
-var __commonJS = (cb, mod) => function() {
-  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
-};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: !0 });
@@ -23,16 +20,6 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: !0 }) : target,
   mod
 )), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
-
-// css-bundle-update-plugin-ns:/Users/breetherkildsen/Work/sparky-site/node_modules/@remix-run/css-bundle/dist/index.js
-var require_dist = __commonJS({
-  "css-bundle-update-plugin-ns:/Users/breetherkildsen/Work/sparky-site/node_modules/@remix-run/css-bundle/dist/index.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: !0 });
-    var cssBundleHref2;
-    exports.cssBundleHref = cssBundleHref2;
-  }
-});
 
 // <stdin>
 var stdin_exports = {};
@@ -154,8 +141,13 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var import_css_bundle = __toESM(require_dist()), import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
-  ...import_css_bundle.cssBundleHref ? [{ rel: "stylesheet", href: import_css_bundle.cssBundleHref }] : []
+
+// app/tailwind.css
+var tailwind_default = "/build/_assets/tailwind-MD6F4MD2.css";
+
+// app/root.tsx
+var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
+  { rel: "stylesheet", href: tailwind_default }
 ];
 function App() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", children: [
@@ -224,83 +216,169 @@ __export(index_exports, {
   default: () => Index,
   meta: () => meta
 });
-var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), meta = () => [
-  { title: "New Remix App" },
-  { name: "description", content: "Welcome to Remix!" }
-];
-function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: "Welcome to Remix" }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 13,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("ul", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/blog",
-          rel: "noreferrer",
-          children: "15m Quickstart Blog Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 16,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 15,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/jokes",
-          rel: "noreferrer",
-          children: "Deep Dive Jokes App Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 25,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 24,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("a", { target: "_blank", href: "https://remix.run/docs", rel: "noreferrer", children: "Remix Docs" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 34,
+
+// app/components/Header/index.tsx
+var import_react3 = require("@remix-run/react");
+
+// app/components/Button/Button.tsx
+var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), Button = ({ onClick, children }) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("button", { className: "rounded-full px-4 py-2 border border-current", onClick, children }, void 0, !1, {
+  fileName: "app/components/Button/Button.tsx",
+  lineNumber: 10,
+  columnNumber: 5
+}, this);
+
+// app/components/Modal/index.tsx
+var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), Modal = ({ children, modalState, closeModal }) => /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: `
+      ${modalState && "active"}
+      [&.active]:opacity-100
+      [&.active]:translate-x-0
+      bg-halfColonialWhite
+      container
+      duration-500
+      fixed
+      h-full
+      max-w-4xl
+      opacity-0
+      p-7
+      right-0
+      top-0
+      transform
+      transition-all
+      translate-x-full
+      w-full
+      z-100
+    `, children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "flex items-center justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("span", { className: "absolute right-0 origin-left top-0 -translate-y-1/4 translate-x-1/2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: `origin-left ${modalState ? "animate-swing" : "transform rotate-90"}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Button, { onClick: closeModal, children: "x | Close" }, void 0, !1, {
+    fileName: "app/components/Modal/index.tsx",
+    lineNumber: 35,
+    columnNumber: 13
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Modal/index.tsx",
+    lineNumber: 34,
+    columnNumber: 11
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Modal/index.tsx",
+    lineNumber: 33,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Modal/index.tsx",
+    lineNumber: 32,
+    columnNumber: 7
+  }, this),
+  children
+] }, void 0, !0, {
+  fileName: "app/components/Modal/index.tsx",
+  lineNumber: 12,
+  columnNumber: 5
+}, this);
+
+// public/sparkyLogo.png
+var sparkyLogo_default = "/build/_assets/sparkyLogo-5HOJMYLR.png";
+
+// app/components/Header/index.tsx
+var import_react4 = require("react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+function Header() {
+  let [modalState, setModalState] = (0, import_react4.useState)(!1);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_jsx_dev_runtime5.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "py-4 px-8 grid grid-cols-3 items-center", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react3.Link, { title: "home", to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { className: "w-32", src: sparkyLogo_default }, void 0, !1, {
+        fileName: "app/components/Header/index.tsx",
+        lineNumber: 17,
         columnNumber: 11
       }, this) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 33,
+        fileName: "app/components/Header/index.tsx",
+        lineNumber: 16,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-full text-center", children: "Ecomm Wizards" }, void 0, !1, {
+        fileName: "app/components/Header/index.tsx",
+        lineNumber: 19,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { onClick: () => {
+        setModalState(!modalState);
+      }, children: "CONTACT" }, void 0, !1, {
+        fileName: "app/components/Header/index.tsx",
+        lineNumber: 21,
+        columnNumber: 11
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Header/index.tsx",
+        lineNumber: 20,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
+      fileName: "app/components/Header/index.tsx",
+      lineNumber: 15,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Modal, { modalState, closeModal: () => setModalState(!1), children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-col", children: "SLIDE INTO OUR CRMs" }, void 0, !1, {
+      fileName: "app/components/Header/index.tsx",
+      lineNumber: 28,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/components/Header/index.tsx",
+      lineNumber: 27,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Header/index.tsx",
+    lineNumber: 14,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_index.tsx
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), meta = () => [
+  { title: "Sparky | Home" },
+  { name: "description", content: "We design, build, & optimize high-converting eCommerce sites that glow with brand personality." }
+];
+function Index() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "bg-ivory", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Header, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 14,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "container min-h-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { className: "font-bold text-8xl", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 16,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 15,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
+    lineNumber: 13,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/$.tsx
+var __exports = {};
+__export(__exports, {
+  default: () => Index2
+});
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
+function Index2() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
+    fileName: "app/routes/$.tsx",
+    lineNumber: 5,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/$.tsx",
+    lineNumber: 4,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/$.tsx",
+    lineNumber: 3,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-URQRM5KA.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-JLIKDT7O.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-KAVZ4CRY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "49920b21", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1694470235599 }, url: "/build/manifest-49920B21.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WAY75OCK.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7F7G5S45.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-URS3RKG5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b369ab63", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1694558380138 }, url: "/build/manifest-B369AB63.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -319,6 +397,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: !0,
     caseSensitive: void 0,
     module: index_exports
+  },
+  "routes/$": {
+    id: "routes/$",
+    parentId: "root",
+    path: "*",
+    index: void 0,
+    caseSensitive: void 0,
+    module: __exports
   }
 };
 // Annotate the CommonJS export names for ESM import in node:
@@ -330,18 +416,4 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
   publicPath,
   routes
 });
-/*! Bundled license information:
-
-@remix-run/css-bundle/dist/index.js:
-  (**
-   * @remix-run/css-bundle v1.19.3
-   *
-   * Copyright (c) Remix Software Inc.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.md file in the root directory of this source tree.
-   *
-   * @license MIT
-   *)
-*/
 //# sourceMappingURL=server.js.map
