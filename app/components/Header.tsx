@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
-import { Modal } from "../Modal";
-import sparkyLogo from "../../../public/sparkyLogo.png";
+import { Modal } from "./Modal";
+import sparkyLogo from "../../public/sparkyLogo.png";
 import { useState } from "react";
 
 export default function Header() {
@@ -11,8 +11,8 @@ export default function Header() {
   };
   
   return (
-    <>
-      <div className="py-4 px-8 grid grid-cols-3 items-center">
+    <div className="py-4 fixed top-0 left-0 w-full z-10">
+      <div className="container grid grid-cols-3 items-center">
         <Link title="home" to="/">
           <img className="w-32" src={sparkyLogo} />
         </Link>
@@ -23,12 +23,11 @@ export default function Header() {
           </button>
         </div>
       </div>
-      
       <Modal modalState={modalState} closeModal={() => setModalState(false)}>
         <div className="flex flex-col">
           SLIDE INTO OUR CRMs
         </div>
       </Modal>
-    </>
+    </div>
   )
 }

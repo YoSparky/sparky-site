@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Mint Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./Mint-Grotesk-Bold-V131.woff');
+}
+
+@font-face {
+  font-family: 'Mint Grotesk';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./Mint-Grotesk-ExtraBold-V131.woff');
+}
+
+@font-face {
+  font-family: 'Victor Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./VictorMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Victor Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./VictorMono-Italic-VariableFont_wght.ttf');
+}

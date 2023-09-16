@@ -1,5 +1,6 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import Header from "~/components/Header";
+import Hero from "~/components/Hero";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -12,9 +13,7 @@ export default function Index() {
   return (
     <div className="bg-ivory">
       <Header />
-      <div className="container min-h-screen">
-        <h1 className="font-bold text-8xl">We design, build, & optimize magical ecommerce sites that glow with personality.</h1>
-      </div>
+      <Hero />
     </div>
   );
 }
