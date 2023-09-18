@@ -1,6 +1,6 @@
 import { Link } from "@remix-run/react";
 import { Modal } from "./Modal";
-import sparkyLogo from "../../public/sparkyLogo.png";
+import sparkyLogo from "../assets/sparkyLogo.png";
 import { useState } from "react";
 
 export default function Header() {
@@ -11,13 +11,13 @@ export default function Header() {
   };
   
   return (
-    <div className="py-4 fixed top-0 left-0 w-full z-10">
+    <div className="py-4 fixed top-0 left-0 w-screen z-10">
       <div className="container grid grid-cols-3 items-center">
         <Link title="home" to="/">
-          <img className="w-32" src={sparkyLogo} />
+          <img className="w-24 md:w-32" src={sparkyLogo} />
         </Link>
-        <div className="w-full text-center">Ecomm Wizards</div>
-        <div className="flex justify-end">
+        <div className="text-center text-sm">Ecomm Wizards</div>
+        <div className="flex justify-end text-sm">
           <button onClick={toggleModal}>
             CONTACT
           </button>

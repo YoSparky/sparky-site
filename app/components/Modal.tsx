@@ -17,22 +17,29 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
   useEffect(() => {
     if (modalState) {
       document.addEventListener('keydown', onKeyDown);
+      document.body.classList.add('h-screen', 'overflow-hidden');
       return;
     }
     
     document.removeEventListener('keydown', onKeyDown);
+    document.body.classList.remove('h-screen', 'overflow-hidden');
   }, [onKeyDown, modalState]);
   
   return (
-    <Transition in={modalState} timeout={0}>
-      {(state : boolean ) => (
+    <Transition 
+      in={modalState} 
+      timeout={modalState ? 0 : 500} 
+      appear 
+      unmountOnExit
+    >
+      {(state) => (
         <>
           <div 
             aria-hidden 
             onClick={() => closeModal()}
             className={`
               transition-${state}
-              transition-opacity
+              transition-all
               duration-500
               fixed
               top-0
@@ -41,9 +48,7 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
               w-full
               bg-black
               opacity-0
-              [&.transition-entered]:opacity-40
-              [&.transition-exited]:opacity-0
-              [&.transition-exited]:hidden
+              [&.transition-entered]:opacity-60
             `}
           ></div>
           <div
