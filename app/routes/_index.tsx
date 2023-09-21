@@ -1,8 +1,8 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import Header from "~/components/Header";
 import Hero from "~/components/Hero";
 import FeaturedPortfolio from "~/components/FeaturedPortfolio";
 import FeaturedPartners from "~/components/FeaturedPartners";
+import PortfolioList from "~/components/PortfolioList";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -14,10 +14,10 @@ export const meta: V2_MetaFunction = () => {
 export default function Index() {
   return (
     <div className="bg-ivory">
-      <Header />
       <Hero />
       <FeaturedPortfolio />
       <FeaturedPartners />
+      <PortfolioList />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import stylesheet from "~/tailwind.css";
 import fonts from "./assets/fonts.css";
+import Header from "./components/Header";
 
 import type { LinksFunction } from "@remix-run/node";
 import {
@@ -26,6 +27,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Header />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

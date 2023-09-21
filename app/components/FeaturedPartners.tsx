@@ -33,7 +33,7 @@ export default function FeaturedPartners() {
   return (
     <div className="max-md:container md:right-edge-container my-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        <ul className="grid grid-cols-2 gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none">
+        <ul className="grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none">
           {partners.map(({ title, logo, link }, i) => (
             <li className="aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-300" key={`${title}-${i}`}>
               <Link className="w-full h-full flex items-center justify-center relative" title={title} to={link}>
@@ -44,7 +44,7 @@ export default function FeaturedPartners() {
           ))}
         </ul>
         <div className="flex flex-col justify-center">
-          <strong className="block font-bold text-5xl text-shadow h1 transform">Howdy, partners.</strong>
+          <strong className="block font-bold text-5xl md:text-6xl h1">Howdy, partners.</strong>
           <div className="max-w-sm mt-11 leading-loose">
             We work closely with the best ecommerce partners and platforms to help support the growth of our clients.
           </div>
