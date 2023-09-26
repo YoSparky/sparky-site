@@ -61,12 +61,13 @@ const Accordion = ({ label, children } : AccordionProps) => {
     }
     
     toggleAccordion(true);
+    // @ts-expect-error
     setHeight(accordionRef?.current?.scrollHeight ?? 0)
   }
   
   return (
     <>
-      <h3 className="text-7xl font-black relative max-md:pl-16">
+      <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16">
         <Star className={`absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-90'}`} />
         <button className={`${isOpen ? 'text-wattle' : `stroke text-[#f9df5e1a]`} transition duration-500 hover:text-wattle`} id={`controls-${id}`} aria-controls={`contents-${id}`} aria-expanded={isOpen} onClick={clickHandler}>
           {label}
@@ -81,7 +82,7 @@ const Accordion = ({ label, children } : AccordionProps) => {
 
 export default function OfferingsAccordion() {
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="max-md:pb-32 py-52 z-[0] relative">
+    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat max-md:pb-32 py-52 z-[0] relative">
       <div className="container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]">
         <div className="md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase">
           We work with <br/> fast-growing brands with <br/> diverse eComm needs.

@@ -36,6 +36,10 @@
   .button {
     @apply rounded-full px-4 py-2 border border-current transition duration-200 hover:bg-energyYellow text-sm;
   }
+  
+  .button--secondary {
+    @apply button border border-tuatara bg-tuatara text-energyYellow hover:text-tuatara hover:bg-energyYellow;
+  }
 
   .button--liquid-drop {
     @apply relative hover:bg-transparent before:top-1/2 before:-translate-y-1/2 before:block before:absolute before:h-16 before:w-16 before:bg-energyYellow before:rounded-full before:-z-[1];
@@ -55,6 +59,13 @@
   
   .button--liquid-drop.default-hover-animation-state::before {
     animation: 0.3s liquidDrop ease-in-out forwards;
+    animation-play-state: paused;
+  }
+  
+  .marquee {
+    animation: 10s marquee linear infinite forwards;
+  }
+  .marquee.paused {
     animation-play-state: paused;
   }
 }
@@ -83,4 +94,9 @@
   100% {
     left: calc(100% - 48px);
   }
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }

@@ -3,8 +3,10 @@ import Hero from "~/components/Hero";
 import FeaturedPortfolio from "~/components/FeaturedPortfolio";
 import FeaturedPartners from "~/components/FeaturedPartners";
 import PortfolioList from "~/components/PortfolioList";
-import PortfolioSlider from "~/components/PorfolioSlider";
+import PortfolioSlider from "~/components/PortfolioSlider";
 import OfferingsAccordion from "~/components/OfferingsAccordion";
+import Marquee from "~/components/Marquee";
+import Footer from "~/components/Footer/Footer";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -13,17 +15,25 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-export default function Index() {
+type PageProps = {
+  toggleModal: Function
+}
+
+export default function Index({ toggleModal } : PageProps) {
   return (
-    <div className="bg-ivory">
-      <div className="w-screen max-md:overflow-x-hidden">
-        <Hero />
-        <FeaturedPortfolio />
-        <FeaturedPartners />
-        <PortfolioList />
-        <PortfolioSlider />
-        <OfferingsAccordion />
+    <>
+      <div className="bg-ivory">
+        <div className="w-screen max-md:overflow-x-hidden">
+          <Hero />
+          <FeaturedPortfolio />
+          <FeaturedPartners />
+          <PortfolioList />
+          <PortfolioSlider />
+          <OfferingsAccordion />
+          <Marquee />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -11,13 +11,23 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { createContext, useState } from "react";
+import { Modal } from "./components/Modal";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: fonts },
 ];
 
+export const ModalContext = createContext<Function | null>(null);
+
 export default function App() {
+  const [modalState, setModalState] = useState(false);
+
+  const toggleModal = () => {
+    setModalState(!modalState);
+  };
+  
   return (
     <html lang="en">
       <head>
@@ -27,11 +37,18 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Header />
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <ModalContext.Provider value={toggleModal}>
+          <Header />
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+          <Modal modalState={modalState} closeModal={() => setModalState(false)}>
+            <div className="flex flex-col">
+              SLIDE INTO OUR CRMs
+            </div>
+          </Modal>
+        </ModalContext.Provider>
       </body>
     </html>
   );

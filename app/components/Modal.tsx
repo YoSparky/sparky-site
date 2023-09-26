@@ -49,6 +49,7 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
               bg-black
               opacity-0
               [&.transition-entered]:opacity-60
+              z-[99]
             `}
           ></div>
           <div
@@ -68,7 +69,7 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
               right-0
               top-0
               w-full
-              z-100
+              z-[100]
             `}
           >
             <div className="flex items-center justify-end">
