@@ -7,7 +7,7 @@ export { default as YotpoLogo } from "./YotpoLogo";
 export { default as CrocsLogo } from "./CrocsLogo";
 export { default as FortysevenLogo } from "./FortysevenLogo";
 export { default as GhostLogo } from "./GhostLogo";
-export { default as HeyDudeLogo } from "./HeyDudeLogo";
+export { default as HeydudeLogo } from "./HeydudeLogo";
 export { default as LogoBlackLegends } from "./LogoBlackLegends";
 export { default as Paka } from "./Paka";
 export { default as SpeidelLogo } from "./SpeidelLogo";
