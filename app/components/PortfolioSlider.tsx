@@ -52,7 +52,7 @@ export default function PortfolioSlider() {
   return (
     <div 
       style={{ backgroundImage: `url(${SliderBackground})` }} 
-      className="bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory">
+      className="bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 lg:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory">
       <swiper-container
         ref={swiperElRef}
         slides-per-view="1"
@@ -61,22 +61,22 @@ export default function PortfolioSlider() {
       >
         {sliderItems.map(({ title, copy, link, image }, i) => 
           <swiper-slide key={`${title}-${i}`}>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-16 items-center pr-16">
+            <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16">
               <div className="bg-botticelli min-w-[319px] w-[319px]">
                 <img className="block w-full mix-blend-multiply" width="319" height="329" src={image} alt={title} />
               </div>
-              <div className="hidden md:flex flex-col text-xs gap-4 top-0 h-full justify-center">
+              <div className="hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center">
                 <span>{currentIndex + 1}</span>
                 <span className="text-[8px]">/</span>
                 <span>{sliderItems.length}</span>
               </div>
-              <div className="flex flex-col gap-8 md:pl-32">
-                <p className="text-xl md:text-3xl tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
+              <div className="flex flex-col gap-8 lg:pl-32">
+                <p className="text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
                 <a className="uppercase underline text-sm tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full" href={link}>
                   <span>Learn More</span>
                 </a>
               </div>
-              <div className="flex md:hidden text-xs gap-4 top-0 items-center w-full">
+              <div className="flex lg:hidden text-xs gap-4 top-0 items-center w-full">
                 <span>{currentIndex + 1}</span>
                 <span className="text-[8px]">/</span>
                 <span>{sliderItems.length}</span>
@@ -93,7 +93,7 @@ export default function PortfolioSlider() {
         <Arrow />
       </button>
       <div 
-        className="hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 lg:flex items-center justify-center absolute right-0 top-1/2"
+        className="hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 md:flex items-center justify-center absolute right-0 top-1/2"
         aria-hidden="true"
       ></div>
     </div>

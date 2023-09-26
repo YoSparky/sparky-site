@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-GC6OI7IG.css";
+var tailwind_default = "/build/_assets/tailwind-Q424SOX6.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -469,22 +469,22 @@ var Legends_Portfolio_default = "/build/_assets/Legends-Portfolio-LLF3SX6K.png";
 // app/components/FeaturedPortfolio.tsx
 var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function FeaturedPortfolio() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "relative w-full max-md:overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "right-edge-container flex flex-col justify-center relative gap-4 md:gap-7 z-[1]", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "relative w-full max-lg:overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "right-edge-container flex flex-col justify-center relative gap-4 lg:gap-7 z-[1]", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { children: "Latest Work" }, void 0, !1, {
         fileName: "app/components/FeaturedPortfolio.tsx",
         lineNumber: 9,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "grid gap-16 md:grid-cols-2 md:gap-5", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex flex-col max-md:pr-4", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "grid gap-16 lg:grid-cols-2 lg:gap-5", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex flex-col max-lg:pr-4", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "block bg-mix-blend-multiply", src: HeyDude_Portfolio_default }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 13,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl md:text-6xl text-shadow h1 transform -translate-y-[65%] -ml-1 leading-none", children: "Hey Dude" }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 transform -translate-y-[65%] -ml-1 leading-none", children: "Hey Dude" }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 14,
               columnNumber: 15
@@ -494,7 +494,7 @@ function FeaturedPortfolio() {
             lineNumber: 12,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap md:border border-current md:w-max max-md:text-center max-md:gap-1 [&_li]:max-md:border [&_li:not(:last-of-type)]:md:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 17,
@@ -515,7 +515,7 @@ function FeaturedPortfolio() {
             lineNumber: 16,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "pt-96 mt-auto hidden md:block", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "pt-96 mt-auto hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
             fileName: "app/components/FeaturedPortfolio.tsx",
             lineNumber: 22,
             columnNumber: 15
@@ -531,12 +531,12 @@ function FeaturedPortfolio() {
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex flex-col", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "block md:mt-[70%]", src: Legends_Portfolio_default }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "block lg:mt-[70%]", src: Legends_Portfolio_default }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 27,
               columnNumber: 15
             }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl md:text-6xl text-shadow h1 -ml-1 transform -translate-y-[65%] leading-none", children: "Legends" }, void 0, !1, {
+            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 -ml-1 transform -translate-y-[65%] leading-none", children: "Legends" }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 28,
               columnNumber: 15
@@ -546,7 +546,7 @@ function FeaturedPortfolio() {
             lineNumber: 26,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap md:border border-current md:w-max max-md:text-center max-md:gap-1 [&_li]:max-md:border [&_li:not(:last-of-type)]:md:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
               fileName: "app/components/FeaturedPortfolio.tsx",
               lineNumber: 31,
@@ -572,7 +572,7 @@ function FeaturedPortfolio() {
           lineNumber: 25,
           columnNumber: 11
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "md:hidden button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "lg:hidden button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
           fileName: "app/components/FeaturedPortfolio.tsx",
           lineNumber: 36,
           columnNumber: 11
@@ -7056,7 +7056,7 @@ function PortfolioSlider() {
     "div",
     {
       style: { backgroundImage: `url(${slider_bg_bottom_default})` },
-      className: "bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory",
+      className: "bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 lg:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory",
       children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
           "swiper-container",
@@ -7065,7 +7065,7 @@ function PortfolioSlider() {
             "slides-per-view": "1",
             loop: "true",
             children: sliderItems.map(
-              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col md:flex-row gap-5 md:gap-16 items-center pr-16", children: [
+              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16", children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
                   fileName: "app/components/PortfolioSlider.tsx",
                   lineNumber: 66,
@@ -7075,7 +7075,7 @@ function PortfolioSlider() {
                   lineNumber: 65,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "hidden md:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 69,
@@ -7096,8 +7096,8 @@ function PortfolioSlider() {
                   lineNumber: 68,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col gap-8 md:pl-32", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("p", { className: "text-xl md:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col gap-8 lg:pl-32", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("p", { className: "text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 74,
                     columnNumber: 17
@@ -7116,7 +7116,7 @@ function PortfolioSlider() {
                   lineNumber: 73,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex md:hidden text-xs gap-4 top-0 items-center w-full", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex lg:hidden text-xs gap-4 top-0 items-center w-full", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 80,
@@ -7180,7 +7180,7 @@ function PortfolioSlider() {
         /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
           "div",
           {
-            className: "hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 lg:flex items-center justify-center absolute right-0 top-1/2",
+            className: "hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 md:flex items-center justify-center absolute right-0 top-1/2",
             "aria-hidden": "true"
           },
           void 0,
@@ -7682,7 +7682,7 @@ function Index2() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VJWYN7NA.js", imports: ["/build/_shared/chunk-3ET4DEQO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-FS75LVRQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "53097611", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695765659035 }, url: "/build/manifest-53097611.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-U5JGTED6.js", imports: ["/build/_shared/chunk-5EAOGXXC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2KR4AR2K.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "c7407b91", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695766276177 }, url: "/build/manifest-C7407B91.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
