@@ -47,7 +47,7 @@ const portfolioListItems = [
 
 export default function PortfolioList() {  
   return (
-    <div className="relative w-full max-md:overflow-hidden">
+    <div className="relative w-full">
       <div className="container py-12 relative z-[1]">
         <div className="max-w-5xl ml-auto flex flex-col gap-8">
           <span className="uppercase">Work in the wild</span>

@@ -27,6 +27,11 @@
   .right-edge-container {
     @apply container pr-0 mr-0 sm:max-w-[calc(100vw-((100vw-640px)/2))] md:max-w-[calc(100vw-((100vw-768px)/2))] lg:max-w-[calc(100vw-((100vw-1024px)/2))] xl:max-w-[calc(100vw-((100vw-1280px)/2))] 2xl:max-w-[calc(100vw-((100vw-1536px)/2))]; 
   }
+  
+  .stroke {
+    -webkit-text-stroke-width: 0.75px;
+    -webkit-text-stroke-color: #F9DF5E;
+  }
 
   .button {
     @apply rounded-full px-4 py-2 border border-current transition duration-200 hover:bg-energyYellow text-sm;

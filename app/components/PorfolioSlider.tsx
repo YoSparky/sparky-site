@@ -50,7 +50,9 @@ export default function PortfolioSlider() {
   }, []);
   
   return (
-    <div style={{ backgroundImage: `url(${SliderBackground})` }} className="bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24">
+    <div 
+      style={{ backgroundImage: `url(${SliderBackground})` }} 
+      className="bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory">
       <swiper-container
         ref={swiperElRef}
         slides-per-view="1"
@@ -86,10 +88,14 @@ export default function PortfolioSlider() {
       <button 
         // @ts-expect-error
         onClick={() => swiperElRef.current.swiper.slideNext()} 
-        className="border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara"
+        className="border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform md:translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara"
       >
         <Arrow />
       </button>
+      <div 
+        className="hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 lg:flex items-center justify-center absolute right-0 top-1/2"
+        aria-hidden="true"
+      ></div>
     </div>
   )
 }

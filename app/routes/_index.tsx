@@ -16,12 +16,14 @@ export const meta: V2_MetaFunction = () => {
 export default function Index() {
   return (
     <div className="bg-ivory">
-      <Hero />
-      <FeaturedPortfolio />
-      <FeaturedPartners />
-      <PortfolioList />
-      <PortfolioSlider />
-      <OfferingsAccordion />
+      <div className="w-screen max-md:overflow-x-hidden">
+        <Hero />
+        <FeaturedPortfolio />
+        <FeaturedPartners />
+        <PortfolioList />
+        <PortfolioSlider />
+        <OfferingsAccordion />
+      </div>
     </div>
   );
 }

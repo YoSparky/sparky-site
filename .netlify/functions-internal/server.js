@@ -143,7 +143,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-MZGW6H6C.css";
+var tailwind_default = "/build/_assets/tailwind-PTGZWGRP.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -992,7 +992,7 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), portfolioListIt
   }
 ];
 function PortfolioList() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "relative w-full max-md:overflow-hidden", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "relative w-full", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "container py-12 relative z-[1]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("div", { className: "max-w-5xl ml-auto flex flex-col gap-8", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("span", { className: "uppercase", children: "Work in the wild" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
@@ -6445,142 +6445,287 @@ function PortfolioSlider() {
     swiperElRef.current.addEventListener("slidechange", (e) => {
       setIndex(e.detail[0].realIndex);
     });
-  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { style: { backgroundImage: `url(${slider_bg_bottom_default})` }, className: "bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
-      "swiper-container",
-      {
-        ref: swiperElRef,
-        "slides-per-view": "1",
-        loop: "true",
-        children: sliderItems.map(
-          ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col md:flex-row gap-5 md:gap-16 items-center pr-16", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
-              fileName: "app/components/PorfolioSlider.tsx",
-              lineNumber: 64,
-              columnNumber: 17
-            }, this) }, void 0, !1, {
-              fileName: "app/components/PorfolioSlider.tsx",
-              lineNumber: 63,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "hidden md:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+    "div",
+    {
+      style: { backgroundImage: `url(${slider_bg_bottom_default})` },
+      className: "bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 md:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory",
+      children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+          "swiper-container",
+          {
+            ref: swiperElRef,
+            "slides-per-view": "1",
+            loop: "true",
+            children: sliderItems.map(
+              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col md:flex-row gap-5 md:gap-16 items-center pr-16", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
+                  fileName: "app/components/PorfolioSlider.tsx",
+                  lineNumber: 66,
+                  columnNumber: 17
+                }, this) }, void 0, !1, {
+                  fileName: "app/components/PorfolioSlider.tsx",
+                  lineNumber: 65,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "hidden md:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 69,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 70,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 71,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/PorfolioSlider.tsx",
+                  lineNumber: 68,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col gap-8 md:pl-32", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("p", { className: "text-xl md:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 74,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("a", { className: "uppercase underline text-sm tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full", href: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 76,
+                    columnNumber: 19
+                  }, this) }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 75,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/PorfolioSlider.tsx",
+                  lineNumber: 73,
+                  columnNumber: 15
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex md:hidden text-xs gap-4 top-0 items-center w-full", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 80,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 81,
+                    columnNumber: 17
+                  }, this),
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
+                    fileName: "app/components/PorfolioSlider.tsx",
+                    lineNumber: 82,
+                    columnNumber: 17
+                  }, this)
+                ] }, void 0, !0, {
+                  fileName: "app/components/PorfolioSlider.tsx",
+                  lineNumber: 79,
+                  columnNumber: 15
+                }, this)
+              ] }, void 0, !0, {
                 fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 67,
-                columnNumber: 17
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+                lineNumber: 64,
+                columnNumber: 13
+              }, this) }, `${title}-${i}`, !1, {
                 fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 68,
-                columnNumber: 17
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 69,
-                columnNumber: 17
+                lineNumber: 63,
+                columnNumber: 11
               }, this)
-            ] }, void 0, !0, {
+            )
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/PorfolioSlider.tsx",
+            lineNumber: 56,
+            columnNumber: 7
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+          "button",
+          {
+            onClick: () => swiperElRef.current.swiper.slideNext(),
+            className: "border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform md:translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara",
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Arrow_default, {}, void 0, !1, {
               fileName: "app/components/PorfolioSlider.tsx",
-              lineNumber: 66,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex flex-col gap-8 md:pl-32", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("p", { className: "text-xl md:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 72,
-                columnNumber: 17
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("a", { className: "uppercase underline text-sm tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full", href: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 74,
-                columnNumber: 19
-              }, this) }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 73,
-                columnNumber: 17
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/components/PorfolioSlider.tsx",
-              lineNumber: 71,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("div", { className: "flex md:hidden text-xs gap-4 top-0 items-center w-full", children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 78,
-                columnNumber: 17
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 79,
-                columnNumber: 17
-              }, this),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
-                fileName: "app/components/PorfolioSlider.tsx",
-                lineNumber: 80,
-                columnNumber: 17
-              }, this)
-            ] }, void 0, !0, {
-              fileName: "app/components/PorfolioSlider.tsx",
-              lineNumber: 77,
-              columnNumber: 15
+              lineNumber: 93,
+              columnNumber: 9
             }, this)
-          ] }, void 0, !0, {
+          },
+          void 0,
+          !1,
+          {
             fileName: "app/components/PorfolioSlider.tsx",
-            lineNumber: 62,
-            columnNumber: 13
-          }, this) }, `${title}-${i}`, !1, {
+            lineNumber: 88,
+            columnNumber: 7
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+          "div",
+          {
+            className: "hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 lg:flex items-center justify-center absolute right-0 top-1/2",
+            "aria-hidden": "true"
+          },
+          void 0,
+          !1,
+          {
             fileName: "app/components/PorfolioSlider.tsx",
-            lineNumber: 61,
-            columnNumber: 11
-          }, this)
+            lineNumber: 95,
+            columnNumber: 7
+          },
+          this
         )
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/PorfolioSlider.tsx",
-        lineNumber: 54,
-        columnNumber: 7
-      },
-      this
-    ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
-      "button",
-      {
-        onClick: () => swiperElRef.current.swiper.slideNext(),
-        className: "border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara",
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Arrow_default, {}, void 0, !1, {
-          fileName: "app/components/PorfolioSlider.tsx",
-          lineNumber: 91,
-          columnNumber: 9
-        }, this)
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/PorfolioSlider.tsx",
-        lineNumber: 86,
-        columnNumber: 7
-      },
-      this
-    )
-  ] }, void 0, !0, {
-    fileName: "app/components/PorfolioSlider.tsx",
-    lineNumber: 53,
-    columnNumber: 5
-  }, this);
+      ]
+    },
+    void 0,
+    !0,
+    {
+      fileName: "app/components/PorfolioSlider.tsx",
+      lineNumber: 53,
+      columnNumber: 5
+    },
+    this
+  );
 }
+
+// app/components/OfferingsAccordion.tsx
+var import_react11 = require("react");
 
 // app/assets/offerings-accordion-background.jpeg
 var offerings_accordion_background_default = "/build/_assets/offerings-accordion-background-EQT2VSAP.jpeg";
 
 // app/components/OfferingsAccordion.tsx
-var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime");
-function OfferingsAccordion() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "py-52 z-[0] relative" }, void 0, !1, {
+var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), offerings = [
+  {
+    title: "Front-End",
+    listItems: [
+      "UI/UX Design",
+      "A/B Testing & Optimization",
+      "Shopify Theme Development",
+      "Product Data Taxonomy",
+      "ADA Compliance",
+      "And More"
+    ]
+  },
+  {
+    title: "Platform",
+    listItems: [
+      "Merchandising Operations",
+      "CMS Admin",
+      "Promo & Campaign Management",
+      "Catalog Architecture ",
+      "Apps & Integrations",
+      "Private App Development",
+      "Shopify Back-end API",
+      "And More"
+    ]
+  },
+  {
+    title: "Strategy",
+    listItems: [
+      "UX Consulting",
+      "CRO Strategy",
+      "Roadmap Development",
+      "Tech Stack Strategy",
+      "Organizational Design",
+      "Digital Innovation",
+      "And More"
+    ]
+  }
+], Accordion = ({ label, children }) => {
+  let [isOpen, toggleAccordion] = (0, import_react11.useState)(!1), [currentHeight, setHeight] = (0, import_react11.useState)(0), accordionRef = (0, import_react11.useRef)(null), id = (0, import_react11.useId)(), clickHandler = () => {
+    var _a;
+    if (isOpen) {
+      toggleAccordion(!1), setHeight(0);
+      return;
+    }
+    toggleAccordion(!0), setHeight(((_a = accordionRef == null ? void 0 : accordionRef.current) == null ? void 0 : _a.scrollHeight) ?? 0);
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_jsx_dev_runtime17.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("h3", { className: "text-7xl font-black relative max-md:pl-16", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(Star_default, { className: `absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && "rotate-90"}` }, void 0, !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 70,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("button", { className: `${isOpen ? "text-wattle" : "stroke text-[#f9df5e1a]"} transition duration-500 hover:text-wattle`, id: `controls-${id}`, "aria-controls": `contents-${id}`, "aria-expanded": isOpen, onClick: clickHandler, children: label }, void 0, !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 71,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/OfferingsAccordion.tsx",
+      lineNumber: 69,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { "aria-labelledby": `controls-${id}`, role: "region", id: `contents-${id}`, ref: accordionRef, style: { height: `${currentHeight}px` }, className: "transition-all duration-500 overflow-hidden", children }, void 0, !1, {
+      fileName: "app/components/OfferingsAccordion.tsx",
+      lineNumber: 75,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
     fileName: "app/components/OfferingsAccordion.tsx",
-    lineNumber: 5,
+    lineNumber: 68,
+    columnNumber: 5
+  }, this);
+};
+function OfferingsAccordion() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "max-md:pb-32 py-52 z-[0] relative", children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
+      "We work with ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("br", {}, void 0, !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 87,
+        columnNumber: 24
+      }, this),
+      " fast-growing brands with ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("br", {}, void 0, !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 87,
+        columnNumber: 55
+      }, this),
+      " diverse eComm needs."
+    ] }, void 0, !0, {
+      fileName: "app/components/OfferingsAccordion.tsx",
+      lineNumber: 86,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("div", { className: "flex flex-col gap-2", children: offerings.map(
+      ({ title, listItems }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(Accordion, { label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, (0, import_react11.useId)(), !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 95,
+        columnNumber: 21
+      }, this)) }, void 0, !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 93,
+        columnNumber: 17
+      }, this) }, (0, import_react11.useId)(), !1, {
+        fileName: "app/components/OfferingsAccordion.tsx",
+        lineNumber: 92,
+        columnNumber: 15
+      }, this)
+    ) }, void 0, !1, {
+      fileName: "app/components/OfferingsAccordion.tsx",
+      lineNumber: 89,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/OfferingsAccordion.tsx",
+    lineNumber: 85,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/OfferingsAccordion.tsx",
+    lineNumber: 84,
     columnNumber: 5
   }, this);
 }
@@ -6591,38 +6736,42 @@ var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), meta = () => [
   { name: "description", content: "We design, build, & optimize high-converting eCommerce sites that glow with brand personality." }
 ];
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "bg-ivory", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "w-screen max-md:overflow-x-hidden", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(Hero, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 19,
-      columnNumber: 7
+      lineNumber: 20,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 20,
-      columnNumber: 7
+      lineNumber: 21,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 21,
-      columnNumber: 7
+      lineNumber: 22,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(PortfolioList, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 22,
-      columnNumber: 7
+      lineNumber: 23,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 23,
-      columnNumber: 7
+      lineNumber: 24,
+      columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 24,
-      columnNumber: 7
+      lineNumber: 25,
+      columnNumber: 9
     }, this)
   ] }, void 0, !0, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 19,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
     fileName: "app/routes/_index.tsx",
     lineNumber: 18,
     columnNumber: 5
@@ -6652,7 +6801,7 @@ function Index2() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-WAY75OCK.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-24G4J4CP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-Y2OED47I.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "68ab6432", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695745318448 }, url: "/build/manifest-68AB6432.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-WAY75OCK.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-22JFSI7E.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-7HKVWUZS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b56b0dcd", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695754866576 }, url: "/build/manifest-B56B0DCD.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

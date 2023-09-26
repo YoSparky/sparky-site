@@ -13,7 +13,9 @@ export default {
         energyYellow: '#F9DF5E',
         halfColonialWhite: '#FDF8D5',
         ivory: '#FFFFF4',
-        tuatara: "#30302C"
+        logCabin: '#1D1D1A',
+        tuatara: "#30302C",
+        wattle: '#E0E34A'
       },
       fontFamily: {
         title: 'Mint Grotesk',
