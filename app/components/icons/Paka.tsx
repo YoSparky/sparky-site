@@ -4,15 +4,13 @@ const SvgPaka = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="Layer_1"
-    width="100%"
-    height="100%"
     viewBox="0 0 406.5 124.5"
     {...props}
   >
     <defs>
       <style>
         {
-          ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4{fill:#fefefe}.cls-5{fill:#fefeff}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}"
+          ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4,.cls-5{fill:transparent}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}"
         }
       </style>
     </defs>

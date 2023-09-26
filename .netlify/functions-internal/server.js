@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-P6WGYWL2.css";
+var tailwind_default = "/build/_assets/tailwind-GC6OI7IG.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -988,18 +988,16 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
   {
     xmlns: "http://www.w3.org/2000/svg",
     id: "Layer_1",
-    width: "100%",
-    height: "100%",
     viewBox: "0 0 406.5 124.5",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("style", { children: ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4{fill:#fefefe}.cls-5{fill:#fefeff}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("style", { children: ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4,.cls-5{fill:transparent}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 13,
+        lineNumber: 11,
         columnNumber: 7
       }, this) }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
@@ -1012,7 +1010,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 19,
+          lineNumber: 17,
           columnNumber: 5
         },
         this
@@ -1029,7 +1027,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 23,
+          lineNumber: 21,
           columnNumber: 5
         },
         this
@@ -1046,7 +1044,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 29,
+          lineNumber: 27,
           columnNumber: 5
         },
         this
@@ -1061,24 +1059,24 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 35,
+          lineNumber: 33,
           columnNumber: 5
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m73.75.48.12-.48h7.38l-.12.48h-7.38Z", className: "cls-7" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 39,
+        lineNumber: 37,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m81.13.48.12-.48h4.88v.48h-5Z", className: "cls-3" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 40,
+        lineNumber: 38,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M81.13.48h5c2.6.08 5.2.16 7.95.25v14.12c.02.09.03.19.05.28.31.01.61.03.92.03h13.81v1.87c0 3.83.01 7.67.03 11.5 0 .35.04.71.15 1.03.05.14.33.28.51.28.85.04 1.71.03 2.56.04 3 .01 6 .02 9 .04.87 0 1.73.08 2.7.12v64.28h-14.67v2.73c0 .18.07.36.07.54-.02 3.62-.06 7.25-.06 10.87 0 .6-.18.78-.78.78-2.98-.02-5.96 0-8.94.01H94.6c-.1 4.98-.2 9.79-.29 14.61h-1.59c-9.98 0-19.96-.01-29.93 0-3.93 0-7.86.1-11.78.15-1.79 0-3.58-.02-5.37-.02H30.59c-.27 0-.54-.03-.81-.05 0-1.6-.02-3.2-.01-4.79.02-3.13.04-6.26.07-9.39-.07-.03-.14-.07-.22-.1-2.89-.02-5.78-.04-8.67-.05-1.49 0-2.98.02-4.48 0-.4 0-.81-.09-1.21-.14-.03-.04-.07-.07-.1-.11-.05-4.83-.11-9.66-.16-14.55-.22-.01-.4-.03-.58-.03-4.24-.01-8.48-.04-12.72-.03-1.41 0-1.45-.12-1.24-1.63.01-.19.03-.37.03-.56V33.43c0-.15-.01-.29-.02-.44v-.26l-.09-1.47c-.03-.4 0-.65.54-.65 2.71.02 5.41.03 8.12-.01 1.88-.03 3.75-.17 5.68-.26.02-.49.07-1 .07-1.51 0-2.23-.03-4.46-.04-6.68-.01-2 0-4-.05-6-.02-.68.26-.78.84-.77 4.08.02 8.16.02 12.24.02 1.69 0 1.66 0 1.65-1.7-.02-4.35 0-8.7 0-13.11.21-.04.45-.08.69-.12.42 0 .83.02 1.25.02h41.7c.23 0 .46-.01.68-.02h7.38Zm12.13 32.26c.18-.23.27-.42 0-.68-.65-.62-1.27-1.28-1.93-1.88-.12-.11-.4-.03-.6-.04C83 22.76 73.76 18.96 63.08 18.36v47.46h10.51c.09 1.69.23 3.25.23 4.82.02 11.12.01 22.25.02 33.37 0 .16.03.32.06.57.75-.18 1.49-.23 2.12-.52 2.25-1.01 4.51-2.01 6.68-3.19 2.69-1.47 5.09-3.38 7.41-5.38.26-.05.6-.02.76-.17.62-.57 1.2-1.18 1.76-1.82.1-.12 0-.41 0-.62.07-.08.13-.16.2-.24 3.56-3.89 6.24-8.33 8.24-13.2.99-2.43 1.65-4.95 2.18-7.51.33-1.61.72-3.23.84-4.86.16-2.22.1-4.45.11-6.67 0-1.02.03-2.05-.15-3.04-.26-1.42-.36-2.86-.76-4.28-.52-1.87-.96-3.77-1.56-5.62-.82-2.53-1.93-4.93-3.21-7.25-1.48-2.69-3.3-5.14-5.27-7.48Zm-41.02 72.47V44.92H41.15v-6.75h5.58c0-.15.02-.3.02-.44 0-1.83-.01-3.67 0-5.5 0-.86.07-.91.89-.92l9.31-.06c.26 0 .52-.03.8-.05V18.77c-.72 0-1.43-.12-2.08.02-1.89.41-3.77.86-5.62 1.41-1.75.52-3.5 1.08-5.17 1.82-6.45 2.84-11.75 7.16-16.13 12.67-4.6 5.78-7.36 12.39-8.85 19.57-.32 1.54-.43 3.13-.51 4.7-.1 2.06-.11 4.12-.08 6.18.02 1.33.12 2.68.34 3.99.23 1.46.66 2.88.95 4.33.36 1.85.98 3.6 1.66 5.35 1.52 3.89 3.5 7.53 6.02 10.86 3.61 4.76 7.96 8.69 13.21 11.53 2.33 1.26 4.78 2.3 7.25 3.26 1.07.41 2.18 1.02 3.5.75Zm5.61.97s.08.05.12.05c2.68-.04 5.36-.07 8.03-.13.61-.01 1.22-.11 1.82-.24.19-.04.39-.29.48-.49.08-.17.03-.41.03-.62 0-8 0-15.99-.01-23.99v-1.14h-1.27c-2.91-.02-5.83-.04-8.74-.07-.4 0-.47.16-.47.53.01 7.93.01 15.87.01 23.8v2.28Z" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 41,
+        lineNumber: 39,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
@@ -1091,14 +1089,14 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 42,
+          lineNumber: 40,
           columnNumber: 5
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M162.42 30.14h24.89c1.7 0 3.37.31 5.05.57 2.14.33 4.16.94 6.07 1.89 4.7 2.35 7.81 6.07 9.23 11.12.42 1.5.53 3.1.72 4.65.11.9.17 1.82.11 2.73-.13 1.83-.25 3.66-.68 5.48-.89 3.74-2.72 6.86-5.65 9.34-2.2 1.86-4.71 3.17-7.51 3.88-2.02.51-4.04.98-6.16.97-5.33-.01-10.65.06-15.98.09h-.8v23.81h-8.82c-.53 0-.48-.33-.47-.67 0-3.67.02-7.33.02-11V30.13Zm9.34 8.9c.02.39.04.62.04.84 0 7.1.02 14.2 0 21.3 0 .54.1.71.67.71 4.39-.02 8.78 0 13.17 0 2.34 0 4.66-.19 6.89-.92 1.83-.6 3.53-1.46 4.75-3.06 1.31-1.71 1.7-3.75 1.82-5.79.1-1.78-.01-3.57-.3-5.36-.59-3.69-3.4-6-6.59-6.86-2.16-.58-4.38-.82-6.61-.84-4.59-.05-9.19-.01-13.85-.01Z" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 46,
+        lineNumber: 44,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
@@ -1111,7 +1109,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 47,
+          lineNumber: 45,
           columnNumber: 5
         },
         this
@@ -1126,7 +1124,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 51,
+          lineNumber: 49,
           columnNumber: 5
         },
         this
@@ -1141,14 +1139,14 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 55,
+          lineNumber: 53,
           columnNumber: 5
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m294.98 30.25-.36-.09.36.09Z", className: "cls-12" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 59,
+        lineNumber: 57,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
@@ -1163,14 +1161,14 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 60,
+          lineNumber: 58,
           columnNumber: 5
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m285.65 94.6.15.09-.15-.09Z", className: "cls-9" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
-        lineNumber: 66,
+        lineNumber: 64,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
@@ -1183,7 +1181,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 67,
+          lineNumber: 65,
           columnNumber: 5
         },
         this
@@ -1198,7 +1196,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 71,
+          lineNumber: 69,
           columnNumber: 5
         },
         this
@@ -1215,7 +1213,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 75,
+          lineNumber: 73,
           columnNumber: 5
         },
         this
@@ -1230,7 +1228,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 81,
+          lineNumber: 79,
           columnNumber: 5
         },
         this
@@ -1245,7 +1243,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 85,
+          lineNumber: 83,
           columnNumber: 5
         },
         this
@@ -1260,7 +1258,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 89,
+          lineNumber: 87,
           columnNumber: 5
         },
         this
@@ -1275,7 +1273,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 93,
+          lineNumber: 91,
           columnNumber: 5
         },
         this
@@ -1290,7 +1288,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 97,
+          lineNumber: 95,
           columnNumber: 5
         },
         this
@@ -1305,7 +1303,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         !1,
         {
           fileName: "app/components/icons/Paka.tsx",
-          lineNumber: 101,
+          lineNumber: 99,
           columnNumber: 5
         },
         this
@@ -1405,7 +1403,7 @@ var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), SvgWinkLogo = (
         {
           d: "M43.5 7.6C21.3 7.6 3.3 25.7 3.3 47.9v40.5c0 22.2 18.1 40.3 40.2 40.3h77.1c22.2 0 40.3-18.1 40.3-40.3V47.9c0-22.2-18.1-40.3-40.3-40.3H43.5z",
           style: {
-            fill: "#fff"
+            fill: "transparent"
           }
         },
         void 0,
@@ -7684,7 +7682,7 @@ function Index2() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-5JLAQRVQ.js", imports: ["/build/_shared/chunk-ID4JAVKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-GYIKLU7P.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a26c4d23", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695765215332 }, url: "/build/manifest-A26C4D23.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VJWYN7NA.js", imports: ["/build/_shared/chunk-3ET4DEQO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-FS75LVRQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "53097611", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695765659035 }, url: "/build/manifest-53097611.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
