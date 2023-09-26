@@ -1,6 +1,14 @@
 @font-face {
   font-family: 'Mint Grotesk';
   font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./Mint-Grotesk-Medium-V131.woff2');
+}
+
+@font-face {
+  font-family: 'Mint Grotesk';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('./Mint-Grotesk-Bold-V131.woff');

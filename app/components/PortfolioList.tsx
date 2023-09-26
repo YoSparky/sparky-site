@@ -77,7 +77,7 @@ export default function PortfolioList() {
         </div>
       </div>
       <div className="absolute right-0 top-0 max-w-[100vw] w-full z-[0] overflow-hidden">
-        <div className="-z-[1] relative bottom-0 right-0 transform translate-x-[70%] rotate-[-25deg] h-[100vh] w-full bg-energyYellow mix-blend-multiply" aria-hidden="true"></div>
+        <div className="-z-[1] relative bottom-0 right-0 transform translate-x-[70%] rotate-[-25deg] h-[150vh] w-full bg-energyYellow mix-blend-multiply" aria-hidden="true"></div>
       </div>
     </div>
   )

@@ -3,6 +3,8 @@ import Hero from "~/components/Hero";
 import FeaturedPortfolio from "~/components/FeaturedPortfolio";
 import FeaturedPartners from "~/components/FeaturedPartners";
 import PortfolioList from "~/components/PortfolioList";
+import PortfolioSlider from "~/components/PorfolioSlider";
+import OfferingsAccordion from "~/components/OfferingsAccordion";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -18,6 +20,8 @@ export default function Index() {
       <FeaturedPortfolio />
       <FeaturedPartners />
       <PortfolioList />
+      <PortfolioSlider />
+      <OfferingsAccordion />
     </div>
   );
 }

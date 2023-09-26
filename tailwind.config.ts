@@ -9,6 +9,7 @@ export default {
     },
     extend: {
       colors: {
+        botticelli: '#D6E7EC',
         energyYellow: '#F9DF5E',
         halfColonialWhite: '#FDF8D5',
         ivory: '#FFFFF4',
