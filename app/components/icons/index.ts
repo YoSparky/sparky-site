@@ -1,4 +1,5 @@
 export { default as Arrow } from "./Arrow";
+export { default as ArrowSquare } from "./ArrowSquare";
 export { default as ElevarLogo } from "./ElevarLogo";
 export { default as KlaviyoLogo } from "./KlaviyoLogo";
 export { default as ShopifyPlusLogo } from "./ShopifyPlusLogo";

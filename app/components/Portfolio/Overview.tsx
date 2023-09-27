@@ -1,0 +1,18 @@
+export function Overview({ content } : { content: string[] | null }) {  
+  return (
+    <div className="flex flex-col">
+      <strong className="text-sm font-normal uppercase pb-16">PROJECT OVERVIEW</strong>
+      <ul className="flex flex-col gap-8">
+        {content?.map((item, i) => (
+          <li className="grid grid-cols-[160px_1fr] gap-3 items-start">
+            <div className="flex items-end w-full gap-3 pt-4">
+              <span className="leading-none text-xs">{i < 9 ? '0' : ''}{i + 1}</span>
+              <div className="border-b border-dashed border-current w-full"></div>
+            </div>
+            <span className="font-title text-2xl opacity-80 leading-relaxed">{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

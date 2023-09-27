@@ -72,7 +72,7 @@ export default function PortfolioSlider() {
               </div>
               <div className="flex flex-col gap-8 lg:pl-32">
                 <p className="text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
-                <a className="uppercase underline text-sm tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full" href={link}>
+                <a className="uppercase underline text-sm tracking-wide hover-highlight hover:highlighted" href={link}>
                   <span>Learn More</span>
                 </a>
               </div>

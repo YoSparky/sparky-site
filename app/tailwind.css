@@ -68,6 +68,13 @@
   .marquee.paused {
     animation-play-state: paused;
   }
+  
+  .hover-highlight {
+    @apply z-[0] py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max;
+  }
+  .hover-highlight.highlighted {
+   @apply after:w-full; 
+  }
 }
 
 @keyframes liquidDropOut {

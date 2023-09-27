@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-T363STPU.css";
+var tailwind_default = "/build/_assets/tailwind-MOIV73B5.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -397,226 +397,413 @@ function App() {
   }, this);
 }
 
-// app/routes/_index.tsx
-var index_exports = {};
-__export(index_exports, {
-  default: () => Index,
-  meta: () => meta
+// app/routes/portfolio.$client.tsx
+var portfolio_client_exports = {};
+__export(portfolio_client_exports, {
+  default: () => Index
 });
 
-// app/components/Hero.tsx
-var import_react8 = require("@remix-run/react");
+// app/assets/fortyseven-portfolio-slide-1.jpeg
+var fortyseven_portfolio_slide_1_default = "/build/_assets/fortyseven-portfolio-slide-1-Q3C3AYFB.jpeg";
 
-// app/components/LiquidDropHover.tsx
-var import_react7 = require("react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), LiquidDropHover = ({ children }) => {
-  let [hasHovered, hover] = (0, import_react7.useState)(!1);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { onMouseEnter: () => hover(!0), className: `button button--liquid-drop w-max ${hasHovered ? "" : "default-hover-animation-state"}`, children }, void 0, !1, {
-    fileName: "app/components/LiquidDropHover.tsx",
-    lineNumber: 10,
-    columnNumber: 5
-  }, this);
-};
+// app/assets/fortyseven-portfolio-slide-2.jpeg
+var fortyseven_portfolio_slide_2_default = "/build/_assets/fortyseven-portfolio-slide-2-GFACQTIP.jpeg";
 
-// app/components/Hero.tsx
-var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
-function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "relative w-full", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "container py-36 flex flex-col justify-center relative gap-28 z-[1]", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { className: "font-bold text-5xl md:text-8xl text-shadow", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
-        fileName: "app/components/Hero.tsx",
-        lineNumber: 8,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react8.Link, { to: "/portfolio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(LiquidDropHover, { children: "See the sites." }, void 0, !1, {
-        fileName: "app/components/Hero.tsx",
-        lineNumber: 10,
-        columnNumber: 11
-      }, this) }, void 0, !1, {
-        fileName: "app/components/Hero.tsx",
-        lineNumber: 9,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/components/Hero.tsx",
-      lineNumber: 7,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "absolute left-0 top-0 min-h-max max-w-[100vw] w-full overflow-hidden z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "-z-[1] relative bottom-0 left-0 transform translate-x-1/2 -translate-y-1/4 aspect-square w-full bg-energyYellow mix-blend-multiply rounded-[20vw]", "aria-hidden": "true" }, void 0, !1, {
-      fileName: "app/components/Hero.tsx",
-      lineNumber: 16,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/components/Hero.tsx",
-      lineNumber: 15,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/components/Hero.tsx",
-    lineNumber: 6,
-    columnNumber: 5
-  }, this);
-}
+// app/assets/fortyseven-portfolio-slide-3.jpeg
+var fortyseven_portfolio_slide_3_default = "/build/_assets/fortyseven-portfolio-slide-3-E3O2AA2C.jpeg";
 
-// app/components/FeaturedPortfolio.tsx
-var import_react9 = require("@remix-run/react");
+// app/assets/fortyseven-portfolio-banner.jpeg
+var fortyseven_portfolio_banner_default = "/build/_assets/fortyseven-portfolio-banner-7FRL5PW7.jpeg";
 
-// app/assets/HeyDude-Portfolio.png
-var HeyDude_Portfolio_default = "/build/_assets/HeyDude-Portfolio-SZS5T4EB.png";
+// app/assets/heydude-portfolio-slide-1.jpeg
+var heydude_portfolio_slide_1_default = "/build/_assets/heydude-portfolio-slide-1-Z7AY2UHK.jpeg";
 
-// app/assets/Legends-Portfolio.png
-var Legends_Portfolio_default = "/build/_assets/Legends-Portfolio-LLF3SX6K.png";
+// app/assets/heydude-portfolio-slide-2.jpeg
+var heydude_portfolio_slide_2_default = "/build/_assets/heydude-portfolio-slide-2-CL67ABYY.jpeg";
 
-// app/components/FeaturedPortfolio.tsx
-var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
-function FeaturedPortfolio() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "relative w-full max-lg:overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "right-edge-container flex flex-col justify-center relative gap-4 lg:gap-7 z-[1]", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("span", { children: "Latest Work" }, void 0, !1, {
-        fileName: "app/components/FeaturedPortfolio.tsx",
-        lineNumber: 9,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "grid gap-16 lg:grid-cols-2 lg:gap-5", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex flex-col max-lg:pr-4", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "block bg-mix-blend-multiply", src: HeyDude_Portfolio_default }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 13,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 transform -translate-y-[65%] -ml-1 leading-none", children: "Hey Dude" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 14,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 12,
-            columnNumber: 13
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 17,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Design" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 18,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Development" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 19,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 16,
-            columnNumber: 13
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "pt-96 mt-auto hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 22,
-            columnNumber: 15
-          }, this) }, void 0, !1, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 21,
-            columnNumber: 13
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/FeaturedPortfolio.tsx",
-          lineNumber: 11,
-          columnNumber: 11
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex flex-col", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("img", { className: "block lg:mt-[70%]", src: Legends_Portfolio_default }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 27,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 -ml-1 transform -translate-y-[65%] leading-none", children: "Legends" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 28,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 26,
-            columnNumber: 13
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 31,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Design" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 32,
-              columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("li", { children: "Development" }, void 0, !1, {
-              fileName: "app/components/FeaturedPortfolio.tsx",
-              lineNumber: 33,
-              columnNumber: 15
-            }, this)
-          ] }, void 0, !0, {
-            fileName: "app/components/FeaturedPortfolio.tsx",
-            lineNumber: 30,
-            columnNumber: 13
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/FeaturedPortfolio.tsx",
-          lineNumber: 25,
-          columnNumber: 11
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react9.Link, { className: "lg:hidden button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
-          fileName: "app/components/FeaturedPortfolio.tsx",
-          lineNumber: 36,
-          columnNumber: 11
-        }, this)
-      ] }, void 0, !0, {
-        fileName: "app/components/FeaturedPortfolio.tsx",
-        lineNumber: 10,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/components/FeaturedPortfolio.tsx",
-      lineNumber: 8,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "absolute left-0 top-0 bottom-0 aspect-[2/1] max-w-[100vw] w-full z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "-z-[1] relative bottom-0 left-0 transform -translate-x-[70%] rotate-[65deg] h-[100vh] w-full bg-energyYellow mix-blend-multiply", "aria-hidden": "true" }, void 0, !1, {
-      fileName: "app/components/FeaturedPortfolio.tsx",
-      lineNumber: 40,
-      columnNumber: 9
-    }, this) }, void 0, !1, {
-      fileName: "app/components/FeaturedPortfolio.tsx",
-      lineNumber: 39,
-      columnNumber: 7
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/components/FeaturedPortfolio.tsx",
-    lineNumber: 7,
-    columnNumber: 5
-  }, this);
-}
+// app/assets/heydude-portfolio-slide-3.jpeg
+var heydude_portfolio_slide_3_default = "/build/_assets/heydude-portfolio-slide-3-VIXURQOC.jpeg";
 
-// app/components/FeaturedPartners.tsx
-var import_react10 = require("@remix-run/react");
+// app/assets/heydude-portfolio-slide-4.jpeg
+var heydude_portfolio_slide_4_default = "/build/_assets/heydude-portfolio-slide-4-SUZ466SS.jpeg";
+
+// app/assets/heydude-portfolio-slide-5.jpeg
+var heydude_portfolio_slide_5_default = "/build/_assets/heydude-portfolio-slide-5-EBJJSZHL.jpeg";
+
+// app/assets/heydude-portfolio-banner.jpeg
+var heydude_portfolio_banner_default = "/build/_assets/heydude-portfolio-banner-TTV7BKXA.jpeg";
+
+// app/assets/legends-portfolio-slide-1.jpeg
+var legends_portfolio_slide_1_default = "/build/_assets/legends-portfolio-slide-1-HQJT3K3B.jpeg";
+
+// app/assets/legends-portfolio-slide-2.jpeg
+var legends_portfolio_slide_2_default = "/build/_assets/legends-portfolio-slide-2-HRFOT57C.jpeg";
+
+// app/assets/legends-portfolio-slide-3.jpeg
+var legends_portfolio_slide_3_default = "/build/_assets/legends-portfolio-slide-3-4MTCA675.jpeg";
+
+// app/assets/legends-portfolio-slide-4.jpeg
+var legends_portfolio_slide_4_default = "/build/_assets/legends-portfolio-slide-4-QS4PDB4B.jpeg";
+
+// app/assets/legends-portfolio-slide-5.jpeg
+var legends_portfolio_slide_5_default = "/build/_assets/legends-portfolio-slide-5-WWPAV3HM.jpeg";
+
+// app/assets/legends-portfolio-slide-6.jpeg
+var legends_portfolio_slide_6_default = "/build/_assets/legends-portfolio-slide-6-BZSJVCB7.jpeg";
+
+// app/assets/legends-portfolio-banner.jpeg
+var legends_portfolio_banner_default = "/build/_assets/legends-portfolio-banner-6KY3FIYI.jpeg";
+
+// app/assets/ghost-portfolio-slide-1.jpeg
+var ghost_portfolio_slide_1_default = "/build/_assets/ghost-portfolio-slide-1-QHBBMN2X.jpeg";
+
+// app/assets/ghost-portfolio-slide-2.jpeg
+var ghost_portfolio_slide_2_default = "/build/_assets/ghost-portfolio-slide-2-VXJODEOH.jpeg";
+
+// app/assets/ghost-portfolio-slide-3.jpeg
+var ghost_portfolio_slide_3_default = "/build/_assets/ghost-portfolio-slide-3-K7PHEA5U.jpeg";
+
+// app/data/case-studies.js
+var data = [
+  {
+    handle: "wink",
+    title: "Wink",
+    description: "Wink is a well-established leader in the scrubs space. Their apparel is designed to work as hard as their customer and they obsess over crafting features and benefits in each of their scrubs to try and make the day a little bit easier for medical professionals.",
+    vimeoLinkPrimary: null,
+    overview: ["Wink, formerly known as WonderWink, had been a widely-distributed wholesale brand but approached us to build their very first DTC site on Shopify Plus. Launching in 2023, the site has sparked an immediately successful new channel for the brand."],
+    carousel: null,
+    sparkyMagic: [
+      "Partnered with internal IT team to integrate real-time ATP inventory experience from a shared distribution center."
+    ],
+    portfolioBanner: null,
+    vimeoLinkSecondary: null,
+    siteLink: "https://winkscrubs.com/",
+    testimonial: null,
+    stack: null,
+    results: null
+  },
+  {
+    handle: "forty-seven",
+    title: "'47",
+    description: "You may not own a '47 hat. Just kidding. You definitely do. '47 is one of the largest and most prominent headwear brands in the world. With licenses for all major American sports leagues, their gear is worn and loved by fans of all kinds on game day and every day.",
+    vimeoLinkPrimary: "https://player.vimeo.com/video/854322590",
+    overview: ["We designed and built a fully custom Shopify theme which led to an immediate 300% improvement in site speed."],
+    carousel: [
+      {
+        image: fortyseven_portfolio_slide_1_default,
+        caption: "Example caption"
+      },
+      {
+        image: fortyseven_portfolio_slide_2_default,
+        caption: ""
+      },
+      {
+        image: fortyseven_portfolio_slide_3_default,
+        caption: ""
+      }
+    ],
+    sparkyMagic: [
+      "We introduced a concept called \u201Cfavorite teams\u201D which personalizes the users' shopping experience and collection sorts based on their fandom.",
+      "We accomplished this by combining the powers of Shopify customer metafields, Algolia Search and Discovery, and some Sparky secret sauce."
+    ],
+    portfolioBanner: {
+      image: fortyseven_portfolio_banner_default,
+      caption: ""
+    },
+    vimeoLinkSecondary: "https://player.vimeo.com/video/854984692",
+    siteLink: "https://www.47brand.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Attentive",
+        link: ""
+      },
+      {
+        title: "Elevar",
+        link: ""
+      },
+      {
+        title: "Algolia",
+        link: ""
+      },
+      {
+        title: "Yotpo",
+        link: ""
+      },
+      {
+        title: "Blue Cherry ERP",
+        link: ""
+      }
+    ],
+    results: null
+  },
+  {
+    handle: "heydude",
+    title: "Hey Dude",
+    description: "<u>HEYDUDE</u> makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site.",
+    vimeoLinkPrimary: "https://player.vimeo.com/video/854315577",
+    overview: [
+      "After a few months of conversion rate optimization, it became apparent that the brand had grown so fast on a technical foundation that was not engineered for scale.",
+      "With the clock ticking ahead of Holiday, we designed, built, and launched a fully-custom Shopify theme.",
+      "The new site realized upticks in conversion and huge productivity gains for site merch and ops teams who were hamstrung by the old site."
+    ],
+    carousel: [
+      {
+        image: heydude_portfolio_slide_1_default,
+        caption: ""
+      },
+      {
+        image: heydude_portfolio_slide_2_default,
+        caption: ""
+      },
+      {
+        image: heydude_portfolio_slide_3_default,
+        caption: ""
+      },
+      {
+        image: heydude_portfolio_slide_4_default,
+        caption: ""
+      },
+      {
+        image: heydude_portfolio_slide_5_default,
+        caption: ""
+      }
+    ],
+    sparkyMagic: [
+      "We did the entire project in three months, and there was zero margin for error.",
+      ""
+    ],
+    portfolioBanner: {
+      image: heydude_portfolio_banner_default,
+      caption: "Staring at stars"
+    },
+    vimeoLinkSecondary: "https://player.vimeo.com/video/854631946",
+    siteLink: "https://heydude.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Attentive",
+        link: ""
+      },
+      {
+        title: "Fast Simon",
+        link: ""
+      },
+      {
+        title: "Elevar",
+        link: ""
+      },
+      {
+        title: "Yotpo",
+        link: ""
+      },
+      {
+        title: "Narvar",
+        link: ""
+      },
+      {
+        title: "Custom Employee Discount App",
+        link: ""
+      }
+    ],
+    results: null
+  },
+  {
+    handle: "legends",
+    title: "Legends",
+    description: "Legends is a fast-growing direct-to-consumer athletic apparel brand whose cap table includes the likes of Quavo, Baker Mayfield, and Barstool\u2019s Big Cat. One of our earliest Shopify clients, we first partnered with Legends in late 2019 to build a custom site as they outgrew their store-bought theme. We\u2019ve continued to collaborate ever since.",
+    vimeoLinkPrimary: "https://player.vimeo.com/video/854324103",
+    overview: [
+      "We launched their first custom site just ahead of Holiday in 2019 which resulted in immediate and huge conversion gains over their prior non-custom theme.",
+      "We've continuously optimized and maintained the site as their business has scaled 30x, and launched a subsequent revamped theme in 2023.      "
+    ],
+    carousel: [
+      {
+        image: legends_portfolio_slide_1_default,
+        caption: ""
+      },
+      {
+        image: legends_portfolio_slide_2_default,
+        caption: ""
+      },
+      {
+        image: legends_portfolio_slide_3_default,
+        caption: ""
+      },
+      {
+        image: legends_portfolio_slide_4_default,
+        caption: ""
+      },
+      {
+        image: legends_portfolio_slide_5_default,
+        caption: ""
+      },
+      {
+        image: legends_portfolio_slide_6_default,
+        caption: ""
+      }
+    ],
+    sparkyMagic: [
+      "We developed some technical wizardry to overcome Shopify Product limitations. When purchasing Legends' signature shorts, the customer must select a color, an inseam length, and a liner option; an add-to-cart flow which exceeds both Shopify's total variant limitation as well as their \u201Cproduct option\u201D limitation.",
+      "The solution that we engineered to solve this problem gave the merchandising team more flexibility than Shopify's standard product form and streamlined the UX. This functionality has become a secret weapon for us, and we've implemented versions of it for many apparel brands since."
+    ],
+    portfolioBanner: {
+      image: legends_portfolio_banner_default,
+      caption: ""
+    },
+    vimeoLinkSecondary: "https://player.vimeo.com/video/854985452",
+    siteLink: "https://www.legends.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Elevar",
+        link: ""
+      },
+      {
+        title: "Stamped",
+        link: ""
+      },
+      {
+        title: "Loop",
+        link: ""
+      }
+    ],
+    results: ""
+  },
+  {
+    handle: "york-athletics",
+    title: "York Athletics",
+    description: "YORK Athletics Mfg. is a fast-growing direct-to-consumer footwear start-up with roots in a multi-generational family sports business. Their performance-focused unisex sneakers feature a minimal aesthetic and have earned the brand credentials such as the 'Best New Performance Gear' award from Men's Health Magazine and praise in Esquire, ESPN, Hypebeast, and Gear Patrol Magazine.",
+    vimeoLinkPrimary: null,
+    overview: [
+      "We designed and built a fully custom Shopify theme which, in the 12 months following site launch, led to a 40% lift in conversion YOY. This lift was sustained in spite of the business becoming much less promotional during the same timeframe."
+    ],
+    carousel: null,
+    sparkyMagic: [
+      "This brand makes unisex footwear but wanted to create the illusion of selling separate men's and women's SKUs for SEO and UX purposes. We came up with some technical witchcraft that allowed a single SKU in their ERP to display as two totally separate products on the front end (one for each gender), without the headache of maintaining two sets of products in Shopify. ",
+      "This created a shopping experience that was more in line with their media strategy of segmenting audiences and introduced a new mechanism for gathering data about their shoppers that was previously unavailable to them.",
+      "This was all achieved with zero impact on their fulfillment or site ops processes."
+    ],
+    portfolioBanner: null,
+    vimeoLinkSecondary: null,
+    siteLink: "https://yorkathleticsmfg.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Attentive",
+        link: ""
+      },
+      {
+        title: "Yotpo",
+        link: ""
+      },
+      {
+        title: "Dear Systems ERP",
+        link: ""
+      }
+    ],
+    results: null
+  },
+  {
+    handle: "ghost",
+    title: "Ghost",
+    description: 'Ghost is a wildly popular lifestyle sports nutrition brand. With high-quality ingredients and iconic flavors, Ghost has amassed a rabid fanbase of gym-goers everywhere who aim to "be seen".',
+    vimeoLinkPrimary: "https://player.vimeo.com/video/854320973",
+    overview: [
+      "Ghost had a vastly outdated Shopify theme and enlisted Sparky to usher their site into a new era of eCommerce performance. We designed and built a fully custom Shopify theme that reimagined their online presence across three different markets.",
+      "We built a new site that introduced subscriptions, integrated with their existing mobile app, and freshened up their fully custom loyalty program."
+    ],
+    carousel: [
+      {
+        image: ghost_portfolio_slide_1_default,
+        caption: ""
+      },
+      {
+        image: ghost_portfolio_slide_2_default,
+        caption: ""
+      },
+      {
+        image: ghost_portfolio_slide_3_default,
+        caption: ""
+      }
+    ],
+    sparkyMagic: [
+      "We built custom GWP and bundle and capabilities built into the theme, as well as engineered a product structure that allowed their site team to maximize merchandising capabilities across their licensed and owned flavors."
+    ],
+    portfolioBanner: null,
+    vimeoLinkSecondary: "https://player.vimeo.com/video/854986194",
+    siteLink: "https://ghostlifestyle.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Skio",
+        link: ""
+      },
+      {
+        title: "Postscript",
+        link: ""
+      },
+      {
+        title: "Custom Ghost Loyalty",
+        link: ""
+      }
+    ],
+    results: null
+  }
+], case_studies_default = data;
+
+// app/routes/portfolio.$client.tsx
+var import_react7 = require("@remix-run/react");
 
 // app/components/icons/Arrow.tsx
-var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), SvgArrow = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), SvgArrow = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: 9,
-    height: 9,
     fill: "none",
     viewBox: "0 0 9 9",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
       "path",
       {
         fill: "currentColor",
@@ -626,7 +813,7 @@ var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), SvgArrow = (prop
       !1,
       {
         fileName: "app/components/icons/Arrow.tsx",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
       },
       this
@@ -642,8 +829,46 @@ var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), SvgArrow = (prop
   this
 ), Arrow_default = SvgArrow;
 
+// app/components/icons/ArrowSquare.tsx
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), SvgArrowSquare = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 24 24",
+    ...props,
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+      "path",
+      {
+        fill: "currentColor",
+        d: "M3.176 4.804V.268h20.448V20.68h-4.536V7.864a181.357 181.357 0 0 1-4.788 4.968L3.464 23.704.188 20.428 11.024 9.556c1.98-1.98 3.276-3.204 4.932-4.752H3.176Z",
+        opacity: 0.97,
+        style: {
+          mixBlendMode: "multiply"
+        }
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/icons/ArrowSquare.tsx",
+        lineNumber: 10,
+        columnNumber: 5
+      },
+      this
+    )
+  },
+  void 0,
+  !1,
+  {
+    fileName: "app/components/icons/ArrowSquare.tsx",
+    lineNumber: 4,
+    columnNumber: 3
+  },
+  this
+), ArrowSquare_default = SvgArrowSquare;
+
 // app/components/icons/ElevarLogo.tsx
-var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime"), SvgElevarLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime"), SvgElevarLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -653,13 +878,13 @@ var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime"), SvgElevarLogo = 
     viewBox: "0 0 215 100",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("g", { fill: "#30302C", clipPath: "url(#a)", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("path", { d: "M42.666 38v.01a12.66 12.66 0 0 0-7.965 2.803 12.144 12.144 0 0 0-4.301 7.125 15.335 15.335 0 0 0-.215 2.92v10.619c0 .89.01 1.779-.126 2.663-.284 1.837-1.087 3.717-2.594 4.915-.632.51-1.39.852-2.198.991-.044.007-.232 0-.258.036-.025.035 0 .061 0 .074a3.78 3.78 0 0 0-.01.405V72a12.632 12.632 0 0 0 6.108-1.598c1.855-1.034 3.432-2.562 4.37-4.446a9.212 9.212 0 0 0 .937-3.562 12.78 12.78 0 0 1-3.63-.523 12.524 12.524 0 0 0 7.496-4.606 11.692 11.692 0 0 0 2.386-7.094v-8.717h17.428l1.6-3.454H42.666Zm-6.242 18.597c-.27 0-.534-.078-.758-.224a1.34 1.34 0 0 1-.503-.597 1.304 1.304 0 0 1 .294-1.453 1.394 1.394 0 0 1 1.486-.291c.248.1.462.271.612.49a1.31 1.31 0 0 1-.167 1.683 1.365 1.365 0 0 1-.964.392ZM132.358 41.574h-4.093l8.006 17.264H141.307l8.007-17.264h-4.112l-6.422 13.848-6.422-13.848ZM92.134 55.386v3.452h14.446v-3.452H95.667V41.574h-3.533v13.812ZM86.833 55.386H75.832v-3.453h11V48.48h-11v-3.454h11v-3.452H72.298V58.838h14.536v-3.452ZM158.968 44.99l3.212 6.944h-6.433l3.221-6.944Zm2.409-3.416h-4.825l-8.006 17.262h3.998l1.606-3.444h9.636l1.606 3.453h3.999l-8.014-17.271ZM110.196 41.574v17.264h14.536v-3.452h-11.003v-3.453h11.003V48.48h-11.003v-3.454h11.003v-3.452h-14.536ZM184.699 45.028h-8.164v3.452h8.164c.469 0 .918-.182 1.249-.506.332-.324.518-.763.518-1.22 0-.459-.186-.898-.518-1.222a1.786 1.786 0 0 0-1.249-.506m0-3.453c1.235 0 2.431.42 3.382 1.19a5.155 5.155 0 0 1 1.826 3.027 5.07 5.07 0 0 1-.572 3.468 5.261 5.261 0 0 1-2.705 2.313l3.37 7.266h-3.998L182.8 51.93h-6.264v6.906h-3.534V41.575h11.697" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("g", { fill: "#30302C", clipPath: "url(#a)", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("path", { d: "M42.666 38v.01a12.66 12.66 0 0 0-7.965 2.803 12.144 12.144 0 0 0-4.301 7.125 15.335 15.335 0 0 0-.215 2.92v10.619c0 .89.01 1.779-.126 2.663-.284 1.837-1.087 3.717-2.594 4.915-.632.51-1.39.852-2.198.991-.044.007-.232 0-.258.036-.025.035 0 .061 0 .074a3.78 3.78 0 0 0-.01.405V72a12.632 12.632 0 0 0 6.108-1.598c1.855-1.034 3.432-2.562 4.37-4.446a9.212 9.212 0 0 0 .937-3.562 12.78 12.78 0 0 1-3.63-.523 12.524 12.524 0 0 0 7.496-4.606 11.692 11.692 0 0 0 2.386-7.094v-8.717h17.428l1.6-3.454H42.666Zm-6.242 18.597c-.27 0-.534-.078-.758-.224a1.34 1.34 0 0 1-.503-.597 1.304 1.304 0 0 1 .294-1.453 1.394 1.394 0 0 1 1.486-.291c.248.1.462.271.612.49a1.31 1.31 0 0 1-.167 1.683 1.365 1.365 0 0 1-.964.392ZM132.358 41.574h-4.093l8.006 17.264H141.307l8.007-17.264h-4.112l-6.422 13.848-6.422-13.848ZM92.134 55.386v3.452h14.446v-3.452H95.667V41.574h-3.533v13.812ZM86.833 55.386H75.832v-3.453h11V48.48h-11v-3.454h11v-3.452H72.298V58.838h14.536v-3.452ZM158.968 44.99l3.212 6.944h-6.433l3.221-6.944Zm2.409-3.416h-4.825l-8.006 17.262h3.998l1.606-3.444h9.636l1.606 3.453h3.999l-8.014-17.271ZM110.196 41.574v17.264h14.536v-3.452h-11.003v-3.453h11.003V48.48h-11.003v-3.454h11.003v-3.452h-14.536ZM184.699 45.028h-8.164v3.452h8.164c.469 0 .918-.182 1.249-.506.332-.324.518-.763.518-1.22 0-.459-.186-.898-.518-1.222a1.786 1.786 0 0 0-1.249-.506m0-3.453c1.235 0 2.431.42 3.382 1.19a5.155 5.155 0 0 1 1.826 3.027 5.07 5.07 0 0 1-.572 3.468 5.261 5.261 0 0 1-2.705 2.313l3.37 7.266h-3.998L182.8 51.93h-6.264v6.906h-3.534V41.575h11.697" }, void 0, !1, {
           fileName: "app/components/icons/ElevarLogo.tsx",
           lineNumber: 13,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("path", { d: "M43.49 58.718a11.824 11.824 0 0 1-5.956 3.448h9.078c1.157 0 2.29-.325 3.264-.937a5.926 5.926 0 0 0 2.223-2.517l-8.608.006ZM46.162 51.812a11.222 11.222 0 0 1-.82 3.45h8.34l1.606-3.454-9.126.004ZM46.197 44.906v3.454H56.89l1.602-3.454H46.197Z" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("path", { d: "M43.49 58.718a11.824 11.824 0 0 1-5.956 3.448h9.078c1.157 0 2.29-.325 3.264-.937a5.926 5.926 0 0 0 2.223-2.517l-8.608.006ZM46.162 51.812a11.222 11.222 0 0 1-.82 3.45h8.34l1.606-3.454-9.126.004ZM46.197 44.906v3.454H56.89l1.602-3.454H46.197Z" }, void 0, !1, {
           fileName: "app/components/icons/ElevarLogo.tsx",
           lineNumber: 14,
           columnNumber: 7
@@ -669,7 +894,7 @@ var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime"), SvgElevarLogo = 
         lineNumber: 12,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("clipPath", { id: "a", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("path", { fill: "#fff", d: "M25 38h165v34H25z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("clipPath", { id: "a", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("path", { fill: "#fff", d: "M25 38h165v34H25z" }, void 0, !1, {
         fileName: "app/components/icons/ElevarLogo.tsx",
         lineNumber: 18,
         columnNumber: 9
@@ -695,7 +920,7 @@ var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime"), SvgElevarLogo = 
 ), ElevarLogo_default = SvgElevarLogo;
 
 // app/components/icons/KlaviyoLogo.tsx
-var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime"), SvgKlaviyoLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime"), SvgKlaviyoLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -705,7 +930,7 @@ var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime"), SvgKlaviyoLogo 
     viewBox: "0 0 215 109",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
         "path",
         {
           fill: "#30302C",
@@ -720,7 +945,7 @@ var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime"), SvgKlaviyoLogo 
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
         "path",
         {
           fill: "#30302C",
@@ -748,7 +973,7 @@ var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime"), SvgKlaviyoLogo 
 ), KlaviyoLogo_default = SvgKlaviyoLogo;
 
 // app/components/icons/ShopifyPlusLogo.tsx
-var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime"), SvgShopifyPlusLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime"), SvgShopifyPlusLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -757,7 +982,7 @@ var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime"), SvgShopifyPlusL
     fill: "none",
     viewBox: "0 0 215 100",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
       "path",
       {
         fill: "#30302C",
@@ -784,16 +1009,14 @@ var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime"), SvgShopifyPlusL
 ), ShopifyPlusLogo_default = SvgShopifyPlusLogo;
 
 // app/components/icons/Star.tsx
-var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), SvgStar = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
+var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime"), SvgStar = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
-    width: 21,
-    height: 21,
     fill: "none",
     viewBox: "0 0 21 21",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
       "path",
       {
         fill: "#F9DF5E",
@@ -805,7 +1028,7 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), SvgStar = (prop
       !1,
       {
         fileName: "app/components/icons/Star.tsx",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 5
       },
       this
@@ -822,7 +1045,7 @@ var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), SvgStar = (prop
 ), Star_default = SvgStar;
 
 // app/components/icons/YotpoLogo.tsx
-var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), SvgYotpoLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime"), SvgYotpoLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -831,7 +1054,7 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), SvgYotpoLogo = 
     fill: "none",
     viewBox: "0 0 215 100",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
       "path",
       {
         fill: "#30302C",
@@ -860,14 +1083,14 @@ var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), SvgYotpoLogo = 
 ), YotpoLogo_default = SvgYotpoLogo;
 
 // app/components/icons/CrocsLogo.tsx
-var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime"), SvgCrocsLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+var import_jsx_dev_runtime12 = require("react/jsx-dev-runtime"), SvgCrocsLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
     viewBox: "0 0 308 74",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
       "path",
       {
         fill: "#000",
@@ -894,7 +1117,7 @@ var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime"), SvgCrocsLogo = 
 ), CrocsLogo_default = SvgCrocsLogo;
 
 // app/components/icons/FortysevenLogo.tsx
-var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgFortysevenLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
+var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime"), SvgFortysevenLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -905,7 +1128,7 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgFortysevenLo
     viewBox: "0 0 43.18 43.18",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("style", { children: ".cls-1{fill-rule:evenodd}" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("style", { children: ".cls-1{fill-rule:evenodd}" }, void 0, !1, {
         fileName: "app/components/icons/FortysevenLogo.tsx",
         lineNumber: 14,
         columnNumber: 7
@@ -914,7 +1137,7 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgFortysevenLo
         lineNumber: 13,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
         "path",
         {
           d: "M21.5 25.02v-2c0-.45 0-.94-.32-1.06s-.75.06-1-.06-.13-.58-.11-.95v-2.77c.06-1.26.05-2.41.08-3.58s.11-2.27.11-3.54v-2.7c0-.5.1-1-.41-.9-.36 0-.49.32-.71.53-.5.51-.9 1.05-1.4 1.51a17 17 0 0 0-1.43 1.5 1.43 1.43 0 0 0-.31.67 12.51 12.51 0 0 0 0 1.26v1.29c0 1.74-.08 3.42-.12 5.11v1.28a3.42 3.42 0 0 1-.1 1.22c-.09.13-.53.13-.78.14h-1.72c-.32 0-.71 0-.75-.14s.26-.44.34-.54l.81-1a2.1 2.1 0 0 0 .4-.5 5 5 0 0 0 .06-1.41 27 27 0 0 0 .06-2.71c0-.41 0-1-.39-1s-.51.26-.7.43a20.8 20.8 0 0 0-1.51 1.77c-.49.57-1 1.19-1.5 1.78-.85 1-1.63 2-2.41 3.06l-.48.61c-.15.2-.34.39-.49.6a9.18 9.18 0 0 0-.88 1.32c-.31.69.1 1.06.49 1.37a1.36 1.36 0 0 0 .6.3 6.48 6.48 0 0 0 1.08 0h1.02c1.53 0 2.77-.13 4.33-.06a9.17 9.17 0 0 0 1 0 2.57 2.57 0 0 1 1 .09c.17.13.06.51.08.82s0 .61 0 .81c-.06 1.39 0 2.61 0 4a1.92 1.92 0 0 0 .05.75c.17.33.83.25 1.24.25a18.5 18.5 0 0 0 2.11 0c.32 0 .78-.07.91-.24a2.77 2.77 0 0 0 .07-1c0-1.37 0-2.55.06-3.85 0-.37-.11-1.28.08-1.52s1 0 1.3-.21.24-.52.24-.73ZM7.57 17.91c.23 0 .41-.23.54-.38.31-.34.48-.57.76-.9l.48-.53c.16-.18.43-.46.63-.65.45-.42.69-.66 1.1-1.07a2.52 2.52 0 0 0 .52-.65 7 7 0 0 0 .08-2.35 2.58 2.58 0 0 0-.28-1 .21.21 0 0 0-.27-.08 7.88 7.88 0 0 0-.91.7l-.45.42-.92.81c-.46.4-.89.84-1.32 1.26a1.36 1.36 0 0 0-.59 1.16c0 .62.09 1.23.14 1.82s.07 1.44.49 1.44ZM31.29 14.54a19 19 0 0 1-2.87.5h-.86a11.52 11.52 0 0 1-2.87-.13 2.79 2.79 0 0 0-1.4-.04c-.29.09-.44.4-.56.69a5.12 5.12 0 0 0 0 2.14v4.1a2.24 2.24 0 0 0 .13 1.18c.15.22.39.18.58.19s.05 0 .16 0a1.55 1.55 0 0 0 1.09-.68 3.62 3.62 0 0 0 .45-1 3.27 3.27 0 0 1 .41-1.09 2 2 0 0 1 1.15-.83 10.18 10.18 0 0 1 1.21-.2c.56-.09 1-.14 1.61-.23s1-.21 1.5-.31c.22-.05.43 0 .42.14a2.1 2.1 0 0 1-.33.75c-.19.34-.41.65-.6 1-.47.82-1 1.64-1.45 2.45-.22.35-.44.69-.64 1-.6 1-1.32 2-1.91 3.06-.82 1.45-1.66 2.82-2.59 4.21-.77 1.13-1.71 2.24-2.36 3.27-.18.27-.55.6-.43.92s.56.23.8.24h1.13c1.1 0 2.19.08 3.3 0a3.66 3.66 0 0 0 .57-.05 1.14 1.14 0 0 0 .84-.85c.11-.35.15-.73.25-1.09s.26-.82.39-1.23a22.44 22.44 0 0 1 1.64-3.89c.45-.84.91-1.68 1.37-2.52 1.6-2.88 3.27-5.72 5-8.57.24-.4.48-.77.73-1.19a6.5 6.5 0 0 0 .6-1.31.82.82 0 0 0-.46-.94 3.6 3.6 0 0 0-1-.19 17.19 17.19 0 0 0-2 0 17.63 17.63 0 0 0-3 .5Z",
@@ -929,7 +1152,7 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgFortysevenLo
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "M21.59 43.23a21.59 21.59 0 1 1 21.59-21.64 21.61 21.61 0 0 1-21.59 21.64Zm0-41.44a19.85 19.85 0 1 0 19.85 19.8A19.88 19.88 0 0 0 21.59 1.74Z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("path", { d: "M21.59 43.23a21.59 21.59 0 1 1 21.59-21.64 21.61 21.61 0 0 1-21.59 21.64Zm0-41.44a19.85 19.85 0 1 0 19.85 19.8A19.88 19.88 0 0 0 21.59 1.74Z" }, void 0, !1, {
         fileName: "app/components/icons/FortysevenLogo.tsx",
         lineNumber: 20,
         columnNumber: 5
@@ -947,14 +1170,14 @@ var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgFortysevenLo
 ), FortysevenLogo_default = SvgFortysevenLogo;
 
 // app/components/icons/LogoBlackLegends.tsx
-var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), SvgLogoBlackLegends = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime"), SvgLogoBlackLegends = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
     fill: "none",
     viewBox: "0 0 1049 164",
     ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
       "path",
       {
         fill: "#000",
@@ -983,7 +1206,7 @@ var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), SvgLogoBlackLeg
 ), LogoBlackLegends_default = SvgLogoBlackLegends;
 
 // app/components/icons/Paka.tsx
-var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime"), SvgPaka = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -991,7 +1214,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
     viewBox: "0 0 406.5 124.5",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("style", { children: ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4,.cls-5{fill:transparent}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("defs", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("style", { children: ".cls-2{fill:#010101}.cls-3{fill:#ececec}.cls-4,.cls-5{fill:transparent}.cls-7{fill:#d8d6d9}.cls-9{fill:#afafb0}.cls-10{fill:#373636}.cls-11{fill:#2e2d2d}.cls-12{fill:#272828}" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 11,
         columnNumber: 7
@@ -1000,7 +1223,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         lineNumber: 10,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M86.13 0h320.38v124.5H50.88c.04-.16.08-.32.13-.48 3.93-.05 7.86-.14 11.78-.15 9.98-.02 19.96 0 29.93 0h1.59c.1-4.83.19-9.63.29-14.61h4.83c2.98 0 5.96-.03 8.94-.01.61 0 .78-.18.78-.78 0-3.62.04-7.25.06-10.87 0-.18-.07-.36-.07-.54v-2.73h14.67V30.04c-.97-.05-1.83-.12-2.7-.12-3-.03-6-.03-9-.04-.85 0-1.71 0-2.56-.04-.18 0-.46-.14-.51-.28-.11-.32-.15-.68-.15-1.03-.02-3.83-.02-7.67-.03-11.5v-1.87H95.05c-.31 0-.61-.02-.92-.03-.02-.09-.03-.19-.05-.28V.73C91.34.64 88.74.56 86.13.48V0Zm213.98 55.05c-.1.07-.22.13-.3.22-1.05 1.2-2.1 2.4-3.15 3.61-.44.51-.85 1.05-1.65 1.16V33.01c0-.91-.01-1.83-.02-2.74l-.36-.09h-9.06c.03.35.09.67.09.99v63.45l.15.09c.33-.01.67-.03 1-.03 2.46 0 4.91 0 7.37-.02.81 0 .83-.04.83-.87 0-6.62 0-13.24-.01-19.87 0-.63.19-1.11.61-1.56 1.4-1.48 2.8-2.97 4.16-4.49.36-.41.65-.44 1.03-.1.14.13.27.26.39.4.72.84 1.43 1.68 2.15 2.52 2.66 3.1 5.33 6.19 7.98 9.29.8.94 1.61 1.87 2.41 2.81 2.88 3.37 5.79 6.71 8.69 10.06.52.61.96 1.43 1.63 1.73.68.3 1.59.09 2.41.09 3.02 0 6.04-.02 9.05-.03h1.21c-.56-.49-1-.88-1.44-1.26-.13-.2-.24-.43-.4-.61-2.47-2.84-4.95-5.68-7.42-8.52-2.69-3.08-5.4-6.16-8.09-9.25-2.87-3.3-5.72-6.61-8.58-9.9-1.37-1.58-2.76-3.14-4.13-4.71 9.21-10.05 18.43-20.09 27.72-30.23h-10.85c-.71 0-1.18.1-1.72.75-2.35 2.8-4.85 5.48-7.3 8.2-2.95 3.27-5.91 6.53-8.86 9.8-.42.46-.84.91-1.26 1.37l-3.24 3.63c-.34.39-.68.79-1.02 1.18Zm106.02 39.6c-.33-.72-.62-1.27-.85-1.86-1.06-2.72-2.07-5.47-3.15-8.18-3.27-8.2-6.58-16.39-9.86-24.59-.89-2.23-1.71-4.49-2.59-6.72-2.36-5.96-4.74-11.91-7.1-17.86-.66-1.67-1.24-3.36-1.88-5.04-.05-.13-.26-.28-.4-.28-2.65 0-5.29 0-7.94.03-.19 0-.48.25-.56.44-1.08 2.67-2.11 5.36-3.18 8.04-3.33 8.38-6.66 16.77-10.01 25.14-2.31 5.77-4.65 11.52-6.97 17.29-1.16 2.91-2.28 5.83-3.42 8.74-.62 1.58-1.24 3.16-1.88 4.8h.54c2.94 0 5.87 0 8.81.04.38 0 .54-.08.68-.43.86-2.26 1.75-4.51 2.63-6.76.99-2.54 1.99-5.07 2.97-7.62.56-1.46 1.1-2.94 1.68-4.5h1.14c7.79 0 15.58 0 23.37-.03.47 0 .71.14.86.56.18.5.4.98.58 1.48.61 1.67 1.19 3.35 1.83 5.01.92 2.4 1.86 4.78 2.8 7.17.61 1.56 1.23 3.11 1.83 4.68.13.33.31.43.65.43 1.46-.01 2.92 0 4.37.01h5.02ZM254.42 75.36c.07.21.12.38.19.54.77 1.98 1.54 3.95 2.3 5.93.76 2 1.51 4 2.27 6 .74 1.95 1.46 3.91 2.26 5.85.16.38.12 1.01.88 1 2.71-.04 5.42-.03 8.12-.04h1.28c-.38-.93-.71-1.74-1.04-2.56-2.14-5.4-4.28-10.8-6.42-16.19-2.85-7.19-5.69-14.39-8.54-21.58-2.5-6.3-5.02-12.59-7.52-18.88-.64-1.6-1.29-3.19-1.87-4.81-.15-.41-.33-.49-.7-.49-2.17.01-4.33 0-6.5 0q-1.47 0-2.01 1.39s-.02.04-.03.05L228 54.34c-2.53 6.34-5.05 12.68-7.58 19.03-1.17 2.94-2.34 5.88-3.52 8.82-1.25 3.12-2.5 6.24-3.74 9.35-.39.99-.77 1.98-1.19 3.05.3.01.5.03.7.03 2.46 0 4.92.02 7.37.02 1.79 0 1.79 0 2.44-1.64.86-2.2 1.7-4.4 2.56-6.6.98-2.53 1.98-5.05 2.95-7.58.44-1.13.84-2.28 1.27-3.47h25.16Zm-91.99-45.23V83c0 3.67-.01 7.33-.02 11 0 .34-.05.67.47.67 2.93-.01 5.86 0 8.82 0V70.86h.8c5.33-.04 10.65-.1 15.98-.09 2.12 0 4.14-.46 6.16-.97 2.79-.71 5.3-2.02 7.51-3.88 2.93-2.47 4.76-5.6 5.65-9.34.43-1.81.56-3.64.68-5.48.06-.9 0-1.82-.11-2.73-.19-1.56-.3-3.15-.72-4.65-1.42-5.05-4.53-8.77-9.23-11.12-1.91-.96-3.93-1.56-6.07-1.89-1.68-.26-3.35-.56-5.05-.57h-24.89ZM0 33V0h30.12v.48c-.24.04-.48.09-.69.12 0 4.41-.01 8.76 0 13.11 0 1.71.04 1.7-1.65 1.7-4.08 0-8.16 0-12.24-.02-.58 0-.86.1-.84.77.05 2 .04 4 .05 6 .01 2.23.03 4.46.04 6.68 0 .51-.05 1.02-.07 1.51-1.93.09-3.81.22-5.68.26-2.71.05-5.41.04-8.12.01-.55 0-.57.25-.54.65.04.49.06.98.09 1.47-.07.04-.14.09-.21.13-.09.04-.17.08-.26.13ZM29.5 124.5H0V93.12h.45c-.21 1.51-.17 1.64 1.24 1.63 4.24-.01 8.48.01 12.72.03.18 0 .36.02.58.03.05 4.88.11 9.71.16 14.55.03.04.07.07.1.11.4.05.81.14 1.21.14 1.49.01 2.98 0 4.48 0 2.89.01 5.78.03 8.67.05.07.03.14.07.22.1-.02 3.13-.05 6.26-.07 9.39 0 1.6 0 3.2.01 4.79-.09.18-.19.37-.28.55Z",
@@ -1015,7 +1238,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M.45 93.13H0V33c.09-.04.17-.08.26-.13.07.04.14.09.22.13 0 .15.02.29.02.44v59.13c0 .19-.02.37-.03.56Z",
@@ -1032,7 +1255,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M30.12.48V0h43.76l-.12.48c-.23 0-.46.02-.68.02h-41.7c-.42 0-.83-.02-1.25-.02Z",
@@ -1049,7 +1272,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M29.5 124.5c.09-.18.19-.37.28-.55.27.02.54.05.81.05h15.05c1.79 0 3.58.01 5.37.02-.04.16-.08.32-.13.48H29.5Z",
@@ -1064,22 +1287,22 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m73.75.48.12-.48h7.38l-.12.48h-7.38Z", className: "cls-7" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "m73.75.48.12-.48h7.38l-.12.48h-7.38Z", className: "cls-7" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 37,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m81.13.48.12-.48h4.88v.48h-5Z", className: "cls-3" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "m81.13.48.12-.48h4.88v.48h-5Z", className: "cls-3" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 38,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M81.13.48h5c2.6.08 5.2.16 7.95.25v14.12c.02.09.03.19.05.28.31.01.61.03.92.03h13.81v1.87c0 3.83.01 7.67.03 11.5 0 .35.04.71.15 1.03.05.14.33.28.51.28.85.04 1.71.03 2.56.04 3 .01 6 .02 9 .04.87 0 1.73.08 2.7.12v64.28h-14.67v2.73c0 .18.07.36.07.54-.02 3.62-.06 7.25-.06 10.87 0 .6-.18.78-.78.78-2.98-.02-5.96 0-8.94.01H94.6c-.1 4.98-.2 9.79-.29 14.61h-1.59c-9.98 0-19.96-.01-29.93 0-3.93 0-7.86.1-11.78.15-1.79 0-3.58-.02-5.37-.02H30.59c-.27 0-.54-.03-.81-.05 0-1.6-.02-3.2-.01-4.79.02-3.13.04-6.26.07-9.39-.07-.03-.14-.07-.22-.1-2.89-.02-5.78-.04-8.67-.05-1.49 0-2.98.02-4.48 0-.4 0-.81-.09-1.21-.14-.03-.04-.07-.07-.1-.11-.05-4.83-.11-9.66-.16-14.55-.22-.01-.4-.03-.58-.03-4.24-.01-8.48-.04-12.72-.03-1.41 0-1.45-.12-1.24-1.63.01-.19.03-.37.03-.56V33.43c0-.15-.01-.29-.02-.44v-.26l-.09-1.47c-.03-.4 0-.65.54-.65 2.71.02 5.41.03 8.12-.01 1.88-.03 3.75-.17 5.68-.26.02-.49.07-1 .07-1.51 0-2.23-.03-4.46-.04-6.68-.01-2 0-4-.05-6-.02-.68.26-.78.84-.77 4.08.02 8.16.02 12.24.02 1.69 0 1.66 0 1.65-1.7-.02-4.35 0-8.7 0-13.11.21-.04.45-.08.69-.12.42 0 .83.02 1.25.02h41.7c.23 0 .46-.01.68-.02h7.38Zm12.13 32.26c.18-.23.27-.42 0-.68-.65-.62-1.27-1.28-1.93-1.88-.12-.11-.4-.03-.6-.04C83 22.76 73.76 18.96 63.08 18.36v47.46h10.51c.09 1.69.23 3.25.23 4.82.02 11.12.01 22.25.02 33.37 0 .16.03.32.06.57.75-.18 1.49-.23 2.12-.52 2.25-1.01 4.51-2.01 6.68-3.19 2.69-1.47 5.09-3.38 7.41-5.38.26-.05.6-.02.76-.17.62-.57 1.2-1.18 1.76-1.82.1-.12 0-.41 0-.62.07-.08.13-.16.2-.24 3.56-3.89 6.24-8.33 8.24-13.2.99-2.43 1.65-4.95 2.18-7.51.33-1.61.72-3.23.84-4.86.16-2.22.1-4.45.11-6.67 0-1.02.03-2.05-.15-3.04-.26-1.42-.36-2.86-.76-4.28-.52-1.87-.96-3.77-1.56-5.62-.82-2.53-1.93-4.93-3.21-7.25-1.48-2.69-3.3-5.14-5.27-7.48Zm-41.02 72.47V44.92H41.15v-6.75h5.58c0-.15.02-.3.02-.44 0-1.83-.01-3.67 0-5.5 0-.86.07-.91.89-.92l9.31-.06c.26 0 .52-.03.8-.05V18.77c-.72 0-1.43-.12-2.08.02-1.89.41-3.77.86-5.62 1.41-1.75.52-3.5 1.08-5.17 1.82-6.45 2.84-11.75 7.16-16.13 12.67-4.6 5.78-7.36 12.39-8.85 19.57-.32 1.54-.43 3.13-.51 4.7-.1 2.06-.11 4.12-.08 6.18.02 1.33.12 2.68.34 3.99.23 1.46.66 2.88.95 4.33.36 1.85.98 3.6 1.66 5.35 1.52 3.89 3.5 7.53 6.02 10.86 3.61 4.76 7.96 8.69 13.21 11.53 2.33 1.26 4.78 2.3 7.25 3.26 1.07.41 2.18 1.02 3.5.75Zm5.61.97s.08.05.12.05c2.68-.04 5.36-.07 8.03-.13.61-.01 1.22-.11 1.82-.24.19-.04.39-.29.48-.49.08-.17.03-.41.03-.62 0-8 0-15.99-.01-23.99v-1.14h-1.27c-2.91-.02-5.83-.04-8.74-.07-.4 0-.47.16-.47.53.01 7.93.01 15.87.01 23.8v2.28Z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "M81.13.48h5c2.6.08 5.2.16 7.95.25v14.12c.02.09.03.19.05.28.31.01.61.03.92.03h13.81v1.87c0 3.83.01 7.67.03 11.5 0 .35.04.71.15 1.03.05.14.33.28.51.28.85.04 1.71.03 2.56.04 3 .01 6 .02 9 .04.87 0 1.73.08 2.7.12v64.28h-14.67v2.73c0 .18.07.36.07.54-.02 3.62-.06 7.25-.06 10.87 0 .6-.18.78-.78.78-2.98-.02-5.96 0-8.94.01H94.6c-.1 4.98-.2 9.79-.29 14.61h-1.59c-9.98 0-19.96-.01-29.93 0-3.93 0-7.86.1-11.78.15-1.79 0-3.58-.02-5.37-.02H30.59c-.27 0-.54-.03-.81-.05 0-1.6-.02-3.2-.01-4.79.02-3.13.04-6.26.07-9.39-.07-.03-.14-.07-.22-.1-2.89-.02-5.78-.04-8.67-.05-1.49 0-2.98.02-4.48 0-.4 0-.81-.09-1.21-.14-.03-.04-.07-.07-.1-.11-.05-4.83-.11-9.66-.16-14.55-.22-.01-.4-.03-.58-.03-4.24-.01-8.48-.04-12.72-.03-1.41 0-1.45-.12-1.24-1.63.01-.19.03-.37.03-.56V33.43c0-.15-.01-.29-.02-.44v-.26l-.09-1.47c-.03-.4 0-.65.54-.65 2.71.02 5.41.03 8.12-.01 1.88-.03 3.75-.17 5.68-.26.02-.49.07-1 .07-1.51 0-2.23-.03-4.46-.04-6.68-.01-2 0-4-.05-6-.02-.68.26-.78.84-.77 4.08.02 8.16.02 12.24.02 1.69 0 1.66 0 1.65-1.7-.02-4.35 0-8.7 0-13.11.21-.04.45-.08.69-.12.42 0 .83.02 1.25.02h41.7c.23 0 .46-.01.68-.02h7.38Zm12.13 32.26c.18-.23.27-.42 0-.68-.65-.62-1.27-1.28-1.93-1.88-.12-.11-.4-.03-.6-.04C83 22.76 73.76 18.96 63.08 18.36v47.46h10.51c.09 1.69.23 3.25.23 4.82.02 11.12.01 22.25.02 33.37 0 .16.03.32.06.57.75-.18 1.49-.23 2.12-.52 2.25-1.01 4.51-2.01 6.68-3.19 2.69-1.47 5.09-3.38 7.41-5.38.26-.05.6-.02.76-.17.62-.57 1.2-1.18 1.76-1.82.1-.12 0-.41 0-.62.07-.08.13-.16.2-.24 3.56-3.89 6.24-8.33 8.24-13.2.99-2.43 1.65-4.95 2.18-7.51.33-1.61.72-3.23.84-4.86.16-2.22.1-4.45.11-6.67 0-1.02.03-2.05-.15-3.04-.26-1.42-.36-2.86-.76-4.28-.52-1.87-.96-3.77-1.56-5.62-.82-2.53-1.93-4.93-3.21-7.25-1.48-2.69-3.3-5.14-5.27-7.48Zm-41.02 72.47V44.92H41.15v-6.75h5.58c0-.15.02-.3.02-.44 0-1.83-.01-3.67 0-5.5 0-.86.07-.91.89-.92l9.31-.06c.26 0 .52-.03.8-.05V18.77c-.72 0-1.43-.12-2.08.02-1.89.41-3.77.86-5.62 1.41-1.75.52-3.5 1.08-5.17 1.82-6.45 2.84-11.75 7.16-16.13 12.67-4.6 5.78-7.36 12.39-8.85 19.57-.32 1.54-.43 3.13-.51 4.7-.1 2.06-.11 4.12-.08 6.18.02 1.33.12 2.68.34 3.99.23 1.46.66 2.88.95 4.33.36 1.85.98 3.6 1.66 5.35 1.52 3.89 3.5 7.53 6.02 10.86 3.61 4.76 7.96 8.69 13.21 11.53 2.33 1.26 4.78 2.3 7.25 3.26 1.07.41 2.18 1.02 3.5.75Zm5.61.97s.08.05.12.05c2.68-.04 5.36-.07 8.03-.13.61-.01 1.22-.11 1.82-.24.19-.04.39-.29.48-.49.08-.17.03-.41.03-.62 0-8 0-15.99-.01-23.99v-1.14h-1.27c-2.91-.02-5.83-.04-8.74-.07-.4 0-.47.16-.47.53.01 7.93.01 15.87.01 23.8v2.28Z" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 39,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M285.65 94.6V31.15c0-.32-.06-.64-.09-.99h9.06l.36.09c0 .91.02 1.83.02 2.74v27.03c.8-.11 1.21-.65 1.65-1.16 1.05-1.21 2.1-2.41 3.15-3.61.08-.09.2-.15.3-.22.37.2.54.1 1.06-.52.23-.27.24-.45-.04-.65l3.24-3.63c.16.02.39.12.48.05.31-.24.55-.55.84-.81.27-.25.13-.43-.07-.61 2.95-3.27 5.91-6.53 8.86-9.8 2.45-2.72 4.95-5.4 7.3-8.2.55-.65 1.02-.75 1.72-.75 3.56.02 7.11 0 10.85 0-9.29 10.14-18.5 20.18-27.72 30.23 1.37 1.57 2.76 3.13 4.13 4.71 2.86 3.3 5.71 6.61 8.58 9.9 2.69 3.09 5.39 6.17 8.09 9.25 2.48 2.84 4.95 5.67 7.42 8.52.16.18.27.41.4.61.02.21.04.42.08.63.04.21.11.42.16.64l-9.05.03c-.81 0-1.73.21-2.41-.09-.67-.3-1.1-1.13-1.63-1.73-2.9-3.35-5.82-6.69-8.69-10.06-.8-.94-1.61-1.87-2.41-2.81-2.65-3.11-5.32-6.2-7.98-9.29-.72-.84-1.43-1.68-2.15-2.52-.12-.14-.26-.27-.39-.4-.38-.34-.66-.31-1.03.1-1.36 1.52-2.76 3-4.16 4.49-.42.45-.62.93-.61 1.56.02 6.62.01 13.24.01 19.87 0 .83-.02.86-.83.87-2.46.01-4.91.01-7.37.02-.33 0-.67.02-1 .03l-.15-.09ZM406.12 94.65h-5.02c-1.46 0-2.92-.02-4.37-.01-.34 0-.52-.1-.65-.43-.6-1.56-1.22-3.12-1.83-4.68-.94-2.39-1.89-4.77-2.8-7.17-.63-1.66-1.22-3.34-1.83-5.01-.18-.5-.4-.98-.58-1.48-.15-.42-.39-.56-.86-.56-7.79.02-15.58.02-23.37.03h-1.14c-.58 1.56-1.12 3.04-1.68 4.5-.98 2.54-1.98 5.08-2.97 7.62-.88 2.25-1.77 4.5-2.63 6.76-.14.36-.3.44-.68.43-2.94-.03-5.87-.03-8.81-.04h-.54c.64-1.64 1.26-3.22 1.88-4.8 1.14-2.91 2.26-5.84 3.42-8.74 2.31-5.77 4.66-11.52 6.97-17.29 3.35-8.38 6.68-16.76 10.01-25.14 1.06-2.68 2.1-5.36 3.18-8.04.08-.2.37-.44.56-.44 2.65-.04 5.29-.04 7.94-.03.14 0 .35.15.4.28.64 1.67 1.23 3.37 1.88 5.04 2.35 5.96 4.74 11.91 7.1 17.86.88 2.23 1.7 4.49 2.59 6.72 3.28 8.2 6.58 16.39 9.86 24.59 1.08 2.71 2.09 5.45 3.15 8.18.23.58.52 1.14.85 1.86Zm-21.03-28.42c-.16-.62-.27-1.23-.48-1.8-.5-1.37-1.06-2.71-1.59-4.07l-2.58-6.69c-.41-1.06-.81-2.11-1.22-3.17-.42-1.08-.85-2.17-1.27-3.25-.42-1.08-.82-2.17-1.25-3.24-.08-.2-.27-.35-.41-.52-.17.14-.42.25-.5.44-.82 2.05-1.62 4.11-2.41 6.17-1.53 3.99-3.06 7.99-4.59 11.99-.52 1.35-1.07 2.69-1.64 4.14h17.93ZM254.41 75.37h-25.16c-.44 1.19-.84 2.34-1.27 3.47-.98 2.53-1.97 5.05-2.95 7.58-.85 2.2-1.7 4.4-2.56 6.6-.64 1.64-.65 1.64-2.44 1.64-2.46 0-4.92-.01-7.37-.02-.2 0-.4-.02-.7-.03.41-1.06.79-2.06 1.19-3.05 1.24-3.12 2.49-6.24 3.74-9.35 1.17-2.94 2.35-5.88 3.52-8.82 2.53-6.34 5.05-12.69 7.58-19.03l9.09-22.77c0-.02.02-.04.03-.05q.55-1.39 2.01-1.39h6.5c.38 0 .56.08.7.49.58 1.62 1.24 3.21 1.87 4.81 2.51 6.29 5.02 12.58 7.52 18.88 2.85 7.19 5.69 14.38 8.54 21.58 2.14 5.4 4.28 10.8 6.42 16.19.32.82.66 1.63 1.04 2.56h-1.28c-2.71 0-5.42 0-8.12.04-.76.01-.73-.62-.88-1-.8-1.93-1.52-3.89-2.26-5.85-.76-2-1.5-4-2.27-6-.76-1.98-1.53-3.95-2.3-5.93l-.19-.54Zm-12.84-31.91c-2.91 7.57-5.81 15.12-8.75 22.79h17.96c-.02-.14-.03-.28-.08-.4-.47-1.22-.97-2.44-1.43-3.67-.48-1.27-.93-2.54-1.42-3.81-.38-.98-.82-1.94-1.19-2.92-.41-1.07-.76-2.17-1.17-3.24-.74-1.92-1.5-3.83-2.24-5.75-.24-.63-.39-1.3-.67-1.92-.19-.44-.28-1.04-1.01-1.07Z",
@@ -1094,12 +1317,12 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M162.42 30.14h24.89c1.7 0 3.37.31 5.05.57 2.14.33 4.16.94 6.07 1.89 4.7 2.35 7.81 6.07 9.23 11.12.42 1.5.53 3.1.72 4.65.11.9.17 1.82.11 2.73-.13 1.83-.25 3.66-.68 5.48-.89 3.74-2.72 6.86-5.65 9.34-2.2 1.86-4.71 3.17-7.51 3.88-2.02.51-4.04.98-6.16.97-5.33-.01-10.65.06-15.98.09h-.8v23.81h-8.82c-.53 0-.48-.33-.47-.67 0-3.67.02-7.33.02-11V30.13Zm9.34 8.9c.02.39.04.62.04.84 0 7.1.02 14.2 0 21.3 0 .54.1.71.67.71 4.39-.02 8.78 0 13.17 0 2.34 0 4.66-.19 6.89-.92 1.83-.6 3.53-1.46 4.75-3.06 1.31-1.71 1.7-3.75 1.82-5.79.1-1.78-.01-3.57-.3-5.36-.59-3.69-3.4-6-6.59-6.86-2.16-.58-4.38-.82-6.61-.84-4.59-.05-9.19-.01-13.85-.01Z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "M162.42 30.14h24.89c1.7 0 3.37.31 5.05.57 2.14.33 4.16.94 6.07 1.89 4.7 2.35 7.81 6.07 9.23 11.12.42 1.5.53 3.1.72 4.65.11.9.17 1.82.11 2.73-.13 1.83-.25 3.66-.68 5.48-.89 3.74-2.72 6.86-5.65 9.34-2.2 1.86-4.71 3.17-7.51 3.88-2.02.51-4.04.98-6.16.97-5.33-.01-10.65.06-15.98.09h-.8v23.81h-8.82c-.53 0-.48-.33-.47-.67 0-3.67.02-7.33.02-11V30.13Zm9.34 8.9c.02.39.04.62.04.84 0 7.1.02 14.2 0 21.3 0 .54.1.71.67.71 4.39-.02 8.78 0 13.17 0 2.34 0 4.66-.19 6.89-.92 1.83-.6 3.53-1.46 4.75-3.06 1.31-1.71 1.7-3.75 1.82-5.79.1-1.78-.01-3.57-.3-5.36-.59-3.69-3.4-6-6.59-6.86-2.16-.58-4.38-.82-6.61-.84-4.59-.05-9.19-.01-13.85-.01Z" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 44,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M305.62 48.87c.2.18.34.36.07.61-.29.26-.54.57-.84.81-.09.07-.32-.03-.48-.05.42-.46.84-.91 1.26-1.37Z",
@@ -1114,7 +1337,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M335.5 94.62c-.05-.21-.12-.42-.16-.64-.04-.21-.05-.42-.08-.63.44.39.88.77 1.44 1.26h-1.21Z",
@@ -1129,7 +1352,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M301.12 53.87c.27.2.26.39.04.65-.52.62-.69.73-1.06.52.34-.39.68-.79 1.02-1.18Z",
@@ -1144,12 +1367,12 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m294.98 30.25-.36-.09.36.09Z", className: "cls-12" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "m294.98 30.25-.36-.09.36.09Z", className: "cls-12" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 57,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M94.12 15.13c-.02-.09-.03-.19-.05-.28.02.09.03.19.05.28Z",
@@ -1166,12 +1389,12 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "m285.65 94.6.15.09-.15-.09Z", className: "cls-9" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("path", { d: "m285.65 94.6.15.09-.15-.09Z", className: "cls-9" }, void 0, !1, {
         fileName: "app/components/icons/Paka.tsx",
         lineNumber: 64,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M.47 32.74V33c-.07-.04-.14-.09-.22-.13.07-.04.14-.09.22-.13Z",
@@ -1186,7 +1409,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M29.62 109.66c.07.03.14.07.22.1-.07-.03-.14-.07-.22-.1Z",
@@ -1201,7 +1424,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M15.16 109.37s.07.07.1.11c-.03-.04-.07-.07-.1-.11Z",
@@ -1218,7 +1441,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M90.11 95.49c-2.32 2-4.72 3.92-7.41 5.38-2.16 1.18-4.43 2.18-6.68 3.19-.64.29-1.37.34-2.12.52-.03-.25-.06-.41-.06-.57 0-11.12 0-22.25-.02-33.37 0-1.57-.15-3.13-.23-4.82H63.08V18.36c10.68.6 19.93 4.4 27.65 11.78.84.87 1.69 1.73 2.53 2.6 1.98 2.34 3.8 4.79 5.27 7.48 1.28 2.32 2.39 4.73 3.21 7.25.6 1.85 1.05 3.75 1.56 5.62.39 1.42.5 2.86.76 4.28.18.99.15 2.03.15 3.04 0 2.23.06 4.46-.11 6.67-.12 1.63-.51 3.25-.84 4.86-.53 2.56-1.19 5.09-2.18 7.51-1.99 4.87-4.67 9.31-8.24 13.2-.07.08-.13.16-.2.24-.84.87-1.68 1.73-2.52 2.6ZM52.24 105.21c-1.32.26-2.43-.34-3.5-.75-2.47-.95-4.93-2-7.25-3.26-5.25-2.84-9.6-6.77-13.21-11.53-2.53-3.33-4.5-6.97-6.02-10.86-.68-1.74-1.3-3.5-1.66-5.35-.28-1.45-.71-2.87-.95-4.33-.21-1.32-.31-2.66-.34-3.99-.04-2.06-.02-4.12.08-6.18.08-1.57.19-3.16.51-4.7 1.49-7.17 4.25-13.79 8.85-19.57 4.38-5.5 9.68-9.82 16.13-12.67 1.67-.74 3.42-1.29 5.17-1.82 1.85-.55 3.73-1 5.62-1.41.65-.14 1.36-.02 2.08-.02V31.2c-.28.02-.54.04-.8.05-3.1.02-6.21.03-9.31.06-.82 0-.88.06-.89.92v5.5c0 .14-.01.29-.02.44h-5.58v6.75h11.09v60.29Z",
@@ -1233,7 +1456,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M57.85 106.18v-2.28c0-7.93 0-15.87-.01-23.8 0-.37.07-.53.47-.53 2.91.03 5.83.05 8.74.07h1.27v1.14c0 8 0 15.99.01 23.99 0 .21.05.45-.03.62-.09.2-.29.44-.48.49-.6.13-1.21.22-1.82.24-2.68.06-5.36.09-8.03.13-.04 0-.07-.03-.12-.05Z",
@@ -1248,7 +1471,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M90.11 95.49c.84-.87 1.68-1.73 2.52-2.6 0 .21.1.5 0 .62-.55.63-1.14 1.25-1.76 1.82-.17.15-.5.12-.76.17Z",
@@ -1263,7 +1486,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M93.26 32.73c-.84-.87-1.69-1.73-2.53-2.6.2 0 .48-.07.6.04.66.61 1.28 1.27 1.93 1.88.27.26.18.45 0 .68Z",
@@ -1278,7 +1501,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M385.08 66.23h-17.93c.57-1.44 1.12-2.79 1.64-4.14 1.54-3.99 3.06-7.99 4.59-11.99.79-2.06 1.59-4.12 2.41-6.17.07-.18.33-.29.5-.44.14.17.33.32.41.52.43 1.07.84 2.16 1.25 3.24.42 1.08.85 2.17 1.27 3.25.41 1.05.81 2.11 1.22 3.17.86 2.23 1.71 4.46 2.58 6.69.53 1.36 1.08 2.7 1.59 4.07.21.57.32 1.18.48 1.8ZM241.57 43.46c.73.03.82.63 1.01 1.07.27.62.42 1.29.67 1.92.74 1.92 1.51 3.83 2.24 5.75.41 1.07.76 2.17 1.17 3.24.38.98.81 1.94 1.19 2.92.49 1.26.94 2.54 1.42 3.81.47 1.23.96 2.44 1.43 3.67.05.12.05.27.08.4h-17.96c2.94-7.67 5.84-15.22 8.75-22.79Z",
@@ -1293,7 +1516,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
         "path",
         {
           d: "M171.75 39.04c4.66 0 9.26-.03 13.85.01 2.23.02 4.45.26 6.61.84 3.19.86 6 3.18 6.59 6.86.29 1.8.41 3.59.3 5.36-.12 2.04-.51 4.08-1.82 5.79-1.22 1.59-2.91 2.46-4.75 3.06-2.23.73-4.56.92-6.89.92-4.39 0-8.78-.02-13.17 0-.57 0-.67-.17-.67-.71.02-7.1 0-14.2 0-21.3 0-.23-.02-.45-.04-.84Z",
@@ -1321,7 +1544,7 @@ var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgPaka = (prop
 ), Paka_default = SvgPaka;
 
 // app/components/icons/SpeidelLogo.tsx
-var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), SvgSpeidelLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
+var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), SvgSpeidelLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -1329,7 +1552,7 @@ var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), SvgSpeidelLogo 
     viewBox: "0 0 264 151",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
         "path",
         {
           fill: "#000",
@@ -1344,7 +1567,7 @@ var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), SvgSpeidelLogo 
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
         "path",
         {
           fill: "#000",
@@ -1359,7 +1582,7 @@ var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), SvgSpeidelLogo 
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(
         "path",
         {
           fill: "#000",
@@ -1387,7 +1610,7 @@ var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime"), SvgSpeidelLogo 
 ), SpeidelLogo_default = SvgSpeidelLogo;
 
 // app/components/icons/WinkLogo.tsx
-var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), SvgWinkLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
+var import_jsx_dev_runtime17 = require("react/jsx-dev-runtime"), SvgWinkLogo = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
   "svg",
   {
     xmlns: "http://www.w3.org/2000/svg",
@@ -1398,7 +1621,7 @@ var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), SvgWinkLogo = (
     viewBox: "0 0 653.8 136.2",
     ...props,
     children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(
         "path",
         {
           d: "M43.5 7.6C21.3 7.6 3.3 25.7 3.3 47.9v40.5c0 22.2 18.1 40.3 40.2 40.3h77.1c22.2 0 40.3-18.1 40.3-40.3V47.9c0-22.2-18.1-40.3-40.3-40.3H43.5z",
@@ -1415,32 +1638,32 @@ var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), SvgWinkLogo = (
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("path", { d: "M109.9 72.3c-3.7 0-6.9-1.3-9.6-4-2.7-2.7-4-5.9-4-9.6 0-3.7 1.3-6.9 4-9.6 2.7-2.7 5.9-4 9.6-4 3.7 0 6.9 1.3 9.6 4 2.7 2.7 4 5.9 4 9.6 0 3.7-1.3 6.9-4 9.6-2.7 2.6-5.9 4-9.6 4M74 55.7c-1.7-2.3-3.9-3.6-6.7-4-2.8-.4-5.3.2-7.6 1.9-1.9 1.4-3.1 3.2-3.7 5.3-6.1-.8-12.9-2.8-20.1-6.9-.2.4 3.3 5.3 8.5 9.6C50.6 67.5 57.2 71 64.3 72c2.8.4 5.3-.2 7.6-2 2.3-1.7 3.6-3.9 4.1-6.7.4-2.8-.2-5.3-2-7.6" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M109.9 72.3c-3.7 0-6.9-1.3-9.6-4-2.7-2.7-4-5.9-4-9.6 0-3.7 1.3-6.9 4-9.6 2.7-2.7 5.9-4 9.6-4 3.7 0 6.9 1.3 9.6 4 2.7 2.7 4 5.9 4 9.6 0 3.7-1.3 6.9-4 9.6-2.7 2.6-5.9 4-9.6 4M74 55.7c-1.7-2.3-3.9-3.6-6.7-4-2.8-.4-5.3.2-7.6 1.9-1.9 1.4-3.1 3.2-3.7 5.3-6.1-.8-12.9-2.8-20.1-6.9-.2.4 3.3 5.3 8.5 9.6C50.6 67.5 57.2 71 64.3 72c2.8.4 5.3-.2 7.6-2 2.3-1.7 3.6-3.9 4.1-6.7.4-2.8-.2-5.3-2-7.6" }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 19,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("path", { d: "M116.3 135.9H50.4C22.6 135.9 0 113.3 0 85.4V50.8C0 23 22.6.3 50.4.3h65.9c27.8 0 50.4 22.6 50.4 50.4v34.7c.1 27.9-22.6 50.5-50.4 50.5zM50.4 16.4c-19 0-34.4 15.4-34.4 34.4v34.7c0 19 15.4 34.4 34.4 34.4h65.9c19 0 34.4-15.4 34.4-34.4V50.8c0-19-15.4-34.4-34.4-34.4H50.4z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M116.3 135.9H50.4C22.6 135.9 0 113.3 0 85.4V50.8C0 23 22.6.3 50.4.3h65.9c27.8 0 50.4 22.6 50.4 50.4v34.7c.1 27.9-22.6 50.5-50.4 50.5zM50.4 16.4c-19 0-34.4 15.4-34.4 34.4v34.7c0 19 15.4 34.4 34.4 34.4h65.9c19 0 34.4-15.4 34.4-34.4V50.8c0-19-15.4-34.4-34.4-34.4H50.4z" }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 20,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("path", { d: "M125.3 119.4c-7.4.7-14.9 1.2-22.4 1.4 12.3-9.8 17-31.6 16.2-32.3-17.7 24.8-40.7 30.4-51.6 31.6v13.1c19.4.8 38.8 1.2 58.2-.2v-13.6h-.4zM323.7 0h28.9l-38.3 135.9h-27.1l-16.4-79.5-4.8-26.3-4.8 26.3-16.4 79.5h-26.4L179.9 0H210l18 77.8 3.9 21.7 4-21.2L251.2 0h30l16.1 77.8 4.1 21.7 4.1-20.8L323.7 0zM457 54.9c-8.9 0-15 3.8-18.3 11.3-1.7 4-2.6 9.1-2.6 15.3v54.4h-26.2V35.6h25.4v14.7c3.4-5.2 6.6-8.9 9.6-11.2 5.4-4.1 12.3-6.1 20.6-6.1 10.4 0 18.9 2.7 25.5 8.2 6.6 5.4 9.9 14.5 9.9 27.1V136H474V74.8c0-5.3-.7-9.3-2.1-12.2-2.8-5.2-7.7-7.7-14.9-7.7zM609.8 135.9h-31.7l-24.1-43-10.9 11.3v31.6h-25.8V.5h25.8v73.2l32.7-37.8h32.5l-35.1 38.4 36.6 61.6zM389 35.6v100.6h-26.7V35.6H389z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M125.3 119.4c-7.4.7-14.9 1.2-22.4 1.4 12.3-9.8 17-31.6 16.2-32.3-17.7 24.8-40.7 30.4-51.6 31.6v13.1c19.4.8 38.8 1.2 58.2-.2v-13.6h-.4zM323.7 0h28.9l-38.3 135.9h-27.1l-16.4-79.5-4.8-26.3-4.8 26.3-16.4 79.5h-26.4L179.9 0H210l18 77.8 3.9 21.7 4-21.2L251.2 0h30l16.1 77.8 4.1 21.7 4.1-20.8L323.7 0zM457 54.9c-8.9 0-15 3.8-18.3 11.3-1.7 4-2.6 9.1-2.6 15.3v54.4h-26.2V35.6h25.4v14.7c3.4-5.2 6.6-8.9 9.6-11.2 5.4-4.1 12.3-6.1 20.6-6.1 10.4 0 18.9 2.7 25.5 8.2 6.6 5.4 9.9 14.5 9.9 27.1V136H474V74.8c0-5.3-.7-9.3-2.1-12.2-2.8-5.2-7.7-7.7-14.9-7.7zM609.8 135.9h-31.7l-24.1-43-10.9 11.3v31.6h-25.8V.5h25.8v73.2l32.7-37.8h32.5l-35.1 38.4 36.6 61.6zM389 35.6v100.6h-26.7V35.6H389z" }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 21,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("path", { d: "M389 35.4V136h-26.7V35.4H389z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M389 35.4V136h-26.7V35.4H389z" }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 22,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("circle", { cx: 375.7, cy: 13.3, r: 13.3 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("circle", { cx: 375.7, cy: 13.3, r: 13.3 }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 23,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("path", { d: "M633.2.5v1.8h-4.7v15.5h-2.3V2.3h-4.7V.5h11.7zM653.8.6v17.2h-2.3V5l-5.7 12.8h-1.6L638.5 5v12.8h-2.3V.6h2.4l6.4 14.2L651.4.6h2.4z" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("path", { d: "M633.2.5v1.8h-4.7v15.5h-2.3V2.3h-4.7V.5h11.7zM653.8.6v17.2h-2.3V5l-5.7 12.8h-1.6L638.5 5v12.8h-2.3V.6h2.4l6.4 14.2L651.4.6h2.4z" }, void 0, !1, {
         fileName: "app/components/icons/WinkLogo.tsx",
         lineNumber: 24,
         columnNumber: 5
@@ -1457,11 +1680,447 @@ var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime"), SvgWinkLogo = (
   this
 ), WinkLogo_default = SvgWinkLogo;
 
+// app/components/Portfolio/Overview.tsx
+var import_jsx_dev_runtime18 = require("react/jsx-dev-runtime");
+function Overview({ content }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "flex flex-col", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("strong", { className: "text-sm font-normal uppercase pb-16", children: "PROJECT OVERVIEW" }, void 0, !1, {
+      fileName: "app/components/Portfolio/Overview.tsx",
+      lineNumber: 4,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("ul", { className: "flex flex-col gap-8", children: content == null ? void 0 : content.map((item, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("li", { className: "grid grid-cols-[160px_1fr] gap-3 items-start", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "flex items-end w-full gap-3 pt-4", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "leading-none text-xs", children: [
+          i < 9 ? "0" : "",
+          i + 1
+        ] }, void 0, !0, {
+          fileName: "app/components/Portfolio/Overview.tsx",
+          lineNumber: 9,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("div", { className: "border-b border-dashed border-current w-full" }, void 0, !1, {
+          fileName: "app/components/Portfolio/Overview.tsx",
+          lineNumber: 10,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/components/Portfolio/Overview.tsx",
+        lineNumber: 8,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("span", { className: "font-title text-2xl opacity-80 leading-relaxed", children: item }, void 0, !1, {
+        fileName: "app/components/Portfolio/Overview.tsx",
+        lineNumber: 12,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Portfolio/Overview.tsx",
+      lineNumber: 7,
+      columnNumber: 11
+    }, this)) }, void 0, !1, {
+      fileName: "app/components/Portfolio/Overview.tsx",
+      lineNumber: 5,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Portfolio/Overview.tsx",
+    lineNumber: 3,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/Portfolio/Video.tsx
+var import_jsx_dev_runtime19 = require("react/jsx-dev-runtime");
+function Video({ vimeoLink }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("iframe", { className: "aspect-video w-full", src: vimeoLink }, void 0, !1, {
+    fileName: "app/components/Portfolio/Video.tsx",
+    lineNumber: 3,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/portfolio.$client.tsx
+var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime");
+function Index() {
+  let params = (0, import_react7.useParams)(), caseStudy = case_studies_default.find((item) => item.handle === params.client);
+  if (!caseStudy)
+    return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("h1", { children: "Whoops! Nothing here." }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 23,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 22,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 21,
+      columnNumber: 7
+    }, this);
+  let {
+    title,
+    description,
+    vimeoLinkPrimary,
+    overview,
+    carousel,
+    sparkyMagic,
+    portfolioBanner,
+    vimeoLinkSecondary,
+    siteLink,
+    testimonial,
+    stack,
+    results
+  } = caseStudy;
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(import_jsx_dev_runtime20.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "container flex flex-col pt-32 gap-5 pb-5 md:pb-10", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "uppercase", children: "case study /" }, void 0, !1, {
+        fileName: "app/routes/portfolio.$client.tsx",
+        lineNumber: 47,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("h1", { className: "block leading-tight text-3xl md:text-[88px] font-bold", children: title }, void 0, !1, {
+          fileName: "app/routes/portfolio.$client.tsx",
+          lineNumber: 49,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("a", { target: "_blank", rel: "noopener", href: siteLink, className: "relative z-[0] group px-2 font-title text-xl font-bold md:text-[44px] flex items-end gap-8", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "py-3 block w-max", children: "Visit" }, void 0, !1, {
+            fileName: "app/routes/portfolio.$client.tsx",
+            lineNumber: 51,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { "aria-hidden": "true", className: "w-6 text-energyYellow transition-all duration-300 origin-bottom transform group-hover:translate-x-3 group-hover:scale-150", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(ArrowSquare_default, {}, void 0, !1, {
+            fileName: "app/routes/portfolio.$client.tsx",
+            lineNumber: 53,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/routes/portfolio.$client.tsx",
+            lineNumber: 52,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { "aria-hidden": "true", className: "absolute bottom-0 left-0 h-6 w-[calc(100%-44px)] bg-energyYellow -z-[1]" }, void 0, !1, {
+            fileName: "app/routes/portfolio.$client.tsx",
+            lineNumber: 55,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/portfolio.$client.tsx",
+          lineNumber: 50,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/portfolio.$client.tsx",
+        lineNumber: 48,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 46,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(
+      "div",
+      {
+        className: "container py-5 md:py-10 font-title text-2xl md:text-4xl font-medium leading-normal",
+        dangerouslySetInnerHTML: { __html: description }
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/portfolio.$client.tsx",
+        lineNumber: 60,
+        columnNumber: 7
+      },
+      this
+    ),
+    vimeoLinkPrimary && /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(Video, { vimeoLink: vimeoLinkPrimary }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 68,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 67,
+      columnNumber: 9
+    }, this),
+    overview && /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "container max-w-5xl py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(Overview, { content: overview }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 74,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 73,
+      columnNumber: 9
+    }, this),
+    vimeoLinkSecondary && /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(Video, { vimeoLink: vimeoLinkSecondary }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 80,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 79,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/portfolio.$client.tsx",
+    lineNumber: 45,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/portfolio._index.tsx
+var portfolio_index_exports = {};
+__export(portfolio_index_exports, {
+  default: () => Index2
+});
+var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime");
+function Index2() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("h1", { children: "portfolio" }, void 0, !1, {
+    fileName: "app/routes/portfolio._index.tsx",
+    lineNumber: 7,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/portfolio._index.tsx",
+    lineNumber: 6,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/portfolio._index.tsx",
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/portfolio.tsx
+var portfolio_exports = {};
+__export(portfolio_exports, {
+  default: () => Index3
+});
+var import_react8 = require("@remix-run/react"), import_jsx_dev_runtime22 = require("react/jsx-dev-runtime");
+function Index3() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "bg-ivory min-h-screen", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(import_react8.Outlet, {}, void 0, !1, {
+    fileName: "app/routes/portfolio.tsx",
+    lineNumber: 6,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/portfolio.tsx",
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+
+// app/routes/_index.tsx
+var index_exports = {};
+__export(index_exports, {
+  default: () => Index4,
+  meta: () => meta
+});
+
+// app/components/Hero.tsx
+var import_react10 = require("@remix-run/react");
+
+// app/components/LiquidDropHover.tsx
+var import_react9 = require("react"), import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), LiquidDropHover = ({ children }) => {
+  let [hasHovered, hover] = (0, import_react9.useState)(!1);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { onMouseEnter: () => hover(!0), className: `button button--liquid-drop w-max ${hasHovered ? "" : "default-hover-animation-state"}`, children }, void 0, !1, {
+    fileName: "app/components/LiquidDropHover.tsx",
+    lineNumber: 10,
+    columnNumber: 5
+  }, this);
+};
+
+// app/components/Hero.tsx
+var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime");
+function Hero() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "relative w-full", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "container py-36 flex flex-col justify-center relative gap-28 z-[1]", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("h1", { className: "font-bold text-5xl md:text-8xl text-shadow", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 8,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_react10.Link, { to: "/portfolio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(LiquidDropHover, { children: "See the sites." }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 10,
+        columnNumber: 11
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Hero.tsx",
+        lineNumber: 9,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 7,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "absolute left-0 top-0 min-h-max max-w-[100vw] w-full overflow-hidden z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "-z-[1] relative bottom-0 left-0 transform translate-x-1/2 -translate-y-1/4 aspect-square w-full bg-energyYellow mix-blend-multiply rounded-[20vw]", "aria-hidden": "true" }, void 0, !1, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 16,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/components/Hero.tsx",
+      lineNumber: 15,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Hero.tsx",
+    lineNumber: 6,
+    columnNumber: 5
+  }, this);
+}
+
+// app/components/FeaturedPortfolio.tsx
+var import_react11 = require("@remix-run/react");
+
+// app/assets/HeyDude-Portfolio.png
+var HeyDude_Portfolio_default = "/build/_assets/HeyDude-Portfolio-SZS5T4EB.png";
+
+// app/assets/Legends-Portfolio.png
+var Legends_Portfolio_default = "/build/_assets/Legends-Portfolio-LLF3SX6K.png";
+
+// app/components/FeaturedPortfolio.tsx
+var import_jsx_dev_runtime25 = require("react/jsx-dev-runtime");
+function FeaturedPortfolio() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "relative w-full max-lg:overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "right-edge-container flex flex-col justify-center relative gap-4 lg:gap-7 z-[1]", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("span", { children: "Latest Work" }, void 0, !1, {
+        fileName: "app/components/FeaturedPortfolio.tsx",
+        lineNumber: 9,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "grid gap-16 lg:grid-cols-2 lg:gap-5", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "flex flex-col max-lg:pr-4", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react11.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("img", { className: "block bg-mix-blend-multiply", src: HeyDude_Portfolio_default }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 13,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 transform -translate-y-[65%] -ml-1 leading-none", children: "Hey Dude" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 14,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 12,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 17,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Design" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 18,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Development" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 19,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 16,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "pt-96 mt-auto hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react11.Link, { className: "button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 22,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 21,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/FeaturedPortfolio.tsx",
+          lineNumber: 11,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "flex flex-col", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react11.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("img", { className: "block lg:mt-[70%]", src: Legends_Portfolio_default }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 27,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("strong", { className: "block font-bold text-5xl lg:text-6xl text-shadow h1 -ml-1 transform -translate-y-[65%] leading-none", children: "Legends" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 28,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 26,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 31,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Design" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 32,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("li", { children: "Development" }, void 0, !1, {
+              fileName: "app/components/FeaturedPortfolio.tsx",
+              lineNumber: 33,
+              columnNumber: 15
+            }, this)
+          ] }, void 0, !0, {
+            fileName: "app/components/FeaturedPortfolio.tsx",
+            lineNumber: 30,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/FeaturedPortfolio.tsx",
+          lineNumber: 25,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_react11.Link, { className: "lg:hidden button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
+          fileName: "app/components/FeaturedPortfolio.tsx",
+          lineNumber: 36,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/components/FeaturedPortfolio.tsx",
+        lineNumber: 10,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/FeaturedPortfolio.tsx",
+      lineNumber: 8,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "absolute left-0 top-0 bottom-0 aspect-[2/1] max-w-[100vw] w-full z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "-z-[1] relative bottom-0 left-0 transform -translate-x-[70%] rotate-[65deg] h-[100vh] w-full bg-energyYellow mix-blend-multiply", "aria-hidden": "true" }, void 0, !1, {
+      fileName: "app/components/FeaturedPortfolio.tsx",
+      lineNumber: 40,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "app/components/FeaturedPortfolio.tsx",
+      lineNumber: 39,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/FeaturedPortfolio.tsx",
+    lineNumber: 7,
+    columnNumber: 5
+  }, this);
+}
+
 // app/components/FeaturedPartners.tsx
-var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), partners = [
+var import_react12 = require("@remix-run/react");
+var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime"), partners = [
   {
     title: "Shopify Plus",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(ShopifyPlusLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(ShopifyPlusLogo_default, {}, void 0, !1, {
       fileName: "app/components/FeaturedPartners.tsx",
       lineNumber: 12,
       columnNumber: 11
@@ -1470,7 +2129,7 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), partners = [
   },
   {
     title: "Klaviyo",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(KlaviyoLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(KlaviyoLogo_default, {}, void 0, !1, {
       fileName: "app/components/FeaturedPartners.tsx",
       lineNumber: 17,
       columnNumber: 11
@@ -1479,7 +2138,7 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), partners = [
   },
   {
     title: "Yotpo",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(YotpoLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(YotpoLogo_default, {}, void 0, !1, {
       fileName: "app/components/FeaturedPartners.tsx",
       lineNumber: 22,
       columnNumber: 11
@@ -1488,7 +2147,7 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), partners = [
   },
   {
     title: "Elevar",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(ElevarLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(ElevarLogo_default, {}, void 0, !1, {
       fileName: "app/components/FeaturedPartners.tsx",
       lineNumber: 27,
       columnNumber: 11
@@ -1497,14 +2156,14 @@ var import_jsx_dev_runtime20 = require("react/jsx-dev-runtime"), partners = [
   }
 ];
 function FeaturedPartners() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "max-md:container md:right-edge-container my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-5", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("ul", { className: "grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none", children: partners.map(({ title, logo, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("li", { className: "aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-300", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)(import_react10.Link, { className: "w-full h-full flex items-center justify-center relative", title, to: link, children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "max-md:container md:right-edge-container my-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-5", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("ul", { className: "grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none", children: partners.map(({ title, logo, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("li", { className: "aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-300", children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_react12.Link, { className: "w-full h-full flex items-center justify-center relative", title, to: link, children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
         fileName: "app/components/FeaturedPartners.tsx",
         lineNumber: 40,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "bottom-3 transition duration-500 right-3 opacity-0 group-hover:opacity-100 group-hover:mirror absolute flex items-center justify-center w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("span", { className: "bottom-3 transition duration-500 right-3 opacity-0 group-hover:opacity-100 group-hover:mirror absolute flex items-center justify-center w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
         fileName: "app/components/FeaturedPartners.tsx",
         lineNumber: 41,
         columnNumber: 217
@@ -1526,13 +2185,13 @@ function FeaturedPartners() {
       lineNumber: 36,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "flex flex-col justify-center", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("strong", { className: "block font-bold text-5xl md:text-6xl h1", children: "Howdy, partners." }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "flex flex-col justify-center", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("strong", { className: "block font-bold text-5xl md:text-6xl h1", children: "Howdy, partners." }, void 0, !1, {
         fileName: "app/components/FeaturedPartners.tsx",
         lineNumber: 47,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime20.jsxDEV)("div", { className: "max-w-sm mt-11 leading-loose", children: "We work closely with the best ecommerce partners and platforms to help support the growth of our clients." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "max-w-sm mt-11 leading-loose", children: "We work closely with the best ecommerce partners and platforms to help support the growth of our clients." }, void 0, !1, {
         fileName: "app/components/FeaturedPartners.tsx",
         lineNumber: 48,
         columnNumber: 11
@@ -1554,7 +2213,7 @@ function FeaturedPartners() {
 }
 
 // app/components/PortfolioList.tsx
-var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime"), portfolioListItems = [
+var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), portfolioListItems = [
   {
     title: "Orthofeet",
     status: "In progress",
@@ -1599,15 +2258,15 @@ var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime"), portfolioListIt
   }
 ];
 function PortfolioList() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "relative w-full", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "container py-12 relative z-[1]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "max-w-5xl ml-auto flex flex-col gap-8", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "uppercase", children: "Work in the wild" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "relative w-full", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "container py-12 relative z-[1]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "max-w-5xl ml-auto flex flex-col gap-8", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "uppercase", children: "Work in the wild" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 53,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("ul", { className: "flex flex-col gap-8 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("li", { className: "relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "transition duration-300 absolute bottom-1/2 left-0 transform translate-y-1/2 -translate-x-[200%] scale-0 group-focus-within:scale-[175%] group-hover:scale-[175%]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Star_default, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("ul", { className: "flex flex-col gap-8 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("li", { className: "relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 hover:highlighted hover-highlight", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "transition duration-300 absolute bottom-1/2 left-0 transform translate-y-1/2 -translate-x-[200%] scale-0 group-focus-within:scale-[175%] group-hover:scale-[175%]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Star_default, {}, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 58,
           columnNumber: 19
@@ -1616,8 +2275,8 @@ function PortfolioList() {
           lineNumber: 57,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "block w-max whitespace-nowrap", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "block w-max whitespace-nowrap", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
             fileName: "app/components/PortfolioList.tsx",
             lineNumber: 62,
             columnNumber: 39
@@ -1626,7 +2285,7 @@ function PortfolioList() {
             lineNumber: 61,
             columnNumber: 19
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
             fileName: "app/components/PortfolioList.tsx",
             lineNumber: 64,
             columnNumber: 19
@@ -1636,13 +2295,13 @@ function PortfolioList() {
           lineNumber: 60,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "leading-none uppercase text-xs whitespace-nowrap", children: platform }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "leading-none uppercase text-xs whitespace-nowrap", children: platform }, void 0, !1, {
             fileName: "app/components/PortfolioList.tsx",
             lineNumber: 67,
             columnNumber: 19
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
             fileName: "app/components/PortfolioList.tsx",
             lineNumber: 68,
             columnNumber: 19
@@ -1652,7 +2311,7 @@ function PortfolioList() {
           lineNumber: 66,
           columnNumber: 17
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "leading-none uppercase text-xs text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "leading-none uppercase text-xs text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 71,
           columnNumber: 45
@@ -1670,7 +2329,7 @@ function PortfolioList() {
         lineNumber: 54,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("strong", { className: "ml-auto text-right uppercase", children: "More examples on request" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("strong", { className: "ml-auto text-right uppercase", children: "More examples on request" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 76,
         columnNumber: 11
@@ -1684,7 +2343,7 @@ function PortfolioList() {
       lineNumber: 51,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "absolute right-0 top-0 max-w-[100vw] w-full z-[0] overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: "-z-[1] relative bottom-0 right-0 transform translate-x-[70%] rotate-[-25deg] h-[150vh] w-full bg-energyYellow mix-blend-multiply", "aria-hidden": "true" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "absolute right-0 top-0 max-w-[100vw] w-full z-[0] overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "-z-[1] relative bottom-0 right-0 transform translate-x-[70%] rotate-[-25deg] h-[150vh] w-full bg-energyYellow mix-blend-multiply", "aria-hidden": "true" }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
       lineNumber: 80,
       columnNumber: 9
@@ -1701,7 +2360,7 @@ function PortfolioList() {
 }
 
 // app/components/PortfolioSlider.tsx
-var import_react11 = require("react");
+var import_react13 = require("react");
 
 // app/assets/legends-slider.jpeg
 var legends_slider_default = "/build/_assets/legends-slider-WK3CNSPU.jpeg";
@@ -2168,14 +2827,14 @@ var eventsEmitter = {
     let self = this;
     if (!self.eventsListeners || self.destroyed || !self.eventsListeners)
       return self;
-    let events2, data, context;
+    let events2, data2, context;
     for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++)
       args[_key2] = arguments[_key2];
-    return typeof args[0] == "string" || Array.isArray(args[0]) ? (events2 = args[0], data = args.slice(1, args.length), context = self) : (events2 = args[0].events, data = args[0].data, context = args[0].context || self), data.unshift(context), (Array.isArray(events2) ? events2 : events2.split(" ")).forEach((event2) => {
+    return typeof args[0] == "string" || Array.isArray(args[0]) ? (events2 = args[0], data2 = args.slice(1, args.length), context = self) : (events2 = args[0].events, data2 = args[0].data, context = args[0].context || self), data2.unshift(context), (Array.isArray(events2) ? events2 : events2.split(" ")).forEach((event2) => {
       self.eventsAnyListeners && self.eventsAnyListeners.length && self.eventsAnyListeners.forEach((eventHandler) => {
-        eventHandler.apply(context, [event2, ...data]);
+        eventHandler.apply(context, [event2, ...data2]);
       }), self.eventsListeners && self.eventsListeners[event2] && self.eventsListeners[event2].forEach((eventHandler) => {
-        eventHandler.apply(context, data);
+        eventHandler.apply(context, data2);
       });
     }), self;
   }
@@ -2974,8 +3633,8 @@ function closestElement(selector, base) {
   return __closestFrom(base);
 }
 function onTouchStart(event2) {
-  let swiper = this, document2 = getDocument(), window2 = getWindow(), data = swiper.touchEventsData;
-  data.evCache.push(event2);
+  let swiper = this, document2 = getDocument(), window2 = getWindow(), data2 = swiper.touchEventsData;
+  data2.evCache.push(event2);
   let {
     params,
     touches,
@@ -2987,7 +3646,7 @@ function onTouchStart(event2) {
   let e = event2;
   e.originalEvent && (e = e.originalEvent);
   let targetEl = e.target;
-  if (params.touchEventsTarget === "wrapper" && !swiper.wrapperEl.contains(targetEl) || "which" in e && e.which === 3 || "button" in e && e.button > 0 || data.isTouched && data.isMoved)
+  if (params.touchEventsTarget === "wrapper" && !swiper.wrapperEl.contains(targetEl) || "which" in e && e.which === 3 || "button" in e && e.button > 0 || data2.isTouched && data2.isMoved)
     return;
   let swipingClassHasValue = !!params.noSwipingClass && params.noSwipingClass !== "", eventPath = event2.composedPath ? event2.composedPath() : event2.path;
   swipingClassHasValue && e.target && e.target.shadowRoot && eventPath && (targetEl = eventPath[0]);
@@ -3005,20 +3664,20 @@ function onTouchStart(event2) {
       event2.preventDefault();
     else
       return;
-  Object.assign(data, {
+  Object.assign(data2, {
     isTouched: !0,
     isMoved: !1,
     allowTouchCallbacks: !0,
     isScrolling: void 0,
     startMoving: void 0
-  }), touches.startX = startX, touches.startY = startY, data.touchStartTime = now(), swiper.allowClick = !0, swiper.updateSize(), swiper.swipeDirection = void 0, params.threshold > 0 && (data.allowThresholdMove = !1);
+  }), touches.startX = startX, touches.startY = startY, data2.touchStartTime = now(), swiper.allowClick = !0, swiper.updateSize(), swiper.swipeDirection = void 0, params.threshold > 0 && (data2.allowThresholdMove = !1);
   let preventDefault = !0;
-  targetEl.matches(data.focusableElements) && (preventDefault = !1, targetEl.nodeName === "SELECT" && (data.isTouched = !1)), document2.activeElement && document2.activeElement.matches(data.focusableElements) && document2.activeElement !== targetEl && document2.activeElement.blur();
+  targetEl.matches(data2.focusableElements) && (preventDefault = !1, targetEl.nodeName === "SELECT" && (data2.isTouched = !1)), document2.activeElement && document2.activeElement.matches(data2.focusableElements) && document2.activeElement !== targetEl && document2.activeElement.blur();
   let shouldPreventDefault = preventDefault && swiper.allowTouchMove && params.touchStartPreventDefault;
   (params.touchStartForcePreventDefault || shouldPreventDefault) && !targetEl.isContentEditable && e.preventDefault(), params.freeMode && params.freeMode.enabled && swiper.freeMode && swiper.animating && !params.cssMode && swiper.freeMode.onTouchStart(), swiper.emit("touchStart", e);
 }
 function onTouchMove(event2) {
-  let document2 = getDocument(), swiper = this, data = swiper.touchEventsData, {
+  let document2 = getDocument(), swiper = this, data2 = swiper.touchEventsData, {
     params,
     touches,
     rtlTranslate: rtl,
@@ -3027,56 +3686,56 @@ function onTouchMove(event2) {
   if (!enabled || !params.simulateTouch && event2.pointerType === "mouse")
     return;
   let e = event2;
-  if (e.originalEvent && (e = e.originalEvent), !data.isTouched) {
-    data.startMoving && data.isScrolling && swiper.emit("touchMoveOpposite", e);
+  if (e.originalEvent && (e = e.originalEvent), !data2.isTouched) {
+    data2.startMoving && data2.isScrolling && swiper.emit("touchMoveOpposite", e);
     return;
   }
-  let pointerIndex = data.evCache.findIndex((cachedEv) => cachedEv.pointerId === e.pointerId);
-  pointerIndex >= 0 && (data.evCache[pointerIndex] = e);
-  let targetTouch = data.evCache.length > 1 ? data.evCache[0] : e, pageX = targetTouch.pageX, pageY = targetTouch.pageY;
+  let pointerIndex = data2.evCache.findIndex((cachedEv) => cachedEv.pointerId === e.pointerId);
+  pointerIndex >= 0 && (data2.evCache[pointerIndex] = e);
+  let targetTouch = data2.evCache.length > 1 ? data2.evCache[0] : e, pageX = targetTouch.pageX, pageY = targetTouch.pageY;
   if (e.preventedByNestedSwiper) {
     touches.startX = pageX, touches.startY = pageY;
     return;
   }
   if (!swiper.allowTouchMove) {
-    e.target.matches(data.focusableElements) || (swiper.allowClick = !1), data.isTouched && (Object.assign(touches, {
+    e.target.matches(data2.focusableElements) || (swiper.allowClick = !1), data2.isTouched && (Object.assign(touches, {
       startX: pageX,
       startY: pageY,
       prevX: swiper.touches.currentX,
       prevY: swiper.touches.currentY,
       currentX: pageX,
       currentY: pageY
-    }), data.touchStartTime = now());
+    }), data2.touchStartTime = now());
     return;
   }
   if (params.touchReleaseOnEdges && !params.loop) {
     if (swiper.isVertical()) {
       if (pageY < touches.startY && swiper.translate <= swiper.maxTranslate() || pageY > touches.startY && swiper.translate >= swiper.minTranslate()) {
-        data.isTouched = !1, data.isMoved = !1;
+        data2.isTouched = !1, data2.isMoved = !1;
         return;
       }
     } else if (pageX < touches.startX && swiper.translate <= swiper.maxTranslate() || pageX > touches.startX && swiper.translate >= swiper.minTranslate())
       return;
   }
-  if (document2.activeElement && e.target === document2.activeElement && e.target.matches(data.focusableElements)) {
-    data.isMoved = !0, swiper.allowClick = !1;
+  if (document2.activeElement && e.target === document2.activeElement && e.target.matches(data2.focusableElements)) {
+    data2.isMoved = !0, swiper.allowClick = !1;
     return;
   }
-  if (data.allowTouchCallbacks && swiper.emit("touchMove", e), e.targetTouches && e.targetTouches.length > 1)
+  if (data2.allowTouchCallbacks && swiper.emit("touchMove", e), e.targetTouches && e.targetTouches.length > 1)
     return;
   touches.currentX = pageX, touches.currentY = pageY;
   let diffX = touches.currentX - touches.startX, diffY = touches.currentY - touches.startY;
   if (swiper.params.threshold && Math.sqrt(diffX ** 2 + diffY ** 2) < swiper.params.threshold)
     return;
-  if (typeof data.isScrolling > "u") {
+  if (typeof data2.isScrolling > "u") {
     let touchAngle;
-    swiper.isHorizontal() && touches.currentY === touches.startY || swiper.isVertical() && touches.currentX === touches.startX ? data.isScrolling = !1 : diffX * diffX + diffY * diffY >= 25 && (touchAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)) * 180 / Math.PI, data.isScrolling = swiper.isHorizontal() ? touchAngle > params.touchAngle : 90 - touchAngle > params.touchAngle);
+    swiper.isHorizontal() && touches.currentY === touches.startY || swiper.isVertical() && touches.currentX === touches.startX ? data2.isScrolling = !1 : diffX * diffX + diffY * diffY >= 25 && (touchAngle = Math.atan2(Math.abs(diffY), Math.abs(diffX)) * 180 / Math.PI, data2.isScrolling = swiper.isHorizontal() ? touchAngle > params.touchAngle : 90 - touchAngle > params.touchAngle);
   }
-  if (data.isScrolling && swiper.emit("touchMoveOpposite", e), typeof data.startMoving > "u" && (touches.currentX !== touches.startX || touches.currentY !== touches.startY) && (data.startMoving = !0), data.isScrolling || swiper.zoom && swiper.params.zoom && swiper.params.zoom.enabled && data.evCache.length > 1) {
-    data.isTouched = !1;
+  if (data2.isScrolling && swiper.emit("touchMoveOpposite", e), typeof data2.startMoving > "u" && (touches.currentX !== touches.startX || touches.currentY !== touches.startY) && (data2.startMoving = !0), data2.isScrolling || swiper.zoom && swiper.params.zoom && swiper.params.zoom.enabled && data2.evCache.length > 1) {
+    data2.isTouched = !1;
     return;
   }
-  if (!data.startMoving)
+  if (!data2.startMoving)
     return;
   swiper.allowClick = !1, !params.cssMode && e.cancelable && e.preventDefault(), params.touchMoveStopPropagation && !params.nested && e.stopPropagation();
   let diff = swiper.isHorizontal() ? diffX : diffY, touchesDiff = swiper.isHorizontal() ? touches.currentX - touches.previousX : touches.currentY - touches.previousY;
@@ -3084,47 +3743,47 @@ function onTouchMove(event2) {
   let prevTouchesDirection = swiper.touchesDirection;
   swiper.swipeDirection = diff > 0 ? "prev" : "next", swiper.touchesDirection = touchesDiff > 0 ? "prev" : "next";
   let isLoop = swiper.params.loop && !params.cssMode, allowLoopFix = swiper.swipeDirection === "next" && swiper.allowSlideNext || swiper.swipeDirection === "prev" && swiper.allowSlidePrev;
-  if (!data.isMoved) {
+  if (!data2.isMoved) {
     if (isLoop && allowLoopFix && swiper.loopFix({
       direction: swiper.swipeDirection
-    }), data.startTranslate = swiper.getTranslate(), swiper.setTransition(0), swiper.animating) {
+    }), data2.startTranslate = swiper.getTranslate(), swiper.setTransition(0), swiper.animating) {
       let evt = new window.CustomEvent("transitionend", {
         bubbles: !0,
         cancelable: !0
       });
       swiper.wrapperEl.dispatchEvent(evt);
     }
-    data.allowMomentumBounce = !1, params.grabCursor && (swiper.allowSlideNext === !0 || swiper.allowSlidePrev === !0) && swiper.setGrabCursor(!0), swiper.emit("sliderFirstMove", e);
+    data2.allowMomentumBounce = !1, params.grabCursor && (swiper.allowSlideNext === !0 || swiper.allowSlidePrev === !0) && swiper.setGrabCursor(!0), swiper.emit("sliderFirstMove", e);
   }
   let loopFixed;
-  data.isMoved && prevTouchesDirection !== swiper.touchesDirection && isLoop && allowLoopFix && Math.abs(diff) >= 1 && (swiper.loopFix({
+  data2.isMoved && prevTouchesDirection !== swiper.touchesDirection && isLoop && allowLoopFix && Math.abs(diff) >= 1 && (swiper.loopFix({
     direction: swiper.swipeDirection,
     setTranslate: !0
-  }), loopFixed = !0), swiper.emit("sliderMove", e), data.isMoved = !0, data.currentTranslate = diff + data.startTranslate;
+  }), loopFixed = !0), swiper.emit("sliderMove", e), data2.isMoved = !0, data2.currentTranslate = diff + data2.startTranslate;
   let disableParentSwiper = !0, resistanceRatio = params.resistanceRatio;
-  if (params.touchReleaseOnEdges && (resistanceRatio = 0), diff > 0 ? (isLoop && allowLoopFix && !loopFixed && data.currentTranslate > (params.centeredSlides ? swiper.minTranslate() - swiper.size / 2 : swiper.minTranslate()) && swiper.loopFix({
+  if (params.touchReleaseOnEdges && (resistanceRatio = 0), diff > 0 ? (isLoop && allowLoopFix && !loopFixed && data2.currentTranslate > (params.centeredSlides ? swiper.minTranslate() - swiper.size / 2 : swiper.minTranslate()) && swiper.loopFix({
     direction: "prev",
     setTranslate: !0,
     activeSlideIndex: 0
-  }), data.currentTranslate > swiper.minTranslate() && (disableParentSwiper = !1, params.resistance && (data.currentTranslate = swiper.minTranslate() - 1 + (-swiper.minTranslate() + data.startTranslate + diff) ** resistanceRatio))) : diff < 0 && (isLoop && allowLoopFix && !loopFixed && data.currentTranslate < (params.centeredSlides ? swiper.maxTranslate() + swiper.size / 2 : swiper.maxTranslate()) && swiper.loopFix({
+  }), data2.currentTranslate > swiper.minTranslate() && (disableParentSwiper = !1, params.resistance && (data2.currentTranslate = swiper.minTranslate() - 1 + (-swiper.minTranslate() + data2.startTranslate + diff) ** resistanceRatio))) : diff < 0 && (isLoop && allowLoopFix && !loopFixed && data2.currentTranslate < (params.centeredSlides ? swiper.maxTranslate() + swiper.size / 2 : swiper.maxTranslate()) && swiper.loopFix({
     direction: "next",
     setTranslate: !0,
     activeSlideIndex: swiper.slides.length - (params.slidesPerView === "auto" ? swiper.slidesPerViewDynamic() : Math.ceil(parseFloat(params.slidesPerView, 10)))
-  }), data.currentTranslate < swiper.maxTranslate() && (disableParentSwiper = !1, params.resistance && (data.currentTranslate = swiper.maxTranslate() + 1 - (swiper.maxTranslate() - data.startTranslate - diff) ** resistanceRatio))), disableParentSwiper && (e.preventedByNestedSwiper = !0), !swiper.allowSlideNext && swiper.swipeDirection === "next" && data.currentTranslate < data.startTranslate && (data.currentTranslate = data.startTranslate), !swiper.allowSlidePrev && swiper.swipeDirection === "prev" && data.currentTranslate > data.startTranslate && (data.currentTranslate = data.startTranslate), !swiper.allowSlidePrev && !swiper.allowSlideNext && (data.currentTranslate = data.startTranslate), params.threshold > 0)
-    if (Math.abs(diff) > params.threshold || data.allowThresholdMove) {
-      if (!data.allowThresholdMove) {
-        data.allowThresholdMove = !0, touches.startX = touches.currentX, touches.startY = touches.currentY, data.currentTranslate = data.startTranslate, touches.diff = swiper.isHorizontal() ? touches.currentX - touches.startX : touches.currentY - touches.startY;
+  }), data2.currentTranslate < swiper.maxTranslate() && (disableParentSwiper = !1, params.resistance && (data2.currentTranslate = swiper.maxTranslate() + 1 - (swiper.maxTranslate() - data2.startTranslate - diff) ** resistanceRatio))), disableParentSwiper && (e.preventedByNestedSwiper = !0), !swiper.allowSlideNext && swiper.swipeDirection === "next" && data2.currentTranslate < data2.startTranslate && (data2.currentTranslate = data2.startTranslate), !swiper.allowSlidePrev && swiper.swipeDirection === "prev" && data2.currentTranslate > data2.startTranslate && (data2.currentTranslate = data2.startTranslate), !swiper.allowSlidePrev && !swiper.allowSlideNext && (data2.currentTranslate = data2.startTranslate), params.threshold > 0)
+    if (Math.abs(diff) > params.threshold || data2.allowThresholdMove) {
+      if (!data2.allowThresholdMove) {
+        data2.allowThresholdMove = !0, touches.startX = touches.currentX, touches.startY = touches.currentY, data2.currentTranslate = data2.startTranslate, touches.diff = swiper.isHorizontal() ? touches.currentX - touches.startX : touches.currentY - touches.startY;
         return;
       }
     } else {
-      data.currentTranslate = data.startTranslate;
+      data2.currentTranslate = data2.startTranslate;
       return;
     }
-  !params.followFinger || params.cssMode || ((params.freeMode && params.freeMode.enabled && swiper.freeMode || params.watchSlidesProgress) && (swiper.updateActiveIndex(), swiper.updateSlidesClasses()), params.freeMode && params.freeMode.enabled && swiper.freeMode && swiper.freeMode.onTouchMove(), swiper.updateProgress(data.currentTranslate), swiper.setTranslate(data.currentTranslate));
+  !params.followFinger || params.cssMode || ((params.freeMode && params.freeMode.enabled && swiper.freeMode || params.watchSlidesProgress) && (swiper.updateActiveIndex(), swiper.updateSlidesClasses()), params.freeMode && params.freeMode.enabled && swiper.freeMode && swiper.freeMode.onTouchMove(), swiper.updateProgress(data2.currentTranslate), swiper.setTranslate(data2.currentTranslate));
 }
 function onTouchEnd(event2) {
-  let swiper = this, data = swiper.touchEventsData, pointerIndex = data.evCache.findIndex((cachedEv) => cachedEv.pointerId === event2.pointerId);
-  if (pointerIndex >= 0 && data.evCache.splice(pointerIndex, 1), ["pointercancel", "pointerout", "pointerleave", "contextmenu"].includes(event2.type) && !(["pointercancel", "contextmenu"].includes(event2.type) && (swiper.browser.isSafari || swiper.browser.isWebView)))
+  let swiper = this, data2 = swiper.touchEventsData, pointerIndex = data2.evCache.findIndex((cachedEv) => cachedEv.pointerId === event2.pointerId);
+  if (pointerIndex >= 0 && data2.evCache.splice(pointerIndex, 1), ["pointercancel", "pointerout", "pointerleave", "contextmenu"].includes(event2.type) && !(["pointercancel", "contextmenu"].includes(event2.type) && (swiper.browser.isSafari || swiper.browser.isWebView)))
     return;
   let {
     params,
@@ -3136,25 +3795,25 @@ function onTouchEnd(event2) {
   if (!enabled || !params.simulateTouch && event2.pointerType === "mouse")
     return;
   let e = event2;
-  if (e.originalEvent && (e = e.originalEvent), data.allowTouchCallbacks && swiper.emit("touchEnd", e), data.allowTouchCallbacks = !1, !data.isTouched) {
-    data.isMoved && params.grabCursor && swiper.setGrabCursor(!1), data.isMoved = !1, data.startMoving = !1;
+  if (e.originalEvent && (e = e.originalEvent), data2.allowTouchCallbacks && swiper.emit("touchEnd", e), data2.allowTouchCallbacks = !1, !data2.isTouched) {
+    data2.isMoved && params.grabCursor && swiper.setGrabCursor(!1), data2.isMoved = !1, data2.startMoving = !1;
     return;
   }
-  params.grabCursor && data.isMoved && data.isTouched && (swiper.allowSlideNext === !0 || swiper.allowSlidePrev === !0) && swiper.setGrabCursor(!1);
-  let touchEndTime = now(), timeDiff = touchEndTime - data.touchStartTime;
+  params.grabCursor && data2.isMoved && data2.isTouched && (swiper.allowSlideNext === !0 || swiper.allowSlidePrev === !0) && swiper.setGrabCursor(!1);
+  let touchEndTime = now(), timeDiff = touchEndTime - data2.touchStartTime;
   if (swiper.allowClick) {
     let pathTree = e.path || e.composedPath && e.composedPath();
-    swiper.updateClickedSlide(pathTree && pathTree[0] || e.target, pathTree), swiper.emit("tap click", e), timeDiff < 300 && touchEndTime - data.lastClickTime < 300 && swiper.emit("doubleTap doubleClick", e);
+    swiper.updateClickedSlide(pathTree && pathTree[0] || e.target, pathTree), swiper.emit("tap click", e), timeDiff < 300 && touchEndTime - data2.lastClickTime < 300 && swiper.emit("doubleTap doubleClick", e);
   }
-  if (data.lastClickTime = now(), nextTick(() => {
+  if (data2.lastClickTime = now(), nextTick(() => {
     swiper.destroyed || (swiper.allowClick = !0);
-  }), !data.isTouched || !data.isMoved || !swiper.swipeDirection || touches.diff === 0 || data.currentTranslate === data.startTranslate) {
-    data.isTouched = !1, data.isMoved = !1, data.startMoving = !1;
+  }), !data2.isTouched || !data2.isMoved || !swiper.swipeDirection || touches.diff === 0 || data2.currentTranslate === data2.startTranslate) {
+    data2.isTouched = !1, data2.isMoved = !1, data2.startMoving = !1;
     return;
   }
-  data.isTouched = !1, data.isMoved = !1, data.startMoving = !1;
+  data2.isTouched = !1, data2.isMoved = !1, data2.startMoving = !1;
   let currentPos;
-  if (params.followFinger ? currentPos = rtl ? swiper.translate : -swiper.translate : currentPos = -data.currentTranslate, params.cssMode)
+  if (params.followFinger ? currentPos = rtl ? swiper.translate : -swiper.translate : currentPos = -data2.currentTranslate, params.cssMode)
     return;
   if (params.freeMode && params.freeMode.enabled) {
     swiper.freeMode.onTouchEnd({
@@ -4162,19 +4821,19 @@ function Mousewheel(_ref) {
     if (!swiper.mouseEntered && !targetElContainsTarget && !params.releaseOnEdges)
       return !0;
     e.originalEvent && (e = e.originalEvent);
-    let delta = 0, rtlFactor = swiper.rtlTranslate ? -1 : 1, data = normalize(e);
+    let delta = 0, rtlFactor = swiper.rtlTranslate ? -1 : 1, data2 = normalize(e);
     if (params.forceToAxis)
       if (swiper.isHorizontal())
-        if (Math.abs(data.pixelX) > Math.abs(data.pixelY))
-          delta = -data.pixelX * rtlFactor;
+        if (Math.abs(data2.pixelX) > Math.abs(data2.pixelY))
+          delta = -data2.pixelX * rtlFactor;
         else
           return !0;
-      else if (Math.abs(data.pixelY) > Math.abs(data.pixelX))
-        delta = -data.pixelY;
+      else if (Math.abs(data2.pixelY) > Math.abs(data2.pixelX))
+        delta = -data2.pixelY;
       else
         return !0;
     else
-      delta = Math.abs(data.pixelX) > Math.abs(data.pixelY) ? -data.pixelX * rtlFactor : -data.pixelY;
+      delta = Math.abs(data2.pixelX) > Math.abs(data2.pixelY) ? -data2.pixelX * rtlFactor : -data2.pixelY;
     if (delta === 0)
       return !0;
     params.invert && (delta = -delta);
@@ -5824,13 +6483,13 @@ function freeMode(_ref) {
     if (swiper.params.cssMode)
       return;
     let {
-      touchEventsData: data,
+      touchEventsData: data2,
       touches
     } = swiper;
-    data.velocities.length === 0 && data.velocities.push({
+    data2.velocities.length === 0 && data2.velocities.push({
       position: touches[swiper.isHorizontal() ? "startX" : "startY"],
-      time: data.touchStartTime
-    }), data.velocities.push({
+      time: data2.touchStartTime
+    }), data2.velocities.push({
       position: touches[swiper.isHorizontal() ? "currentX" : "currentY"],
       time: now()
     });
@@ -5846,8 +6505,8 @@ function freeMode(_ref) {
       wrapperEl,
       rtlTranslate: rtl,
       snapGrid,
-      touchEventsData: data
-    } = swiper, timeDiff = now() - data.touchStartTime;
+      touchEventsData: data2
+    } = swiper, timeDiff = now() - data2.touchStartTime;
     if (currentPos < -swiper.minTranslate()) {
       swiper.slideTo(swiper.activeIndex);
       return;
@@ -5857,19 +6516,19 @@ function freeMode(_ref) {
       return;
     }
     if (params.freeMode.momentum) {
-      if (data.velocities.length > 1) {
-        let lastMoveEvent = data.velocities.pop(), velocityEvent = data.velocities.pop(), distance = lastMoveEvent.position - velocityEvent.position, time = lastMoveEvent.time - velocityEvent.time;
+      if (data2.velocities.length > 1) {
+        let lastMoveEvent = data2.velocities.pop(), velocityEvent = data2.velocities.pop(), distance = lastMoveEvent.position - velocityEvent.position, time = lastMoveEvent.time - velocityEvent.time;
         swiper.velocity = distance / time, swiper.velocity /= 2, Math.abs(swiper.velocity) < params.freeMode.minimumVelocity && (swiper.velocity = 0), (time > 150 || now() - lastMoveEvent.time > 300) && (swiper.velocity = 0);
       } else
         swiper.velocity = 0;
-      swiper.velocity *= params.freeMode.momentumVelocityRatio, data.velocities.length = 0;
+      swiper.velocity *= params.freeMode.momentumVelocityRatio, data2.velocities.length = 0;
       let momentumDuration = 1e3 * params.freeMode.momentumRatio, momentumDistance = swiper.velocity * momentumDuration, newPosition = swiper.translate + momentumDistance;
       rtl && (newPosition = -newPosition);
       let doBounce = !1, afterBouncePosition, bounceAmount = Math.abs(swiper.velocity) * 20 * params.freeMode.momentumBounceRatio, needsLoopFix;
       if (newPosition < swiper.maxTranslate())
-        params.freeMode.momentumBounce ? (newPosition + swiper.maxTranslate() < -bounceAmount && (newPosition = swiper.maxTranslate() - bounceAmount), afterBouncePosition = swiper.maxTranslate(), doBounce = !0, data.allowMomentumBounce = !0) : newPosition = swiper.maxTranslate(), params.loop && params.centeredSlides && (needsLoopFix = !0);
+        params.freeMode.momentumBounce ? (newPosition + swiper.maxTranslate() < -bounceAmount && (newPosition = swiper.maxTranslate() - bounceAmount), afterBouncePosition = swiper.maxTranslate(), doBounce = !0, data2.allowMomentumBounce = !0) : newPosition = swiper.maxTranslate(), params.loop && params.centeredSlides && (needsLoopFix = !0);
       else if (newPosition > swiper.minTranslate())
-        params.freeMode.momentumBounce ? (newPosition - swiper.minTranslate() > bounceAmount && (newPosition = swiper.minTranslate() + bounceAmount), afterBouncePosition = swiper.minTranslate(), doBounce = !0, data.allowMomentumBounce = !0) : newPosition = swiper.minTranslate(), params.loop && params.centeredSlides && (needsLoopFix = !0);
+        params.freeMode.momentumBounce ? (newPosition - swiper.minTranslate() > bounceAmount && (newPosition = swiper.minTranslate() + bounceAmount), afterBouncePosition = swiper.minTranslate(), doBounce = !0, data2.allowMomentumBounce = !0) : newPosition = swiper.minTranslate(), params.loop && params.centeredSlides && (needsLoopFix = !0);
       else if (params.freeMode.sticky) {
         let nextSlide;
         for (let j = 0; j < snapGrid.length; j += 1)
@@ -5891,7 +6550,7 @@ function freeMode(_ref) {
         return;
       }
       params.freeMode.momentumBounce && doBounce ? (swiper.updateProgress(afterBouncePosition), swiper.setTransition(momentumDuration), swiper.setTranslate(newPosition), swiper.transitionStart(!0, swiper.swipeDirection), swiper.animating = !0, elementTransitionEnd(wrapperEl, () => {
-        !swiper || swiper.destroyed || !data.allowMomentumBounce || (emit("momentumBounce"), swiper.setTransition(params.speed), setTimeout(() => {
+        !swiper || swiper.destroyed || !data2.allowMomentumBounce || (emit("momentumBounce"), swiper.setTransition(params.speed), setTimeout(() => {
           swiper.setTranslate(afterBouncePosition), elementTransitionEnd(wrapperEl, () => {
             !swiper || swiper.destroyed || swiper.transitionEnd();
           });
@@ -6479,27 +7138,27 @@ function EffectCreative(_ref) {
         isCenteredSlides || (originalProgress = Math.min(Math.max(slideEl.originalProgress, -params.limitProgress), params.limitProgress));
         let offset = slideEl.swiperSlideOffset, t = [swiper.params.cssMode ? -offset - swiper.translate : -offset, 0, 0], r = [0, 0, 0], custom = !1;
         swiper.isHorizontal() || (t[1] = t[0], t[0] = 0);
-        let data = {
+        let data2 = {
           translate: [0, 0, 0],
           rotate: [0, 0, 0],
           scale: 1,
           opacity: 1
         };
-        progress < 0 ? (data = params.next, custom = !0) : progress > 0 && (data = params.prev, custom = !0), t.forEach((value, index) => {
-          t[index] = `calc(${value}px + (${getTranslateValue(data.translate[index])} * ${Math.abs(progress * multiplier)}))`;
+        progress < 0 ? (data2 = params.next, custom = !0) : progress > 0 && (data2 = params.prev, custom = !0), t.forEach((value, index) => {
+          t[index] = `calc(${value}px + (${getTranslateValue(data2.translate[index])} * ${Math.abs(progress * multiplier)}))`;
         }), r.forEach((value, index) => {
-          r[index] = data.rotate[index] * Math.abs(progress * multiplier);
+          r[index] = data2.rotate[index] * Math.abs(progress * multiplier);
         }), slideEl.style.zIndex = -Math.abs(Math.round(slideProgress)) + slides.length;
-        let translateString = t.join(", "), rotateString = `rotateX(${r[0]}deg) rotateY(${r[1]}deg) rotateZ(${r[2]}deg)`, scaleString = originalProgress < 0 ? `scale(${1 + (1 - data.scale) * originalProgress * multiplier})` : `scale(${1 - (1 - data.scale) * originalProgress * multiplier})`, opacityString = originalProgress < 0 ? 1 + (1 - data.opacity) * originalProgress * multiplier : 1 - (1 - data.opacity) * originalProgress * multiplier, transform = `translate3d(${translateString}) ${rotateString} ${scaleString}`;
-        if (custom && data.shadow || !custom) {
+        let translateString = t.join(", "), rotateString = `rotateX(${r[0]}deg) rotateY(${r[1]}deg) rotateZ(${r[2]}deg)`, scaleString = originalProgress < 0 ? `scale(${1 + (1 - data2.scale) * originalProgress * multiplier})` : `scale(${1 - (1 - data2.scale) * originalProgress * multiplier})`, opacityString = originalProgress < 0 ? 1 + (1 - data2.opacity) * originalProgress * multiplier : 1 - (1 - data2.opacity) * originalProgress * multiplier, transform = `translate3d(${translateString}) ${rotateString} ${scaleString}`;
+        if (custom && data2.shadow || !custom) {
           let shadowEl = slideEl.querySelector(".swiper-slide-shadow");
-          if (!shadowEl && data.shadow && (shadowEl = createShadow("creative", slideEl)), shadowEl) {
+          if (!shadowEl && data2.shadow && (shadowEl = createShadow("creative", slideEl)), shadowEl) {
             let shadowOpacity = params.shadowPerProgress ? progress * (1 / params.limitProgress) : progress;
             shadowEl.style.opacity = Math.min(Math.max(Math.abs(shadowOpacity), 0), 1);
           }
         }
         let targetEl = effectTarget(params, slideEl);
-        targetEl.style.transform = transform, targetEl.style.opacity = opacityString, data.origin && (targetEl.style.transformOrigin = data.origin);
+        targetEl.style.transform = transform, targetEl.style.opacity = opacityString, data2.origin && (targetEl.style.transformOrigin = data2.origin);
       }
     },
     setTransition: (duration) => {
@@ -7025,7 +7684,7 @@ typeof window < "u" && (window.SwiperElementRegisterParams = (params) => {
 });
 
 // app/components/PortfolioSlider.tsx
-var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime"), sliderItems = [
+var import_jsx_dev_runtime28 = require("react/jsx-dev-runtime"), sliderItems = [
   {
     title: "Legends",
     image: legends_slider_default,
@@ -7047,26 +7706,26 @@ var import_jsx_dev_runtime22 = require("react/jsx-dev-runtime"), sliderItems = [
 ];
 register();
 function PortfolioSlider() {
-  let swiperElRef = (0, import_react11.useRef)(null), [currentIndex, setIndex] = (0, import_react11.useState)(0);
-  return (0, import_react11.useEffect)(() => {
+  let swiperElRef = (0, import_react13.useRef)(null), [currentIndex, setIndex] = (0, import_react13.useState)(0);
+  return (0, import_react13.useEffect)(() => {
     swiperElRef.current.addEventListener("slidechange", (e) => {
       setIndex(e.detail[0].realIndex);
     });
-  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
+  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
     "div",
     {
       style: { backgroundImage: `url(${slider_bg_bottom_default})` },
       className: "bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 lg:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory",
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
           "swiper-container",
           {
             ref: swiperElRef,
             "slides-per-view": "1",
             loop: "true",
             children: sliderItems.map(
-              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16", children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
+              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
                   fileName: "app/components/PortfolioSlider.tsx",
                   lineNumber: 66,
                   columnNumber: 17
@@ -7075,18 +7734,18 @@ function PortfolioSlider() {
                   lineNumber: 65,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 69,
                     columnNumber: 17
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 70,
                     columnNumber: 17
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 71,
                     columnNumber: 17
@@ -7096,13 +7755,13 @@ function PortfolioSlider() {
                   lineNumber: 68,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex flex-col gap-8 lg:pl-32", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("p", { className: "text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "flex flex-col gap-8 lg:pl-32", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("p", { className: "text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 74,
                     columnNumber: 17
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("a", { className: "uppercase underline text-sm tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full", href: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("a", { className: "uppercase underline text-sm tracking-wide hover-highlight hover:highlighted", href: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 76,
                     columnNumber: 19
@@ -7116,18 +7775,18 @@ function PortfolioSlider() {
                   lineNumber: 73,
                   columnNumber: 15
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("div", { className: "flex lg:hidden text-xs gap-4 top-0 items-center w-full", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "flex lg:hidden text-xs gap-4 top-0 items-center w-full", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 80,
                     columnNumber: 17
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 81,
                     columnNumber: 17
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 82,
                     columnNumber: 17
@@ -7157,12 +7816,12 @@ function PortfolioSlider() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
           "button",
           {
             onClick: () => swiperElRef.current.swiper.slideNext(),
             className: "border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform md:translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara",
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(Arrow_default, {}, void 0, !1, {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Arrow_default, {}, void 0, !1, {
               fileName: "app/components/PortfolioSlider.tsx",
               lineNumber: 93,
               columnNumber: 9
@@ -7177,7 +7836,7 @@ function PortfolioSlider() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime22.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
           "div",
           {
             className: "hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 md:flex items-center justify-center absolute right-0 top-1/2",
@@ -7206,13 +7865,13 @@ function PortfolioSlider() {
 }
 
 // app/components/OfferingsAccordion.tsx
-var import_react12 = require("react");
+var import_react14 = require("react");
 
 // app/assets/offerings-accordion-background.jpeg
 var offerings_accordion_background_default = "/build/_assets/offerings-accordion-background-EQT2VSAP.jpeg";
 
 // app/components/OfferingsAccordion.tsx
-var import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), offerings = [
+var import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime29 = require("react/jsx-dev-runtime"), offerings = [
   {
     title: "Front-End",
     listItems: [
@@ -7251,10 +7910,10 @@ var import_react_transition_group2 = require("react-transition-group"), import_j
   }
 ], Accordion = ({ label, children, id, isOpen, toggleAccordion }) => {
   var _a;
-  let [currentHeight, setHeight] = (0, import_react12.useState)(0), accordionRef = (0, import_react12.useRef)(null), clickHandler = () => {
+  let [currentHeight, setHeight] = (0, import_react14.useState)(0), accordionRef = (0, import_react14.useRef)(null), clickHandler = () => {
     toggleAccordion(isOpen ? null : id);
   };
-  (0, import_react12.useEffect)(() => {
+  (0, import_react14.useEffect)(() => {
     var _a2;
     if (isOpen) {
       setHeight(((_a2 = accordionRef == null ? void 0 : accordionRef.current) == null ? void 0 : _a2.scrollHeight) ?? 0);
@@ -7270,14 +7929,14 @@ var import_react_transition_group2 = require("react-transition-group"), import_j
     exited: { opacity: 0, height: 0 },
     unmounted: {}
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(import_jsx_dev_runtime23.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("h3", { className: "text-3xl md:text-7xl font-black relative max-md:pl-16 py-2", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(Star_default, { className: `absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && "rotate-90"}` }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(import_jsx_dev_runtime29.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("h3", { className: "text-3xl md:text-7xl font-black relative max-md:pl-16 py-2", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(Star_default, { className: `absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && "rotate-90"}` }, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 82,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("button", { className: `${isOpen ? "text-wattle" : "stroke text-[#f9df5e1a]"} transition duration-500 hover:text-wattle`, id: `controls-${id}`, "aria-controls": `contents-${id}`, "aria-expanded": isOpen, onClick: clickHandler, children: label }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("button", { className: `${isOpen ? "text-wattle" : "stroke text-[#f9df5e1a]"} transition duration-500 hover:text-wattle`, id: `controls-${id}`, "aria-controls": `contents-${id}`, "aria-expanded": isOpen, onClick: clickHandler, children: label }, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 83,
         columnNumber: 9
@@ -7287,7 +7946,7 @@ var import_react_transition_group2 = require("react-transition-group"), import_j
       lineNumber: 81,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(import_react_transition_group2.Transition, { nodeRef: accordionRef, in: isOpen, timeout: isOpen ? 0 : 500, appear: !0, unmountOnExit: !0, children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(import_react_transition_group2.Transition, { nodeRef: accordionRef, in: isOpen, timeout: isOpen ? 0 : 500, appear: !0, unmountOnExit: !0, children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(
       "div",
       {
         style: {
@@ -7322,17 +7981,17 @@ var import_react_transition_group2 = require("react-transition-group"), import_j
   }, this);
 };
 function OfferingsAccordion() {
-  let [currentlyActive, setCurrentlyActive] = (0, import_react12.useState)(null);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "bg-no-repeat max-md:pb-32 py-52 z-[0] relative", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
+  let [currentlyActive, setCurrentlyActive] = (0, import_react14.useState)(null);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "bg-no-repeat max-md:pb-32 py-52 z-[0] relative", children: /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
       "We work with ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("br", {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 115,
         columnNumber: 24
       }, this),
       " fast-growing brands with ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("br", {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 115,
         columnNumber: 55
@@ -7343,10 +8002,10 @@ function OfferingsAccordion() {
       lineNumber: 114,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "flex flex-col", children: offerings.map(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("div", { className: "flex flex-col", children: offerings.map(
       ({ title, listItems }) => {
-        let accordionKey = (0, import_react12.useId)();
-        return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(Accordion, { toggleAccordion: setCurrentlyActive, id: accordionKey, isOpen: accordionKey === currentlyActive, label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, accordionKey, !1, {
+        let accordionKey = (0, import_react14.useId)();
+        return /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)(Accordion, { toggleAccordion: setCurrentlyActive, id: accordionKey, isOpen: accordionKey === currentlyActive, label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime29.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, accordionKey, !1, {
           fileName: "app/components/OfferingsAccordion.tsx",
           lineNumber: 124,
           columnNumber: 21
@@ -7377,8 +8036,8 @@ function OfferingsAccordion() {
 }
 
 // app/components/Marquee.tsx
-var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_jsx_dev_runtime24.Fragment, { children: [
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
+var import_jsx_dev_runtime30 = require("react/jsx-dev-runtime"), Logos = () => /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(import_jsx_dev_runtime30.Fragment, { children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 6,
     columnNumber: 7
@@ -7387,7 +8046,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 5,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 9,
     columnNumber: 7
@@ -7396,7 +8055,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 8,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 12,
     columnNumber: 7
@@ -7405,7 +8064,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 11,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 15,
     columnNumber: 7
@@ -7414,7 +8073,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 14,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(Paka_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Paka_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 18,
     columnNumber: 7
@@ -7423,7 +8082,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 17,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 21,
     columnNumber: 7
@@ -7432,7 +8091,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 20,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 24,
     columnNumber: 7
@@ -7441,7 +8100,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 23,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 27,
     columnNumber: 7
@@ -7450,7 +8109,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 26,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 30,
     columnNumber: 7
@@ -7459,7 +8118,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 29,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 33,
     columnNumber: 6
@@ -7468,7 +8127,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 32,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(Paka_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Paka_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 36,
     columnNumber: 7
@@ -7477,7 +8136,7 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 35,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 39,
     columnNumber: 7
@@ -7492,9 +8151,9 @@ var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), Logos = () => /
   columnNumber: 3
 }, this);
 function Marquee() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-screen overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-[200vw] md:w-screen relative min-h-[250px] flex items-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "[&_svg]:max-h-full flex items-center absolute top-1/2 transform -translate-y-1/2 left-0 marquee w-[800vw] md:w-[400vw] hover:paused", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(Logos, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "w-screen overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "w-[200vw] md:w-screen relative min-h-[250px] flex items-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "[&_svg]:max-h-full flex items-center absolute top-1/2 transform -translate-y-1/2 left-0 marquee w-[800vw] md:w-[400vw] hover:paused", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Logos, {}, void 0, !1, {
         fileName: "app/components/Marquee.tsx",
         lineNumber: 50,
         columnNumber: 13
@@ -7503,7 +8162,7 @@ function Marquee() {
         lineNumber: 49,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(Logos, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Logos, {}, void 0, !1, {
         fileName: "app/components/Marquee.tsx",
         lineNumber: 53,
         columnNumber: 13
@@ -7521,7 +8180,7 @@ function Marquee() {
       lineNumber: 47,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("hr", { className: "border-t border-tuatara border-dashed" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)("hr", { className: "border-t border-tuatara border-dashed" }, void 0, !1, {
       fileName: "app/components/Marquee.tsx",
       lineNumber: 58,
       columnNumber: 9
@@ -7538,18 +8197,18 @@ function Marquee() {
 }
 
 // app/components/Footer/Footer.tsx
-var import_react14 = require("react");
+var import_react16 = require("react");
 
 // app/components/Footer/components/FooterInfo.tsx
-var import_react13 = require("react");
-var import_jsx_dev_runtime25 = require("react/jsx-dev-runtime");
+var import_react15 = require("react");
+var import_jsx_dev_runtime31 = require("react/jsx-dev-runtime");
 function FooterInfo() {
-  let toggleModal = (0, import_react13.useContext)(ModalContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "bg-ivory py-16 md:pb-32 text-xs", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "container flex flex-col gap-14 relative", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(
+  let toggleModal = (0, import_react15.useContext)(ModalContext);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { className: "bg-ivory py-16 md:pb-32 text-xs", children: /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("div", { className: "container flex flex-col gap-14 relative", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)(
       "button",
       {
-        className: "z-[0] uppercase underline tracking-wide py-2 relative after:absolute after:left-0 after:top-0 after:h-full after:-z-[1] after:w-0 after:bg-energyYellow after:transition-all after:duration-200 w-max hover:after:w-full",
+        className: "uppercase underline tracking-wide hover-highlight hover:highlighted",
         onClick: () => toggleModal ? toggleModal() : null,
         children: "CONTACT"
       },
@@ -7562,7 +8221,7 @@ function FooterInfo() {
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("span", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime31.jsxDEV)("span", { children: [
       "\xA9 ",
       (/* @__PURE__ */ new Date()).getFullYear(),
       " / SPARKY / OPERATING WORLDWIDE"
@@ -7583,14 +8242,14 @@ function FooterInfo() {
 }
 
 // app/components/Footer/Footer.tsx
-var import_jsx_dev_runtime26 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime");
 function Footer() {
-  let toggleModal = (0, import_react14.useContext)(ModalContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(import_jsx_dev_runtime26.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "bg-ivory py-52", children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "container flex flex-col items-center justify-center gap-14", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("strong", { className: "h1 text-5xl text-center", children: [
+  let toggleModal = (0, import_react16.useContext)(ModalContext);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(import_jsx_dev_runtime32.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "bg-ivory py-52", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "container flex flex-col items-center justify-center gap-14", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("strong", { className: "h1 text-5xl text-center", children: [
         "Take your Shopify site to ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("br", {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("br", {}, void 0, !1, {
           fileName: "app/components/Footer/Footer.tsx",
           lineNumber: 12,
           columnNumber: 81
@@ -7601,7 +8260,7 @@ function Footer() {
         lineNumber: 12,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("button", { className: "button--secondary", onClick: () => toggleModal ? toggleModal() : null, children: "Get in Touch" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("button", { className: "button--secondary", onClick: () => toggleModal ? toggleModal() : null, children: "Get in Touch" }, void 0, !1, {
         fileName: "app/components/Footer/Footer.tsx",
         lineNumber: 13,
         columnNumber: 11
@@ -7615,7 +8274,7 @@ function Footer() {
       lineNumber: 10,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)("hr", { className: "border-0 border-b border-dashed border-current" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("hr", { className: "border-0 border-b border-dashed border-current" }, void 0, !1, {
       fileName: "app/components/Footer/Footer.tsx",
       lineNumber: 19,
       columnNumber: 9
@@ -7624,7 +8283,7 @@ function Footer() {
       lineNumber: 18,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime26.jsxDEV)(FooterInfo, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)(FooterInfo, {}, void 0, !1, {
       fileName: "app/components/Footer/Footer.tsx",
       lineNumber: 21,
       columnNumber: 7
@@ -7637,48 +8296,48 @@ function Footer() {
 }
 
 // app/routes/_index.tsx
-var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime"), meta = () => [
+var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime"), meta = () => [
   { title: "Sparky | Home" },
   { name: "description", content: "We design, build, & optimize high-converting eCommerce sites that glow with brand personality." }
 ];
-function Index({ toggleModal }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(import_jsx_dev_runtime27.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "w-screen max-md:overflow-x-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Hero, {}, void 0, !1, {
+function Index4({ toggleModal }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_jsx_dev_runtime33.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "w-screen max-md:overflow-x-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(Hero, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 27,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 28,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 29,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(PortfolioList, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(PortfolioList, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 30,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 31,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 32,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Marquee, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(Marquee, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 33,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)(Footer, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(Footer, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 34,
       columnNumber: 11
@@ -7701,11 +8360,11 @@ function Index({ toggleModal }) {
 // app/routes/$.tsx
 var __exports = {};
 __export(__exports, {
-  default: () => Index2
+  default: () => Index5
 });
-var import_jsx_dev_runtime28 = require("react/jsx-dev-runtime");
-function Index2() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
+var import_jsx_dev_runtime34 = require("react/jsx-dev-runtime");
+function Index5() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
     fileName: "app/routes/$.tsx",
     lineNumber: 5,
     columnNumber: 9
@@ -7721,7 +8380,7 @@ function Index2() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7OWJHQS2.js", imports: ["/build/_shared/chunk-32DI4ZQ2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-KE47TRUX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "c7a753da", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695832146750 }, url: "/build/manifest-C7A753DA.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-Q4FSTICI.js", imports: ["/build/_shared/chunk-CW6TIO6L.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-Z44D45GK.js", imports: ["/build/_shared/chunk-76MJMSFO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-JC3IHVBO.js", imports: ["/build/_shared/chunk-76MJMSFO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "be817398", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695853288658 }, url: "/build/manifest-BE817398.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -7732,6 +8391,30 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
+  },
+  "routes/portfolio.$client": {
+    id: "routes/portfolio.$client",
+    parentId: "routes/portfolio",
+    path: ":client",
+    index: void 0,
+    caseSensitive: void 0,
+    module: portfolio_client_exports
+  },
+  "routes/portfolio._index": {
+    id: "routes/portfolio._index",
+    parentId: "routes/portfolio",
+    path: void 0,
+    index: !0,
+    caseSensitive: void 0,
+    module: portfolio_index_exports
+  },
+  "routes/portfolio": {
+    id: "routes/portfolio",
+    parentId: "root",
+    path: "portfolio",
+    index: void 0,
+    caseSensitive: void 0,
+    module: portfolio_exports
   },
   "routes/_index": {
     id: "routes/_index",
