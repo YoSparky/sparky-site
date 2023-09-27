@@ -52,7 +52,6 @@ type AccordionProps = {
 
 const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionProps) => {
   const [currentHeight, setHeight] = useState(0);
-  
   const accordionRef = useRef(null);
   
   const clickHandler = () => {
@@ -68,17 +67,41 @@ const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionP
     setHeight(0);
   }, [isOpen])
   
+  const transitionStyles = {
+    entering: {},
+    // @ts-expect-error
+    entered:  { opacity: 1, height: `${accordionRef?.current?.scrollHeight}px` },
+    exiting: {},
+    exited:  { opacity: 0, height: 0 },
+    unmounted: {}
+  };
+  
   return (
     <>
-      <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16">
+      <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16 py-2">
         <Star className={`absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-90'}`} />
         <button className={`${isOpen ? 'text-wattle' : `stroke text-[#f9df5e1a]`} transition duration-500 hover:text-wattle`} id={`controls-${id}`} aria-controls={`contents-${id}`} aria-expanded={isOpen} onClick={clickHandler}>
           {label}
         </button>
       </h3>
-      <div aria-labelledby={`controls-${id}`} role="region" id={`contents-${id}`} ref={accordionRef} style={{ height: `${currentHeight}px` }} className="transition-all duration-500 overflow-hidden">
-        {children}
-      </div>
+      <Transition nodeRef={accordionRef} in={isOpen} timeout={isOpen ? 0 : 500} appear unmountOnExit>
+        {state => (
+          <div 
+            style={{ 
+              height: 0,
+              opacity: 0,
+              ...transitionStyles[state]
+            }}
+            aria-labelledby={`controls-${id}`} 
+            role="region" 
+            id={`contents-${id}`} 
+            ref={accordionRef} 
+            className="transition-all duration-500 overflow-hidden"
+          >
+            {children}
+          </div>
+        )}
+      </Transition>
     </>
   )
 }
@@ -91,7 +114,7 @@ export default function OfferingsAccordion() {
         <div className="md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase">
           We work with <br/> fast-growing brands with <br/> diverse eComm needs.
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col">
           {offerings.map(({ title, listItems }) => {
             const accordionKey = useId();
             return (
