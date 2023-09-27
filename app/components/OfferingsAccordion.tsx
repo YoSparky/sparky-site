@@ -1,6 +1,7 @@
-import { ReactNode, useId, useRef, useState } from 'react';
+import { ReactNode, useEffect, useId, useRef, useState } from 'react';
 import backgroundImage from '../assets/offerings-accordion-background.jpeg';
 import { Star } from './icons';
+import { Transition } from "react-transition-group";
 
 const offerings = [
   {
@@ -44,26 +45,28 @@ const offerings = [
 type AccordionProps = {
   children: ReactNode,
   label: string,
+  id: string,
+  isOpen: boolean,
+  toggleAccordion: Function
 }
 
-const Accordion = ({ label, children } : AccordionProps) => {
-  const [isOpen, toggleAccordion] = useState(false);
+const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionProps) => {
   const [currentHeight, setHeight] = useState(0);
   
   const accordionRef = useRef(null);
-  const id = useId();
   
   const clickHandler = () => {
+    toggleAccordion(isOpen ? null : id);
+  }
+  
+  useEffect(() => {
     if (isOpen) {
-      toggleAccordion(false);
-      setHeight(0);
+      // @ts-expect-error
+      setHeight(accordionRef?.current?.scrollHeight ?? 0)
       return;
     }
-    
-    toggleAccordion(true);
-    // @ts-expect-error
-    setHeight(accordionRef?.current?.scrollHeight ?? 0)
-  }
+    setHeight(0);
+  }, [isOpen])
   
   return (
     <>
@@ -81,6 +84,7 @@ const Accordion = ({ label, children } : AccordionProps) => {
 }
 
 export default function OfferingsAccordion() {
+  const [currentlyActive, setCurrentlyActive] = useState(null);
   return (
     <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat max-md:pb-32 py-52 z-[0] relative">
       <div className="container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]">
@@ -88,12 +92,13 @@ export default function OfferingsAccordion() {
           We work with <br/> fast-growing brands with <br/> diverse eComm needs.
         </div>
         <div className="flex flex-col gap-2">
-          {offerings.map(({ title, listItems }, i) => {
+          {offerings.map(({ title, listItems }) => {
+            const accordionKey = useId();
             return (
-              <Accordion key={useId()} label={title}>
+              <Accordion toggleAccordion={setCurrentlyActive} id={accordionKey} isOpen={accordionKey === currentlyActive} key={accordionKey} label={title}>
                 <ul className="flex gap-4 flex-wrap py-6">
                   {listItems.map((item) => (
-                    <li className="px-8 py-4 block bg-logCabin text-ivory text-sm" key={useId()}>{item}</li>
+                    <li className="px-8 py-4 block bg-logCabin text-ivory text-sm" key={accordionKey}>{item}</li>
                   ))}
                 </ul>
               </Accordion>

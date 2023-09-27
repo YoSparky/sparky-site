@@ -7249,90 +7249,96 @@ var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime"), offerings = [
       "And More"
     ]
   }
-], Accordion = ({ label, children }) => {
-  let [isOpen, toggleAccordion] = (0, import_react12.useState)(!1), [currentHeight, setHeight] = (0, import_react12.useState)(0), accordionRef = (0, import_react12.useRef)(null), id = (0, import_react12.useId)(), clickHandler = () => {
+], Accordion = ({ label, children, id, isOpen, toggleAccordion }) => {
+  let [currentHeight, setHeight] = (0, import_react12.useState)(0), accordionRef = (0, import_react12.useRef)(null), clickHandler = () => {
+    toggleAccordion(isOpen ? null : id);
+  };
+  return (0, import_react12.useEffect)(() => {
     var _a;
     if (isOpen) {
-      toggleAccordion(!1), setHeight(0);
+      setHeight(((_a = accordionRef == null ? void 0 : accordionRef.current) == null ? void 0 : _a.scrollHeight) ?? 0);
       return;
     }
-    toggleAccordion(!0), setHeight(((_a = accordionRef == null ? void 0 : accordionRef.current) == null ? void 0 : _a.scrollHeight) ?? 0);
-  };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(import_jsx_dev_runtime23.Fragment, { children: [
+    setHeight(0);
+  }, [isOpen]), /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(import_jsx_dev_runtime23.Fragment, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("h3", { className: "text-3xl md:text-7xl font-black relative max-md:pl-16", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(Star_default, { className: `absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && "rotate-90"}` }, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 71,
+        lineNumber: 74,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("button", { className: `${isOpen ? "text-wattle" : "stroke text-[#f9df5e1a]"} transition duration-500 hover:text-wattle`, id: `controls-${id}`, "aria-controls": `contents-${id}`, "aria-expanded": isOpen, onClick: clickHandler, children: label }, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 72,
+        lineNumber: 75,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/OfferingsAccordion.tsx",
-      lineNumber: 70,
+      lineNumber: 73,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { "aria-labelledby": `controls-${id}`, role: "region", id: `contents-${id}`, ref: accordionRef, style: { height: `${currentHeight}px` }, className: "transition-all duration-500 overflow-hidden", children }, void 0, !1, {
       fileName: "app/components/OfferingsAccordion.tsx",
-      lineNumber: 76,
+      lineNumber: 79,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/OfferingsAccordion.tsx",
-    lineNumber: 69,
+    lineNumber: 72,
     columnNumber: 5
   }, this);
 };
 function OfferingsAccordion() {
+  let [currentlyActive, setCurrentlyActive] = (0, import_react12.useState)(null);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "bg-no-repeat max-md:pb-32 py-52 z-[0] relative", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
       "We work with ",
       /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 88,
+        lineNumber: 92,
         columnNumber: 24
       }, this),
       " fast-growing brands with ",
       /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 88,
+        lineNumber: 92,
         columnNumber: 55
       }, this),
       " diverse eComm needs."
     ] }, void 0, !0, {
       fileName: "app/components/OfferingsAccordion.tsx",
-      lineNumber: 87,
+      lineNumber: 91,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "flex flex-col gap-2", children: offerings.map(
-      ({ title, listItems }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(Accordion, { label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, (0, import_react12.useId)(), !1, {
-        fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 96,
-        columnNumber: 21
-      }, this)) }, void 0, !1, {
-        fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 94,
-        columnNumber: 17
-      }, this) }, (0, import_react12.useId)(), !1, {
-        fileName: "app/components/OfferingsAccordion.tsx",
-        lineNumber: 93,
-        columnNumber: 15
-      }, this)
+      ({ title, listItems }) => {
+        let accordionKey = (0, import_react12.useId)();
+        return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(Accordion, { toggleAccordion: setCurrentlyActive, id: accordionKey, isOpen: accordionKey === currentlyActive, label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, accordionKey, !1, {
+          fileName: "app/components/OfferingsAccordion.tsx",
+          lineNumber: 101,
+          columnNumber: 21
+        }, this)) }, void 0, !1, {
+          fileName: "app/components/OfferingsAccordion.tsx",
+          lineNumber: 99,
+          columnNumber: 17
+        }, this) }, accordionKey, !1, {
+          fileName: "app/components/OfferingsAccordion.tsx",
+          lineNumber: 98,
+          columnNumber: 15
+        }, this);
+      }
     ) }, void 0, !1, {
       fileName: "app/components/OfferingsAccordion.tsx",
-      lineNumber: 90,
+      lineNumber: 94,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/OfferingsAccordion.tsx",
-    lineNumber: 86,
+    lineNumber: 90,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/OfferingsAccordion.tsx",
-    lineNumber: 85,
+    lineNumber: 89,
     columnNumber: 5
   }, this);
 }
@@ -7682,7 +7688,7 @@ function Index2() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EZRJKGNR.js", imports: ["/build/_shared/chunk-4XB4QJVV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3PQJT5GF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "18a32027", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695767116462 }, url: "/build/manifest-18A32027.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-DIHPRSAG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EZRJKGNR.js", imports: ["/build/_shared/chunk-4XB4QJVV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-MEV4RJJC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "cece3ecc", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1695831511854 }, url: "/build/manifest-CECE3ECC.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
