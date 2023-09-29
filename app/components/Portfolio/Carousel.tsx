@@ -69,7 +69,7 @@ export function Carousel({ content } : { content: { image: string | null, captio
       </swiper-container>
       {content.length > 1 && 
         <>
-          <div className={`${isSliding ? 'md:opacity-0' : ''} transition-opacity duration-200 flex max-md:container max-md:py-4 md:flex-col gap-3 items-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:pl-[24%] md:w-[1%]`}>
+          <div className={`${isSliding ? 'md:opacity-0' : ''} transition-opacity duration-500 flex max-md:container max-md:py-4 md:flex-col gap-3 items-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:pl-[24%] md:w-[1%]`}>
             <span>{currentIndex + 1}</span>
             <span className="text-xs">/</span>
             <span>{content.length}</span>

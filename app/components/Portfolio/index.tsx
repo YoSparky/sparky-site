@@ -5,3 +5,4 @@ export { Results } from "./Results";
 export { SparkyMagic } from "./SparkyMagic";
 export { Stack } from "./Stack";
 export { Testimonial } from "./Testimonial";
+export { Footer } from "./Footer";

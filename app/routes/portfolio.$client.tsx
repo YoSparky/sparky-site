@@ -8,7 +8,8 @@ import {
   Results, 
   SparkyMagic, 
   Stack, 
-  Testimonial
+  Testimonial,
+  Footer
 } from '~/components/Portfolio';
 
 export default function Index() {
@@ -91,6 +92,12 @@ export default function Index() {
         </div>
       }
       
+      {portfolioBanner && 
+        <div className="py-5 md:py-10">
+          <PortfolioBanner content={portfolioBanner} />
+        </div>
+      }
+      
       {testimonial &&
         <div className="container max-w-5xl py-5 md:py-10">
           <Testimonial content={testimonial} />
@@ -102,6 +109,14 @@ export default function Index() {
           <Stack content={stack} />
         </div>
       }
+      
+      {results && 
+        <div className="container py-5 md:py-10">
+          <Results content={results} />
+        </div>
+      }
+      
+      <Footer />
     </>
   );
 }

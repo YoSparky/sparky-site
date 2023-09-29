@@ -223,7 +223,7 @@ const data = [
         link: ``
       }
     ],
-    results: null
+    results: `Nostrud qui ex velit duis reprehenderit sint. Officia sit magna duis aliquip est sit aliqua do consectetur laborum irure. Ea dolor nisi sint est labore. Occaecat fugiat mollit aliqua eiusmod ipsum consequat quis deserunt nulla.`
   },
   {
     handle: `legends`,
