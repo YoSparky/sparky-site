@@ -74,7 +74,15 @@ export default function Index() {
       }
       
       {carousel && 
-        <Carousel content={carousel} />
+        <div className="py-5 md:py-10">
+          <Carousel content={carousel} />
+        </div>
+      }
+      
+      {sparkyMagic && 
+        <div className="container max-w-5xl py-5 md:py-10">
+          <SparkyMagic content={sparkyMagic} />
+        </div>
       }
       
       {vimeoLinkSecondary && 

@@ -52,7 +52,7 @@ export function Carousel({ content } : { content: { image: string | null, captio
   }, []);
   
   return (
-    <div className="relative py-5 md:py-10">
+    <div className="relative">
        <swiper-container
         // @ts-expect-error
         init="false"

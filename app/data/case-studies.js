@@ -176,8 +176,7 @@ const data = [
       }
     ],
     sparkyMagic: [
-      `We did the entire project in three months, and there was zero margin for error.`,
-      ``
+      `We did the entire project <strong>in three months</strong>, and there was <strong>zero margin for error.</strong>`
     ],
     portfolioBanner: {
       image: HeydudeBanner,
