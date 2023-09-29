@@ -12,7 +12,7 @@ export default function Header() {
         <Link title="home" to="/">
           <img className="w-24 md:w-32" src={sparkyLogo} />
         </Link>
-        <div className="text-center text-sm">Ecomm Wizards</div>
+        <div className="text-center text-sm"></div>
         <div className="flex justify-end text-sm">
           <button onClick={() => toggleModal ? toggleModal() : null}>
             CONTACT

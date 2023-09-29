@@ -79,7 +79,7 @@ const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionP
   return (
     <>
       <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16 py-2">
-        <Star className={`absolute top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-90'}`} />
+        <Star className={`absolute w-8 h-8 top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-[135deg]'}`} />
         <button className={`${isOpen ? 'text-wattle' : `stroke text-[#f9df5e1a]`} transition duration-500 hover:text-wattle`} id={`controls-${id}`} aria-controls={`contents-${id}`} aria-expanded={isOpen} onClick={clickHandler}>
           {label}
         </button>
@@ -120,8 +120,8 @@ export default function OfferingsAccordion() {
             return (
               <Accordion toggleAccordion={setCurrentlyActive} id={accordionKey} isOpen={accordionKey === currentlyActive} key={accordionKey} label={title}>
                 <ul className="flex gap-4 flex-wrap py-6">
-                  {listItems.map((item) => (
-                    <li className="px-8 py-4 block bg-logCabin text-ivory text-sm" key={accordionKey}>{item}</li>
+                  {listItems.map((item, i) => (
+                    <li className="px-8 py-4 block bg-logCabin text-ivory text-sm" key={`${accordionKey}-${i}`}>{item}</li>
                   ))}
                 </ul>
               </Accordion>

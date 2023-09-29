@@ -11,6 +11,13 @@
     transform: rotateY(180deg);
     transition: inherit 10ms;
   }
+  
+  .absolute-container-right {
+    @apply right-4 sm:right-[calc(((100vw-640px)/2)+16px)] md:right-[calc(((100vw-768px)/2)+16px)] lg:right-[calc(((100vw-1024px)/2)+16px)] xl:right-[calc(((100vw-1280px)/2)+16px)] 2xl:right-[calc(((100vw-1536px)/2)+16px)]
+  }
+  .absolute-container-left {
+    @apply left-4 sm:left-[calc(((100vw-640px)/2)+16px)] md:left-[calc(((100vw-768px)/2)+16px)] lg:left-[calc(((100vw-1024px)/2)+16px)] xl:left-[calc(((100vw-1280px)/2)+16px)] 2xl:left-[calc(((100vw-1536px)/2)+16px)]
+  }
 }
 
 @layer base {

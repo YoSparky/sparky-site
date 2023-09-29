@@ -8,8 +8,7 @@ import {
   Results, 
   SparkyMagic, 
   Stack, 
-  Testimonial, 
-  Video 
+  Testimonial
 } from '~/components/Portfolio';
 
 export default function Index() {
@@ -60,12 +59,11 @@ export default function Index() {
       <div 
         className="container py-5 md:py-10 font-title text-2xl md:text-4xl font-medium leading-normal"
         dangerouslySetInnerHTML={{ __html: description }}
-      >
-      </div>
+      ></div>
       
       {vimeoLinkPrimary && 
         <div className="container py-5 md:py-10">
-          <Video vimeoLink={vimeoLinkPrimary} />
+          <iframe className="aspect-video w-full" src={vimeoLinkPrimary} />
         </div>
       }
       
@@ -75,9 +73,13 @@ export default function Index() {
         </div>
       }
       
+      {carousel && 
+        <Carousel content={carousel} />
+      }
+      
       {vimeoLinkSecondary && 
         <div className="container py-5 md:py-10">
-          <Video vimeoLink={vimeoLinkSecondary} />
+          <iframe className="aspect-video w-full" src={vimeoLinkSecondary} />
         </div>
       }
     </>

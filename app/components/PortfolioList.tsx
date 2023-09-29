@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { Star } from "./icons";
 
 const portfolioListItems = [
@@ -53,9 +54,9 @@ export default function PortfolioList() {
           <span className="uppercase">Work in the wild</span>
           <ul className="flex flex-col gap-8 pb-11 border-b border-current">
             {portfolioListItems.map(({ title, status, platform, link }, i) => (
-              <li className="relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 hover:highlighted hover-highlight" key={`${title}-${i}`}>
+              <li className="relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 hover:highlighted hover-highlight" key={`${useId()}`}>
                 <span className="transition duration-300 absolute bottom-1/2 left-0 transform translate-y-1/2 -translate-x-[200%] scale-0 group-focus-within:scale-[175%] group-hover:scale-[175%]">
-                  <Star/>
+                  <Star className="w-8 h-8" />
                 </span>
                 <span className="flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title">
                   <span className="block w-max whitespace-nowrap">                

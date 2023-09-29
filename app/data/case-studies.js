@@ -93,7 +93,7 @@ const data = [
       },
       {
         image: FortySevenSlide2,
-        caption: ''
+        caption: 'Also a caption here'
       },
       {
         image: FortySevenSlide3,
@@ -363,7 +363,11 @@ const data = [
     portfolioBanner: null,
     vimeoLinkSecondary: `https://player.vimeo.com/video/854986194`,
     siteLink: `https://ghostlifestyle.com/`,
-    testimonial: null,
+    testimonial: {
+      quote: `Wow, Sparky made it simple to supercharge our aging site.`,
+      attribution: `BJORN LURPIS`,
+      attributionTitle: `VP OF TECHNOLOGY`
+    },
     stack: [
       {
         title: `Shopify Plus`,

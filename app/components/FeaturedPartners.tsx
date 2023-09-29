@@ -5,6 +5,7 @@ import {
   YotpoLogo,
   ElevarLogo
 } from "./icons";
+import { useId } from "react";
 
 const partners = [
   {
@@ -35,7 +36,7 @@ export default function FeaturedPartners() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         <ul className="grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none">
           {partners.map(({ title, logo, link }, i) => (
-            <li className="aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-300" key={`${title}-${i}`}>
+            <li className="aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-300" key={useId()}>
               <Link className="w-full h-full flex items-center justify-center relative" title={title} to={link}>
                 <div className="transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full">{logo}</div>
                 <span className="bottom-3 transition duration-500 right-3 opacity-0 group-hover:opacity-100 group-hover:mirror absolute flex items-center justify-center w-9 h-9 rounded-full bg bg-tuatara text-ivory"><span className="mirror">i</span></span>

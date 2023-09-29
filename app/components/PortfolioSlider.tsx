@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, useId } from 'react';
 import LegendsImage from '../assets/legends-slider.jpeg';
 import HeydudeImage from '../assets/heydude-slider.jpeg';
 import GhostImage from '../assets/ghost-slider.jpeg';
@@ -60,7 +60,7 @@ export default function PortfolioSlider() {
         loop="true"
       >
         {sliderItems.map(({ title, copy, link, image }, i) => 
-          <swiper-slide key={`${title}-${i}`}>
+          <swiper-slide key={useId()}>
             <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16">
               <div className="bg-botticelli min-w-[319px] w-[319px]">
                 <img className="block w-full mix-blend-multiply" width="319" height="329" src={image} alt={title} />
@@ -90,7 +90,7 @@ export default function PortfolioSlider() {
         onClick={() => swiperElRef.current.swiper.slideNext()} 
         className="border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform md:translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara"
       >
-        <Arrow />
+        <Arrow className="w-5 h-5" />
       </button>
       <div 
         className="hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 md:flex items-center justify-center absolute right-0 top-1/2"
