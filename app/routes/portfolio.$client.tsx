@@ -96,6 +96,12 @@ export default function Index() {
           <Testimonial content={testimonial} />
         </div>
       }
+      
+      {stack && 
+        <div className="container max-w-5xl py-5 md:py-10">
+          <Stack content={stack} />
+        </div>
+      }
     </>
   );
 }
