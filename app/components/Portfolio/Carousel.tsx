@@ -23,8 +23,6 @@ export function Carousel({ content } : { content: { image: string | null, captio
       spaceBetween: "80",
       breakpoints: {
         768: {
-          slidesPerView: 1.25,
-          slidesPerGroup: 1,	
           spaceBetween: "16",
         }
       },
