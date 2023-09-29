@@ -2,6 +2,7 @@ export { default as Arrow } from "./Arrow";
 export { default as ArrowSquare } from "./ArrowSquare";
 export { default as ElevarLogo } from "./ElevarLogo";
 export { default as KlaviyoLogo } from "./KlaviyoLogo";
+export { default as Quote } from "./Quote";
 export { default as ShopifyPlusLogo } from "./ShopifyPlusLogo";
 export { default as Star } from "./Star";
 export { default as YotpoLogo } from "./YotpoLogo";

@@ -90,6 +90,12 @@ export default function Index() {
           <iframe className="aspect-video w-full" src={vimeoLinkSecondary} />
         </div>
       }
+      
+      {testimonial &&
+        <div className="container max-w-5xl py-5 md:py-10">
+          <Testimonial content={testimonial} />
+        </div>
+      }
     </>
   );
 }

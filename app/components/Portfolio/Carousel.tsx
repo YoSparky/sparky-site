@@ -63,7 +63,7 @@ export function Carousel({ content } : { content: { image: string | null, captio
         
         return (
           <swiper-slide key={useId()}>
-            <img className="block max-h-[80vh] object-contain object-center w-auto mix-blend-multiply" width="319" height="329" src={image} alt={caption || ''} />
+            <img className="block max-h-[80vh] object-contain object-center mx-auto w-auto mix-blend-multiply" width="319" height="329" src={image} alt={caption || ''} />
             {caption && <span className="block text-sm uppercase pt-4">* {caption}</span>}
           </swiper-slide>
         );

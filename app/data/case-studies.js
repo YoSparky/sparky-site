@@ -184,7 +184,11 @@ const data = [
     },
     vimeoLinkSecondary: `https://player.vimeo.com/video/854631946`,
     siteLink: `https://heydude.com/`,
-    testimonial: null,
+    testimonial: {
+      quote: `Wow, Sparky made it simple to supercharge our aging site.`,
+      attribution: `BJORN LURPIS`,
+      attributionTitle: `VP OF TECHNOLOGY`
+    },
     stack: [
       {
         title: `Shopify Plus`,
@@ -362,11 +366,7 @@ const data = [
     portfolioBanner: null,
     vimeoLinkSecondary: `https://player.vimeo.com/video/854986194`,
     siteLink: `https://ghostlifestyle.com/`,
-    testimonial: {
-      quote: `Wow, Sparky made it simple to supercharge our aging site.`,
-      attribution: `BJORN LURPIS`,
-      attributionTitle: `VP OF TECHNOLOGY`
-    },
+    testimonial: null,
     stack: [
       {
         title: `Shopify Plus`,
