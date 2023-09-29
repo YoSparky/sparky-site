@@ -20,10 +20,11 @@ export function Carousel({ content } : { content: { image: string | null, captio
       slidesPerGroup: 1,	
       centeredSlides: true,
       centerInsufficientSlides: true,
-      spaceBetween: "80",
+      spaceBetween: "16",
       breakpoints: {
         768: {
-          spaceBetween: "16",
+          slidesPerView: 1.25,
+          spaceBetween: "80",
         }
       },
       on: {
