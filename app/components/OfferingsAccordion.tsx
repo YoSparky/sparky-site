@@ -78,7 +78,7 @@ const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionP
   
   return (
     <>
-      <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16 py-2">
+      <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16 py-2 mix-bl">
         <Star className={`absolute w-8 h-8 top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-[135deg]'}`} />
         <button className={`${isOpen ? 'text-wattle' : `stroke text-[#f9df5e1a]`} transition duration-500 hover:text-wattle`} id={`controls-${id}`} aria-controls={`contents-${id}`} aria-expanded={isOpen} onClick={clickHandler}>
           {label}
@@ -109,7 +109,7 @@ const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionP
 export default function OfferingsAccordion() {
   const [currentlyActive, setCurrentlyActive] = useState(null);
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat max-md:pb-32 py-52">
+    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat py-16 max-md:pb-32 md:py-52 mix-blend-multiply">
       <div className="container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]">
         <div className="md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase">
           We work with <br/> fast-growing brands with <br/> diverse eComm needs.

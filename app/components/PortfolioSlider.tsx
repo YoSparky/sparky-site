@@ -50,48 +50,104 @@ export default function PortfolioSlider() {
   }, []);
   
   return (
-    <div 
-      style={{ backgroundImage: `url(${SliderBackground})` }} 
-      className="bg-botticelli bg-[length:0_0] xl:bg-[length:100%_106px] bg-bottom bg-no-repeat container relative p-8 lg:p-11 w-[calc(100%-80px)] z-[1] -mb-24 before:absolute before:h-2 before:-right-2 before:left-0 before:-top-2 before:bg-ivory after:absolute after:w-2 after:top-0 after:-right-2 after:bottom-[96px] after:bg-ivory">
-      <swiper-container
-        ref={swiperElRef}
-        slides-per-view="1"
-        // @ts-expect-error
-        loop="true"
-      >
-        {sliderItems.map(({ title, copy, link, image }, i) => 
-          <swiper-slide key={useId()}>
-            <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pr-16">
-              <div className="bg-botticelli min-w-[319px] w-[319px]">
-                <img className="block w-full mix-blend-multiply" width="319" height="329" src={image} alt={title} />
+    <div className="transform md:translate-y-1/3 py-10 container relative after:absolute after:left-0 after:top-0 after:w-full after:h-full md:after:h-[80%] after:bg-botticelli z-[1]">
+      <div 
+        className="
+          w-full
+          md:w-[calc(100%-80px)] 
+          z-[1] 
+          md:px-11
+          before:absolute
+          before:h-2 
+          before:-right-2 
+          before:left-0 
+          before:-top-2 
+          before:bg-ivory 
+          after:absolute 
+          after:w-2 
+          after:top-0 
+          after:-right-2 
+          after:h-[80%]
+        after:bg-ivory
+          "
+        >
+        <swiper-container
+          ref={swiperElRef}
+          slides-per-view="1"
+          // @ts-expect-error
+          loop="true"
+        >
+          {sliderItems.map(({ title, copy, link, image }, i) => 
+            <swiper-slide key={useId()}>
+              <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pb-1/3 pr-16">
+                <div className="bg-botticelli min-w-[319px] w-[319px]">
+                  <img className="block w-full mix-blend-multiply" width="319" height="329" src={image} alt={title} />
+                </div>
+                <div className="hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center">
+                  <span>{currentIndex + 1}</span>
+                  <span className="text-[8px]">/</span>
+                  <span>{sliderItems.length}</span>
+                </div>
+                <div className="flex flex-col gap-8 pb-8 lg:pl-32">
+                  <p className="text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
+                  <a className="hover-highlight hover:highlighted button--link" href={link}>
+                    <span>Learn More</span>
+                  </a>
+                </div>
+                <div className="flex lg:hidden text-xs gap-4 top-0 items-center w-full">
+                  <span>{currentIndex + 1}</span>
+                  <span className="text-[8px]">/</span>
+                  <span>{sliderItems.length}</span>
+                </div>
               </div>
-              <div className="hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center">
-                <span>{currentIndex + 1}</span>
-                <span className="text-[8px]">/</span>
-                <span>{sliderItems.length}</span>
-              </div>
-              <div className="flex flex-col gap-8 lg:pl-32">
-                <p className="text-xl lg:text-3xl tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
-                <a className="uppercase underline text-sm tracking-wide hover-highlight hover:highlighted" href={link}>
-                  <span>Learn More</span>
-                </a>
-              </div>
-              <div className="flex lg:hidden text-xs gap-4 top-0 items-center w-full">
-                <span>{currentIndex + 1}</span>
-                <span className="text-[8px]">/</span>
-                <span>{sliderItems.length}</span>
-              </div>
-            </div>
-          </swiper-slide>
-        )}
-      </swiper-container>
-      <button 
-        // @ts-expect-error
-        onClick={() => swiperElRef.current.swiper.slideNext()} 
-        className="border-8 z-[1] border-botticelli h-16 w-16 bg-tuatara text-energyYellow transform md:translate-x-1/2 -translate-y-1/2 flex items-center justify-center absolute right-0 top-1/2 rounded-full transition duration-200 hover:bg-energyYellow hover:text-tuatara"
-      >
-        <Arrow className="w-5 h-5" />
-      </button>
+            </swiper-slide>
+          )}
+        </swiper-container>
+        <button 
+          // @ts-expect-error
+          onClick={() => swiperElRef.current.swiper.slideNext()} 
+          className="
+            border-8 
+            z-[1]
+            border-botticelli 
+            h-16 
+            w-16
+            bg-tuatara
+            text-energyYellow 
+            transform md:translate-x-1/2 
+            -translate-y-1/2 
+            flex 
+            items-center 
+            justify-center 
+            absolute 
+            right-0 
+            top-1/2 
+            rounded-full 
+            transition 
+            duration-200
+            hover:bg-energyYellow
+            hover:text-tuatara
+          "
+        >
+          <Arrow className="w-5 h-5" />
+        </button>
+        <div
+          className="
+          before:border-8 
+          before:z-[0]
+          before:border-ivory 
+          before:h-20 
+          before:w-20
+          before:transform 
+          before:md:translate-x-1/2 
+          before:-translate-y-1/2 
+          before:absolute 
+          before:right-0 
+          before:top-1/2 
+          before:rounded-full 
+          "
+        ></div>
+      </div>
     </div>
   )
 }

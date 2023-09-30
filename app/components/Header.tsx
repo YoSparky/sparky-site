@@ -46,9 +46,9 @@ export default function Header() {
               <img className="w-24 md:w-32" src={sparkyLogo} />
             </Link>
             <div className="text-center text-sm"></div>
-            <div className="flex justify-end text-sm">
-              <button onClick={() => toggleModal ? toggleModal() : null}>
-                CONTACT
+            <div className="flex justify-end">
+              <button className="button--link w-max" onClick={() => toggleModal ? toggleModal() : null}>
+                Contact
               </button>
             </div>
           </div>
