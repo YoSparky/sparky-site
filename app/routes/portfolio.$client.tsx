@@ -120,7 +120,7 @@ export default function Index() {
         </div>
       }
       
-      <div className="bg-ivory">
+      <div className="bg-ivory pt-20">
         <Footer 
           prevItem={{
             title: data[currentIndex - 1]?.title,

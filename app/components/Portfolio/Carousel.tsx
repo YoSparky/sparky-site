@@ -79,7 +79,7 @@ export function Carousel({ content } : { content: { image: string | null, captio
             <button 
               // @ts-expect-error
               onClick={() => swiperElRef.current.swiper.slidePrev()} 
-              className="z-[1] h-16 w-16 text-ivory transform rotate-180 origin-top translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-left top-1/2 transition duration-200 opacity-90"
+              className="z-[1] h-16 w-16 text-ivory hover:text-tuatara transform rotate-180 origin-top translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-left top-1/2 transition duration-200 opacity-90"
             >
               <Arrow className="w-16 h-16" />
             </button>
@@ -88,7 +88,7 @@ export function Carousel({ content } : { content: { image: string | null, captio
           <button 
               // @ts-expect-error
               onClick={() => swiperElRef.current.swiper.slideNext()} 
-              className="z-[1] h-16 w-16 text-ivory transform -translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-right top-1/2 transition duration-200 opacity-90"
+              className="z-[1] h-16 w-16 text-ivory hover:text-tuatara transform -translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-right top-1/2 transition duration-200 opacity-90"
             >
               <Arrow className="w-16 h-16" />
             </button>
