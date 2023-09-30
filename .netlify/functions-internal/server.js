@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-VW53MEEB.css";
+var tailwind_default = "/build/_assets/tailwind-6362TOIO.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -8109,7 +8109,9 @@ function FeaturedPartners() {
 
 // app/components/PortfolioList.tsx
 var import_react20 = require("react");
-var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), portfolioListItems = [
+
+// app/data/homepage.js
+var portfolioListItems = [
   {
     title: "Orthofeet",
     status: "In progress",
@@ -8153,93 +8155,101 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), portfolioListIt
     link: "https://speidel.com/"
   }
 ];
+
+// app/components/PortfolioList.tsx
+var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime");
 function PortfolioList() {
+  let toggleModal = (0, import_react20.useContext)(ModalContext);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "relative w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "container py-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "max-w-5xl ml-auto flex flex-col gap-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "uppercase", children: "Work in the wild" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "title", children: "Work in the wild" }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
-      lineNumber: 54,
+      lineNumber: 13,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "flex flex-col gap-8 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: "relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 hover:highlighted hover-highlight", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "transition duration-300 absolute bottom-1/2 left-0 transform translate-y-1/2 -translate-x-[200%] scale-0 group-focus-within:scale-[175%] group-hover:scale-[175%]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(Star_default, { className: "w-8 h-8" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "flex flex-col gap-3 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: `relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? "opacity-80" : "focus-within:highlighted hover:highlighted hover-highlight !duration-500"}`, children: [
+      !status && /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "transition duration-500 absolute bottom-1/2 -left-5 transform translate-y-1/2 -translate-x-full -rotate-45 scale-0 group-hover:rotate-90 group-hover:scale-100", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(Star_default, { className: "w-9 h-9" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 59,
-        columnNumber: 19
+        lineNumber: 19,
+        columnNumber: 21
       }, this) }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 58,
-        columnNumber: 17
+        lineNumber: 18,
+        columnNumber: 19
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "block w-max whitespace-nowrap", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "block w-max whitespace-nowrap", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
-          lineNumber: 63,
+          lineNumber: 24,
           columnNumber: 39
         }, this) }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
-          lineNumber: 62,
+          lineNumber: 23,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
-          lineNumber: 65,
+          lineNumber: 26,
           columnNumber: 19
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 61,
+        lineNumber: 22,
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "leading-none uppercase text-xs whitespace-nowrap", children: platform }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
-          lineNumber: 68,
+          lineNumber: 29,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
-          lineNumber: 69,
+          lineNumber: 30,
           columnNumber: 19
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 67,
+        lineNumber: 28,
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "leading-none uppercase text-xs text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 72,
+        lineNumber: 33,
         columnNumber: 45
       }, this) }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
-        lineNumber: 71,
+        lineNumber: 32,
         columnNumber: 17
       }, this)
     ] }, `${(0, import_react20.useId)()}`, !0, {
       fileName: "app/components/PortfolioList.tsx",
-      lineNumber: 57,
+      lineNumber: 16,
       columnNumber: 15
     }, this)) }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
-      lineNumber: 55,
+      lineNumber: 14,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "ml-auto text-right uppercase", children: "More examples on request" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "ml-auto", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("button", { className: "ml-auto text-right title pb-0.5 border-b border-current", onClick: () => toggleModal ? toggleModal() : null, children: "More examples on request" }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
-      lineNumber: 77,
+      lineNumber: 39,
+      columnNumber: 13
+    }, this) }, void 0, !1, {
+      fileName: "app/components/PortfolioList.tsx",
+      lineNumber: 38,
       columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/PortfolioList.tsx",
-    lineNumber: 53,
+    lineNumber: 12,
     columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/components/PortfolioList.tsx",
-    lineNumber: 52,
+    lineNumber: 11,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/PortfolioList.tsx",
-    lineNumber: 51,
+    lineNumber: 10,
     columnNumber: 5
   }, this);
 }
@@ -8900,7 +8910,7 @@ function Index5() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PWAFNSCE.js", imports: ["/build/_shared/chunk-7PSQMABF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-7BBUCYVO.js", imports: ["/build/_shared/chunk-GEPKK4W5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-JW36QRWT.js", imports: ["/build/_shared/chunk-GEPKK4W5.js", "/build/_shared/chunk-7PSQMABF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "03c98b31", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696038445254 }, url: "/build/manifest-03C98B31.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NDGCHN6P.js", imports: ["/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3GASB3QP.js", imports: ["/build/_shared/chunk-M4XVP5BT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-B53JZPNJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js", "/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "2960e0a3", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696039839844 }, url: "/build/manifest-2960E0A3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
