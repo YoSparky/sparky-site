@@ -7,7 +7,6 @@ import PortfolioSlider from "~/components/PortfolioSlider";
 import OfferingsAccordion from "~/components/OfferingsAccordion";
 import Marquee from "~/components/Marquee";
 import Footer from "~/components/Footer/Footer";
-import backgroundShapes from '../assets/homepage-svg-background.svg';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -16,25 +15,17 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
-type PageProps = {
-  toggleModal: Function
-}
-
-export default function Index({ toggleModal } : PageProps) {
+export default function Index() {
   return (
     <>
-      <div style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-cover bg-no-repeat bg-center">
-        <div className="w-screen max-md:overflow-x-hidden">
-          <Hero />
-          <FeaturedPortfolio />
-          <FeaturedPartners />
-          <PortfolioList />
-          <PortfolioSlider />
-          <OfferingsAccordion />
-          <Marquee />
-          <Footer />
-        </div>
-      </div>
+      <Hero />
+      <FeaturedPortfolio />
+      <FeaturedPartners />
+      <PortfolioList />
+      <PortfolioSlider />
+      <OfferingsAccordion />
+      <Marquee />
+      <Footer />
     </>
   );
 }

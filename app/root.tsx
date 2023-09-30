@@ -1,7 +1,6 @@
 import stylesheet from "~/tailwind.css";
 import fonts from "./assets/fonts.css";
 import Header from "./components/Header";
-
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -13,6 +12,7 @@ import {
 } from "@remix-run/react";
 import { createContext, useState } from "react";
 import { Modal } from "./components/Modal";
+import backgroundShapes from './assets/homepage-svg-background.svg';
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -36,7 +36,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-cover bg-no-repeat bg-center">
         <ModalContext.Provider value={toggleModal}>
           <Header />
           <Outlet />

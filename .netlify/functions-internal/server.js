@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-6362TOIO.css";
+var tailwind_default = "/build/_assets/tailwind-HWTVBNZX.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -157,40 +157,75 @@ var sparkyLogo_default = "/build/_assets/sparkyLogo-5HOJMYLR.png";
 
 // app/components/Header.tsx
 var import_react3 = require("react");
-var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
+var import_react_transition_group = require("react-transition-group"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
 function Header() {
-  let toggleModal = (0, import_react3.useContext)(ModalContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "py-4 fixed top-0 left-0 w-screen z-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "container grid grid-cols-3 items-center", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Link, { title: "home", to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { className: "w-24 md:w-32", src: sparkyLogo_default }, void 0, !1, {
-      fileName: "app/components/Header.tsx",
-      lineNumber: 13,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/components/Header.tsx",
-      lineNumber: 12,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "text-center text-sm" }, void 0, !1, {
-      fileName: "app/components/Header.tsx",
-      lineNumber: 15,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "flex justify-end text-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("button", { onClick: () => toggleModal ? toggleModal() : null, children: "CONTACT" }, void 0, !1, {
-      fileName: "app/components/Header.tsx",
-      lineNumber: 17,
-      columnNumber: 11
-    }, this) }, void 0, !1, {
-      fileName: "app/components/Header.tsx",
-      lineNumber: 16,
-      columnNumber: 9
-    }, this)
-  ] }, void 0, !0, {
+  let toggleModal = (0, import_react3.useContext)(ModalContext), headerRef = (0, import_react3.useRef)(null), [prevOffset, setPrevOffset] = (0, import_react3.useState)(0), [currentOffset, setCurrentOffset] = (0, import_react3.useState)(0);
+  (0, import_react3.useEffect)(() => {
+    let onScroll2 = () => {
+      setPrevOffset(currentOffset), setCurrentOffset(window.scrollY);
+    };
+    return window.removeEventListener("scroll", onScroll2), window.addEventListener("scroll", onScroll2, { passive: !0 }), () => window.removeEventListener("scroll", onScroll2);
+  }, [currentOffset, prevOffset]);
+  let transitionStyles = {
+    entering: {},
+    entered: { transform: "translateY(0)" },
+    exiting: {},
+    exited: { transform: "translateY(-100%)" },
+    unmounted: {}
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react_transition_group.Transition, { nodeRef: headerRef, in: prevOffset > currentOffset, timeout: prevOffset > currentOffset ? 0 : 500, children: (state) => {
+    var _a;
+    return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
+      "header",
+      {
+        style: {
+          transform: "translateY(-100%)",
+          ...transitionStyles[state]
+        },
+        ref: headerRef,
+        className: `${prevOffset > currentOffset && ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.scrollHeight) < currentOffset && "bg-ivory shadow"} py-4 sticky left-0 w-screen z-10 transition duration-500 top-0`,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "container grid grid-cols-3 items-center", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Link, { title: "home", to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { className: "w-24 md:w-32", src: sparkyLogo_default }, void 0, !1, {
+            fileName: "app/components/Header.tsx",
+            lineNumber: 46,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Header.tsx",
+            lineNumber: 45,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "text-center text-sm" }, void 0, !1, {
+            fileName: "app/components/Header.tsx",
+            lineNumber: 48,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "flex justify-end text-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("button", { onClick: () => toggleModal ? toggleModal() : null, children: "CONTACT" }, void 0, !1, {
+            fileName: "app/components/Header.tsx",
+            lineNumber: 50,
+            columnNumber: 15
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Header.tsx",
+            lineNumber: 49,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Header.tsx",
+          lineNumber: 44,
+          columnNumber: 11
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/Header.tsx",
+        lineNumber: 36,
+        columnNumber: 9
+      },
+      this
+    );
+  } }, void 0, !1, {
     fileName: "app/components/Header.tsx",
-    lineNumber: 11,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/components/Header.tsx",
-    lineNumber: 10,
+    lineNumber: 34,
     columnNumber: 5
   }, this);
 }
@@ -199,7 +234,7 @@ function Header() {
 var import_react5 = require("@remix-run/react"), import_react6 = require("react");
 
 // app/components/Modal.tsx
-var import_react4 = require("react"), import_react_transition_group = require("react-transition-group"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), Modal = ({ children, modalState, closeModal }) => {
+var import_react4 = require("react"), import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), Modal = ({ children, modalState, closeModal }) => {
   let onKeyDown = (0, import_react4.useCallback)((event2) => {
     event2.key === "Escape" && closeModal();
   }, []);
@@ -210,7 +245,7 @@ var import_react4 = require("react"), import_react_transition_group = require("r
     }
     document.removeEventListener("keydown", onKeyDown), document.body.classList.remove("h-screen", "overflow-hidden");
   }, [onKeyDown, modalState]), /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
-    import_react_transition_group.Transition,
+    import_react_transition_group2.Transition,
     {
       in: modalState,
       timeout: modalState ? 0 : 500,
@@ -310,6 +345,9 @@ var import_react4 = require("react"), import_react_transition_group = require("r
   );
 };
 
+// app/assets/homepage-svg-background.svg
+var homepage_svg_background_default = "/build/_assets/homepage-svg-background-UCFKBJDT.svg";
+
 // app/root.tsx
 var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), links = () => [
   { rel: "stylesheet", href: tailwind_default },
@@ -346,7 +384,7 @@ function App() {
       lineNumber: 33,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("body", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(ModalContext.Provider, { value: toggleModal, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("body", { style: { backgroundImage: `url(${homepage_svg_background_default})` }, className: "bg-ivory bg-cover bg-no-repeat bg-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(ModalContext.Provider, { value: toggleModal, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(Header, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 41,
@@ -7849,8 +7887,8 @@ var import_react15 = require("react"), import_jsx_dev_runtime31 = require("react
 // app/components/Hero.tsx
 var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime");
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "relative w-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "container py-36 flex flex-col justify-center relative gap-28 z-[1]", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("h1", { className: "font-bold text-5xl md:text-8xl text-shadow", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "relative w-full z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { className: "container pt-24 pb-36 flex flex-col justify-center gap-28", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("h1", { className: "text-shadow", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
       fileName: "app/components/Hero.tsx",
       lineNumber: 8,
       columnNumber: 9
@@ -8166,7 +8204,7 @@ function PortfolioList() {
       lineNumber: 13,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "flex flex-col gap-3 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: `relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? "opacity-80" : "focus-within:highlighted hover:highlighted hover-highlight !duration-500"}`, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "flex flex-col gap-3 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: `relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? "opacity-80" : "focus-within:highlighted hover:highlighted hover-highlight"}`, children: [
       !status && /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "transition duration-500 absolute bottom-1/2 -left-5 transform translate-y-1/2 -translate-x-full -rotate-45 scale-0 group-hover:rotate-90 group-hover:scale-100", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(Star_default, { className: "w-9 h-9" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 19,
@@ -8442,7 +8480,7 @@ var import_react22 = require("react");
 var offerings_accordion_background_default = "/build/_assets/offerings-accordion-background-EQT2VSAP.jpeg";
 
 // app/components/OfferingsAccordion.tsx
-var import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime37 = require("react/jsx-dev-runtime"), offerings = [
+var import_react_transition_group3 = require("react-transition-group"), import_jsx_dev_runtime37 = require("react/jsx-dev-runtime"), offerings = [
   {
     title: "Front-End",
     listItems: [
@@ -8517,7 +8555,7 @@ var import_react_transition_group2 = require("react-transition-group"), import_j
       lineNumber: 81,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(import_react_transition_group2.Transition, { nodeRef: accordionRef, in: isOpen, timeout: isOpen ? 0 : 500, appear: !0, unmountOnExit: !0, children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(import_react_transition_group3.Transition, { nodeRef: accordionRef, in: isOpen, timeout: isOpen ? 0 : 500, appear: !0, unmountOnExit: !0, children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
       "div",
       {
         style: {
@@ -8822,67 +8860,56 @@ function Footer2() {
   }, this);
 }
 
-// app/assets/homepage-svg-background.svg
-var homepage_svg_background_default = "/build/_assets/homepage-svg-background-UCFKBJDT.svg";
-
 // app/routes/_index.tsx
 var import_jsx_dev_runtime40 = require("react/jsx-dev-runtime"), meta = () => [
   { title: "Sparky | Home" },
   { name: "description", content: "We design, build, & optimize high-converting eCommerce sites that glow with brand personality." }
 ];
-function Index4({ toggleModal }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(import_jsx_dev_runtime40.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { style: { backgroundImage: `url(${homepage_svg_background_default})` }, className: "bg-ivory bg-cover bg-no-repeat bg-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { className: "w-screen max-md:overflow-x-hidden", children: [
+function Index4() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(import_jsx_dev_runtime40.Fragment, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Hero, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 28,
-      columnNumber: 11
+      lineNumber: 21,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 29,
-      columnNumber: 11
+      lineNumber: 22,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 30,
-      columnNumber: 11
+      lineNumber: 23,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(PortfolioList, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 31,
-      columnNumber: 11
+      lineNumber: 24,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 32,
-      columnNumber: 11
+      lineNumber: 25,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 33,
-      columnNumber: 11
+      lineNumber: 26,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Marquee, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 34,
-      columnNumber: 11
+      lineNumber: 27,
+      columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Footer2, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 35,
-      columnNumber: 11
+      lineNumber: 28,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 27,
-    columnNumber: 9
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 26,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 25,
+    lineNumber: 20,
     columnNumber: 5
   }, this);
 }
@@ -8910,7 +8937,7 @@ function Index5() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NDGCHN6P.js", imports: ["/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OSLQHOYJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-B53JZPNJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js", "/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b4dcd0c3", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696040025259 }, url: "/build/manifest-B4DCD0C3.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZETJ3O4J.js", imports: ["/build/_shared/chunk-RLFMSAON.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-N43A6RYQ.js", imports: ["/build/_shared/chunk-AQ2B7HAU.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-BVHA6UFM.js", imports: ["/build/_shared/chunk-AQ2B7HAU.js", "/build/_shared/chunk-RLFMSAON.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "1fac14cf", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696093605652 }, url: "/build/manifest-1FAC14CF.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
