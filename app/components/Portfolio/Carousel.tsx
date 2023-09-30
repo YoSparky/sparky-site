@@ -50,11 +50,12 @@ export function Carousel({ content } : { content: { image: string | null, captio
   }, []);
   
   return (
-    <div className="relative">
+    <div className="relative mix-blend-multiply">
        <swiper-container
         // @ts-expect-error
         init="false"
         ref={swiperElRef}
+        className="mix-blend-multiply"
       >
       {content.map(({ image, caption }) => {
         if (!image) return;

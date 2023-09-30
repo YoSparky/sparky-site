@@ -9,8 +9,10 @@ import {
   SparkyMagic, 
   Stack, 
   Testimonial,
-  Footer
+  Footer,
+  SVGBackground
 } from '~/components/Portfolio';
+import backgroundShapes from '../assets/portfolio-svg-background.svg';
 
 export default function Index() {
   const params = useParams();
@@ -44,7 +46,7 @@ export default function Index() {
   } = caseStudy;
   
   return (
-    <>
+    <div className="bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${backgroundShapes})` }}>
       <div className="container flex flex-col pt-32 gap-5 pb-5 md:pb-10">
         <span className="uppercase">case study /</span>
         <div className="flex items-center justify-between">
@@ -118,16 +120,18 @@ export default function Index() {
         </div>
       }
       
-      <Footer 
-        prevItem={{
-          title: data[currentIndex - 1]?.title,
-          handle: data[currentIndex - 1]?.handle
-        }} 
-        nextItem={{
-          title: data[currentIndex + 1]?.title,
-          handle: data[currentIndex + 1]?.handle
-        }} 
-      />
-    </>
+      <div className="bg-ivory">
+        <Footer 
+          prevItem={{
+            title: data[currentIndex - 1]?.title,
+            handle: data[currentIndex - 1]?.handle
+          }} 
+          nextItem={{
+            title: data[currentIndex + 1]?.title,
+            handle: data[currentIndex + 1]?.handle
+          }} 
+        />
+      </div>
+    </div>
   );
 }

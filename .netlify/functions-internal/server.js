@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-6WRHZNXA.css";
+var tailwind_default = "/build/_assets/tailwind-MDIUZMXS.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -7067,18 +7067,19 @@ function Carousel({ content }) {
       }
     };
     Object.assign(swiper, swiperParams), swiper.initialize();
-  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "relative", children: [
+  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "relative mix-blend-multiply", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
       "swiper-container",
       {
         init: "false",
         ref: swiperElRef,
+        className: "mix-blend-multiply",
         children: content.map(({ image, caption }) => {
           if (image)
             return /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("swiper-slide", { children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("img", { className: "block max-h-[80vh] object-contain object-center mx-auto w-auto mix-blend-multiply", width: "319", height: "329", src: image, alt: caption || "" }, void 0, !1, {
                 fileName: "app/components/Portfolio/Carousel.tsx",
-                lineNumber: 64,
+                lineNumber: 65,
                 columnNumber: 13
               }, this),
               caption && /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "block text-sm uppercase pt-4", children: [
@@ -7086,12 +7087,12 @@ function Carousel({ content }) {
                 caption
               ] }, void 0, !0, {
                 fileName: "app/components/Portfolio/Carousel.tsx",
-                lineNumber: 65,
+                lineNumber: 66,
                 columnNumber: 25
               }, this)
             ] }, (0, import_react7.useId)(), !0, {
               fileName: "app/components/Portfolio/Carousel.tsx",
-              lineNumber: 63,
+              lineNumber: 64,
               columnNumber: 11
             }, this);
         })
@@ -7109,22 +7110,22 @@ function Carousel({ content }) {
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: `${isSliding ? "md:opacity-0" : "duration-500"} transition-opacity duration-200 flex max-md:container max-md:py-4 md:flex-col gap-3 items-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:pl-[24%] md:w-[1%]`, children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 73,
+          lineNumber: 74,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { className: "text-xs", children: "/" }, void 0, !1, {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 74,
+          lineNumber: 75,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: content.length }, void 0, !1, {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 75,
+          lineNumber: 76,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/Portfolio/Carousel.tsx",
-        lineNumber: 72,
+        lineNumber: 73,
         columnNumber: 11
       }, this),
       currentIndex > 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
@@ -7134,7 +7135,7 @@ function Carousel({ content }) {
           className: "z-[1] h-16 w-16 text-ivory transform rotate-180 origin-top translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-left top-1/2 transition duration-200 opacity-90",
           children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(Arrow_default, { className: "w-16 h-16" }, void 0, !1, {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 83,
+            lineNumber: 84,
             columnNumber: 15
           }, this)
         },
@@ -7142,7 +7143,7 @@ function Carousel({ content }) {
         !1,
         {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 78,
+          lineNumber: 79,
           columnNumber: 13
         },
         this
@@ -7154,7 +7155,7 @@ function Carousel({ content }) {
           className: "z-[1] h-16 w-16 text-ivory transform -translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-right top-1/2 transition duration-200 opacity-90",
           children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(Arrow_default, { className: "w-16 h-16" }, void 0, !1, {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 92,
+            lineNumber: 93,
             columnNumber: 15
           }, this)
         },
@@ -7162,14 +7163,14 @@ function Carousel({ content }) {
         !1,
         {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 87,
+          lineNumber: 88,
           columnNumber: 11
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/Portfolio/Carousel.tsx",
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -7343,7 +7344,7 @@ function Stack({ content }) {
       lineNumber: 6,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("ul", { className: "flex flex-wrap [&_li]:border [&_li]:border-current [&_li]:py-2 [&_li]:px-4 [&_li]:md:py-4 [&_li]:md:px-8 md:text-xl", children: content.map(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("ul", { className: "flex flex-wrap [&_li]:bg-ivory [&_li]:border [&_li]:border-current [&_li]:py-2 [&_li]:px-4 [&_li]:md:py-4 [&_li]:md:px-8 md:text-xl", children: content.map(
       ({ title, link }) => link ? /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("a", { href: link, children: title }, void 0, !1, {
         fileName: "app/components/Portfolio/Stack.tsx",
         lineNumber: 10,
@@ -7568,6 +7569,9 @@ function Footer({ prevItem, nextItem }) {
   }, this);
 }
 
+// app/assets/portfolio-svg-background.svg
+var portfolio_svg_background_default = "/build/_assets/portfolio-svg-background-UU3LEGFQ.svg";
+
 // app/routes/portfolio.$client.tsx
 var import_jsx_dev_runtime28 = require("react/jsx-dev-runtime");
 function Index() {
@@ -7576,15 +7580,15 @@ function Index() {
   if (!caseStudy)
     return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { children: "Whoops! Nothing here." }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 25,
+      lineNumber: 27,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 24,
+      lineNumber: 26,
       columnNumber: 9
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 23,
+      lineNumber: 25,
       columnNumber: 7
     }, this);
   let {
@@ -7601,52 +7605,52 @@ function Index() {
     stack,
     results
   } = caseStudy;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(import_jsx_dev_runtime28.Fragment, { children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "bg-cover bg-no-repeat bg-center", style: { backgroundImage: `url(${portfolio_svg_background_default})` }, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container flex flex-col pt-32 gap-5 pb-5 md:pb-10", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { className: "uppercase", children: "case study /" }, void 0, !1, {
         fileName: "app/routes/portfolio.$client.tsx",
-        lineNumber: 49,
+        lineNumber: 51,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "flex items-center justify-between", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("h1", { className: "block leading-tight text-3xl md:text-[88px] font-bold", children: title }, void 0, !1, {
           fileName: "app/routes/portfolio.$client.tsx",
-          lineNumber: 51,
+          lineNumber: 53,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("a", { target: "_blank", rel: "noopener", href: siteLink, className: "relative z-[0] group px-2 font-title text-xl font-bold md:text-[44px] flex items-end gap-8", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("span", { className: "py-3 block w-max", children: "Visit" }, void 0, !1, {
             fileName: "app/routes/portfolio.$client.tsx",
-            lineNumber: 53,
+            lineNumber: 55,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { "aria-hidden": "true", className: "w-6 text-energyYellow transition-all duration-300 group-hover:text-tuatara", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(ArrowSquare_default, {}, void 0, !1, {
             fileName: "app/routes/portfolio.$client.tsx",
-            lineNumber: 55,
+            lineNumber: 57,
             columnNumber: 15
           }, this) }, void 0, !1, {
             fileName: "app/routes/portfolio.$client.tsx",
-            lineNumber: 54,
+            lineNumber: 56,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { "aria-hidden": "true", className: "absolute bottom-0 left-0 h-6 w-[calc(100%-44px)] bg-energyYellow -z-[1]" }, void 0, !1, {
             fileName: "app/routes/portfolio.$client.tsx",
-            lineNumber: 57,
+            lineNumber: 59,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/portfolio.$client.tsx",
-          lineNumber: 52,
+          lineNumber: 54,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/portfolio.$client.tsx",
-        lineNumber: 50,
+        lineNumber: 52,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 48,
+      lineNumber: 50,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
@@ -7659,93 +7663,93 @@ function Index() {
       !1,
       {
         fileName: "app/routes/portfolio.$client.tsx",
-        lineNumber: 62,
+        lineNumber: 64,
         columnNumber: 7
       },
       this
     ),
     vimeoLinkPrimary && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("iframe", { className: "aspect-video w-full", src: vimeoLinkPrimary }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 69,
+      lineNumber: 71,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 68,
+      lineNumber: 70,
       columnNumber: 9
     }, this),
     overview && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container md:max-w-5xl py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Overview, { content: overview }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 75,
+      lineNumber: 77,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 74,
+      lineNumber: 76,
       columnNumber: 9
     }, this),
     carousel && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Carousel, { content: carousel }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 81,
+      lineNumber: 83,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 80,
+      lineNumber: 82,
       columnNumber: 9
     }, this),
     sparkyMagic && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container md:max-w-5xl py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(SparkyMagic, { content: sparkyMagic }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 87,
+      lineNumber: 89,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 86,
+      lineNumber: 88,
       columnNumber: 9
     }, this),
     vimeoLinkSecondary && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("iframe", { className: "aspect-video w-full", src: vimeoLinkSecondary }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 93,
+      lineNumber: 95,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 92,
+      lineNumber: 94,
       columnNumber: 9
     }, this),
     portfolioBanner && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(PortfolioBanner, { content: portfolioBanner }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 99,
+      lineNumber: 101,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 98,
+      lineNumber: 100,
       columnNumber: 9
     }, this),
     testimonial && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container md:max-w-5xl py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Testimonial, { content: testimonial }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 105,
+      lineNumber: 107,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 104,
+      lineNumber: 106,
       columnNumber: 9
     }, this),
     stack && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container md:max-w-5xl py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Stack, { content: stack }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 111,
+      lineNumber: 113,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 110,
+      lineNumber: 112,
       columnNumber: 9
     }, this),
     results && /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(Results, { content: results }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 117,
+      lineNumber: 119,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/portfolio.$client.tsx",
-      lineNumber: 116,
+      lineNumber: 118,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime28.jsxDEV)(
       Footer,
       {
         prevItem: {
@@ -7761,14 +7765,18 @@ function Index() {
       !1,
       {
         fileName: "app/routes/portfolio.$client.tsx",
-        lineNumber: 121,
-        columnNumber: 7
+        lineNumber: 124,
+        columnNumber: 9
       },
       this
-    )
+    ) }, void 0, !1, {
+      fileName: "app/routes/portfolio.$client.tsx",
+      lineNumber: 123,
+      columnNumber: 7
+    }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/portfolio.$client.tsx",
-    lineNumber: 47,
+    lineNumber: 49,
     columnNumber: 5
   }, this);
 }
@@ -8932,7 +8940,7 @@ function Index5() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VVUVSKOK.js", imports: ["/build/_shared/chunk-62BFZQKX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2CWLFFGE.js", imports: ["/build/_shared/chunk-J5KRCEAS.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-E5E4S552.js", imports: ["/build/_shared/chunk-J5KRCEAS.js", "/build/_shared/chunk-62BFZQKX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "381093d3", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696032598440 }, url: "/build/manifest-381093D3.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EHLOS66L.js", imports: ["/build/_shared/chunk-V4CNL3V2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-I3DSJCWL.js", imports: ["/build/_shared/chunk-UE6VRZVQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-NNOHA7V3.js", imports: ["/build/_shared/chunk-UE6VRZVQ.js", "/build/_shared/chunk-V4CNL3V2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "8ed96b99", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696034562562 }, url: "/build/manifest-8ED96B99.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
