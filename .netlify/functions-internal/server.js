@@ -8176,8 +8176,8 @@ function PortfolioList() {
         lineNumber: 18,
         columnNumber: 19
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "block w-max whitespace-nowrap", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex w-full items-end gap-4 ", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "block w-max whitespace-nowrap text-2xl md:text-[44px] font-title leading-[0.75]", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 24,
           columnNumber: 39
@@ -8197,7 +8197,7 @@ function PortfolioList() {
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "leading-none uppercase text-xs whitespace-nowrap", children: platform }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "title leading-none whitespace-nowrap", children: platform }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 29,
           columnNumber: 19
@@ -8212,7 +8212,7 @@ function PortfolioList() {
         lineNumber: 28,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "leading-none uppercase text-xs text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "title leading-none text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 33,
         columnNumber: 45
@@ -8910,7 +8910,7 @@ function Index5() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NDGCHN6P.js", imports: ["/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3GASB3QP.js", imports: ["/build/_shared/chunk-M4XVP5BT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-B53JZPNJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js", "/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "2960e0a3", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696039839844 }, url: "/build/manifest-2960E0A3.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-J5E4HPHQ.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NDGCHN6P.js", imports: ["/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-2PH7CI3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OSLQHOYJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio": { id: "routes/portfolio", parentId: "root", path: "portfolio", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio-K2MNEJC7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "routes/portfolio", path: ":client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-B53JZPNJ.js", imports: ["/build/_shared/chunk-M4XVP5BT.js", "/build/_shared/chunk-6WEKIVOK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "routes/portfolio", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-LOVENKP7.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b4dcd0c3", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696040025259 }, url: "/build/manifest-B4DCD0C3.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

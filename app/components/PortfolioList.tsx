@@ -19,17 +19,17 @@ export default function PortfolioList() {
                     <Star className="w-9 h-9" />
                   </span>
                 }
-                <span className="flex w-full items-end leading-[0.75] gap-4 text-2xl md:text-[44px] font-title">
-                  <strong className="block w-max whitespace-nowrap">                
+                <span className="flex w-full items-end gap-4 ">
+                  <strong className="block w-max whitespace-nowrap text-2xl md:text-[44px] font-title leading-[0.75]">                
                     {status ? title : <a target="_blank" href={link}>{title}</a>}
                   </strong>
                   <span className="w-full border-b border-current border-dashed"></span>
                 </span>
                 <span className="flex items-end w-full gap-4">
-                  <span className="leading-none uppercase text-xs whitespace-nowrap">{platform}</span>
+                  <span className="title leading-none whitespace-nowrap">{platform}</span>
                   <span className="w-full border-b border-current border-dashed"></span>
                 </span>
-                <span className="leading-none uppercase text-xs text-center">
+                <span className="title leading-none text-center">
                   {status ? 'In progress' : <a target="_blank" href={link}>Visit</a>}
                 </span>
               </li>
