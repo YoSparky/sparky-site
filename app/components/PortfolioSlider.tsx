@@ -92,10 +92,6 @@ export default function PortfolioSlider() {
       >
         <Arrow className="w-5 h-5" />
       </button>
-      <div 
-        className="hidden scale-125 after:absolute after:right-0 after:bg-ivory after:h-full after:w-1/2 after:-z-[1] after:rounded-[0_150px_150px_0] z-[0] h-16 w-16 transform translate-x-1/2 -translate-y-1/2 md:flex items-center justify-center absolute right-0 top-1/2"
-        aria-hidden="true"
-      ></div>
     </div>
   )
 }

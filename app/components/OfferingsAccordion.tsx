@@ -109,7 +109,7 @@ const Accordion = ({ label, children, id, isOpen, toggleAccordion } : AccordionP
 export default function OfferingsAccordion() {
   const [currentlyActive, setCurrentlyActive] = useState(null);
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat max-md:pb-32 py-52 z-[0] relative">
+    <div style={{ backgroundImage: `url(${backgroundImage})` }} className="bg-no-repeat max-md:pb-32 py-52">
       <div className="container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]">
         <div className="md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase">
           We work with <br/> fast-growing brands with <br/> diverse eComm needs.

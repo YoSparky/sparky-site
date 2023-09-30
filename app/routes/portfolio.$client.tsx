@@ -10,7 +10,6 @@ import {
   Stack, 
   Testimonial,
   Footer,
-  SVGBackground
 } from '~/components/Portfolio';
 import backgroundShapes from '../assets/portfolio-svg-background.svg';
 

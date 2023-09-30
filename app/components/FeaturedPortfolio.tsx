@@ -36,9 +36,6 @@ export default function FeaturedPortfolio() {
           <Link className="lg:hidden button w-max" to="/portfolio">View More Work</Link>
         </div>
       </div>
-      <div className="absolute left-0 top-0 bottom-0 aspect-[2/1] max-w-[100vw] w-full z-[0]">
-        <div className="-z-[1] relative bottom-0 left-0 transform -translate-x-[70%] rotate-[65deg] h-[100vh] w-full bg-energyYellow mix-blend-multiply" aria-hidden="true"></div>
-      </div>
     </div>
   )
 }

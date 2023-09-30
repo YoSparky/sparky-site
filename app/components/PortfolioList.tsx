@@ -49,7 +49,7 @@ const portfolioListItems = [
 export default function PortfolioList() {  
   return (
     <div className="relative w-full">
-      <div className="container py-12 relative z-[1]">
+      <div className="container py-12">
         <div className="max-w-5xl ml-auto flex flex-col gap-8">
           <span className="uppercase">Work in the wild</span>
           <ul className="flex flex-col gap-8 pb-11 border-b border-current">
@@ -76,9 +76,6 @@ export default function PortfolioList() {
           </ul>
           <strong className="ml-auto text-right uppercase">More examples on request</strong>
         </div>
-      </div>
-      <div className="absolute right-0 top-0 max-w-[100vw] w-full z-[0] overflow-hidden">
-        <div className="-z-[1] relative bottom-0 right-0 transform translate-x-[70%] rotate-[-25deg] h-[150vh] w-full bg-energyYellow mix-blend-multiply" aria-hidden="true"></div>
       </div>
     </div>
   )

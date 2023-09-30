@@ -12,9 +12,6 @@ export default function Hero() {
           </LiquidDropHover>
         </Link>
       </div>
-      <div className="absolute left-0 top-0 min-h-max max-w-[100vw] w-full overflow-hidden z-[0]">
-        <div className="-z-[1] relative bottom-0 left-0 transform translate-x-1/2 -translate-y-1/4 aspect-square w-full bg-energyYellow mix-blend-multiply rounded-[20vw]" aria-hidden="true"></div>
-      </div>
     </div>
   )
 }
