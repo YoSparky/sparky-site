@@ -12,7 +12,7 @@ export default function PortfolioList() {
         <div className="md:max-w-5xl ml-auto flex flex-col gap-8">
           <span className="title">Work in the wild</span>
           <ul className="flex flex-col gap-3 pb-11 border-b border-current">
-            {portfolioListItems.map(({ title, status, platform, link }, i) => (
+            {portfolioListItems.map(({ title, status, platform, link }) => (
               <li className={`relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? `opacity-80` : `focus-within:highlighted hover:highlighted hover-highlight after:!duration-500`}`} key={`${useId()}`}>
                 {!status &&
                   <span className="transition duration-500 absolute bottom-1/2 -left-5 transform translate-y-1/2 -translate-x-full -rotate-45 scale-0 group-hover:rotate-90 group-hover:scale-100">

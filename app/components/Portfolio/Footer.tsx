@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { ModalContext } from "~/root";
 import FooterInfo from "../Footer/components/FooterInfo";
+import { Link } from "@remix-run/react";
 
 type PortfolioPaginationItem = {
   handle: string | null,
@@ -8,7 +9,7 @@ type PortfolioPaginationItem = {
   | undefined
 }
 
-export function Footer({ prevItem, nextItem } : { prevItem: PortfolioPaginationItem, nextItem: PortfolioPaginationItem }) {  
+export function Footer({ prevItem, nextItem, isFirst = false } : { prevItem: PortfolioPaginationItem, nextItem: PortfolioPaginationItem, isFirst: boolean }) {  
   const toggleModal = useContext(ModalContext);
 
   return (
@@ -16,16 +17,16 @@ export function Footer({ prevItem, nextItem } : { prevItem: PortfolioPaginationI
       <div className="container pt-11">
         <div className="flex items-center w-full">
           {prevItem.handle && 
-            <a className="group flex items-center gap-3 md:gap-7" href={`/portfolio/${prevItem.handle}`}>
+            <Link className="group flex items-center gap-3 md:gap-7" to={`/portfolio/${prevItem.handle}`}>
               <strong className="text-xl md:text-[44px] font-title underline hover-highlight group-hover:highlighted">{prevItem.title}</strong>
               <span className="uppercase text-xs">PREV</span>
-            </a>
+            </Link>
           }
-          {nextItem.handle && 
-            <a className="group flex items-center gap-3 md:gap-7 ml-auto" href={`/portfolio/${nextItem.handle}`}>
-              <span className="uppercase text-xs">NEXT</span>
+          {(nextItem.handle) &&
+            <Link className="group flex items-center gap-3 md:gap-7 ml-auto" to={`/portfolio/${nextItem.handle}`}>
+              <span className="uppercase text-xs">{isFirst ? 'View' : 'NEXT'}</span>
               <strong className="text-xl md:text-[44px] font-title underline hover-highlight group-hover:highlighted">{nextItem.title}</strong>
-            </a>
+            </Link>
           }
         </div>
         <hr className="border-0 border-b py-11 border-dashed border-current w-full" />

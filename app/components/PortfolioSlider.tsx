@@ -5,6 +5,7 @@ import GhostImage from '../assets/ghost-slider.jpeg';
 import SliderBackground from '../assets/slider-bg-bottom.png';
 import { register } from 'swiper/element/bundle';
 import { Arrow } from './icons';
+import { Link } from '@remix-run/react';
 
 declare global {
   namespace JSX {
@@ -41,23 +42,33 @@ register();
 export default function PortfolioSlider() {  
   const swiperElRef = useRef(null);
   const [currentIndex, setIndex] = useState(0);
+  const [isSliding, setSlidingState] = useState(false);
 
   useEffect(() => {
     // @ts-expect-error
     swiperElRef.current.addEventListener('slidechange', (e) => {
       setIndex(e.detail[0].realIndex);
     });
+    
+     // @ts-expect-error
+     swiperElRef.current.addEventListener('slidechangetransitionstart', () => {
+      setSlidingState(true);
+    });
+    // @ts-expect-error
+    swiperElRef.current.addEventListener('slidechangetransitionend', () => {
+      setSlidingState(false);
+    });
   }, []);
   
   return (
-    <div className="transform lg:translate-y-1/3 py-10 container relative after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]">
+    <div className="transform lg:translate-y-1/3 py-10 lg:py-12 container relative before:absolute before:bg-botticelli before:top-0 before:-left-4 before:w-4 before:h-2/3 after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]">
       <div 
         className="
           w-full
           lg:w-[calc(100%-80px)] 
           z-[1] 
           px-4
-          lg:px-11
+          lg:px-4
           before:absolute
           before:h-2 
           before:-right-2 
@@ -70,8 +81,8 @@ export default function PortfolioSlider() {
           after:-right-2 
           after:h-[80%]
         after:bg-ivory
-          "
-        >
+        "
+      >
         <swiper-container
           ref={swiperElRef}
           slides-per-view="1"
@@ -86,15 +97,15 @@ export default function PortfolioSlider() {
                 </div>
                 <div className="flex flex-col gap-8 pb-8 lg:pl-32">
                   <p className="text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
-                  <a className="hover-highlight hover:highlighted button--link" href={link}>
+                  <Link className="hover-highlight hover:highlighted button--link" to={link}>
                     <span>Learn More</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </swiper-slide>
           )}
         </swiper-container>
-        <div className="flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10">
+        <div className={`${isSliding ? 'md:opacity-0' : 'duration-500'} flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10`}>
           <span>{currentIndex + 1}</span>
           <span className="text-[8px]">/</span>
           <span>{sliderItems.length}</span>
@@ -116,7 +127,7 @@ export default function PortfolioSlider() {
             items-center 
             justify-center 
             absolute 
-            right-0 
+            absolute-container-right
             top-[40%] 
             rounded-full 
             transition 
@@ -128,19 +139,20 @@ export default function PortfolioSlider() {
           <Arrow className="w-5 h-5" />
         </button>
         <div
+          aria-hidden="true"
           className="
-          before:border-8 
-          before:z-[0]
-          before:border-ivory 
-          before:h-20 
-          before:w-20
-          before:transform 
-          before:lg:translate-x-1/2 
-          before:-translate-y-1/2 
-          before:absolute 
-          before:right-0 
-          before:top-[40%] 
-          before:rounded-full 
+            before:border-8 
+            before:z-[0]
+            before:border-ivory 
+            before:h-20 
+            before:w-20
+            before:transform 
+            before:lg:translate-x-1/2 
+            before:-translate-y-1/2 
+            before:absolute 
+            before:absolute-container-right 
+            before:top-[40%] 
+            before:rounded-full 
           "
         ></div>
       </div>
