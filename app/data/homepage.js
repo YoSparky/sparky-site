@@ -1,3 +1,7 @@
+import LegendsImage from '../assets/legends-slider.jpeg';
+import HeydudeImage from '../assets/heydude-slider.jpeg';
+import GhostImage from '../assets/ghost-slider.jpeg';
+
 export const portfolioListItems = [
   {
     title: 'Orthofeet',
@@ -79,5 +83,26 @@ export const offerings = [
       'Digital Innovation',
       'And More'
     ]
+  }
+];
+
+export const sliderItems = [
+  {
+    title: 'Legends',
+    image: LegendsImage,
+    copy: 'Legends saw a <strong>275% lift in site speed</strong> overnight after launching a new, custom theme',
+    link: '/portfolio/legends'
+  },
+  {
+    title: 'HEYDUDE',
+    image: HeydudeImage,
+    copy: 'HEYDUDE experienced a <strong>51% increase in “Checkouts Reached”</strong> YOY as of seven months post-launch.',
+    link: '/portfolio/heydude'
+  },
+  {
+    title: 'Ghost',
+    image: GhostImage,
+    copy: '<strong>2,210 supplement subscription orders in 30 days</strong> after launching functionality on new Ghost site with no marketing.',
+    link: '/portfolio/ghost'
   }
 ];

@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-OTZZZ3SH.css";
+var tailwind_default = "/build/_assets/tailwind-EEP65F7E.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -1936,11 +1936,11 @@ var data = [
     carousel: [
       {
         image: fortyseven_portfolio_slide_1_default,
-        caption: "Example caption"
+        caption: ""
       },
       {
         image: fortyseven_portfolio_slide_2_default,
-        caption: "Also a caption here"
+        caption: ""
       },
       {
         image: fortyseven_portfolio_slide_3_default,
@@ -2070,7 +2070,7 @@ var data = [
         link: ""
       }
     ],
-    results: "Nostrud qui ex velit duis reprehenderit sint. Officia sit magna duis aliquip est sit aliqua do consectetur laborum irure. Ea dolor nisi sint est labore. Occaecat fugiat mollit aliqua eiusmod ipsum consequat quis deserunt nulla."
+    results: null
   },
   {
     handle: "legends",
@@ -2144,7 +2144,7 @@ var data = [
   },
   {
     handle: "york-athletics",
-    title: "York Athletics",
+    title: "YORK Athletics",
     description: "YORK Athletics Mfg. is a fast-growing direct-to-consumer footwear start-up with roots in a multi-generational family sports business. Their performance-focused unisex sneakers feature a minimal aesthetic and have earned the brand credentials such as the 'Best New Performance Gear' award from Men's Health Magazine and praise in Esquire, ESPN, Hypebeast, and Gear Patrol Magazine.",
     vimeoLinkPrimary: null,
     overview: [
@@ -2233,6 +2233,48 @@ var data = [
       },
       {
         title: "Custom Ghost Loyalty",
+        link: ""
+      }
+    ],
+    results: null
+  },
+  {
+    handle: "rocketsofawesome",
+    title: "Rockets of Awesome",
+    description: "Rockets of Awesome is a curated quarterly apparel subscription box for kids and babies. Parents fill out a \u201Cstyle quiz\u201D when signing up, and the Rockets of Awesome robots and unicorns fill their kids' boxes with apparel that they know they're going to love. ",
+    vimeoLinkPrimary: null,
+    overview: [
+      "Rockets of Awesome wanted to move to Shopify Plus but were handcuffed by their homegrown, complex web platform that was built over a ten-year span.",
+      "We migrated the brand to Shopify Plus and partnered with Awtomic to create an easily editable subscription bundle feature. "
+    ],
+    carousel: null,
+    sparkyMagic: [
+      "We reimagined their curation algorithm and legacy box sorting system, eliminating development dependencies and putting total control into the hands of the merchandising team.",
+      "We built a custom quiz builder and box curator app that integrates with Shopify, Awtomic, and their 3PL Pitney Bowes."
+    ],
+    portfolioBanner: null,
+    vimeoLinkSecondary: null,
+    siteLink: "https://rocketsofawesome.com/",
+    testimonial: null,
+    stack: [
+      {
+        title: "Shopify Plus",
+        link: ""
+      },
+      {
+        title: "Klaviyo",
+        link: ""
+      },
+      {
+        title: "Awtomic",
+        link: ""
+      },
+      {
+        title: "Loop",
+        link: ""
+      },
+      {
+        title: "Custom Box Curator App",
         link: ""
       }
     ],
@@ -8935,6 +8977,15 @@ function FeaturedPartners() {
 // app/components/PortfolioList.tsx
 var import_react24 = require("react");
 
+// app/assets/legends-slider.jpeg
+var legends_slider_default = "/build/_assets/legends-slider-WK3CNSPU.jpeg";
+
+// app/assets/heydude-slider.jpeg
+var heydude_slider_default = "/build/_assets/heydude-slider-ECV7TTBB.jpeg";
+
+// app/assets/ghost-slider.jpeg
+var ghost_slider_default = "/build/_assets/ghost-slider-6AESFCJH.jpeg";
+
 // app/data/homepage.js
 var portfolioListItems = [
   {
@@ -9015,6 +9066,25 @@ var portfolioListItems = [
       "Digital Innovation",
       "And More"
     ]
+  }
+], sliderItems = [
+  {
+    title: "Legends",
+    image: legends_slider_default,
+    copy: "Legends saw a <strong>275% lift in site speed</strong> overnight after launching a new, custom theme",
+    link: "/portfolio/legends"
+  },
+  {
+    title: "HEYDUDE",
+    image: heydude_slider_default,
+    copy: "HEYDUDE experienced a <strong>51% increase in \u201CCheckouts Reached\u201D</strong> YOY as of seven months post-launch.",
+    link: "/portfolio/heydude"
+  },
+  {
+    title: "Ghost",
+    image: ghost_slider_default,
+    copy: "<strong>2,210 supplement subscription orders in 30 days</strong> after launching functionality on new Ghost site with no marketing.",
+    link: "/portfolio/ghost"
   }
 ];
 
@@ -9114,37 +9184,8 @@ function PortfolioList() {
 
 // app/components/PortfolioSlider.tsx
 var import_react25 = require("react");
-
-// app/assets/legends-slider.jpeg
-var legends_slider_default = "/build/_assets/legends-slider-WK3CNSPU.jpeg";
-
-// app/assets/heydude-slider.jpeg
-var heydude_slider_default = "/build/_assets/heydude-slider-ECV7TTBB.jpeg";
-
-// app/assets/ghost-slider.jpeg
-var ghost_slider_default = "/build/_assets/ghost-slider-6AESFCJH.jpeg";
-
-// app/components/PortfolioSlider.tsx
-var import_react26 = require("@remix-run/react"), import_jsx_dev_runtime37 = require("react/jsx-dev-runtime"), sliderItems = [
-  {
-    title: "Legends",
-    image: legends_slider_default,
-    copy: "Legends saw a <strong>24% lift in cart conversions</strong> after our Shopify Plus replatforming.",
-    link: "/portfolio/legends"
-  },
-  {
-    title: "HEYDUDE",
-    image: heydude_slider_default,
-    copy: "HEYDUDE experienced a <strong>51% increase in \u201CCheckouts Reached\u201D</strong> YOY as of seven months post-launch.",
-    link: "/portfolio/heydude"
-  },
-  {
-    title: "Ghost",
-    image: ghost_slider_default,
-    copy: "<strong>2,210 supplement subscription orders in 30 days</strong> after launching functionality on new Ghost site with no marketing.",
-    link: "/portfolio/ghost"
-  }
-];
+var import_react26 = require("@remix-run/react");
+var import_jsx_dev_runtime37 = require("react/jsx-dev-runtime");
 register();
 function PortfolioSlider() {
   let swiperElRef = (0, import_react25.useRef)(null), [currentIndex, setIndex] = (0, import_react25.useState)(0), [isSliding, setSlidingState] = (0, import_react25.useState)(!1);
@@ -9189,40 +9230,40 @@ function PortfolioSlider() {
               ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pb-1/3 pr-16", children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
                   fileName: "app/components/PortfolioSlider.tsx",
-                  lineNumber: 96,
+                  lineNumber: 72,
                   columnNumber: 19
                 }, this) }, void 0, !1, {
                   fileName: "app/components/PortfolioSlider.tsx",
-                  lineNumber: 95,
+                  lineNumber: 71,
                   columnNumber: 17
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "flex flex-col gap-8 pb-8 lg:pl-32", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("p", { className: "text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
-                    lineNumber: 99,
+                    lineNumber: 75,
                     columnNumber: 19
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(import_react26.Link, { className: "hover-highlight hover:highlighted button--link", to: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
-                    lineNumber: 101,
+                    lineNumber: 77,
                     columnNumber: 21
                   }, this) }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
-                    lineNumber: 100,
+                    lineNumber: 76,
                     columnNumber: 19
                   }, this)
                 ] }, void 0, !0, {
                   fileName: "app/components/PortfolioSlider.tsx",
-                  lineNumber: 98,
+                  lineNumber: 74,
                   columnNumber: 17
                 }, this)
               ] }, void 0, !0, {
                 fileName: "app/components/PortfolioSlider.tsx",
-                lineNumber: 94,
+                lineNumber: 70,
                 columnNumber: 15
               }, this) }, (0, import_react25.useId)(), !1, {
                 fileName: "app/components/PortfolioSlider.tsx",
-                lineNumber: 93,
+                lineNumber: 69,
                 columnNumber: 13
               }, this)
             )
@@ -9231,7 +9272,7 @@ function PortfolioSlider() {
           !1,
           {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 86,
+            lineNumber: 62,
             columnNumber: 9
           },
           this
@@ -9239,22 +9280,22 @@ function PortfolioSlider() {
         /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: `${isSliding ? "md:opacity-0" : "duration-500"} flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10`, children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 109,
+            lineNumber: 85,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 110,
+            lineNumber: 86,
             columnNumber: 11
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 111,
+            lineNumber: 87,
             columnNumber: 11
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/PortfolioSlider.tsx",
-          lineNumber: 108,
+          lineNumber: 84,
           columnNumber: 9
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
@@ -9285,7 +9326,7 @@ function PortfolioSlider() {
           `,
             children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(Arrow_default, { className: "w-5 h-5" }, void 0, !1, {
               fileName: "app/components/PortfolioSlider.tsx",
-              lineNumber: 139,
+              lineNumber: 115,
               columnNumber: 11
             }, this)
           },
@@ -9293,7 +9334,7 @@ function PortfolioSlider() {
           !1,
           {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 113,
+            lineNumber: 89,
             columnNumber: 9
           },
           this
@@ -9321,7 +9362,7 @@ function PortfolioSlider() {
           !1,
           {
             fileName: "app/components/PortfolioSlider.tsx",
-            lineNumber: 141,
+            lineNumber: 117,
             columnNumber: 9
           },
           this
@@ -9332,13 +9373,13 @@ function PortfolioSlider() {
     !0,
     {
       fileName: "app/components/PortfolioSlider.tsx",
-      lineNumber: 65,
+      lineNumber: 41,
       columnNumber: 7
     },
     this
   ) }, void 0, !1, {
     fileName: "app/components/PortfolioSlider.tsx",
-    lineNumber: 64,
+    lineNumber: 40,
     columnNumber: 5
   }, this);
 }
@@ -9699,7 +9740,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-DFE5FAMG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VHRFULOS.js", imports: ["/build/_shared/chunk-OAJBLGZ2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-NUWCDFJN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QZIIJKBJ.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-PSYK2JY5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-MO2X7ANU.js", imports: ["/build/_shared/chunk-NO73TVSC.js", "/build/_shared/chunk-PSYK2JY5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-K3J3ZGW2.js", imports: ["/build/_shared/chunk-NO73TVSC.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-PSYK2JY5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e775e684", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696284667666 }, url: "/build/manifest-E775E684.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-DFE5FAMG.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-KIQM334Y.js", imports: ["/build/_shared/chunk-AWHGRWOE.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-NUWCDFJN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-RRXDOUJY.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-EBK3FBQL.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-27MYGFWQ.js", imports: ["/build/_shared/chunk-FWFQBGZT.js", "/build/_shared/chunk-EBK3FBQL.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-GDGZE6MW.js", imports: ["/build/_shared/chunk-FWFQBGZT.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-EBK3FBQL.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "d7907cec", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1696286210302 }, url: "/build/manifest-D7907CEC.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

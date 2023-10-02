@@ -89,11 +89,11 @@ const data = [
     carousel: [
       {
         image: FortySevenSlide1,
-        caption: 'Example caption'
+        caption: ''
       },
       {
         image: FortySevenSlide2,
-        caption: 'Also a caption here'
+        caption: ''
       },
       {
         image: FortySevenSlide3,
@@ -223,7 +223,7 @@ const data = [
         link: ``
       }
     ],
-    results: `Nostrud qui ex velit duis reprehenderit sint. Officia sit magna duis aliquip est sit aliqua do consectetur laborum irure. Ea dolor nisi sint est labore. Occaecat fugiat mollit aliqua eiusmod ipsum consequat quis deserunt nulla.`
+    results: null
   },
   {
     handle: `legends`,
@@ -297,7 +297,7 @@ const data = [
   },
   {
     handle: `york-athletics`,
-    title: `York Athletics`,
+    title: `YORK Athletics`,
     description: `YORK Athletics Mfg. is a fast-growing direct-to-consumer footwear start-up with roots in a multi-generational family sports business. Their performance-focused unisex sneakers feature a minimal aesthetic and have earned the brand credentials such as the 'Best New Performance Gear' award from Men's Health Magazine and praise in Esquire, ESPN, Hypebeast, and Gear Patrol Magazine.`,
     vimeoLinkPrimary: null,
     overview: [
@@ -386,6 +386,48 @@ const data = [
       },
       {
         title: `Custom Ghost Loyalty`,
+        link: ``
+      }
+    ],
+    results: null
+  },
+  {
+    handle: `rocketsofawesome`,
+    title: `Rockets of Awesome`,
+    description: `Rockets of Awesome is a curated quarterly apparel subscription box for kids and babies. Parents fill out a “style quiz” when signing up, and the Rockets of Awesome robots and unicorns fill their kids' boxes with apparel that they know they're going to love. `,
+    vimeoLinkPrimary: null,
+    overview: [
+      `Rockets of Awesome wanted to move to Shopify Plus but were handcuffed by their homegrown, complex web platform that was built over a ten-year span.`,
+      `We migrated the brand to Shopify Plus and partnered with Awtomic to create an easily editable subscription bundle feature. `
+    ],
+    carousel: null,
+    sparkyMagic: [
+      `We reimagined their curation algorithm and legacy box sorting system, eliminating development dependencies and putting total control into the hands of the merchandising team.`,
+      `We built a custom quiz builder and box curator app that integrates with Shopify, Awtomic, and their 3PL Pitney Bowes.`
+    ],
+    portfolioBanner: null,
+    vimeoLinkSecondary: null,
+    siteLink: `https://rocketsofawesome.com/`,
+    testimonial: null,
+    stack: [
+      {
+        title: `Shopify Plus`,
+        link: ``
+      },
+      {
+        title: `Klaviyo`,
+        link: ``
+      },
+      {
+        title: `Awtomic`,
+        link: ``
+      },
+      {
+        title: `Loop`,
+        link: ``
+      },
+      {
+        title: `Custom Box Curator App`,
         link: ``
       }
     ],

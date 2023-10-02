@@ -1,11 +1,8 @@
 import { useRef, useEffect, useState, useId } from 'react';
-import LegendsImage from '../assets/legends-slider.jpeg';
-import HeydudeImage from '../assets/heydude-slider.jpeg';
-import GhostImage from '../assets/ghost-slider.jpeg';
-import SliderBackground from '../assets/slider-bg-bottom.png';
 import { register } from 'swiper/element/bundle';
 import { Arrow } from './icons';
 import { Link } from '@remix-run/react';
+import { sliderItems } from '~/data/homepage';
 
 declare global {
   namespace JSX {
@@ -15,27 +12,6 @@ declare global {
     }
   }
 }
-
-const sliderItems = [
-  {
-    title: 'Legends',
-    image: LegendsImage,
-    copy: 'Legends saw a <strong>24% lift in cart conversions</strong> after our Shopify Plus replatforming.',
-    link: '/portfolio/legends'
-  },
-  {
-    title: 'HEYDUDE',
-    image: HeydudeImage,
-    copy: 'HEYDUDE experienced a <strong>51% increase in “Checkouts Reached”</strong> YOY as of seven months post-launch.',
-    link: '/portfolio/heydude'
-  },
-  {
-    title: 'Ghost',
-    image: GhostImage,
-    copy: '<strong>2,210 supplement subscription orders in 30 days</strong> after launching functionality on new Ghost site with no marketing.',
-    link: '/portfolio/ghost'
-  }
-];
 
 register();
 
