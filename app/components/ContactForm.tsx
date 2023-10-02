@@ -31,7 +31,7 @@ export default function ContactForm() {
           </li>
         </ul>
       </Accordion>
-      <Accordion toggleAccordion={setCurrentlyActive} id="looking-to" isOpen={'looking-to' === currentlyActive} label="looking to... site">
+      <Accordion toggleAccordion={setCurrentlyActive} id="looking-to" isOpen={'looking-to' === currentlyActive} label="looking to ... site">
         <ul className="options pt-6 pb-11">
           <li>
             <label className="radio-wrap"><input type="radio" name="goal" value="Launch a new" /> <span>Launch a new</span></label>
@@ -53,7 +53,7 @@ export default function ContactForm() {
           </li>
         </ul>
       </Accordion>
-      <Accordion toggleAccordion={setCurrentlyActive} id="lives-on" isOpen={'lives-on' === currentlyActive} label="that lives on...">
+      <Accordion toggleAccordion={setCurrentlyActive} id="lives-on" isOpen={'lives-on' === currentlyActive} label="that lives on ...">
         <ul className="options pt-6 pb-11">
           <li>
             <label className="radio-wrap"><input type="radio" name="platform" value="Shopify" /> <span>Shopify</span></label>
@@ -65,7 +65,7 @@ export default function ContactForm() {
             <label className="radio-wrap"><input type="radio" name="platform" value="Magento" /> <span>Magento</span></label>
           </li>
           <li>
-            <label className="radio-wrap"><input type="radio" name="platform" value="Hybrid" /> <span>Hybris</span></label>
+            <label className="radio-wrap"><input type="radio" name="platform" value="Hybrid" /> <span>Hybrid</span></label>
           </li>
           <li>
             <label className="radio-wrap"><input type="radio" name="platform" value="WooCommerce" /> <span>WooCommerce</span></label>
