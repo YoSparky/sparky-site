@@ -12,7 +12,7 @@ import {
 } from "@remix-run/react";
 import { createContext, useState } from "react";
 import { Modal } from "./components/Modal";
-import backgroundShapes from './assets/homepage-svg-background.svg';
+import ContactForm from "./components/ContactForm";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -44,9 +44,7 @@ export default function App() {
           <Scripts />
           <LiveReload />
           <Modal modalState={modalState} closeModal={() => setModalState(false)}>
-            <div className="flex flex-col">
-              SLIDE INTO OUR CRMs
-            </div>
+            <ContactForm />
           </Modal>
         </ModalContext.Provider>
       </body>

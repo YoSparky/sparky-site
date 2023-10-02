@@ -61,13 +61,13 @@ export default function PortfolioSlider() {
   }, []);
   
   return (
-    <div className="transform lg:translate-y-1/3 py-10 lg:py-12 container relative before:absolute before:bg-botticelli before:top-0 before:-left-4 before:w-4 before:h-2/3 after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]">
+    <div className="transform lg:translate-y-1/3 py-10 lg:py-12 max-md:right-edge-container md:container relative before:absolute before:bg-botticelli before:top-0 before:-left-4 before:w-4 before:h-2/3 after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]">
       <div 
         className="
           w-full
           lg:w-[calc(100%-80px)] 
           z-[1] 
-          px-4
+          pl-4
           lg:px-4
           before:absolute
           before:h-2 
@@ -75,12 +75,12 @@ export default function PortfolioSlider() {
           before:left-0 
           before:-top-2 
           before:bg-ivory 
-          after:absolute 
-          after:w-2 
-          after:top-0 
-          after:-right-2 
-          after:h-[80%]
-        after:bg-ivory
+          md:after:absolute 
+          md:after:w-2 
+          md:after:top-0 
+          md:after:-right-2 
+          md:after:h-[80%]
+        md:after:bg-ivory
         "
       >
         <swiper-container

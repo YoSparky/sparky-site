@@ -63,17 +63,20 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
               transition-all
               duration-500
               fixed
-              h-full
-              max-w-4xl
+              max-w-[100vw]
+              md:max-w-4xl
+              overflow-y-scroll
               p-7
+              pb-16
               right-0
               top-0
+              bottom-0
               w-full
               z-[100]
             `}
           >
-            <div className="flex items-center justify-end">
-              <div className="transform rotate-90 translate-x-1/2 origin-left">
+            <div className="flex items-center justify-end sticky top-0 z-10">
+              <div className="md:transform md:rotate-90 md:translate-x-1/2 md:origin-left bg-halfColonialWhite">
                 <button className="button" onClick={() => closeModal()}>
                   x | Close
                 </button>

@@ -18,7 +18,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-[length:_100%_auto] bg-no-repeat bg-top">
+    <div style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-[length:_100%_auto] bg-no-repeat bg-top w-screen max-md:overflow-x-hidden">
       <Hero />
       <FeaturedPortfolio />
       <FeaturedPartners />

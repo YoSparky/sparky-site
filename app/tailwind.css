@@ -49,6 +49,11 @@
   h2, .h2 {
    @apply font-bold text-4xl md:text-[66px];
   }
+  
+  input[type="text"],
+  input[type="email"] {
+    @apply px-6 py-5 bg-transparent;
+  }
 }
 
 @layer components {
@@ -90,6 +95,16 @@
   }
   .marquee.paused {
     animation-play-state: paused;
+  }
+  
+  .radio-wrap {
+    @apply relative px-4 py-3 rounded-full border border-current flex items-center gap-4 w-max cursor-pointer transition duration-200 hover:bg-energyYellow grayscale-0;
+  }
+  .radio-wrap input {
+    @apply relative w-4 h-4 block after:transition after:duration-200 after:absolute after:border after:border-current after:top-0 after:left-0 after:h-full after:w-full after:rounded-full after:bg-halfColonialWhite checked:after:bg-tuatara;
+  }
+  .options {
+    @apply flex flex-col gap-4;
   }
   
   .hover-highlight {

@@ -7,7 +7,7 @@ export default function PortfolioList() {
   const toggleModal = useContext(ModalContext);
 
   return (
-    <div className="w-full py-5 md:py-10">
+    <div className="w-full pt-5 pb-8 md:py-10">
       <div className="container py-5 md:py-10">
         <div className="md:max-w-5xl ml-auto flex flex-col gap-8">
           <span className="title">Work in the wild</span>

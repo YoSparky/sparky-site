@@ -42,3 +42,42 @@ export const portfolioListItems = [
     link: 'https://speidel.com/'
   }
 ];
+
+export const offerings = [
+  {
+    title: "Front-End",
+    listItems: [
+      'UI/UX Design',
+      'A/B Testing & Optimization',
+      'Shopify Theme Development',
+      'Product Data Taxonomy',
+      'ADA Compliance',
+      'And More'
+    ]
+  },
+  {
+    title: "Platform",
+    listItems: [
+      'Merchandising Operations',
+      'CMS Admin',
+      'Promo & Campaign Management',
+      'Catalog Architecture ',
+      'Apps & Integrations',
+      'Private App Development',
+      'Shopify Back-end API',
+      'And More'
+    ]
+  },
+  {
+    title: "Strategy",
+    listItems: [
+      'UX Consulting',
+      'CRO Strategy',
+      'Roadmap Development',
+      'Tech Stack Strategy',
+      'Organizational Design',
+      'Digital Innovation',
+      'And More'
+    ]
+  }
+];
