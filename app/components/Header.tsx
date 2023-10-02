@@ -9,6 +9,7 @@ export default function Header() {
   const headerRef = useRef(null);
   const [prevOffset, setPrevOffset] = useState(0);
   const [currentOffset, setCurrentOffset] = useState(0);
+  const [headerVisible, setHeaderVisibility] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -19,8 +20,15 @@ export default function Header() {
     window.removeEventListener('scroll', onScroll);
     window.addEventListener('scroll', onScroll, { passive: true });
     
+    if (currentOffset < prevOffset || currentOffset === 0) {
+      setHeaderVisibility(true);
+    } else {
+      setHeaderVisibility(false);
+    }
+    
     return () => window.removeEventListener('scroll', onScroll);
-  }, [currentOffset, prevOffset]);
+  }, [currentOffset, prevOffset, headerRef]);
+  
     
   const transitionStyles = {
     entering: {},
@@ -29,17 +37,18 @@ export default function Header() {
     exited:  { transform: `translateY(-100%)` },
     unmounted: {}
   };
+  
 
   return (
-    <Transition nodeRef={headerRef} in={(prevOffset > currentOffset)} timeout={(prevOffset > currentOffset) ? 0 : 500}>
+    <Transition nodeRef={headerRef} in={headerVisible} timeout={headerVisible ? 500 : 0}>
       {state => (
         <header 
           style={{ 
-            transform: `translateY(-100%)`,
+            transform: `translateY(0)`,
             ...transitionStyles[state]
           }}
           ref={headerRef}
-          className={`${(prevOffset > currentOffset && headerRef?.current?.scrollHeight < currentOffset) && `bg-ivory shadow`} py-4 sticky left-0 w-screen z-10 transition duration-500 top-0`}
+          className={`${(headerVisible && headerRef?.current?.scrollHeight < currentOffset) && `bg-ivory shadow`} py-4 fixed left-0 w-screen z-10 transition duration-500 top-0`}
         >
           <div className="container grid grid-cols-3 items-center">
             <Link title="home" to="/">

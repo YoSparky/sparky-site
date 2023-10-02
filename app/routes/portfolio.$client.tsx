@@ -45,7 +45,7 @@ export default function Index() {
   } = caseStudy;
   
   return (
-    <div className="bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${backgroundShapes})` }}>
+    <div className="bg-cover bg-no-repeat bg-top" style={{ backgroundImage: `url(${backgroundShapes})` }}>
       <div className="container flex flex-col pt-32 gap-5 pb-5 md:pb-10">
         <span className="uppercase">case study /</span>
         <div className="flex items-center justify-between">

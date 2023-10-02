@@ -50,13 +50,14 @@ export default function PortfolioSlider() {
   }, []);
   
   return (
-    <div className="transform md:translate-y-1/3 py-10 container relative after:absolute after:left-0 after:top-0 after:w-full after:h-full md:after:h-[80%] after:bg-botticelli z-[1]">
+    <div className="transform lg:translate-y-1/3 py-10 container relative after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]">
       <div 
         className="
           w-full
-          md:w-[calc(100%-80px)] 
+          lg:w-[calc(100%-80px)] 
           z-[1] 
-          md:px-11
+          px-4
+          lg:px-11
           before:absolute
           before:h-2 
           before:-right-2 
@@ -83,26 +84,21 @@ export default function PortfolioSlider() {
                 <div className="bg-botticelli min-w-[319px] w-[319px]">
                   <img className="block w-full mix-blend-multiply" width="319" height="329" src={image} alt={title} />
                 </div>
-                <div className="hidden lg:flex flex-col text-xs gap-4 top-0 h-full justify-center">
-                  <span>{currentIndex + 1}</span>
-                  <span className="text-[8px]">/</span>
-                  <span>{sliderItems.length}</span>
-                </div>
                 <div className="flex flex-col gap-8 pb-8 lg:pl-32">
                   <p className="text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black" dangerouslySetInnerHTML={{ __html: copy }}></p>
                   <a className="hover-highlight hover:highlighted button--link" href={link}>
                     <span>Learn More</span>
                   </a>
                 </div>
-                <div className="flex lg:hidden text-xs gap-4 top-0 items-center w-full">
-                  <span>{currentIndex + 1}</span>
-                  <span className="text-[8px]">/</span>
-                  <span>{sliderItems.length}</span>
-                </div>
               </div>
             </swiper-slide>
           )}
         </swiper-container>
+        <div className="flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10">
+          <span>{currentIndex + 1}</span>
+          <span className="text-[8px]">/</span>
+          <span>{sliderItems.length}</span>
+        </div>
         <button 
           // @ts-expect-error
           onClick={() => swiperElRef.current.swiper.slideNext()} 
@@ -114,14 +110,14 @@ export default function PortfolioSlider() {
             w-16
             bg-tuatara
             text-energyYellow 
-            transform md:translate-x-1/2 
+            transform lg:translate-x-1/2 
             -translate-y-1/2 
             flex 
             items-center 
             justify-center 
             absolute 
             right-0 
-            top-1/2 
+            top-[40%] 
             rounded-full 
             transition 
             duration-200
@@ -139,11 +135,11 @@ export default function PortfolioSlider() {
           before:h-20 
           before:w-20
           before:transform 
-          before:md:translate-x-1/2 
+          before:lg:translate-x-1/2 
           before:-translate-y-1/2 
           before:absolute 
           before:right-0 
-          before:top-1/2 
+          before:top-[40%] 
           before:rounded-full 
           "
         ></div>

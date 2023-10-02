@@ -36,7 +36,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-cover bg-no-repeat bg-center">
+      <body>
         <ModalContext.Provider value={toggleModal}>
           <Header />
           <Outlet />

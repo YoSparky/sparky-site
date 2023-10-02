@@ -7,6 +7,7 @@ import PortfolioSlider from "~/components/PortfolioSlider";
 import OfferingsAccordion from "~/components/OfferingsAccordion";
 import Marquee from "~/components/Marquee";
 import Footer from "~/components/Footer/Footer";
+import backgroundShapes from '../assets/homepage-svg-background.svg';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -17,7 +18,7 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <>
+    <div style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-cover bg-no-repeat bg-center">
       <Hero />
       <FeaturedPortfolio />
       <FeaturedPartners />
@@ -26,6 +27,6 @@ export default function Index() {
       <OfferingsAccordion />
       <Marquee />
       <Footer />
-    </>
+    </div>
   );
 }
