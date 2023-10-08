@@ -37,3 +37,19 @@
   font-display: swap;
   src: url('./VictorMono-Italic-VariableFont_wght.ttf');
 }
+
+@font-face {
+  font-family: 'Arnold';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./WEB/Arnold_v0.3-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Arnold';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./WEB/Arnold_v0.3-Italic.woff');
+}

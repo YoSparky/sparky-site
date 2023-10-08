@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         title: 'Mint Grotesk',
-        body: 'Victor Mono'
+        body: 'Arnold'
       }
     },
   },
