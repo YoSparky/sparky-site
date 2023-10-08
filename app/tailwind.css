@@ -73,6 +73,10 @@
     @apply title pb-0.5 border-b border-current;
   }
 
+  .button--circle {
+    @apply ;
+  }
+
   .button--liquid-drop {
     @apply relative hover:bg-transparent before:top-1/2 before:-translate-y-1/2 before:block before:absolute before:h-16 before:w-16 before:bg-energyYellow before:rounded-full before:-z-[1];
   }
@@ -88,6 +92,16 @@
   .button--liquid-drop.default-hover-animation-state::before {
     animation: 0.3s liquidDrop ease-in-out forwards;
     animation-play-state: paused;
+  }
+
+  .menu {
+    @apply flex items-baseline uppercase text-xs;
+  }
+  .menu a {
+    @apply p-4 block;
+  }
+  .menu .btn {
+    @apply flex ml-4 px-4 py-2 text-center rounded-full uppercase border border-solid border-black;
   }
   
   .marquee {

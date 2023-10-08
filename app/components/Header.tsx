@@ -55,11 +55,16 @@ export default function Header() {
               <img className="w-24 md:w-32" src={sparkyLogo} />
             </Link>
             <div className="text-center text-sm"></div>
-            <div className="flex justify-end">
-              <button className="button--link w-max" onClick={() => toggleModal ? toggleModal() : null}>
+            <nav className="menu flex justify-end">
+              <Link to={{
+                pathname: `portfolio`
+              }}>
+                Work
+              </Link>
+              <button className="btn" onClick={() => toggleModal ? toggleModal() : null}>
                 Contact
               </button>
-            </div>
+            </nav>
           </div>
         </header>
       )}
