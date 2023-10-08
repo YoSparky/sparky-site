@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-OFACR4L5.css";
+var tailwind_default = "/build/_assets/tailwind-5OWD2DXS.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-VMM3UEDO.css";
@@ -8681,22 +8681,31 @@ var import_react20 = require("react"), import_jsx_dev_runtime32 = require("react
 // app/components/Homepage/Hero.tsx
 var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime");
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "relative w-full pt-16 z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "container py-16 md:pt-24 md:pb-36 flex flex-col justify-center gap-28", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("h1", { className: "text-shadow", children: "We design, build, & optimize magical ecommerce sites that glow with personality." }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("section", { className: "hero", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "relative w-full pt-16 z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "container py-16 md:pt-24 md:pb-36 flex flex-col justify-center gap-16", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("h1", { className: "text-shadow", children: "We design, build, and optimize high-converting eCommerce sites that glow with brand personality." }, void 0, !1, {
       fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 8,
-      columnNumber: 9
+      lineNumber: 9,
+      columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_react21.Link, { to: "/portfolio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(LiquidDropHover, { children: "See the sites." }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("p", { children: "As proud Shopify Plus partners, we help fast-growing DTC businesses squeeze more out of their websites and future-proof their tech stacks." }, void 0, !1, {
       fileName: "app/components/Homepage/Hero.tsx",
       lineNumber: 10,
       columnNumber: 11
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_react21.Link, { to: "/portfolio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(LiquidDropHover, { children: "See the sites." }, void 0, !1, {
+      fileName: "app/components/Homepage/Hero.tsx",
+      lineNumber: 12,
+      columnNumber: 13
     }, this) }, void 0, !1, {
       fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 9,
-      columnNumber: 9
+      lineNumber: 11,
+      columnNumber: 11
     }, this)
   ] }, void 0, !0, {
+    fileName: "app/components/Homepage/Hero.tsx",
+    lineNumber: 8,
+    columnNumber: 9
+  }, this) }, void 0, !1, {
     fileName: "app/components/Homepage/Hero.tsx",
     lineNumber: 7,
     columnNumber: 7
@@ -9749,7 +9758,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-W7YQ7MFY.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-PKPDN6PA.js", imports: ["/build/_shared/chunk-VH4A2XHH.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-SRUM74HN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-PDXUYROO.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-BXHCOSGE.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-ITHKWBJV.js", imports: ["/build/_shared/chunk-QG2CEDBD.js", "/build/_shared/chunk-BXHCOSGE.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-NRL3R6JQ.js", imports: ["/build/_shared/chunk-QG2CEDBD.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-BXHCOSGE.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "39f9df0b", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696805484435 }, url: "/build/manifest-39F9DF0B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-W7YQ7MFY.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-6UUFQ3B3.js", imports: ["/build/_shared/chunk-764OGWYO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-SRUM74HN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-FLG7XUC2.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-XBG6GDDX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-6GAPF6UU.js", imports: ["/build/_shared/chunk-4EMK6XFN.js", "/build/_shared/chunk-XBG6GDDX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-G6LK4WIQ.js", imports: ["/build/_shared/chunk-4EMK6XFN.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-XBG6GDDX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "602ec705", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696805912274 }, url: "/build/manifest-602EC705.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
