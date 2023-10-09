@@ -30,37 +30,41 @@ export default function ElevarSubmissionForm() {
           <div className="form__inputGroup">
             <label htmlFor="brand_name">What's your brand name?</label>
             <input
+              id="brand_name"
+              name="brand_name"
               type="text"
               placeholder="Brand Name"
-              name="brand_name"
-              id="brand_name"
+              required
             />
           </div>
           <div className="form__inputGroup">
             <label htmlFor="brand_site">What's your brand website?</label>
             <input
+              id="brand_site"
+              name="brand_site"
               type="text"
               placeholder="brandwebsite.com"
-              name="brand_site"
-              id="brand_site"
+              required
             />
           </div>
           <div className="form__inputGroup">
             <label htmlFor="name">What's your name?</label>
             <input
+              id="name"
+              name="name"
               type="text"
               placeholder="First Last"
-              name="name"
-              id="name"
+              required
             />
           </div>
           <div className="form__inputGroup">
             <label htmlFor="email">Where should we send your CRO Quick Wins?</label>
             <input
-              type="text"
-              placeholder="you@brand.com"
-              name="email"
               id="email"
+              name="email"
+              type="email"
+              placeholder="you@brand.com"
+              required
             />
           </div>
           <div className="text-center justify-center flex">

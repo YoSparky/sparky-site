@@ -86,6 +86,9 @@
   .ContentArea__text {
     @apply flex flex-col p-4;
   }
+  .ContentArea__media {
+    @apply flex justify-end;
+  }
   .ContentArea__media img {
   }
 
