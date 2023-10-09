@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-2O2IZUZD.css";
+var tailwind_default = "/build/_assets/tailwind-FIUTGEXU.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-XCLAY73W.css";
@@ -1706,23 +1706,23 @@ function ContactForm() {
         lineNumber: 56,
         columnNumber: 7
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "grid grid-cols-3 border border-current my-5 md:my-10", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border-r border-current", type: "text", id: "fname", name: "fname", placeholder: "First Name", required: !0 }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "grid md:grid-cols-3 my-5", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px] md:-mr-[1px]", type: "text", id: "fname", name: "fname", placeholder: "First Name", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
           lineNumber: 80,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border-r border-current", type: "text", id: "lname", name: "lname", placeholder: "Last Name", required: !0 }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px] md:-mr-[1px]", type: "text", id: "lname", name: "lname", placeholder: "Last Name", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
           lineNumber: 81,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "text", id: "company", name: "company", placeholder: "Company", required: !0 }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px]", type: "text", id: "company", name: "company", placeholder: "Company", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
           lineNumber: 82,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "col-span-3 border-t border-current", type: "email", id: "email", name: "email", placeholder: "Email Address", required: !0 }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current md:col-span-3", type: "email", id: "email", name: "email", placeholder: "Email Address", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
           lineNumber: 83,
           columnNumber: 9
@@ -1735,21 +1735,21 @@ function ContactForm() {
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("button", { type: "submit", name: "submit", className: "button--secondary bg-black flex tracking-wide items-center gap-5 uppercase", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Submit" }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 87,
+          lineNumber: 88,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 88,
+          lineNumber: 89,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 86,
+        lineNumber: 87,
         columnNumber: 9
       }, this) }, void 0, !1, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 85,
+        lineNumber: 86,
         columnNumber: 7
       }, this)
     ] }, void 0, !0, {
@@ -10078,7 +10078,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TW5WM4E7.js", imports: ["/build/_shared/chunk-E4ZGKEN7.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-YT7TE5DA.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-X3EOES7F.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-G2XICMOY.js", imports: ["/build/_shared/chunk-X3EOES7F.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-AHXGIOMV.js", imports: ["/build/_shared/chunk-XWGWNI4H.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-CVWEAXWX.js", imports: ["/build/_shared/chunk-XWGWNI4H.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "df1179e4", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696872491200 }, url: "/build/manifest-DF1179E4.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3RSOO2Z2.js", imports: ["/build/_shared/chunk-GV42XET5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IEM3KKF6.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-AQOERX46.js", "/build/_shared/chunk-T7LIX4KN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-YSZTML6P.js", imports: ["/build/_shared/chunk-AQOERX46.js", "/build/_shared/chunk-T7LIX4KN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-SSX27IZM.js", imports: ["/build/_shared/chunk-RHZZBRZN.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-T7LIX4KN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-7Y6TC7VA.js", imports: ["/build/_shared/chunk-RHZZBRZN.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-T7LIX4KN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "21d3c076", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696873010979 }, url: "/build/manifest-21D3C076.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

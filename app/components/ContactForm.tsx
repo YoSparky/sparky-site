@@ -76,12 +76,13 @@ export default function ContactForm() {
         </ul>
       </Accordion>
 
-      <div className="grid grid-cols-3 border border-current my-5 md:my-10">
-        <input className="border-r border-current" type="text" id="fname" name="fname" placeholder="First Name" required />
-        <input className="border-r border-current" type="text" id="lname" name="lname" placeholder="Last Name" required />
-        <input type="text" id="company" name="company" placeholder="Company" required />
-        <input className="col-span-3 border-t border-current" type="email" id="email" name="email" placeholder="Email Address" required />
+      <div className="grid md:grid-cols-3 my-5">
+        <input className="border border-current -mb-[1px] md:-mr-[1px]" type="text" id="fname" name="fname" placeholder="First Name" required />
+        <input className="border border-current -mb-[1px] md:-mr-[1px]" type="text" id="lname" name="lname" placeholder="Last Name" required />
+        <input className="border border-current -mb-[1px]" type="text" id="company" name="company" placeholder="Company" required />
+        <input className="border border-current md:col-span-3" type="email" id="email" name="email" placeholder="Email Address" required />
       </div>
+      
       <div>
         <button type="submit" name="submit" className="button--secondary bg-black flex tracking-wide items-center gap-5 uppercase">
           <span>Submit</span>
