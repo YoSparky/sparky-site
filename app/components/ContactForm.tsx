@@ -15,6 +15,10 @@ export default function ContactForm() {
     event.preventDefault();
     setSubmitting(true);
     const form_data = new FormData(event.currentTarget as HTMLFormElement);
+    if (brand_type) { form_data.append(`brand_type`, brand_type); }
+    if (looking_to) { form_data.append(`looking_to`, looking_to); }
+    if (platform) { form_data.append(`platform`, platform); }
+    
     await fetch(`https://usebasin.com/f/840caf1493b3`, {
       method: `post`,
       body: form_data,

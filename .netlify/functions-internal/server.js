@@ -1381,7 +1381,7 @@ function ContactForm() {
   let [currentlyActive, setCurrentlyActive] = (0, import_react6.useState)(null), [brand_type, setBrandType] = (0, import_react6.useState)(null), [looking_to, setLookingTo] = (0, import_react6.useState)(null), [platform, setPlatform] = (0, import_react6.useState)(null), [submitting, setSubmitting] = (0, import_react6.useState)(!1), [submitted, setSubmitted] = (0, import_react6.useState)(!1), handleSubmit = (0, import_react6.useCallback)(async (event2) => {
     event2.preventDefault(), setSubmitting(!0);
     let form_data = new FormData(event2.currentTarget);
-    await fetch("https://usebasin.com/f/840caf1493b3", {
+    brand_type && form_data.append("brand_type", brand_type), looking_to && form_data.append("looking_to", looking_to), platform && form_data.append("platform", platform), await fetch("https://usebasin.com/f/840caf1493b3", {
       method: "post",
       body: form_data
     }), setSubmitting(!1), setSubmitted(!0);
@@ -1391,23 +1391,23 @@ function ContactForm() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "md:pl-16", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "title pb-11", children: "SLIDE INTO OUR CRMs" }, void 0, !1, {
       fileName: "app/components/ContactForm.tsx",
-      lineNumber: 36,
+      lineNumber: 40,
       columnNumber: 5
     }, this),
     submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "text-center", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("p", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 39,
+        lineNumber: 43,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("button", { className: "button--secondary my-5", onClick: resetForm, children: "Send Another" }, void 0, !1, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 40,
+        lineNumber: 44,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/ContactForm.tsx",
-      lineNumber: 38,
+      lineNumber: 42,
       columnNumber: 7
     }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(import_react7.Form, { onSubmit: handleSubmit, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
@@ -1421,66 +1421,66 @@ function ContactForm() {
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", value: "Start-up", name: "brand", onClick: () => setBrandType("a start-up"), defaultChecked: brand_type === "a start-up" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 53,
+                lineNumber: 57,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Start-up" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 54,
+                lineNumber: 58,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 52,
+              lineNumber: 56,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 51,
+              lineNumber: 55,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", value: "Early Stage", name: "brand", onClick: () => setBrandType("an early stage"), defaultChecked: brand_type === "an early stage" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 59,
+                lineNumber: 63,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Early Stage" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 60,
+                lineNumber: 64,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 58,
+              lineNumber: 62,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 57,
+              lineNumber: 61,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", value: "Established", name: "brand", onClick: () => setBrandType("an established"), defaultChecked: brand_type === "an established" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 65,
+                lineNumber: 69,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Established" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 66,
+                lineNumber: 70,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 64,
+              lineNumber: 68,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 63,
+              lineNumber: 67,
               columnNumber: 13
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/ContactForm.tsx",
-            lineNumber: 50,
+            lineNumber: 54,
             columnNumber: 11
           }, this)
         },
@@ -1488,7 +1488,7 @@ function ContactForm() {
         !1,
         {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 44,
+          lineNumber: 48,
           columnNumber: 9
         },
         this
@@ -1504,126 +1504,126 @@ function ContactForm() {
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Launch a new", onClick: () => setLookingTo("launch a new"), defaultChecked: looking_to === "launch a new" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 80,
+                lineNumber: 84,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Launch a new" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 81,
+                lineNumber: 85,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 79,
+              lineNumber: 83,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 78,
+              lineNumber: 82,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Re-design my current", onClick: () => setLookingTo("redesign my current"), defaultChecked: looking_to === "redesign my current" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 86,
+                lineNumber: 90,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Re-design my current" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 87,
+                lineNumber: 91,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 85,
+              lineNumber: 89,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 84,
+              lineNumber: 88,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Re-platform my", onClick: () => setLookingTo("re-platform my"), defaultChecked: looking_to === "re-platform my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 92,
+                lineNumber: 96,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Re-platform my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 93,
+                lineNumber: 97,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 91,
+              lineNumber: 95,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 90,
+              lineNumber: 94,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Optimize my", onClick: () => setLookingTo("optimize my"), defaultChecked: looking_to === "optimize my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 98,
+                lineNumber: 102,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Optimize my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 99,
+                lineNumber: 103,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 97,
+              lineNumber: 101,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 96,
+              lineNumber: 100,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Add something to my", onClick: () => setLookingTo("add something to my"), defaultChecked: looking_to === "add something to my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 104,
+                lineNumber: 108,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Add something to my" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 105,
+                lineNumber: 109,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 103,
+              lineNumber: 107,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 102,
+              lineNumber: 106,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "goal", value: "Create a headless", onClick: () => setLookingTo("create a headless"), defaultChecked: looking_to === "create a headless" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 110,
+                lineNumber: 114,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Create a headless" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 111,
+                lineNumber: 115,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 109,
+              lineNumber: 113,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 108,
+              lineNumber: 112,
               columnNumber: 13
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/ContactForm.tsx",
-            lineNumber: 77,
+            lineNumber: 81,
             columnNumber: 11
           }, this)
         },
@@ -1631,7 +1631,7 @@ function ContactForm() {
         !1,
         {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 71,
+          lineNumber: 75,
           columnNumber: 9
         },
         this
@@ -1647,126 +1647,126 @@ function ContactForm() {
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "Shopify", onClick: () => setPlatform("Shopify"), defaultChecked: platform === "Shopify" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 125,
+                lineNumber: 129,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Shopify" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 126,
+                lineNumber: 130,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 124,
+              lineNumber: 128,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 123,
+              lineNumber: 127,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "Salesforce Commerce Cloud", onClick: () => setPlatform("Salesforce Commerce Cloud"), defaultChecked: platform === "Salesforce Commerce Cloud" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 131,
+                lineNumber: 135,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Salesforce Commerce Cloud" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 132,
+                lineNumber: 136,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 130,
+              lineNumber: 134,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 129,
+              lineNumber: 133,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "Magento", onClick: () => setPlatform("Magento"), defaultChecked: platform === "Magento" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 137,
+                lineNumber: 141,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Magento" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 138,
+                lineNumber: 142,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 136,
+              lineNumber: 140,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 135,
+              lineNumber: 139,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "Hybrid", onClick: () => setPlatform("Hybrid"), defaultChecked: platform === "Hybrid" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 143,
+                lineNumber: 147,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Hybrid" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 144,
+                lineNumber: 148,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 142,
+              lineNumber: 146,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 141,
+              lineNumber: 145,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "WooCommerce", onClick: () => setPlatform("WooCommerce"), defaultChecked: platform === "WooCommerce" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 149,
+                lineNumber: 153,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "WooCommerce" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 150,
+                lineNumber: 154,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 148,
+              lineNumber: 152,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 147,
+              lineNumber: 151,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("label", { className: "radio-wrap", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { type: "radio", name: "platform", value: "a different platform", onClick: () => setPlatform("a different platform"), defaultChecked: platform === "a different platform" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 155,
+                lineNumber: 159,
                 columnNumber: 17
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "a different platform" }, void 0, !1, {
                 fileName: "app/components/ContactForm.tsx",
-                lineNumber: 156,
+                lineNumber: 160,
                 columnNumber: 17
               }, this)
             ] }, void 0, !0, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 154,
+              lineNumber: 158,
               columnNumber: 15
             }, this) }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 153,
+              lineNumber: 157,
               columnNumber: 13
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/ContactForm.tsx",
-            lineNumber: 122,
+            lineNumber: 126,
             columnNumber: 11
           }, this)
         },
@@ -1774,7 +1774,7 @@ function ContactForm() {
         !1,
         {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 116,
+          lineNumber: 120,
           columnNumber: 9
         },
         this
@@ -1782,27 +1782,27 @@ function ContactForm() {
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { className: "grid md:grid-cols-3 my-5", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px] md:-mr-[1px]", type: "text", id: "fname", name: "fname", placeholder: "First Name", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 163,
+          lineNumber: 167,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px] md:-mr-[1px]", type: "text", id: "lname", name: "lname", placeholder: "Last Name", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 164,
+          lineNumber: 168,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current -mb-[1px]", type: "text", id: "company", name: "company", placeholder: "Company", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 165,
+          lineNumber: 169,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("input", { className: "border border-current md:col-span-3", type: "email", id: "email", name: "email", placeholder: "Email Address", required: !0 }, void 0, !1, {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 166,
+          lineNumber: 170,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 162,
+        lineNumber: 166,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(
@@ -1815,12 +1815,12 @@ function ContactForm() {
           children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)("span", { children: "Submit" }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 176,
+              lineNumber: 180,
               columnNumber: 13
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime19.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
               fileName: "app/components/ContactForm.tsx",
-              lineNumber: 177,
+              lineNumber: 181,
               columnNumber: 13
             }, this)
           ]
@@ -1829,23 +1829,23 @@ function ContactForm() {
         !0,
         {
           fileName: "app/components/ContactForm.tsx",
-          lineNumber: 170,
+          lineNumber: 174,
           columnNumber: 11
         },
         this
       ) }, void 0, !1, {
         fileName: "app/components/ContactForm.tsx",
-        lineNumber: 169,
+        lineNumber: 173,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/ContactForm.tsx",
-      lineNumber: 43,
+      lineNumber: 47,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/ContactForm.tsx",
-    lineNumber: 35,
+    lineNumber: 39,
     columnNumber: 4
   }, this);
 }
@@ -10215,7 +10215,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZAZRBYBA.js", imports: ["/build/_shared/chunk-BYBRLN3L.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-XKACDESU.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-HV7PXMMZ.js", "/build/_shared/chunk-R5GKI4C2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-NBSNB7CS.js", imports: ["/build/_shared/chunk-HV7PXMMZ.js", "/build/_shared/chunk-R5GKI4C2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-HM7MK5LT.js", imports: ["/build/_shared/chunk-DLAR2AFK.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-R5GKI4C2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-TBRSN7M6.js", imports: ["/build/_shared/chunk-DLAR2AFK.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-R5GKI4C2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e297817b", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696880970886 }, url: "/build/manifest-E297817B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XCVRML2Y.js", imports: ["/build/_shared/chunk-QHOJD3I6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OTMSLZZH.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-USPFIAS6.js", "/build/_shared/chunk-UU24WHA2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-PFUB6D57.js", imports: ["/build/_shared/chunk-USPFIAS6.js", "/build/_shared/chunk-UU24WHA2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-SAPW5TDL.js", imports: ["/build/_shared/chunk-VM6HLAD3.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-UU24WHA2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-2GSE2KUT.js", imports: ["/build/_shared/chunk-VM6HLAD3.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-UU24WHA2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a8f15d1e", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696881225574 }, url: "/build/manifest-A8F15D1E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
