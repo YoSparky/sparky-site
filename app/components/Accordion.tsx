@@ -1,3 +1,4 @@
+import classnames from 'classnames';
 import { useState, useRef, useEffect, ReactNode } from "react";
 import { Transition } from "react-transition-group";
 import { Star } from "./icons";
@@ -39,7 +40,21 @@ export const Accordion = ({ label, children, id, isOpen, toggleAccordion } : Acc
     <>
       <h3 className="text-3xl md:text-7xl font-black relative max-md:pl-16 py-2">
         <Star className={`absolute w-8 h-8 top-1/2 left-0 transition duration-500 transform -translate-y-1/2 md:-translate-x-[calc(100%+32px)] ${isOpen && 'rotate-[135deg]'}`} />
-        <button type="button" className={`${isOpen ? 'isOpen' : `isClosed`} accordion-heading transition duration-500`} id={`controls-${id}`} aria-controls={`contents-${id}`} aria-expanded={isOpen} onClick={clickHandler}>
+        <button
+          id={`controls-${id}`}
+          type="button"
+          className={classnames({
+            "accordion-heading": true,
+            "transition": true,
+            "duration-500": true,
+            "text-left": true,
+            isOpen: isOpen,
+            isClosed: !isOpen,
+          })}
+          aria-controls={`contents-${id}`}
+          aria-expanded={isOpen}
+          onClick={clickHandler}
+        >
           {label}
         </button>
       </h3>
