@@ -46,15 +46,23 @@
     @apply font-bold text-5xl md:text-8xl;
   }
   
-  h2, .h2 {
-   /* @apply font-bold text-4xl md:text-[66px]; */
-  }
-
   h1, .h1 {
     font-size: clamp(48px, 5.8vw, 96px);
   }
   h2, .h2 {
     font-size: clamp(36px, 4vw, 66px);
+    @apply mb-4;
+  }
+  h3, .h3 {
+    font-size: clamp(24px, 4vw, 48px);
+    @apply mb-4;
+  }
+  h4, .h4 {
+    font-size: clamp(18px, 2vw, 30px);
+    @apply mb-4;
+  }
+  h5, .h5 {
+    font-size: clamp(12px, 1.8vw, 24px);
     @apply mb-4;
   }
   
@@ -69,15 +77,32 @@
     @apply pt-[80px];
   }
   .ContentArea {
-    @apply flex w-full right-edge-container;
+    @apply flex flex-col w-full right-edge-container;
+    @apply md:flex-row;
   }
   .ContentArea > div {
     @apply basis-1/2 relative;
   }
   .ContentArea__text {
-    @apply flex flex-col;
+    @apply flex flex-col p-4;
   }
   .ContentArea__media img {
+  }
+
+  .ElevarSubmissionForm {
+    @apply flex flex-col w-full md:w-[880px] items-center my-8;
+  }
+  .form.form__wrapper {
+    @apply w-full;
+  }
+  .form .form__inputGroup {
+    @apply flex flex-col w-full py-4;
+  }
+  .form .form__inputGroup label {
+    @apply font-title h4 leading-6;
+  }
+  .form .form__inputGroup input {
+    @apply border border-solid;
   }
 
   .title {

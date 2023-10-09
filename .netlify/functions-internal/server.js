@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-FUWT75IR.css";
+var tailwind_default = "/build/_assets/tailwind-2O2IZUZD.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-XCLAY73W.css";
@@ -9826,11 +9826,147 @@ var sparkydude_default = "/build/_assets/sparkydude-R3X7OUN4.png";
 // app/assets/personalized_login_touches.png
 var personalized_login_touches_default = "/build/_assets/personalized_login_touches-FGHZKNWB.png";
 
+// app/components/forms/ElevarSubmission.tsx
+var import_react29 = require("@remix-run/react"), import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
+function ElevarSubmissionForm() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_react29.Form, { className: "form form__wrapper", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_name", children: "What's your brand name?" }, void 0, !1, {
+        fileName: "app/components/forms/ElevarSubmission.tsx",
+        lineNumber: 8,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+        "input",
+        {
+          type: "text",
+          placeholder: "Brand Name",
+          name: "brand_name",
+          id: "brand_name"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/forms/ElevarSubmission.tsx",
+          lineNumber: 9,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 7,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_site", children: "What's your brand website?" }, void 0, !1, {
+        fileName: "app/components/forms/ElevarSubmission.tsx",
+        lineNumber: 17,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+        "input",
+        {
+          type: "text",
+          placeholder: "brandwebsite.com",
+          name: "brand_site",
+          id: "brand_site"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/forms/ElevarSubmission.tsx",
+          lineNumber: 18,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 16,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
+        fileName: "app/components/forms/ElevarSubmission.tsx",
+        lineNumber: 26,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+        "input",
+        {
+          type: "text",
+          placeholder: "First Last",
+          name: "name",
+          id: "name"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/forms/ElevarSubmission.tsx",
+          lineNumber: 27,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 25,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "email", children: "Where should we send your CRO Quick Wins?" }, void 0, !1, {
+        fileName: "app/components/forms/ElevarSubmission.tsx",
+        lineNumber: 35,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+        "input",
+        {
+          type: "text",
+          placeholder: "you@brand.com",
+          name: "email",
+          id: "email"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/forms/ElevarSubmission.tsx",
+          lineNumber: 36,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 34,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("button", { className: "button--secondary", children: "Get My Free CRO Quick Wins" }, void 0, !1, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 44,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 43,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/forms/ElevarSubmission.tsx",
+    lineNumber: 6,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/forms/ElevarSubmission.tsx",
+    lineNumber: 5,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/elevar.tsx
-var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime");
 function ElevarPage() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_jsx_dev_runtime43.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(import_jsx_dev_runtime44.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
       ContentArea,
       {
         layout: "standard",
@@ -9838,14 +9974,14 @@ function ElevarPage() {
         image: quick_wins_default,
         textVerticalPosition: "middle",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("h2", { children: "CRO Quick Wins" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h2", { children: "CRO Quick Wins" }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
-            lineNumber: 15,
+            lineNumber: 17,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
-            lineNumber: 16,
+            lineNumber: 18,
             columnNumber: 9
           }, this)
         ]
@@ -9854,19 +9990,24 @@ function ElevarPage() {
       !0,
       {
         fileName: "app/routes/elevar.tsx",
-        lineNumber: 9,
+        lineNumber: 11,
         columnNumber: 7
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(ElevarSubmissionForm, {}, void 0, !1, {
+      fileName: "app/routes/elevar.tsx",
+      lineNumber: 20,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
       ContentArea,
       {
         layout: "standard",
         image: personalized_login_touches_default,
         textVerticalPosition: "middle",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
             "img",
             {
               src: sparkydude_default,
@@ -9876,19 +10017,19 @@ function ElevarPage() {
             !1,
             {
               fileName: "app/routes/elevar.tsx",
-              lineNumber: 23,
+              lineNumber: 26,
               columnNumber: 9
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("h2", { children: "Headline" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h2", { children: "Headline" }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
-            lineNumber: 27,
+            lineNumber: 30,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
-            lineNumber: 28,
+            lineNumber: 31,
             columnNumber: 9
           }, this)
         ]
@@ -9897,14 +10038,19 @@ function ElevarPage() {
       !0,
       {
         fileName: "app/routes/elevar.tsx",
-        lineNumber: 18,
+        lineNumber: 21,
         columnNumber: 7
       },
       this
-    )
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(Footer2, {}, void 0, !1, {
+      fileName: "app/routes/elevar.tsx",
+      lineNumber: 33,
+      columnNumber: 7
+    }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/elevar.tsx",
-    lineNumber: 8,
+    lineNumber: 10,
     columnNumber: 5
   }, this);
 }
@@ -9914,9 +10060,9 @@ var __exports = {};
 __export(__exports, {
   default: () => Index4
 });
-var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime45 = require("react/jsx-dev-runtime");
 function Index4() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
     fileName: "app/routes/$.tsx",
     lineNumber: 5,
     columnNumber: 9
@@ -9932,7 +10078,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SL6KYHJB.js", imports: ["/build/_shared/chunk-NKI3HQX2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-E4BRT2PW.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-27CCJTGM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-QUEYYEKQ.js", imports: ["/build/_shared/chunk-OXKOQKJU.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-PJPQ3OF7.js", imports: ["/build/_shared/chunk-OXKOQKJU.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "dfb4e5ee", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696809906593 }, url: "/build/manifest-DFB4E5EE.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-TW5WM4E7.js", imports: ["/build/_shared/chunk-E4ZGKEN7.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-YT7TE5DA.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-X3EOES7F.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-G2XICMOY.js", imports: ["/build/_shared/chunk-X3EOES7F.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-AHXGIOMV.js", imports: ["/build/_shared/chunk-XWGWNI4H.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-CVWEAXWX.js", imports: ["/build/_shared/chunk-XWGWNI4H.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RWLBVNKT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "df1179e4", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696872491200 }, url: "/build/manifest-DF1179E4.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
