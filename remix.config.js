@@ -9,7 +9,7 @@ module.exports = {
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // publicPath: "/build/",
-  serverDependenciesToBundle:  ['swiper', 'swiper/element', 'swiper/element/bundle', 'swiper/react', 'swiper/react/swiper-react.js', 'ssr-window','ssr-window/ssr-window.esm.js','dom7'],
+  serverDependenciesToBundle:  ['axios', 'swiper', 'swiper/element', 'swiper/element/bundle', 'swiper/react', 'swiper/react/swiper-react.js', 'ssr-window','ssr-window/ssr-window.esm.js','dom7'],
   serverModuleFormat: "cjs",
   tailwind: true,
   future: {

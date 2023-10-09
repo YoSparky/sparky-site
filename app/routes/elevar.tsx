@@ -1,7 +1,7 @@
 import ContentArea from "~/components/ContentArea";
-import quickWinsImage from '../assets/quick_wins.png';
-import sparkyDudeImage from '../assets/sparkydude.png';
-import personalizedLoginTouchesImage from '../assets/personalized_login_touches.png';
+import quickWinsImage from '~/assets/quick_wins.png';
+import sparkyDudeImage from '~/assets/sparkydude.png';
+import personalizedLoginTouchesImage from '~/assets/personalized_login_touches.png';
 import ElevarSubmissionForm from "~/components/forms/ElevarSubmission";
 import Footer from "~/components/Footer/Footer";
 

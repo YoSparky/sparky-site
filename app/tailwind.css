@@ -116,6 +116,9 @@
   .button--secondary {
     @apply button border border-tuatara bg-tuatara text-energyYellow hover:text-tuatara hover:bg-energyYellow;
   }
+  .button--secondary:disabled {
+    @apply hover:pointer-events-none hover:bg-tuatara hover:text-energyYellow;
+  }
   
   .button--link {
     @apply title pb-0.5 border-b border-current;

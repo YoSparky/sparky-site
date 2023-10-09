@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-E2HQ4RB7.css";
+var tailwind_default = "/build/_assets/tailwind-NGCH76CX.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-XCLAY73W.css";
@@ -9876,14 +9876,38 @@ var sparkydude_default = "/build/_assets/sparkydude-R3X7OUN4.png";
 var personalized_login_touches_default = "/build/_assets/personalized_login_touches-FGHZKNWB.png";
 
 // app/components/forms/ElevarSubmission.tsx
-var import_react29 = require("@remix-run/react"), import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
+var import_react29 = require("@remix-run/react"), import_react30 = require("react");
+var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
 function ElevarSubmissionForm() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_react29.Form, { className: "form form__wrapper", children: [
+  let [submitting, setSubmitting] = (0, import_react30.useState)(!1), [submitted, setSubmitted] = (0, import_react30.useState)(!1), handleSubmit = (0, import_react30.useCallback)(async (event2) => {
+    event2.preventDefault(), setSubmitting(!0);
+    let form_data = new FormData(event2.currentTarget);
+    await fetch("https://usebasin.com/f/6d5879c9a3ba", {
+      method: "post",
+      body: form_data
+    }), setSubmitting(!1), setSubmitted(!0);
+  }, []);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 25,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("button", { className: "button--secondary my-5", onClick: () => setSubmitted(!1), children: "Send Another" }, void 0, !1, {
+      fileName: "app/components/forms/ElevarSubmission.tsx",
+      lineNumber: 26,
+      columnNumber: 11
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/forms/ElevarSubmission.tsx",
+    lineNumber: 24,
+    columnNumber: 9
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_react29.Form, { className: "form form__wrapper", onSubmit: handleSubmit, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_name", children: "What's your brand name?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
-        lineNumber: 8,
-        columnNumber: 11
+        lineNumber: 31,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
@@ -9897,21 +9921,21 @@ function ElevarSubmissionForm() {
         !1,
         {
           fileName: "app/components/forms/ElevarSubmission.tsx",
-          lineNumber: 9,
-          columnNumber: 11
+          lineNumber: 32,
+          columnNumber: 13
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 7,
-      columnNumber: 9
+      lineNumber: 30,
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_site", children: "What's your brand website?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
-        lineNumber: 17,
-        columnNumber: 11
+        lineNumber: 40,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
@@ -9925,21 +9949,21 @@ function ElevarSubmissionForm() {
         !1,
         {
           fileName: "app/components/forms/ElevarSubmission.tsx",
-          lineNumber: 18,
-          columnNumber: 11
+          lineNumber: 41,
+          columnNumber: 13
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 16,
-      columnNumber: 9
+      lineNumber: 39,
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
-        lineNumber: 26,
-        columnNumber: 11
+        lineNumber: 49,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
@@ -9953,21 +9977,21 @@ function ElevarSubmissionForm() {
         !1,
         {
           fileName: "app/components/forms/ElevarSubmission.tsx",
-          lineNumber: 27,
-          columnNumber: 11
+          lineNumber: 50,
+          columnNumber: 13
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 25,
-      columnNumber: 9
+      lineNumber: 48,
+      columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "email", children: "Where should we send your CRO Quick Wins?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
-        lineNumber: 35,
-        columnNumber: 11
+        lineNumber: 58,
+        columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
@@ -9981,32 +10005,55 @@ function ElevarSubmissionForm() {
         !1,
         {
           fileName: "app/components/forms/ElevarSubmission.tsx",
-          lineNumber: 36,
-          columnNumber: 11
+          lineNumber: 59,
+          columnNumber: 13
         },
         this
       )
     ] }, void 0, !0, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 34,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("button", { className: "button--secondary", children: "Get My Free CRO Quick Wins" }, void 0, !1, {
-      fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 44,
+      lineNumber: 57,
       columnNumber: 11
-    }, this) }, void 0, !1, {
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center justify-center flex", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      "button",
+      {
+        disabled: submitting,
+        type: "submit",
+        className: "button--secondary flex gap-5 items-center",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { children: "Get My Free CRO Quick Wins" }, void 0, !1, {
+            fileName: "app/components/forms/ElevarSubmission.tsx",
+            lineNumber: 72,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
+            fileName: "app/components/forms/ElevarSubmission.tsx",
+            lineNumber: 73,
+            columnNumber: 15
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/forms/ElevarSubmission.tsx",
+        lineNumber: 67,
+        columnNumber: 13
+      },
+      this
+    ) }, void 0, !1, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
-      lineNumber: 43,
-      columnNumber: 9
+      lineNumber: 66,
+      columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/forms/ElevarSubmission.tsx",
-    lineNumber: 6,
-    columnNumber: 7
+    lineNumber: 29,
+    columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/components/forms/ElevarSubmission.tsx",
-    lineNumber: 5,
+    lineNumber: 22,
     columnNumber: 5
   }, this);
 }
@@ -10127,7 +10174,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XD6XXUO2.js", imports: ["/build/_shared/chunk-MQHMWGPV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-WEYPO3GG.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-PYQTFALN.js", "/build/_shared/chunk-Y6SILMMF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-6ER3RXDQ.js", imports: ["/build/_shared/chunk-PYQTFALN.js", "/build/_shared/chunk-Y6SILMMF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-ZJUCGF4J.js", imports: ["/build/_shared/chunk-BKKSVBDN.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-Y6SILMMF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-2HSKJ3B5.js", imports: ["/build/_shared/chunk-BKKSVBDN.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-Y6SILMMF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a2116395", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696873818960 }, url: "/build/manifest-A2116395.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-W6I4GIX3.js", imports: ["/build/_shared/chunk-7B7GYD47.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-I2NJ3TJY.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-EKQ73ZCH.js", "/build/_shared/chunk-YMHR43JB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-WU5BL7AS.js", imports: ["/build/_shared/chunk-EKQ73ZCH.js", "/build/_shared/chunk-YMHR43JB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-DPIAY5ND.js", imports: ["/build/_shared/chunk-VCFDXDHT.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-YMHR43JB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-RWJCGCKL.js", imports: ["/build/_shared/chunk-VCFDXDHT.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-YMHR43JB.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "ac5234d5", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696879717446 }, url: "/build/manifest-AC5234D5.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
