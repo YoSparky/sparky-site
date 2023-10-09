@@ -35,11 +35,11 @@
 
 @layer base {
   body {
-    @apply font-body text-tuatara;
+    @apply font-body text-tuatara bg-[#FFFFF4];
   }
 
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    @apply font-title;
+    @apply font-title font-bold leading-[0.9em];
   }
   
   h1, .h1 {
@@ -47,7 +47,15 @@
   }
   
   h2, .h2 {
-   @apply font-bold text-4xl md:text-[66px];
+   /* @apply font-bold text-4xl md:text-[66px]; */
+  }
+
+  h1, .h1 {
+    font-size: clamp(48px, 5.8vw, 96px);
+  }
+  h2, .h2 {
+    font-size: clamp(36px, 4vw, 66px);
+    @apply mb-4;
   }
   
   input[type="text"],
@@ -57,6 +65,21 @@
 }
 
 @layer components {
+  .Component--header-padded {
+    @apply pt-[80px];
+  }
+  .ContentArea {
+    @apply flex w-full right-edge-container;
+  }
+  .ContentArea > div {
+    @apply basis-1/2 relative;
+  }
+  .ContentArea__text {
+    @apply flex flex-col;
+  }
+  .ContentArea__media img {
+  }
+
   .title {
     @apply text-sm uppercase; 
   }
@@ -128,9 +151,6 @@
    @apply after:w-full; 
   }
 
-  .hero h1 {
-    font-size: clamp(48px, 5.8vw, 96px);
-  }
 }
 
 @keyframes liquidDropOut {

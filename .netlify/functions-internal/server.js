@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-KCAHF4Y7.css";
+var tailwind_default = "/build/_assets/tailwind-FUWT75IR.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-XCLAY73W.css";
@@ -9735,14 +9735,188 @@ function Index3() {
   }, this);
 }
 
+// app/routes/elevar.tsx
+var elevar_exports = {};
+__export(elevar_exports, {
+  default: () => ElevarPage
+});
+
+// app/components/ContentArea.tsx
+var import_classnames = __toESM(require("classnames")), import_jsx_dev_runtime42 = require("react/jsx-dev-runtime");
+function ContentArea(props) {
+  let section_classes = (0, import_classnames.default)(props.className, {
+    ContentArea: !0,
+    "ContentArea--reverse": props.layout === "reverse",
+    "Component--header-padded": props.topComponent,
+    hero: props.topComponent
+  }), text_classes = (0, import_classnames.default)({
+    ContentArea__text: !0,
+    "justify-start": props.textVerticalPosition === "top",
+    "justify-center": props.textVerticalPosition === "middle",
+    "justify-end": props.textVerticalPosition === "bottom"
+  });
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+    "section",
+    {
+      id: props.id,
+      className: section_classes,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+          "div",
+          {
+            className: text_classes,
+            children: props.children
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/ContentArea.tsx",
+            lineNumber: 32,
+            columnNumber: 7
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+          "div",
+          {
+            className: "ContentArea__media",
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+              "img",
+              {
+                src: props.image
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/ContentArea.tsx",
+                lineNumber: 40,
+                columnNumber: 9
+              },
+              this
+            )
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/ContentArea.tsx",
+            lineNumber: 37,
+            columnNumber: 7
+          },
+          this
+        )
+      ]
+    },
+    void 0,
+    !0,
+    {
+      fileName: "app/components/ContentArea.tsx",
+      lineNumber: 28,
+      columnNumber: 5
+    },
+    this
+  );
+}
+
+// app/assets/quick_wins.png
+var quick_wins_default = "/build/_assets/quick_wins-JR6ZSL4F.png";
+
+// app/assets/sparkydude.png
+var sparkydude_default = "/build/_assets/sparkydude-R3X7OUN4.png";
+
+// app/assets/personalized_login_touches.png
+var personalized_login_touches_default = "/build/_assets/personalized_login_touches-FGHZKNWB.png";
+
+// app/routes/elevar.tsx
+var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
+function ElevarPage() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_jsx_dev_runtime43.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      ContentArea,
+      {
+        layout: "standard",
+        topComponent: !0,
+        image: quick_wins_default,
+        textVerticalPosition: "middle",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("h2", { children: "CRO Quick Wins" }, void 0, !1, {
+            fileName: "app/routes/elevar.tsx",
+            lineNumber: 15,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
+            fileName: "app/routes/elevar.tsx",
+            lineNumber: 16,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/routes/elevar.tsx",
+        lineNumber: 9,
+        columnNumber: 7
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      ContentArea,
+      {
+        layout: "standard",
+        image: personalized_login_touches_default,
+        textVerticalPosition: "middle",
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+            "img",
+            {
+              src: sparkydude_default,
+              className: "w-[144px]"
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/elevar.tsx",
+              lineNumber: 23,
+              columnNumber: 9
+            },
+            this
+          ),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("h2", { children: "Headline" }, void 0, !1, {
+            fileName: "app/routes/elevar.tsx",
+            lineNumber: 27,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("p", { className: "font-title", children: "Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site." }, void 0, !1, {
+            fileName: "app/routes/elevar.tsx",
+            lineNumber: 28,
+            columnNumber: 9
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/routes/elevar.tsx",
+        lineNumber: 18,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/routes/elevar.tsx",
+    lineNumber: 8,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/$.tsx
 var __exports = {};
 __export(__exports, {
   default: () => Index4
 });
-var import_jsx_dev_runtime42 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime");
 function Index4() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
     fileName: "app/routes/$.tsx",
     lineNumber: 5,
     columnNumber: 9
@@ -9758,7 +9932,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-W7YQ7MFY.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-32E7CLZA.js", imports: ["/build/_shared/chunk-TBHAKX7F.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-SRUM74HN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3SBQTMPH.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-B64ITILF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-QIHB7AII.js", imports: ["/build/_shared/chunk-QQPSP6II.js", "/build/_shared/chunk-B64ITILF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-VGIGKS3K.js", imports: ["/build/_shared/chunk-QQPSP6II.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-B64ITILF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b254333e", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696807104024 }, url: "/build/manifest-B254333E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-MUI3H4SE.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-LGMQX3ZZ.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SL6KYHJB.js", imports: ["/build/_shared/chunk-NKI3HQX2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-E4BRT2PW.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-27CCJTGM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-QUEYYEKQ.js", imports: ["/build/_shared/chunk-OXKOQKJU.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-PJPQ3OF7.js", imports: ["/build/_shared/chunk-OXKOQKJU.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-3TFTN3KG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "dfb4e5ee", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696809906593 }, url: "/build/manifest-DFB4E5EE.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -9793,6 +9967,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: !0,
     caseSensitive: void 0,
     module: index_exports
+  },
+  "routes/elevar": {
+    id: "routes/elevar",
+    parentId: "root",
+    path: "elevar",
+    index: void 0,
+    caseSensitive: void 0,
+    module: elevar_exports
   },
   "routes/$": {
     id: "routes/$",
