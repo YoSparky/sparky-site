@@ -4,6 +4,7 @@ import sparkyDudeImage from '~/assets/sparkydude.png';
 import personalizedLoginTouchesImage from '~/assets/personalized_login_touches.png';
 import ElevarSubmissionForm from "~/components/forms/ElevarSubmission";
 import Footer from "~/components/Footer/Footer";
+import ElevarSubmissionSimpleForm from "~/components/forms/ElevarSubmissionSimple";
 
 export default function ElevarPage() {
   return (
@@ -14,10 +15,10 @@ export default function ElevarPage() {
         image={quickWinsImage}
         textVerticalPosition='middle'
       >
-        <h2>CRO Quick Wins</h2>
-        <p className='font-title'>Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site.</p>
+        <h2>CRO Readiness Checklist</h2>
+        <p className='h4 leading-8 font-normal'>Send us your site and we’ll give you 3 brand-specific ideas to level up this holiday season.</p>
       </ContentArea>
-      <ElevarSubmissionForm />
+      <ElevarSubmissionSimpleForm />
       <ContentArea
         layout="standard"
         image={personalizedLoginTouchesImage}
@@ -27,9 +28,10 @@ export default function ElevarPage() {
           src={sparkyDudeImage}
           className="w-[144px]"
         />
-        <h2>Headline</h2>
-        <p className='font-title'>Lorem ipsum makes lightweight, comfortable, casual shoes for adventurers of all varieties. When Crocs purchased HEYDUDE (one of the largest and fastest-growing Shopify Plus brands) for $2.5b in early 2022, they immediately called Sparky to level-up the site.</p>
+        <h2>Get 3 CRO Quick Wins</h2>
+        <p className='h4 leading-8 font-normal'>Send us your site and we’ll give you 3 brand-specific ideas to level up this holiday season.</p>
       </ContentArea>
+      <ElevarSubmissionForm />
       <Footer />
     </>
   );

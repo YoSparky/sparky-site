@@ -2,14 +2,14 @@ import { Form } from "@remix-run/react";
 import { FormEvent, useCallback, useState } from "react";
 import Arrow from '~/components/icons/Arrow';
 
-export default function ElevarSubmissionForm() {
+export default function ElevarSubmissionSimpleForm() {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = useCallback(async (event: FormEvent) => {
     event.preventDefault();
     setSubmitting(true);
     const form_data = new FormData(event.currentTarget as HTMLFormElement);
-    form_data.append(`type`, `quick wins`);
+    form_data.append(`type`, `checklist`);
     await fetch(`https://usebasin.com/f/6d5879c9a3ba`, {
       method: `post`,
       body: form_data,
@@ -28,26 +28,6 @@ export default function ElevarSubmissionForm() {
       ) : (
         <Form className="form form__wrapper" onSubmit={handleSubmit}>
           <div className="form__inputGroup">
-            <label htmlFor="brand_name">What's your brand name?</label>
-            <input
-              id="brand_name"
-              name="brand_name"
-              type="text"
-              placeholder="Brand Name"
-              required
-            />
-          </div>
-          <div className="form__inputGroup">
-            <label htmlFor="brand_site">What's your brand website?</label>
-            <input
-              id="brand_site"
-              name="brand_site"
-              type="text"
-              placeholder="brandwebsite.com"
-              required
-            />
-          </div>
-          <div className="form__inputGroup">
             <label htmlFor="name">What's your name?</label>
             <input
               id="name"
@@ -58,7 +38,7 @@ export default function ElevarSubmissionForm() {
             />
           </div>
           <div className="form__inputGroup">
-            <label htmlFor="email">Where should we send your CRO Quick Wins?</label>
+            <label htmlFor="email">What's your email?</label>
             <input
               id="email"
               name="email"
@@ -73,7 +53,7 @@ export default function ElevarSubmissionForm() {
               type="submit"
               className="button--secondary flex gap-5 items-center"
             >
-              <span>Get My Free CRO Quick Wins</span>
+              <span>Get the CRO Readiness Checklist</span>
               <Arrow className="w-3" />
             </button>
           </div>
