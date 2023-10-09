@@ -67,7 +67,7 @@ export default function ElevarSubmissionForm() {
               required
             />
           </div>
-          <div className="text-center justify-center flex">
+          <div className="text-center justify-center flex my-8">
             <button
               disabled={submitting}
               type="submit"
