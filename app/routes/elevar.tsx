@@ -16,7 +16,7 @@ export default function ElevarPage() {
         textVerticalPosition='middle'
       >
         <h2>CRO Readiness Checklist</h2>
-        <p className='h4 leading-8 font-normal'>Looking to improve conversion rate? Before you start testing, download this checklist to determine site readiness and avoid common pitfalls that come in the way growth.</p>
+        <p className='h4 leading-8 font-normal'>Looking to improve conversion rate? Before you start testing, download this checklist to determine site readiness and avoid common pitfalls that hinder growth.</p>
       </ContentArea>
       <ElevarSubmissionSimpleForm />
       <ContentArea
