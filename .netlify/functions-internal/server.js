@@ -8740,6 +8740,26 @@ function Index2() {
   }, this);
 }
 
+// app/routes/elevar-summit.tsx
+var elevar_summit_exports = {};
+__export(elevar_summit_exports, {
+  loader: () => loader
+});
+var import_node2 = require("@remix-run/node");
+async function loader() {
+  return (0, import_node2.redirect)("/elevar");
+}
+
+// app/routes/checklist.tsx
+var checklist_exports = {};
+__export(checklist_exports, {
+  loader: () => loader2
+});
+var import_node3 = require("@remix-run/node");
+async function loader2() {
+  return (0, import_node3.redirect)("/elevar");
+}
+
 // app/routes/_index.tsx
 var index_exports = {};
 __export(index_exports, {
@@ -10345,7 +10365,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-R2HM4NRI.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-UTVODLSX.js", imports: ["/build/_shared/chunk-VBQI3UAG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-OLFWB6TS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-JR7MMKVO.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-SBW7I3QV.js", "/build/_shared/chunk-BCDLSRSC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-72COHCAG.js", imports: ["/build/_shared/chunk-SBW7I3QV.js", "/build/_shared/chunk-BCDLSRSC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-UXHW6J7Z.js", imports: ["/build/_shared/chunk-EET5NLJU.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-BCDLSRSC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-XKG5ZXEI.js", imports: ["/build/_shared/chunk-EET5NLJU.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-BCDLSRSC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "8a347ed0", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696910542720 }, url: "/build/manifest-8A347ED0.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-BOA65QVA.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-7ADG4H4P.js", imports: ["/build/_shared/chunk-6M44XK4A.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-RI2FQWB6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-E3AEEBBQ.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-FEQY5LYZ.js", "/build/_shared/chunk-A77MUS7D.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-UAAWK724.js", imports: ["/build/_shared/chunk-FEQY5LYZ.js", "/build/_shared/chunk-A77MUS7D.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-DGHDW7S3.js", imports: ["/build/_shared/chunk-HORAVHKK.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-A77MUS7D.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-YNQ5KO7O.js", imports: ["/build/_shared/chunk-HORAVHKK.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-A77MUS7D.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "3513ee45", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1696939069946 }, url: "/build/manifest-3513EE45.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -10372,6 +10392,22 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: !0,
     caseSensitive: void 0,
     module: portfolio_index_exports
+  },
+  "routes/elevar-summit": {
+    id: "routes/elevar-summit",
+    parentId: "root",
+    path: "elevar-summit",
+    index: void 0,
+    caseSensitive: void 0,
+    module: elevar_summit_exports
+  },
+  "routes/checklist": {
+    id: "routes/checklist",
+    parentId: "root",
+    path: "checklist",
+    index: void 0,
+    caseSensitive: void 0,
+    module: checklist_exports
   },
   "routes/_index": {
     id: "routes/_index",
