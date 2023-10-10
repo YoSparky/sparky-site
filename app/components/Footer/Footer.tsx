@@ -9,7 +9,7 @@ export default function Footer() {
     <>
       <div className="bg-ivory py-52">
         <div className="container flex flex-col items-center justify-center gap-14">  
-          <strong className="h1 text-5xl text-center">Take your Shopify site to <br/> the next-level today.</strong> 
+          <strong className="h1 text-5xl text-center">Take your Shopify site to <br/> the next level today.</strong> 
           <button className="button--secondary" onClick={() => toggleModal ? toggleModal() : null}>
             Get in Touch  
           </button>
