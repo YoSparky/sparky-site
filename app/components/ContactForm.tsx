@@ -25,7 +25,7 @@ export default function ContactForm() {
     });
     setSubmitting(false);
     setSubmitted(true);
-  }, []);
+  }, [brand_type, looking_to, platform]);
 
   const resetForm = useCallback(() => {
     setCurrentlyActive(null);
