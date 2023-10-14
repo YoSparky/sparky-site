@@ -1,23 +1,41 @@
 import { Arrow } from "~/components/icons";
 import { Accordion } from "~/components/Accordion";
-import { FormEvent, useCallback, useState } from "react";
+import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
 import { Form } from "@remix-run/react";
+import contact_form_data from '~/data/contact';
 
 export default function ContactForm() {
-  const [currentlyActive, setCurrentlyActive] = useState(null);
-  const [brand_type, setBrandType] = useState<null | string>(null);
-  const [looking_to, setLookingTo] = useState<null | string>(null);
-  const [platform, setPlatform] = useState<null | string>(null);
+  const [currently_active, setCurrentlyActive] = useState(`brand`);
+  const [brand_type, setBrandType] = useState(``);
+  const [looking_to, setLookingTo] = useState(``);
+  const [livesOn, setLivesOn] = useState(``);
+
+  const section_map: { [key: string]: { value: string, action: Function } } = {
+    brand: {
+      value: brand_type,
+      action: setBrandType,
+    },
+    "looking-to": {
+      value: looking_to,
+      action: setLookingTo,
+    },
+    "lives-on": {
+      value: livesOn,
+      action: setLivesOn,
+    },
+  };
 
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const first_name_ref = useRef<HTMLInputElement>(null);
+
   const handleSubmit = useCallback(async (event: FormEvent) => {
     event.preventDefault();
     setSubmitting(true);
     const form_data = new FormData(event.currentTarget as HTMLFormElement);
     if (brand_type) { form_data.append(`brand_type`, brand_type); }
     if (looking_to) { form_data.append(`looking_to`, looking_to); }
-    if (platform) { form_data.append(`platform`, platform); }
+    if (livesOn) { form_data.append(`livesOn`, livesOn); }
     
     await fetch(`https://usebasin.com/f/840caf1493b3`, {
       method: `post`,
@@ -25,13 +43,27 @@ export default function ContactForm() {
     });
     setSubmitting(false);
     setSubmitted(true);
-  }, [brand_type, looking_to, platform]);
+  }, [brand_type, looking_to, livesOn]);
+
+  const advanceSection = useCallback((label: string) => {
+    const sections = Object.keys(section_map);
+    const section_index = sections.indexOf(currently_active);
+    const next_section = sections[section_index+1];
+    section_map[currently_active].action(label);
+
+    if (next_section) {
+      setCurrentlyActive(next_section);
+    } else {
+      setCurrentlyActive(``);
+      first_name_ref.current?.focus();
+    }
+  }, [currently_active, section_map, first_name_ref]);
 
   const resetForm = useCallback(() => {
-    setCurrentlyActive(null);
-    setBrandType(null);
-    setLookingTo(null);
-    setPlatform(null);
+    setCurrentlyActive(``);
+    setBrandType(``);
+    setLookingTo(``);
+    setLivesOn(``);
     setSubmitted(false);
   }, []);
 
@@ -45,126 +77,42 @@ export default function ContactForm() {
       </div>
     ) : (
       <Form onSubmit={handleSubmit}>
-        <Accordion
-          id="brand"
-          isOpen={'brand' === currentlyActive}
-          label={`I am ${brand_type || `a ...`} brand`}
-          toggleAccordion={setCurrentlyActive}
-        >
-          <ul className="options pt-6 pb-11">
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" value="Start-up" name="brand" onClick={() => setBrandType(`a start-up`)} defaultChecked={brand_type === `a start-up`} />
-                <span>Start-up</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" value="Early Stage" name="brand" onClick={() => setBrandType(`an early stage`)} defaultChecked={brand_type === `an early stage`} />
-                <span>Early Stage</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" value="Established" name="brand" onClick={() => setBrandType(`an established`)} defaultChecked={brand_type === `an established`} />
-                <span>Established</span>
-              </label>
-            </li>
-          </ul>
-        </Accordion>
-        <Accordion
-          id="looking-to"
-          toggleAccordion={setCurrentlyActive}
-          isOpen={'looking-to' === currentlyActive}
-          label={`looking to ${looking_to || `...`} site`}
-        >
-          <ul className="options pt-6 pb-11">
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Launch a new" onClick={() => setLookingTo(`launch a new`)} defaultChecked={looking_to === `launch a new`} />
-                <span>Launch a new</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Re-design my current" onClick={() => setLookingTo(`redesign my current`)} defaultChecked={looking_to === `redesign my current`} />
-                <span>Re-design my current</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Re-platform my" onClick={() => setLookingTo(`re-platform my`)} defaultChecked={looking_to === `re-platform my`} />
-                <span>Re-platform my</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Optimize my" onClick={() => setLookingTo(`optimize my`)} defaultChecked={looking_to === `optimize my`} />
-                <span>Optimize my</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Add something to my" onClick={() => setLookingTo(`add something to my`)} defaultChecked={looking_to === `add something to my`} />
-                <span>Add something to my</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="goal" value="Create a headless" onClick={() => setLookingTo(`create a headless`)} defaultChecked={looking_to === `create a headless`} />
-                <span>Create a headless</span>
-              </label>
-            </li>
-          </ul>
-        </Accordion>
-        <Accordion
-          toggleAccordion={setCurrentlyActive}
-          id="lives-on"
-          isOpen={'lives-on' === currentlyActive}
-          label={`that lives on ${platform || `...`}`}
-        >
-          <ul className="options pt-6 pb-11">
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="Shopify" onClick={() => setPlatform(`Shopify`)} defaultChecked={platform === `Shopify`} />
-                <span>Shopify</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="Salesforce Commerce Cloud" onClick={() => setPlatform(`Salesforce Commerce Cloud`)} defaultChecked={platform === `Salesforce Commerce Cloud`} />
-                <span>Salesforce Commerce Cloud</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="Magento" onClick={() => setPlatform(`Magento`)} defaultChecked={platform === `Magento`} />
-                <span>Magento</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="Hybrid" onClick={() => setPlatform(`Hybrid`)} defaultChecked={platform === `Hybrid`} />
-                <span>Hybrid</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="WooCommerce" onClick={() => setPlatform(`WooCommerce`)} defaultChecked={platform === `WooCommerce`} />
-                <span>WooCommerce</span>
-              </label>
-            </li>
-            <li>
-              <label className="radio-wrap">
-                <input type="radio" name="platform" value="a different platform" onClick={() => setPlatform(`a different platform`)} defaultChecked={platform === `a different platform`} />
-                <span>a different platform</span>
-              </label>
-            </li>
-          </ul>
-        </Accordion>
+        {contact_form_data.map((section) => (
+          <Accordion
+            id={section.section}
+            isOpen={section.section === currently_active}
+            label={section.label.replace(section.label_replace, section_map[section.section].value || section.label_replace)}
+            toggleAccordion={setCurrentlyActive}
+          >
+            <ul className="options pt-6 pb-11">
+              {section.options.map((option) => (
+                <li>
+                  <label className="radio-wrap">
+                    <input
+                      type="radio"
+                      value={option.value}
+                      name={section.section}
+                      onClick={() => advanceSection(option.label)}
+                      defaultChecked={section_map[section.section].value === option.label}
+                    />
+                    <span>{option.value}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </Accordion>
+        ))}
 
         <div className="grid md:grid-cols-3 my-5">
-          <input className="border border-current -mb-[1px] md:-mr-[1px]" type="text" id="fname" name="fname" placeholder="First Name" required />
+          <input
+            ref={first_name_ref}
+            className="border border-current -mb-[1px] md:-mr-[1px]"
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+            required
+          />
           <input className="border border-current -mb-[1px] md:-mr-[1px]" type="text" id="lname" name="lname" placeholder="Last Name" required />
           <input className="border border-current -mb-[1px]" type="text" id="company" name="company" placeholder="Company" required />
           <input className="border border-current md:col-span-3" type="email" id="email" name="email" placeholder="Email Address" required />
