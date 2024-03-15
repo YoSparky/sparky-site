@@ -34,7 +34,7 @@ export default function FeaturedPortfolio() {
       slidesPerView: 3.1,
       breakpoints: {
         768: {
-          slidesPerView: 2.1,
+          slidesPerView: 1.1,
         },
       },
     };
@@ -44,6 +44,7 @@ export default function FeaturedPortfolio() {
 
     // initialize swiper
     swiperRef.current.initialize();
+    setIsEnd(swiperRef.current.swiper.isEnd);
   }, []);
 
   const buttonStyles = `

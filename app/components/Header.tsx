@@ -51,7 +51,7 @@ export default function Header() {
           ref={headerRef}
           className={`${(headerVisible && headerRef?.current?.scrollHeight < currentOffset) && `shadow`} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`}
         >
-          <div className="container items-center text-center font-urbanist pb-4 announcement">
+          <div className="container items-center text-center font-NeueHaasGroteskDisplay pb-4 announcement">
             <button 
               className="inline-flex justify-center items-center gap-3" 
               onClick={() => toggleModal ? toggleModal() : null}
@@ -67,7 +67,7 @@ export default function Header() {
             <div className="text-center text-sm"></div>
             <nav className="menu flex justify-end">
               <button 
-                className="font-urbanist border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
+                className="font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
                 onClick={() => toggleModal ? toggleModal() : null}
               >
                 Let's Talk

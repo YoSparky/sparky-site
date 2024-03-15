@@ -1,12 +1,11 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import Hero from "~/components/Homepage/Hero";
 import FeaturedPortfolio from "~/components/Homepage/FeaturedPortfolio";
-import FeaturedPartners from "~/components/Homepage/FeaturedPartners";
 import PortfolioList from "~/components/PortfolioList";
-import PortfolioSlider from "~/components/PortfolioSlider";
-import OfferingsAccordion from "~/components/OfferingsAccordion";
-import Marquee from "~/components/Marquee";
 import Footer from "~/components/Footer/Footer";
+import Offerings from "~/components/Offerings";
+import TextImageColumns from "~/components/Homepage/TextImageColumns";
+import FeaturedPartners from "~/components/Homepage/FeaturedPartners";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -20,11 +19,10 @@ export default function Index() {
     <div className="homepage">
       <Hero />
       <FeaturedPortfolio />
-      <FeaturedPartners />
       <PortfolioList />
-      <PortfolioSlider />
-      <OfferingsAccordion />
-      <Marquee />
+      <Offerings />
+      <TextImageColumns />
+      <FeaturedPartners />
       <Footer />
     </div>
   );
