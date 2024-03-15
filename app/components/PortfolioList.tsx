@@ -8,7 +8,7 @@ export default function PortfolioList() {
   return (
     <div className="bg-[#141414] text-white w-full py-10 md:py-20">
       <div className="container">
-        <div className="flex items-center justify-between py-5 md:py-10">
+        <div className="flex items-center justify-between py-10">
           <span className="font-body text-2xl">Notable Merchants</span>
           <button 
             className="font-NeueHaasGroteskDisplay text-white cursor-pointer text-sm" 
@@ -17,7 +17,7 @@ export default function PortfolioList() {
             Become a Client
           </button>
         </div>
-        <ul className="grid grid-cols-4 border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md overflow-hidden">
+        <ul className="grid grid-cols-2 md:grid-cols-4 border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md overflow-hidden">
           {portfolioListItems.map(({ title, logo, link }) => (
             <li className="block relative aspect-[320/190] bg-[#141414] group" key={`${useId()}`}>
               <a 

@@ -69,7 +69,7 @@ export default function FeaturedPortfolio() {
   
   return (
     <div className="overflow-hidden">
-      <div className="pt-5 pb-10 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible">
+      <div className="pt-5 pb-16 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible">
         <swiper-container init="false" ref={swiperRef}>
         {caseStudies.map((caseStudy) => {
             const caseStudyKey = useId();

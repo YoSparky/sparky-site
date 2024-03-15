@@ -8,7 +8,7 @@ export default function FeaturedPartners() {
         <div className="flex items-center justify-between py-5 md:py-10">
           <span className="font-body text-2xl">Partners</span>
         </div>
-        <ul className="grid grid-cols-4 border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md overflow-hidden">
+        <ul className="grid grid-cols-2 md:grid-cols-4 border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md overflow-hidden">
           {partnerListItems.map(({ title, logo }) => (
             <li className="block relative aspect-[320/190] bg-[#141414] group" key={`${useId()}`}>
               <span className="absolute top-0 left-0 h-full w-full flex items-center justify-center transform transition duration-500 origin-center scale-105 group-hover:scale-110"

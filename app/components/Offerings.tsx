@@ -8,8 +8,8 @@ export default function Offerings() {
   return (
     <div>
       <div className="bg-[#f4df73]">
-        <div className="container items-center text-center pt-[120px] pb-[100px] flex flex-col w-full gap-11">
-          <strong className="text-[54px] leading-[1.37]">
+        <div className="container items-center text-center pt-20 pb-14 md:pt-[120px] md:pb-[100px] flex flex-col w-full gap-11">
+          <strong className="font-semibold text-3xl md:text-[54px] leading-[1.37] max-w-[996px]">
             We are a partner for brands with diverse eComm technical and business needs.
           </strong>
           <button 
@@ -20,13 +20,13 @@ export default function Offerings() {
           </button>
         </div>
       </div>
-      <div className="bg-gradient-to-b from-[#f4df73] from-[50%] via-white via-50%">
-        <div className="container grid grid-cols-3 gap-2 text-white">
+      <div className="bg-gradient-to-b from-[#f4df73] via-white from-[30%] via-30% md:from-[50%] md:via-50%">
+        <div className="container grid md:grid-cols-3 gap-2 text-white">
           {offerings.map(({ title, listItems }) => {
             const id = useId();
             return (
-              <div className="bg-[#141414] rounded-md p-11 flex flex-col gap-[30px]">
-                <strong className="font-body text-2xl">{title}</strong>
+              <div className="bg-[#141414] rounded-md p-9 md:p-11 flex flex-col gap-6 md:gap-[30px]">
+                <strong className="font-body text-lg md:text-2xl">{title}</strong>
                 <ul 
                   className="border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md flex flex-col overflow-hidden" 
                   key={id}

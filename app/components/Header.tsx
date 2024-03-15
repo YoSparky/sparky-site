@@ -53,13 +53,13 @@ export default function Header() {
         >
           <div className="container items-center text-center font-NeueHaasGroteskDisplay pb-4 announcement">
             <button 
-              className="inline-flex justify-center items-center gap-3" 
+              className="max-md:text-xs inline-flex justify-center items-center gap-3" 
               onClick={() => toggleModal ? toggleModal() : null}
             >
               Let our team of eCommerce experts help your store grow <Arrow className="w-3" />
             </button>
           </div>
-          <hr className="pt-0.5 mb-5 border-t-0 border-b"></hr>
+          <hr className="pt-0.5 mb-4 md:mb-5 border-t-0 border-b"></hr>
           <div className="container grid grid-cols-3 items-center">
             <Link title="home" to="/">
               <img className="w-24 md:w-32" src={sparkyLogo} />
