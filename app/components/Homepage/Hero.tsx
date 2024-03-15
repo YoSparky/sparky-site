@@ -1,20 +1,12 @@
-import { Link } from "@remix-run/react";
-import { LiquidDropHover } from "../LiquidDropHover";
-
 export default function Hero() {  
   return (
-    <section className="hero">
-      <div className="relative w-full pt-16 z-[0]">
-        <div className="container py-16 md:pt-24 md:pb-36 flex flex-col justify-center gap-16">
-          <h1 className="text-shadow">We design, build, and optimize high-converting eCommerce sites that glow with brand personality.</h1>
-          <p>As proud Shopify Plus partners, we help fast-growing DTC businesses squeeze more out of their websites and future-proof their tech stacks.</p>
-          <Link to="/portfolio">
-            <LiquidDropHover> 
-              See the sites.
-            </LiquidDropHover>
-          </Link>
-        </div>
-      </div>
+    <section className="hero flex flex-col justify-center container text-center gap-5 pt-48 pb-16">
+      <h1 className="text-[54px] leading-tight font-semibold">
+        The Shopify Plus partner with startup agility and enterprise ability
+      </h1>
+      <p className="pt-0.5 text-xl leading-normal">
+        Since 2018, we’ve partnered with some of Shopify’s largest brands to future-proof their tech <br></br>stacks, optimize their revenues per visitor, and make their sites glow with brand personality.
+      </p>
     </section>
   );
 }

@@ -144,10 +144,10 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-P5HJPM74.css";
+var tailwind_default = "/build/_assets/tailwind-YSVMHY34.css";
 
 // app/assets/fonts.css
-var fonts_default = "/build/_assets/fonts-XCLAY73W.css";
+var fonts_default = "/build/_assets/fonts-G6DOKJMT.css";
 
 // app/components/Header.tsx
 var import_react2 = require("@remix-run/react");
@@ -157,7 +157,44 @@ var sparkyLogo_default = "/build/_assets/sparkyLogo-5HOJMYLR.png";
 
 // app/components/Header.tsx
 var import_react3 = require("react");
-var import_react_transition_group = require("react-transition-group"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
+var import_react_transition_group = require("react-transition-group");
+
+// app/components/icons/Arrow.tsx
+var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), SvgArrow = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    fill: "none",
+    viewBox: "0 0 9 9",
+    ...props,
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
+      "path",
+      {
+        fill: "currentColor",
+        d: "m4.06.866-.7.896 3.388 2.492-1.806-.098H0V5.29h4.942l1.764-.098L3.36 7.74l.7.826 4.27-3.402v-.882L4.06.866Z"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/icons/Arrow.tsx",
+        lineNumber: 10,
+        columnNumber: 5
+      },
+      this
+    )
+  },
+  void 0,
+  !1,
+  {
+    fileName: "app/components/icons/Arrow.tsx",
+    lineNumber: 4,
+    columnNumber: 3
+  },
+  this
+), Arrow_default = SvgArrow;
+
+// app/components/Header.tsx
+var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
 function Header() {
   let toggleModal = (0, import_react3.useContext)(ModalContext), headerRef = (0, import_react3.useRef)(null), [prevOffset, setPrevOffset] = (0, import_react3.useState)(0), [currentOffset, setCurrentOffset] = (0, import_react3.useState)(0), [headerVisible, setHeaderVisibility] = (0, import_react3.useState)(!0);
   (0, import_react3.useEffect)(() => {
@@ -173,9 +210,9 @@ function Header() {
     exited: { transform: "translateY(-100%)" },
     unmounted: {}
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react_transition_group.Transition, { nodeRef: headerRef, in: headerVisible, timeout: headerVisible ? 500 : 0, children: (state) => {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react_transition_group.Transition, { nodeRef: headerRef, in: headerVisible, timeout: headerVisible ? 500 : 0, children: (state) => {
     var _a;
-    return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
+    return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
       "header",
       {
         style: {
@@ -183,58 +220,94 @@ function Header() {
           ...transitionStyles[state]
         },
         ref: headerRef,
-        className: `${headerVisible && ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.scrollHeight) < currentOffset && "bg-ivory shadow"} py-4 fixed left-0 w-screen z-10 transition duration-500 top-0`,
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "container grid grid-cols-3 items-center", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Link, { title: "home", to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { className: "w-24 md:w-32", src: sparkyLogo_default }, void 0, !1, {
-            fileName: "app/components/Header.tsx",
-            lineNumber: 55,
-            columnNumber: 15
-          }, this) }, void 0, !1, {
+        className: `${headerVisible && ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.scrollHeight) < currentOffset && "shadow"} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`,
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "container items-center text-center font-urbanist pb-4 announcement", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+            "button",
+            {
+              className: "inline-flex justify-center items-center gap-3",
+              onClick: () => toggleModal ? toggleModal() : null,
+              children: [
+                "Let our team of eCommerce experts help your store grow ",
+                /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
+                  fileName: "app/components/Header.tsx",
+                  lineNumber: 59,
+                  columnNumber: 70
+                }, this)
+              ]
+            },
+            void 0,
+            !0,
+            {
+              fileName: "app/components/Header.tsx",
+              lineNumber: 55,
+              columnNumber: 13
+            },
+            this
+          ) }, void 0, !1, {
             fileName: "app/components/Header.tsx",
             lineNumber: 54,
-            columnNumber: 13
+            columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("div", { className: "text-center text-sm" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("hr", { className: "pt-0.5 mb-5 border-t-0 border-b" }, void 0, !1, {
             fileName: "app/components/Header.tsx",
-            lineNumber: 57,
-            columnNumber: 13
+            lineNumber: 62,
+            columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("nav", { className: "menu flex justify-end", children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Link, { to: {
-              pathname: "portfolio"
-            }, children: "Work" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "container grid grid-cols-3 items-center", children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react2.Link, { title: "home", to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("img", { className: "w-24 md:w-32", src: sparkyLogo_default }, void 0, !1, {
               fileName: "app/components/Header.tsx",
-              lineNumber: 59,
+              lineNumber: 65,
               columnNumber: 15
-            }, this),
-            /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("button", { className: "btn", onClick: () => toggleModal ? toggleModal() : null, children: "Contact" }, void 0, !1, {
+            }, this) }, void 0, !1, {
               fileName: "app/components/Header.tsx",
               lineNumber: 64,
-              columnNumber: 15
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "text-center text-sm" }, void 0, !1, {
+              fileName: "app/components/Header.tsx",
+              lineNumber: 67,
+              columnNumber: 13
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("nav", { className: "menu flex justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+              "button",
+              {
+                className: "font-urbanist border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200",
+                onClick: () => toggleModal ? toggleModal() : null,
+                children: "Let's Talk"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Header.tsx",
+                lineNumber: 69,
+                columnNumber: 15
+              },
+              this
+            ) }, void 0, !1, {
+              fileName: "app/components/Header.tsx",
+              lineNumber: 68,
+              columnNumber: 13
             }, this)
           ] }, void 0, !0, {
             fileName: "app/components/Header.tsx",
-            lineNumber: 58,
-            columnNumber: 13
+            lineNumber: 63,
+            columnNumber: 11
           }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/Header.tsx",
-          lineNumber: 53,
-          columnNumber: 11
-        }, this)
+        ]
       },
       void 0,
-      !1,
+      !0,
       {
         fileName: "app/components/Header.tsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 9
       },
       this
     );
   } }, void 0, !1, {
     fileName: "app/components/Header.tsx",
-    lineNumber: 43,
+    lineNumber: 44,
     columnNumber: 5
   }, this);
 }
@@ -243,7 +316,7 @@ function Header() {
 var import_react8 = require("@remix-run/react"), import_react9 = require("react");
 
 // app/components/Modal.tsx
-var import_react4 = require("react"), import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), Modal = ({ children, modalState, closeModal }) => {
+var import_react4 = require("react"), import_react_transition_group2 = require("react-transition-group"), import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), Modal = ({ children, modalState, closeModal }) => {
   let onKeyDown = (0, import_react4.useCallback)((event2) => {
     event2.key === "Escape" && closeModal();
   }, []);
@@ -253,15 +326,15 @@ var import_react4 = require("react"), import_react_transition_group2 = require("
       return;
     }
     document.removeEventListener("keydown", onKeyDown), document.body.classList.remove("h-screen", "overflow-hidden");
-  }, [onKeyDown, modalState]), /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+  }, [onKeyDown, modalState]), /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
     import_react_transition_group2.Transition,
     {
       in: modalState,
       timeout: modalState ? 0 : 500,
       appear: !0,
       unmountOnExit: !0,
-      children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_jsx_dev_runtime3.Fragment, { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+      children: (state) => /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_jsx_dev_runtime4.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
           "div",
           {
             "aria-hidden": !0,
@@ -290,7 +363,7 @@ var import_react4 = require("react"), import_react_transition_group2 = require("
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
           "div",
           {
             className: `
@@ -315,7 +388,7 @@ var import_react4 = require("react"), import_react_transition_group2 = require("
               z-[100]
             `,
             children: [
-              /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-end sticky top-0 z-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "md:transform md:rotate-90 md:translate-x-1/2 md:origin-left bg-halfColonialWhite", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("button", { className: "button", onClick: () => closeModal(), children: "x | Close" }, void 0, !1, {
+              /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "flex items-center justify-end sticky top-0 z-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "md:transform md:rotate-90 md:translate-x-1/2 md:origin-left bg-halfColonialWhite", children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("button", { className: "button", onClick: () => closeModal(), children: "x | Close" }, void 0, !1, {
                 fileName: "app/components/Modal.tsx",
                 lineNumber: 80,
                 columnNumber: 17
@@ -356,40 +429,6 @@ var import_react4 = require("react"), import_react_transition_group2 = require("
     this
   );
 };
-
-// app/components/icons/Arrow.tsx
-var import_jsx_dev_runtime4 = require("react/jsx-dev-runtime"), SvgArrow = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
-  "svg",
-  {
-    xmlns: "http://www.w3.org/2000/svg",
-    fill: "none",
-    viewBox: "0 0 9 9",
-    ...props,
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
-      "path",
-      {
-        fill: "currentColor",
-        d: "m4.06.866-.7.896 3.388 2.492-1.806-.098H0V5.29h4.942l1.764-.098L3.36 7.74l.7.826 4.27-3.402v-.882L4.06.866Z"
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/icons/Arrow.tsx",
-        lineNumber: 10,
-        columnNumber: 5
-      },
-      this
-    )
-  },
-  void 0,
-  !1,
-  {
-    fileName: "app/components/icons/Arrow.tsx",
-    lineNumber: 4,
-    columnNumber: 3
-  },
-  this
-), Arrow_default = SvgArrow;
 
 // app/components/icons/ArrowSquare.tsx
 var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), SvgArrowSquare = (props) => /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
@@ -7495,10 +7534,9 @@ typeof window < "u" && (window.SwiperElementRegisterParams = (params) => {
 
 // app/components/Portfolio/Carousel.tsx
 var import_jsx_dev_runtime21 = require("react/jsx-dev-runtime");
-register();
 function Carousel({ content }) {
   let swiperElRef = (0, import_react10.useRef)(null), [currentIndex, setIndex] = (0, import_react10.useState)(0), [isSliding, setSlidingState] = (0, import_react10.useState)(!1), id = (0, import_react10.useId)();
-  if ((0, import_react10.useEffect)(() => {
+  if (register(), (0, import_react10.useEffect)(() => {
     let swiper = swiperElRef.current;
     if (!swiper)
       return;
@@ -7540,7 +7578,7 @@ function Carousel({ content }) {
               return /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("swiper-slide", { children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("img", { className: "block max-h-[80vh] object-contain object-center mx-auto w-auto mix-blend-multiply", width: "319", height: "329", src: image, alt: caption || "" }, void 0, !1, {
                   fileName: "app/components/Portfolio/Carousel.tsx",
-                  lineNumber: 69,
+                  lineNumber: 68,
                   columnNumber: 15
                 }, this),
                 caption && /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "block text-sm uppercase pt-4", children: [
@@ -7548,12 +7586,12 @@ function Carousel({ content }) {
                   caption
                 ] }, void 0, !0, {
                   fileName: "app/components/Portfolio/Carousel.tsx",
-                  lineNumber: 70,
+                  lineNumber: 69,
                   columnNumber: 27
                 }, this)
               ] }, `${id}-${i}`, !0, {
                 fileName: "app/components/Portfolio/Carousel.tsx",
-                lineNumber: 68,
+                lineNumber: 67,
                 columnNumber: 13
               }, this);
           })
@@ -7562,7 +7600,7 @@ function Carousel({ content }) {
         !1,
         {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 58,
+          lineNumber: 57,
           columnNumber: 9
         },
         this
@@ -7571,22 +7609,22 @@ function Carousel({ content }) {
         /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("div", { className: `${isSliding ? "md:opacity-0" : "duration-500"} transition-opacity duration-200 flex max-md:container max-md:py-4 md:flex-col gap-3 items-center md:absolute md:left-0 md:top-1/2 md:transform md:-translate-y-1/2 md:pl-[24%] md:w-[1%]`, children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 78,
+            lineNumber: 77,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { className: "text-xs", children: "/" }, void 0, !1, {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 79,
+            lineNumber: 78,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)("span", { children: content.length }, void 0, !1, {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 80,
+            lineNumber: 79,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/Portfolio/Carousel.tsx",
-          lineNumber: 77,
+          lineNumber: 76,
           columnNumber: 13
         }, this),
         currentIndex > 0 && /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(
@@ -7596,7 +7634,7 @@ function Carousel({ content }) {
             className: "z-[1] h-16 w-16 text-ivory hover:text-tuatara transform rotate-180 origin-top translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-left top-1/2 transition duration-200 opacity-90",
             children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Arrow_default, { className: "w-16 h-16" }, void 0, !1, {
               fileName: "app/components/Portfolio/Carousel.tsx",
-              lineNumber: 88,
+              lineNumber: 87,
               columnNumber: 17
             }, this)
           },
@@ -7604,7 +7642,7 @@ function Carousel({ content }) {
           !1,
           {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 83,
+            lineNumber: 82,
             columnNumber: 15
           },
           this
@@ -7616,7 +7654,7 @@ function Carousel({ content }) {
             className: "z-[1] h-16 w-16 text-ivory hover:text-tuatara transform -translate-y-1/2 hidden md:flex items-center justify-center absolute absolute-container-right top-1/2 transition duration-200 opacity-90",
             children: /* @__PURE__ */ (0, import_jsx_dev_runtime21.jsxDEV)(Arrow_default, { className: "w-16 h-16" }, void 0, !1, {
               fileName: "app/components/Portfolio/Carousel.tsx",
-              lineNumber: 97,
+              lineNumber: 96,
               columnNumber: 17
             }, this)
           },
@@ -7624,23 +7662,23 @@ function Carousel({ content }) {
           !1,
           {
             fileName: "app/components/Portfolio/Carousel.tsx",
-            lineNumber: 92,
+            lineNumber: 91,
             columnNumber: 13
           },
           this
         )
       ] }, void 0, !0, {
         fileName: "app/components/Portfolio/Carousel.tsx",
-        lineNumber: 76,
+        lineNumber: 75,
         columnNumber: 11
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Portfolio/Carousel.tsx",
-      lineNumber: 57,
+      lineNumber: 56,
       columnNumber: 7
     }, this) }, void 0, !1, {
       fileName: "app/components/Portfolio/Carousel.tsx",
-      lineNumber: 56,
+      lineNumber: 55,
       columnNumber: 5
     }, this);
 }
@@ -8573,196 +8611,195 @@ __export(index_exports, {
 });
 
 // app/components/Homepage/Hero.tsx
-var import_react22 = require("@remix-run/react");
-
-// app/components/LiquidDropHover.tsx
-var import_react21 = require("react"), import_jsx_dev_runtime32 = require("react/jsx-dev-runtime"), LiquidDropHover = ({ children }) => {
-  let [hasHovered, hover] = (0, import_react21.useState)(!1);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("div", { onMouseEnter: () => hover(!0), className: `button button--liquid-drop w-max ${hasHovered ? "" : "default-hover-animation-state"}`, children }, void 0, !1, {
-    fileName: "app/components/LiquidDropHover.tsx",
-    lineNumber: 10,
-    columnNumber: 5
-  }, this);
-};
-
-// app/components/Homepage/Hero.tsx
-var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime32 = require("react/jsx-dev-runtime");
 function Hero() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("section", { className: "hero", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "relative w-full pt-16 z-[0]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "container py-16 md:pt-24 md:pb-36 flex flex-col justify-center gap-16", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("h1", { className: "text-shadow", children: "We design, build, and optimize high-converting eCommerce sites that glow with brand personality." }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("section", { className: "hero flex flex-col justify-center container text-center gap-5 pt-48 pb-16", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("h1", { className: "text-[54px] leading-tight font-semibold", children: "The Shopify Plus partner with startup agility and enterprise ability" }, void 0, !1, {
       fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 9,
-      columnNumber: 11
+      lineNumber: 4,
+      columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("p", { children: "As proud Shopify Plus partners, we help fast-growing DTC businesses squeeze more out of their websites and future-proof their tech stacks." }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("p", { className: "pt-0.5 text-xl leading-normal", children: [
+      "Since 2018, we\u2019ve partnered with some of Shopify\u2019s largest brands to future-proof their tech ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime32.jsxDEV)("br", {}, void 0, !1, {
+        fileName: "app/components/Homepage/Hero.tsx",
+        lineNumber: 8,
+        columnNumber: 102
+      }, this),
+      "stacks, optimize their revenues per visitor, and make their sites glow with brand personality."
+    ] }, void 0, !0, {
       fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 10,
-      columnNumber: 11
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_react22.Link, { to: "/portfolio", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(LiquidDropHover, { children: "See the sites." }, void 0, !1, {
-      fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 12,
-      columnNumber: 13
-    }, this) }, void 0, !1, {
-      fileName: "app/components/Homepage/Hero.tsx",
-      lineNumber: 11,
-      columnNumber: 11
+      lineNumber: 7,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Homepage/Hero.tsx",
-    lineNumber: 8,
-    columnNumber: 9
-  }, this) }, void 0, !1, {
-    fileName: "app/components/Homepage/Hero.tsx",
-    lineNumber: 7,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/components/Homepage/Hero.tsx",
-    lineNumber: 6,
+    lineNumber: 3,
     columnNumber: 5
   }, this);
 }
 
 // app/components/Homepage/FeaturedPortfolio.tsx
-var import_react23 = require("@remix-run/react");
-
-// app/assets/HeyDude-Portfolio.png
-var HeyDude_Portfolio_default = "/build/_assets/HeyDude-Portfolio-SZS5T4EB.png";
-
-// app/assets/Legends-Portfolio.png
-var Legends_Portfolio_default = "/build/_assets/Legends-Portfolio-LLF3SX6K.png";
-
-// app/components/Homepage/FeaturedPortfolio.tsx
-var import_jsx_dev_runtime34 = require("react/jsx-dev-runtime");
+var import_react21 = require("react");
+var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime");
+register();
 function FeaturedPortfolio() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "pt-5 pb-10 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "right-edge-container flex flex-col justify-center gap-5 lg:gap-7 py-5 md:py-10", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "text-sm", children: "Latest Work" }, void 0, !1, {
+  let swiperRef = (0, import_react21.useRef)(null), [isEnd, setIsEnd] = (0, import_react21.useState)(!1), [isBeginning, setIsBeginning] = (0, import_react21.useState)(!0);
+  (0, import_react21.useEffect)(() => {
+    register();
+    let params = {
+      injectStyles: [
+        `
+        .swiper {
+          overflow: visible;
+        }
+        `
+      ],
+      on: {
+        slideChange(s) {
+          setIsEnd(s.isEnd), setIsBeginning(s.isBeginning);
+        }
+      },
+      spaceBetween: 8,
+      slidesPerView: 3.1,
+      breakpoints: {
+        768: {
+          slidesPerView: 2.1
+        }
+      }
+    };
+    Object.assign(swiperRef.current, params), swiperRef.current.initialize();
+  }, []);
+  let buttonStyles = `
+    z-[1]
+    h-16 
+    w-16
+    transform 
+    -translate-y-1/2 
+    items-center 
+    justify-center 
+    absolute 
+    top-1/2 
+    rounded-full 
+    transition 
+    duration-200
+    flex
+    bg-white
+    p-5
+    hover:bg-black
+    hover:text-white
+  `;
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "pt-5 pb-10 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("swiper-container", { init: "false", ref: swiperRef, children: case_studies_default.map((caseStudy) => {
+      let caseStudyKey = (0, import_react21.useId)();
+      if (caseStudy != null && caseStudy.portfolioBanner)
+        return /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { className: "block relative rounded-md overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(
+          "img",
+          {
+            className: "block aspect-[432/540] object-cover object-center",
+            src: caseStudy.portfolioBanner.image,
+            alt: caseStudy.portfolioBanner.caption ?? ""
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+            lineNumber: 79,
+            columnNumber: 19
+          },
+          this
+        ) }, void 0, !1, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 78,
+          columnNumber: 17
+        }, this) }, caseStudyKey, !1, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 77,
+          columnNumber: 15
+        }, this);
+    }) }, void 0, !1, {
       fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-      lineNumber: 9,
+      lineNumber: 72,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "grid gap-10 md:gap-16 lg:grid-cols-2 lg:gap-5", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "flex flex-col max-lg:pr-4", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(import_react23.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("img", { className: "block bg-mix-blend-multiply", src: HeyDude_Portfolio_default }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(
+      "button",
+      {
+        onClick: () => swiperRef.current.swiper.slidePrev(),
+        className: `left-0 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? "hidden" : "flex"}`,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 13,
-            columnNumber: 15
+            lineNumber: 93,
+            columnNumber: 189
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("strong", { className: "block text-shadow h2 transform -translate-y-[65%] -ml-1 leading-none", children: "Hey Dude" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 14,
-            columnNumber: 15
+            lineNumber: 93,
+            columnNumber: 221
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 12,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 17,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Design" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 18,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Development" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 19,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 16,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "pt-96 mt-auto hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(import_react23.Link, { className: "block button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 22,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 21,
-          columnNumber: 13
+          lineNumber: 93,
+          columnNumber: 11
         }, this)
-      ] }, void 0, !0, {
+      },
+      void 0,
+      !1,
+      {
         fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-        lineNumber: 11,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "flex flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(import_react23.Link, { className: "flex flex-col", to: "/portfolio/heydude", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("img", { className: "block lg:mt-[70%]", src: Legends_Portfolio_default }, void 0, !1, {
+        lineNumber: 89,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(
+      "button",
+      {
+        onClick: () => swiperRef.current.swiper.slideNext(),
+        className: `right-0 ${buttonStyles} ${isEnd ? "hidden" : "flex"}`,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 27,
-            columnNumber: 15
+            lineNumber: 99,
+            columnNumber: 189
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("strong", { className: "block text-shadow h2 transform -translate-y-[65%] -ml-1 leading-none", children: "Legends" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 28,
-            columnNumber: 15
+            lineNumber: 99,
+            columnNumber: 221
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 26,
-          columnNumber: 13
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("ul", { className: "flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Shopify Plus Migration" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 31,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Design" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 32,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { children: "Development" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 33,
-            columnNumber: 15
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 30,
-          columnNumber: 13
+          lineNumber: 99,
+          columnNumber: 11
         }, this)
-      ] }, void 0, !0, {
+      },
+      void 0,
+      !1,
+      {
         fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-        lineNumber: 25,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(import_react23.Link, { className: "block lg:hidden button w-max", to: "/portfolio", children: "View More Work" }, void 0, !1, {
-        fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-        lineNumber: 36,
-        columnNumber: 11
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-      lineNumber: 10,
-      columnNumber: 9
-    }, this)
+        lineNumber: 95,
+        columnNumber: 9
+      },
+      this
+    )
   ] }, void 0, !0, {
     fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-    lineNumber: 8,
+    lineNumber: 71,
     columnNumber: 7
   }, this) }, void 0, !1, {
     fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-    lineNumber: 7,
+    lineNumber: 70,
     columnNumber: 5
   }, this);
 }
 
 // app/components/Homepage/FeaturedPartners.tsx
-var import_react24 = require("react"), import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), partners = [
+var import_react22 = require("react"), import_jsx_dev_runtime34 = require("react/jsx-dev-runtime"), partners = [
   {
     title: "Shopify Plus",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(ShopifyPlusLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(ShopifyPlusLogo_default, {}, void 0, !1, {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 12,
       columnNumber: 11
@@ -8772,7 +8809,7 @@ var import_react24 = require("react"), import_jsx_dev_runtime35 = require("react
   },
   {
     title: "Klaviyo",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(KlaviyoLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(KlaviyoLogo_default, {}, void 0, !1, {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 18,
       columnNumber: 11
@@ -8782,7 +8819,7 @@ var import_react24 = require("react"), import_jsx_dev_runtime35 = require("react
   },
   {
     title: "Yotpo",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(YotpoLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(YotpoLogo_default, {}, void 0, !1, {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 24,
       columnNumber: 11
@@ -8792,7 +8829,7 @@ var import_react24 = require("react"), import_jsx_dev_runtime35 = require("react
   },
   {
     title: "Elevar",
-    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(ElevarLogo_default, {}, void 0, !1, {
+    logo: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(ElevarLogo_default, {}, void 0, !1, {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 30,
       columnNumber: 11
@@ -8802,20 +8839,20 @@ var import_react24 = require("react"), import_jsx_dev_runtime35 = require("react
   }
 ];
 function FeaturedPartners() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "max-md:container md:right-edge-container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-5", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none", children: partners.map(({ title, logo, link, tagline }) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: "aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-500", children: link ? /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", rel: "noopener", className: "w-full h-full flex items-center justify-center relative", href: link, children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { title, className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "max-md:container md:right-edge-container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-5", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("ul", { className: "grid grid-cols-2 gap-2.5 md:gap-5 md:pr-32 [&_li:first-of-type]:rounded-tl-none [&_li:nth-of-type(2)]:rounded-tr-none [&_li:nth-of-type(3)]:rounded-bl-none [&_li:nth-of-type(4)]:rounded-br-none", children: partners.map(({ title, logo, link, tagline }) => /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("li", { className: "aspect-[337/460] bg-halfColonialWhite rounded-3xl group hover:bg-energyYellow transition duration-500", children: link ? /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("a", { target: "_blank", rel: "noopener", className: "w-full h-full flex items-center justify-center relative", href: link, children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { title, className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
         fileName: "app/components/Homepage/FeaturedPartners.tsx",
         lineNumber: 45,
         columnNumber: 19
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "absolute bottom-3 left-3 right-3 pr-12 flex items-center", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { children: tagline }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "absolute bottom-3 left-3 right-3 pr-12 flex items-center", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { children: tagline }, void 0, !1, {
           fileName: "app/components/Homepage/FeaturedPartners.tsx",
           lineNumber: 47,
           columnNumber: 21
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "bottom-0 transition duration-500 right-0 opacity-0 group-hover:opacity-100 group-hover:mirror absolute flex items-center justify-center w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "bottom-0 transition duration-500 right-0 opacity-0 group-hover:opacity-100 group-hover:mirror absolute flex items-center justify-center w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
           fileName: "app/components/Homepage/FeaturedPartners.tsx",
           lineNumber: 48,
           columnNumber: 221
@@ -8833,19 +8870,19 @@ function FeaturedPartners() {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 44,
       columnNumber: 17
-    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "w-full h-full flex items-center justify-center relative", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { title, className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
+    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "w-full h-full flex items-center justify-center relative", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { title, className: "transition duration-500 transform w-2/3 group-hover:scale-110 [&_svg]:w-full", children: logo }, void 0, !1, {
         fileName: "app/components/Homepage/FeaturedPartners.tsx",
         lineNumber: 53,
         columnNumber: 19
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "absolute bottom-3 left-3 right-3 p-4 flex items-center", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "text-xs opacity-0 transition duration-500 group-hover:opacity-100", children: tagline }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "absolute bottom-3 left-3 right-3 p-4 flex items-center", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "text-xs opacity-0 transition duration-500 group-hover:opacity-100", children: tagline }, void 0, !1, {
           fileName: "app/components/Homepage/FeaturedPartners.tsx",
           lineNumber: 55,
           columnNumber: 21
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "ml-auto transition duration-500 right-0 opacity-0 group-hover:opacity-100 group-hover:mirror flex items-center justify-center min-h-[36px] min-w-[36px] w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "ml-auto transition duration-500 right-0 opacity-0 group-hover:opacity-100 group-hover:mirror flex items-center justify-center min-h-[36px] min-w-[36px] w-9 h-9 rounded-full bg bg-tuatara text-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("span", { className: "mirror", children: "i" }, void 0, !1, {
           fileName: "app/components/Homepage/FeaturedPartners.tsx",
           lineNumber: 56,
           columnNumber: 237
@@ -8863,7 +8900,7 @@ function FeaturedPartners() {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 52,
       columnNumber: 17
-    }, this) }, (0, import_react24.useId)(), !1, {
+    }, this) }, (0, import_react22.useId)(), !1, {
       fileName: "app/components/Homepage/FeaturedPartners.tsx",
       lineNumber: 42,
       columnNumber: 13
@@ -8872,13 +8909,13 @@ function FeaturedPartners() {
       lineNumber: 40,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "flex flex-col gap-5 py-5 md:gap-10 md:py-10 justify-center", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "block h2 leading-[1]", children: "Howdy, partners." }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "flex flex-col gap-5 py-5 md:gap-10 md:py-10 justify-center", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("strong", { className: "block h2 leading-[1]", children: "Howdy, partners." }, void 0, !1, {
         fileName: "app/components/Homepage/FeaturedPartners.tsx",
         lineNumber: 64,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "max-w-sm leading-loose text-sm", children: "We work closely with the best ecommerce partners and platforms to help support the growth of our clients." }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)("div", { className: "max-w-sm leading-loose text-sm", children: "We work closely with the best ecommerce partners and platforms to help support the growth of our clients." }, void 0, !1, {
         fileName: "app/components/Homepage/FeaturedPartners.tsx",
         lineNumber: 65,
         columnNumber: 11
@@ -8900,7 +8937,7 @@ function FeaturedPartners() {
 }
 
 // app/components/PortfolioList.tsx
-var import_react25 = require("react");
+var import_react23 = require("react");
 
 // app/assets/legends-slider.jpeg
 var legends_slider_default = "/build/_assets/legends-slider-WK3CNSPU.jpeg";
@@ -9014,17 +9051,17 @@ var portfolioListItems = [
 ];
 
 // app/components/PortfolioList.tsx
-var import_jsx_dev_runtime36 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime");
 function PortfolioList() {
-  let toggleModal = (0, import_react25.useContext)(ModalContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "w-full pt-5 pb-8 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "md:max-w-5xl ml-auto flex flex-col gap-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "title", children: "Work in the wild" }, void 0, !1, {
+  let toggleModal = (0, import_react23.useContext)(ModalContext);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "w-full pt-5 pb-8 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "container py-5 md:py-10", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("div", { className: "md:max-w-5xl ml-auto flex flex-col gap-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "title", children: "Work in the wild" }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
       lineNumber: 13,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("ul", { className: "flex flex-col gap-3 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }) => /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("li", { className: `relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? "opacity-80" : "focus-within:highlighted hover:highlighted hover-highlight after:!duration-500"}`, children: [
-      !status && /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "transition duration-500 absolute bottom-1/2 -left-5 transform translate-y-1/2 -translate-x-full -rotate-45 scale-0 group-hover:rotate-90 group-hover:scale-100", children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(Star_default, { className: "w-9 h-9" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("ul", { className: "flex flex-col gap-3 pb-11 border-b border-current", children: portfolioListItems.map(({ title, status, platform, link }) => /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("li", { className: `relative group w-full grid grid-cols-[40%_1fr_auto] md:grid-cols-[50%_1fr_auto] items-end gap-4 ${status ? "opacity-80" : "focus-within:highlighted hover:highlighted hover-highlight after:!duration-500"}`, children: [
+      !status && /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "transition duration-500 absolute bottom-1/2 -left-5 transform translate-y-1/2 -translate-x-full -rotate-45 scale-0 group-hover:rotate-90 group-hover:scale-100", children: /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(Star_default, { className: "w-9 h-9" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 19,
         columnNumber: 21
@@ -9033,8 +9070,8 @@ function PortfolioList() {
         lineNumber: 18,
         columnNumber: 19
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "flex w-full items-end gap-4 ", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("strong", { className: "block w-max whitespace-nowrap text-2xl md:text-[44px] font-title leading-[0.75]", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex w-full items-end gap-4 ", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("strong", { className: "block w-max whitespace-nowrap text-2xl md:text-[44px] font-title leading-[0.75]", children: status ? title : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: title }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 24,
           columnNumber: 39
@@ -9043,7 +9080,7 @@ function PortfolioList() {
           lineNumber: 23,
           columnNumber: 19
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 26,
           columnNumber: 19
@@ -9053,13 +9090,13 @@ function PortfolioList() {
         lineNumber: 22,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "max-md:text-xs title leading-none whitespace-nowrap", children: platform }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "flex items-end w-full gap-4", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "max-md:text-xs title leading-none whitespace-nowrap", children: platform }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 29,
           columnNumber: 19
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "w-full border-b border-current border-dashed" }, void 0, !1, {
           fileName: "app/components/PortfolioList.tsx",
           lineNumber: 30,
           columnNumber: 19
@@ -9069,7 +9106,7 @@ function PortfolioList() {
         lineNumber: 28,
         columnNumber: 17
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "max-md:text-xs title leading-none text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "max-md:text-xs title leading-none text-center", children: status ? "In progress" : /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("a", { target: "_blank", href: link, children: "Visit" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 33,
         columnNumber: 45
@@ -9078,7 +9115,7 @@ function PortfolioList() {
         lineNumber: 32,
         columnNumber: 17
       }, this)
-    ] }, `${(0, import_react25.useId)()}`, !0, {
+    ] }, `${(0, import_react23.useId)()}`, !0, {
       fileName: "app/components/PortfolioList.tsx",
       lineNumber: 16,
       columnNumber: 15
@@ -9087,7 +9124,7 @@ function PortfolioList() {
       lineNumber: 14,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("button", { className: "ml-auto text-right button--link", onClick: () => toggleModal ? toggleModal() : null, children: "More examples on request" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("button", { className: "ml-auto text-right button--link", onClick: () => toggleModal ? toggleModal() : null, children: "More examples on request" }, void 0, !1, {
       fileName: "app/components/PortfolioList.tsx",
       lineNumber: 38,
       columnNumber: 11
@@ -9108,13 +9145,13 @@ function PortfolioList() {
 }
 
 // app/components/PortfolioSlider.tsx
-var import_react26 = require("react");
-var import_react27 = require("@remix-run/react");
-var import_jsx_dev_runtime37 = require("react/jsx-dev-runtime");
+var import_react24 = require("react");
+var import_react25 = require("@remix-run/react");
+var import_jsx_dev_runtime36 = require("react/jsx-dev-runtime");
 register();
 function PortfolioSlider() {
-  let swiperElRef = (0, import_react26.useRef)(null), [currentIndex, setIndex] = (0, import_react26.useState)(0), [isSliding, setSlidingState] = (0, import_react26.useState)(!1);
-  return (0, import_react26.useEffect)(() => {
+  let swiperElRef = (0, import_react24.useRef)(null), [currentIndex, setIndex] = (0, import_react24.useState)(0), [isSliding, setSlidingState] = (0, import_react24.useState)(!1);
+  return (0, import_react24.useEffect)(() => {
     swiperElRef.current.addEventListener("slidechange", (e) => {
       setIndex(e.detail[0].realIndex);
     }), swiperElRef.current.addEventListener("slidechangetransitionstart", () => {
@@ -9122,7 +9159,7 @@ function PortfolioSlider() {
     }), swiperElRef.current.addEventListener("slidechangetransitionend", () => {
       setSlidingState(!1);
     });
-  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "transform lg:translate-y-1/3 py-10 lg:py-12 max-md:right-edge-container md:container relative before:absolute before:bg-botticelli before:top-0 before:-left-4 before:w-4 before:h-2/3 after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
+  }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "transform lg:translate-y-1/3 py-10 lg:py-12 max-md:right-edge-container md:container relative before:absolute before:bg-botticelli before:top-0 before:-left-4 before:w-4 before:h-2/3 after:absolute after:left-0 after:top-0 after:w-full after:h-full lg:after:h-[80%] after:bg-botticelli z-[1]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(
     "div",
     {
       className: `
@@ -9145,15 +9182,15 @@ function PortfolioSlider() {
         md:after:bg-ivory
         `,
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(
           "swiper-container",
           {
             ref: swiperElRef,
             "slides-per-view": "1",
             loop: "true",
             children: sliderItems.map(
-              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pb-1/3 pr-16", children: [
-                /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
+              ({ title, copy, link, image }, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "flex flex-col lg:flex-row gap-5 lg:gap-16 items-center pb-1/3 pr-16", children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "bg-botticelli min-w-[319px] w-[319px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("img", { className: "block w-full mix-blend-multiply", width: "319", height: "329", src: image, alt: title }, void 0, !1, {
                   fileName: "app/components/PortfolioSlider.tsx",
                   lineNumber: 72,
                   columnNumber: 19
@@ -9162,13 +9199,13 @@ function PortfolioSlider() {
                   lineNumber: 71,
                   columnNumber: 17
                 }, this),
-                /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "flex flex-col gap-8 pb-8 lg:pl-32", children: [
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("p", { className: "text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
+                /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: "flex flex-col gap-8 pb-8 lg:pl-32", children: [
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("p", { className: "text-xl lg:text-[28px] tracking-wide font-title [&_strong]:font-black", dangerouslySetInnerHTML: { __html: copy } }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 75,
                     columnNumber: 19
                   }, this),
-                  /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(import_react27.Link, { className: "hover-highlight hover:highlighted button--link", to: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
+                  /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(import_react25.Link, { className: "hover-highlight hover:highlighted button--link", to: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { children: "Learn More" }, void 0, !1, {
                     fileName: "app/components/PortfolioSlider.tsx",
                     lineNumber: 77,
                     columnNumber: 21
@@ -9186,7 +9223,7 @@ function PortfolioSlider() {
                 fileName: "app/components/PortfolioSlider.tsx",
                 lineNumber: 70,
                 columnNumber: 15
-              }, this) }, (0, import_react26.useId)(), !1, {
+              }, this) }, (0, import_react24.useId)(), !1, {
                 fileName: "app/components/PortfolioSlider.tsx",
                 lineNumber: 69,
                 columnNumber: 13
@@ -9202,18 +9239,18 @@ function PortfolioSlider() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: `${isSliding ? "md:opacity-0" : "duration-500"} flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10`, children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("div", { className: `${isSliding ? "md:opacity-0" : "duration-500"} flex md:flex-col relative md:absolute md:left-[450px] text-xs gap-4 md:top-[40%] md:transform md:-translate-y-1/2 items-center w-max z-10`, children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { children: currentIndex + 1 }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
             lineNumber: 85,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { className: "text-[8px]", children: "/" }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
             lineNumber: 86,
             columnNumber: 11
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)("span", { children: sliderItems.length }, void 0, !1, {
             fileName: "app/components/PortfolioSlider.tsx",
             lineNumber: 87,
             columnNumber: 11
@@ -9223,7 +9260,7 @@ function PortfolioSlider() {
           lineNumber: 84,
           columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(
           "button",
           {
             onClick: () => swiperElRef.current.swiper.slideNext(),
@@ -9249,7 +9286,7 @@ function PortfolioSlider() {
             hover:bg-energyYellow
             hover:text-tuatara
           `,
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(Arrow_default, { className: "w-5 h-5" }, void 0, !1, {
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(Arrow_default, { className: "w-5 h-5" }, void 0, !1, {
               fileName: "app/components/PortfolioSlider.tsx",
               lineNumber: 115,
               columnNumber: 11
@@ -9264,7 +9301,7 @@ function PortfolioSlider() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(
           "div",
           {
             "aria-hidden": "true",
@@ -9310,25 +9347,25 @@ function PortfolioSlider() {
 }
 
 // app/components/OfferingsAccordion.tsx
-var import_react28 = require("react");
+var import_react26 = require("react");
 
 // app/assets/offerings-accordion-background.jpeg
 var offerings_accordion_background_default = "/build/_assets/offerings-accordion-background-EQT2VSAP.jpeg";
 
 // app/components/OfferingsAccordion.tsx
-var import_jsx_dev_runtime38 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime37 = require("react/jsx-dev-runtime");
 function OfferingsAccordion() {
-  let [currentlyActive, setCurrentlyActive] = (0, import_react28.useState)(null);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "bg-no-repeat bg-top bg-cover md:bg-[length:_100%_auto] py-16 max-md:pb-32 md:py-52 mix-blend-multiply", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
+  let [currentlyActive, setCurrentlyActive] = (0, import_react26.useState)(null);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { style: { backgroundImage: `url(${offerings_accordion_background_default})` }, className: "bg-no-repeat bg-top bg-cover md:bg-[length:_100%_auto] py-16 max-md:pb-32 md:py-52 mix-blend-multiply", children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "container text-wattle grid grid-cols-1 md:grid-cols-2 gap-16 text-[#f9df5e1a]", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "md:sticky md:top-[50vh] transform md:-translate-y-1/2 h-max text-ivory uppercase", children: [
       "We work with ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("br", {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 12,
         columnNumber: 24
       }, this),
       " fast-growing brands with ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("br", {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("br", {}, void 0, !1, {
         fileName: "app/components/OfferingsAccordion.tsx",
         lineNumber: 12,
         columnNumber: 55
@@ -9339,10 +9376,10 @@ function OfferingsAccordion() {
       lineNumber: 11,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex flex-col [&_.accordion-heading:hover]:text-wattle [&_.accordion-heading.isOpen]:text-wattle [&_.accordion-heading.isClosed]:stroke [&_.accordion-heading.isClosed]:text-[#f9df5e1a]", children: offerings.map(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "flex flex-col [&_.accordion-heading:hover]:text-wattle [&_.accordion-heading.isOpen]:text-wattle [&_.accordion-heading.isClosed]:stroke [&_.accordion-heading.isClosed]:text-[#f9df5e1a]", children: offerings.map(
       ({ title, listItems }) => {
-        let accordionKey = (0, import_react28.useId)();
-        return /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(Accordion, { toggleAccordion: setCurrentlyActive, id: accordionKey, isOpen: accordionKey === currentlyActive, label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, `${accordionKey}-${i}`, !1, {
+        let accordionKey = (0, import_react26.useId)();
+        return /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(Accordion, { toggleAccordion: setCurrentlyActive, id: accordionKey, isOpen: accordionKey === currentlyActive, label: title, children: /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("ul", { className: "flex gap-4 flex-wrap py-6", children: listItems.map((item, i) => /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("li", { className: "px-8 py-4 block bg-logCabin text-ivory text-sm", children: item }, `${accordionKey}-${i}`, !1, {
           fileName: "app/components/OfferingsAccordion.tsx",
           lineNumber: 21,
           columnNumber: 21
@@ -9373,8 +9410,8 @@ function OfferingsAccordion() {
 }
 
 // app/components/Marquee.tsx
-var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(import_jsx_dev_runtime39.Fragment, { children: [
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
+var import_jsx_dev_runtime38 = require("react/jsx-dev-runtime"), Logos = () => /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(import_jsx_dev_runtime38.Fragment, { children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 6,
     columnNumber: 7
@@ -9383,7 +9420,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 5,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 9,
     columnNumber: 7
@@ -9392,7 +9429,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 8,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 12,
     columnNumber: 7
@@ -9401,7 +9438,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 11,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 15,
     columnNumber: 7
@@ -9410,7 +9447,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 14,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(Paka_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(Paka_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 18,
     columnNumber: 7
@@ -9419,7 +9456,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 17,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 21,
     columnNumber: 7
@@ -9428,7 +9465,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 20,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(FortysevenLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 24,
     columnNumber: 7
@@ -9437,7 +9474,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 23,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(WinkLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 27,
     columnNumber: 7
@@ -9446,7 +9483,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 26,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(CrocsLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 30,
     columnNumber: 7
@@ -9455,7 +9492,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 29,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(LogoBlackLegends_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 33,
     columnNumber: 6
@@ -9464,7 +9501,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 32,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(Paka_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(Paka_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 36,
     columnNumber: 7
@@ -9473,7 +9510,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
     lineNumber: 35,
     columnNumber: 5
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "flex items-center justify-center h-16 w-[240px]", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(SpeidelLogo_default, {}, void 0, !1, {
     fileName: "app/components/Marquee.tsx",
     lineNumber: 39,
     columnNumber: 7
@@ -9488,9 +9525,9 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Logos = () => /
   columnNumber: 3
 }, this);
 function Marquee() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "w-screen overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "w-[200vw] md:w-screen relative min-h-[250px] flex items-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "[&_svg]:max-h-full flex items-center absolute top-1/2 transform -translate-y-1/2 left-0 marquee w-[800vw] md:w-[400vw] hover:paused", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(Logos, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "w-screen overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "w-[200vw] md:w-screen relative min-h-[250px] flex items-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "[&_svg]:max-h-full flex items-center absolute top-1/2 transform -translate-y-1/2 left-0 marquee w-[800vw] md:w-[400vw] hover:paused", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(Logos, {}, void 0, !1, {
         fileName: "app/components/Marquee.tsx",
         lineNumber: 50,
         columnNumber: 13
@@ -9499,7 +9536,7 @@ function Marquee() {
         lineNumber: 49,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(Logos, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "w-[400vw] md:w-[200vw] flex gap-12 items-center pl-12", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(Logos, {}, void 0, !1, {
         fileName: "app/components/Marquee.tsx",
         lineNumber: 53,
         columnNumber: 13
@@ -9517,7 +9554,7 @@ function Marquee() {
       lineNumber: 47,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("hr", { className: "border-t border-tuatara border-dashed" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("hr", { className: "border-t border-tuatara border-dashed" }, void 0, !1, {
       fileName: "app/components/Marquee.tsx",
       lineNumber: 58,
       columnNumber: 9
@@ -9534,15 +9571,15 @@ function Marquee() {
 }
 
 // app/components/Footer/Footer.tsx
-var import_react29 = require("react");
-var import_jsx_dev_runtime40 = require("react/jsx-dev-runtime");
+var import_react27 = require("react");
+var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime");
 function Footer2() {
-  let toggleModal = (0, import_react29.useContext)(ModalContext);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(import_jsx_dev_runtime40.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { className: "bg-ivory py-52", children: /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { className: "container flex flex-col items-center justify-center gap-14", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("strong", { className: "h1 text-5xl text-center", children: [
+  let toggleModal = (0, import_react27.useContext)(ModalContext);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(import_jsx_dev_runtime39.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "bg-ivory py-52", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "container flex flex-col items-center justify-center gap-14", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("strong", { className: "h1 text-5xl text-center", children: [
         "Take your Shopify site to ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("br", {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("br", {}, void 0, !1, {
           fileName: "app/components/Footer/Footer.tsx",
           lineNumber: 12,
           columnNumber: 81
@@ -9553,7 +9590,7 @@ function Footer2() {
         lineNumber: 12,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("button", { className: "button--secondary", onClick: () => toggleModal ? toggleModal() : null, children: "Get in Touch" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("button", { className: "button--secondary", onClick: () => toggleModal ? toggleModal() : null, children: "Get in Touch" }, void 0, !1, {
         fileName: "app/components/Footer/Footer.tsx",
         lineNumber: 13,
         columnNumber: 11
@@ -9567,7 +9604,7 @@ function Footer2() {
       lineNumber: 10,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("hr", { className: "border-0 border-b border-dashed border-current" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "container", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("hr", { className: "border-0 border-b border-dashed border-current" }, void 0, !1, {
       fileName: "app/components/Footer/Footer.tsx",
       lineNumber: 19,
       columnNumber: 9
@@ -9576,7 +9613,7 @@ function Footer2() {
       lineNumber: 18,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(FooterInfo, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(FooterInfo, {}, void 0, !1, {
       fileName: "app/components/Footer/Footer.tsx",
       lineNumber: 21,
       columnNumber: 7
@@ -9589,55 +9626,55 @@ function Footer2() {
 }
 
 // app/routes/_index.tsx
-var import_jsx_dev_runtime41 = require("react/jsx-dev-runtime"), meta = () => [
+var import_jsx_dev_runtime40 = require("react/jsx-dev-runtime"), meta = () => [
   { title: "Sparky | Home" },
   { name: "description", content: "We design, build, & optimize high-converting eCommerce sites that glow with brand personality." }
 ];
 function Index3() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)("div", { style: { backgroundImage: `url(${homepage_svg_background_default})` }, className: "bg-ivory bg-[length:_100%_auto] bg-no-repeat bg-top w-screen max-md:overflow-x-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(Hero, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)("div", { className: "homepage", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Hero, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 21,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 22,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(FeaturedPortfolio, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 23,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(FeaturedPartners, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(PortfolioList, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 24,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(PortfolioList, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 25,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(PortfolioSlider, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 26,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(OfferingsAccordion, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Marquee, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 27,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(Marquee, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime40.jsxDEV)(Footer2, {}, void 0, !1, {
       fileName: "app/routes/_index.tsx",
       lineNumber: 28,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(Footer2, {}, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 29,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 21,
+    lineNumber: 20,
     columnNumber: 5
   }, this);
 }
@@ -9649,7 +9686,7 @@ __export(elevar_exports, {
 });
 
 // app/components/ContentArea.tsx
-var import_classnames2 = __toESM(require("classnames")), import_jsx_dev_runtime42 = require("react/jsx-dev-runtime");
+var import_classnames2 = __toESM(require("classnames")), import_jsx_dev_runtime41 = require("react/jsx-dev-runtime");
 function ContentArea(props) {
   let section_classes = (0, import_classnames2.default)(props.className, {
     ContentArea: !0,
@@ -9662,13 +9699,13 @@ function ContentArea(props) {
     "justify-center": props.textVerticalPosition === "middle",
     "justify-end": props.textVerticalPosition === "bottom"
   });
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(
     "section",
     {
       id: props.id,
       className: section_classes,
       children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(
           "div",
           {
             className: text_classes,
@@ -9683,11 +9720,11 @@ function ContentArea(props) {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+        /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(
           "div",
           {
             className: "ContentArea__media",
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(
               "img",
               {
                 src: props.image
@@ -9734,10 +9771,10 @@ var sparkydude_default = "/build/_assets/sparkydude-R3X7OUN4.png";
 var personalized_login_touches_default = "/build/_assets/personalized_login_touches-FGHZKNWB.png";
 
 // app/components/forms/ElevarSubmission.tsx
-var import_react30 = require("@remix-run/react"), import_react31 = require("react");
-var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
+var import_react28 = require("@remix-run/react"), import_react29 = require("react");
+var import_jsx_dev_runtime42 = require("react/jsx-dev-runtime");
 function ElevarSubmissionForm() {
-  let [submitting, setSubmitting] = (0, import_react31.useState)(!1), [submitted, setSubmitted] = (0, import_react31.useState)(!1), handleSubmit = (0, import_react31.useCallback)(async (event2) => {
+  let [submitting, setSubmitting] = (0, import_react29.useState)(!1), [submitted, setSubmitted] = (0, import_react29.useState)(!1), handleSubmit = (0, import_react29.useCallback)(async (event2) => {
     event2.preventDefault(), setSubmitting(!0);
     let form_data = new FormData(event2.currentTarget);
     form_data.append("type", "quick wins"), await fetch("https://usebasin.com/f/6d5879c9a3ba", {
@@ -9745,13 +9782,13 @@ function ElevarSubmissionForm() {
       body: form_data
     }), setSubmitting(!1), setSubmitted(!0);
   }, []);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "text-center", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("span", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
       lineNumber: 25,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("button", { className: "button--secondary my-5", onClick: () => setSubmitted(!1), children: "Send Another" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("button", { className: "button--secondary my-5", onClick: () => setSubmitted(!1), children: "Send Another" }, void 0, !1, {
       fileName: "app/components/forms/ElevarSubmission.tsx",
       lineNumber: 26,
       columnNumber: 11
@@ -9760,14 +9797,14 @@ function ElevarSubmissionForm() {
     fileName: "app/components/forms/ElevarSubmission.tsx",
     lineNumber: 24,
     columnNumber: 9
-  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_react30.Form, { className: "form form__wrapper", onSubmit: handleSubmit, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_name", children: "What's your brand name?" }, void 0, !1, {
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(import_react28.Form, { className: "form form__wrapper", onSubmit: handleSubmit, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("label", { htmlFor: "brand_name", children: "What's your brand name?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
         lineNumber: 31,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
         "input",
         {
           id: "brand_name",
@@ -9790,13 +9827,13 @@ function ElevarSubmissionForm() {
       lineNumber: 30,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "brand_site", children: "What's your brand website?" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("label", { htmlFor: "brand_site", children: "What's your brand website?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
         lineNumber: 41,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
         "input",
         {
           id: "brand_site",
@@ -9819,13 +9856,13 @@ function ElevarSubmissionForm() {
       lineNumber: 40,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
         lineNumber: 51,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
         "input",
         {
           id: "name",
@@ -9848,13 +9885,13 @@ function ElevarSubmissionForm() {
       lineNumber: 50,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "email", children: "Where should we send your CRO Quick Wins?" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("label", { htmlFor: "email", children: "Where should we send your CRO Quick Wins?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmission.tsx",
         lineNumber: 61,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
         "input",
         {
           id: "email",
@@ -9877,19 +9914,19 @@ function ElevarSubmissionForm() {
       lineNumber: 60,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center justify-center flex my-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("div", { className: "text-center justify-center flex my-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(
       "button",
       {
         disabled: submitting,
         type: "submit",
         className: "button--secondary flex gap-5 items-center",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { children: "Get My Free CRO Quick Wins" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)("span", { children: "Get My Free CRO Quick Wins" }, void 0, !1, {
             fileName: "app/components/forms/ElevarSubmission.tsx",
             lineNumber: 76,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime42.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
             fileName: "app/components/forms/ElevarSubmission.tsx",
             lineNumber: 77,
             columnNumber: 15
@@ -9921,10 +9958,10 @@ function ElevarSubmissionForm() {
 }
 
 // app/components/forms/ElevarSubmissionSimple.tsx
-var import_react32 = require("@remix-run/react"), import_react33 = require("react");
-var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime");
+var import_react30 = require("@remix-run/react"), import_react31 = require("react");
+var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime");
 function ElevarSubmissionSimpleForm() {
-  let [submitting, setSubmitting] = (0, import_react33.useState)(!1), [submitted, setSubmitted] = (0, import_react33.useState)(!1), handleSubmit = (0, import_react33.useCallback)(async (event2) => {
+  let [submitting, setSubmitting] = (0, import_react31.useState)(!1), [submitted, setSubmitted] = (0, import_react31.useState)(!1), handleSubmit = (0, import_react31.useCallback)(async (event2) => {
     event2.preventDefault(), setSubmitting(!0);
     let form_data = new FormData(event2.currentTarget);
     form_data.append("type", "checklist"), await fetch("https://usebasin.com/f/6d5879c9a3ba", {
@@ -9932,13 +9969,13 @@ function ElevarSubmissionSimpleForm() {
       body: form_data
     }), setSubmitting(!1), setSubmitted(!0);
   }, []);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "text-center", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("span", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("section", { className: "container ElevarSubmissionForm", children: submitted ? /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { className: "h2", children: "Thank you for your submission!" }, void 0, !1, {
       fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
       lineNumber: 25,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("button", { className: "button--secondary my-5", onClick: () => setSubmitted(!1), children: "Send Another" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("button", { className: "button--secondary my-5", onClick: () => setSubmitted(!1), children: "Send Another" }, void 0, !1, {
       fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
       lineNumber: 26,
       columnNumber: 11
@@ -9947,14 +9984,14 @@ function ElevarSubmissionSimpleForm() {
     fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
     lineNumber: 24,
     columnNumber: 9
-  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(import_react32.Form, { className: "form form__wrapper", onSubmit: handleSubmit, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(import_react30.Form, { className: "form form__wrapper", onSubmit: handleSubmit, children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "name", children: "What's your name?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
         lineNumber: 31,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
         {
           id: "name",
@@ -9977,13 +10014,13 @@ function ElevarSubmissionSimpleForm() {
       lineNumber: 30,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "form__inputGroup", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("label", { htmlFor: "email", children: "What's your email?" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "form__inputGroup", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("label", { htmlFor: "email", children: "What's your email?" }, void 0, !1, {
         fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
         lineNumber: 41,
         columnNumber: 13
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
         "input",
         {
           id: "email",
@@ -10006,19 +10043,19 @@ function ElevarSubmissionSimpleForm() {
       lineNumber: 40,
       columnNumber: 11
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("div", { className: "text-center justify-center flex my-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("div", { className: "text-center justify-center flex my-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(
       "button",
       {
         disabled: submitting,
         type: "submit",
         className: "button--secondary flex gap-5 items-center",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("span", { children: "Get the CRO Readiness Checklist" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)("span", { children: "Get the CRO Readiness Checklist" }, void 0, !1, {
             fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
             lineNumber: 56,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime43.jsxDEV)(Arrow_default, { className: "w-3" }, void 0, !1, {
             fileName: "app/components/forms/ElevarSubmissionSimple.tsx",
             lineNumber: 57,
             columnNumber: 15
@@ -10050,10 +10087,10 @@ function ElevarSubmissionSimpleForm() {
 }
 
 // app/routes/elevar.tsx
-var import_jsx_dev_runtime45 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime");
 function ElevarPage() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(import_jsx_dev_runtime45.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(import_jsx_dev_runtime44.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
       ContentArea,
       {
         layout: "standard",
@@ -10061,12 +10098,12 @@ function ElevarPage() {
         image: quick_wins_default,
         textVerticalPosition: "middle",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("h2", { children: "CRO Readiness Checklist" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h2", { children: "CRO Readiness Checklist" }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
             lineNumber: 18,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("p", { className: "h4 leading-8 font-normal", children: "Looking to improve conversion rate? Before you start testing, download this checklist to determine site readiness and avoid common pitfalls that hinder growth." }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("p", { className: "h4 leading-8 font-normal", children: "Looking to improve conversion rate? Before you start testing, download this checklist to determine site readiness and avoid common pitfalls that hinder growth." }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
             lineNumber: 19,
             columnNumber: 9
@@ -10082,19 +10119,19 @@ function ElevarPage() {
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(ElevarSubmissionSimpleForm, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(ElevarSubmissionSimpleForm, {}, void 0, !1, {
       fileName: "app/routes/elevar.tsx",
       lineNumber: 21,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
       ContentArea,
       {
         layout: "standard",
         image: personalized_login_touches_default,
         textVerticalPosition: "middle",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(
             "img",
             {
               src: sparkydude_default,
@@ -10109,12 +10146,12 @@ function ElevarPage() {
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("h2", { children: "Get 3 CRO Quick Wins" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("h2", { children: "Get 3 CRO Quick Wins" }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
             lineNumber: 31,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("p", { className: "h4 leading-8 font-normal", children: "Send us your site and we\u2019ll give you 3 brand-specific ideas to level up this holiday season." }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)("p", { className: "h4 leading-8 font-normal", children: "Send us your site and we\u2019ll give you 3 brand-specific ideas to level up this holiday season." }, void 0, !1, {
             fileName: "app/routes/elevar.tsx",
             lineNumber: 32,
             columnNumber: 9
@@ -10130,12 +10167,12 @@ function ElevarPage() {
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(ElevarSubmissionForm, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(ElevarSubmissionForm, {}, void 0, !1, {
       fileName: "app/routes/elevar.tsx",
       lineNumber: 34,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)(Footer2, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime44.jsxDEV)(Footer2, {}, void 0, !1, {
       fileName: "app/routes/elevar.tsx",
       lineNumber: 35,
       columnNumber: 7
@@ -10152,9 +10189,9 @@ var __exports = {};
 __export(__exports, {
   default: () => Index4
 });
-var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime45 = require("react/jsx-dev-runtime");
 function Index4() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("div", { className: "bg-ivory", children: /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("div", { className: "container text-center flex items-center justify-center min-h-screen text-5xl font-bold", children: /* @__PURE__ */ (0, import_jsx_dev_runtime45.jsxDEV)("h1", { children: "404 - Page not found" }, void 0, !1, {
     fileName: "app/routes/$.tsx",
     lineNumber: 5,
     columnNumber: 9
@@ -10170,7 +10207,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-BOA65QVA.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ZL24VIFV.js", imports: ["/build/_shared/chunk-3WBMW7RQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-RI2FQWB6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-6OI5AFNJ.js", imports: ["/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-YQ43M7PX.js", "/build/_shared/chunk-RQMP25AX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-ROWWXW4I.js", imports: ["/build/_shared/chunk-YQ43M7PX.js", "/build/_shared/chunk-RQMP25AX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-M7RXTQ2Z.js", imports: ["/build/_shared/chunk-ZISC7ZXA.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RQMP25AX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-6AS3VXZC.js", imports: ["/build/_shared/chunk-ZISC7ZXA.js", "/build/_shared/chunk-DDTTXL2I.js", "/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-RQMP25AX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "c187da2b", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1697243154165 }, url: "/build/manifest-C187DA2B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AK6MC7Y7.js", imports: ["/build/_shared/chunk-ASKUILIF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M5D2W7KW.js", imports: ["/build/_shared/chunk-2BFDO7HF.js", "/build/_shared/chunk-GB6PMBQ4.js", "/build/_shared/chunk-SIVC3CNK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-X3RTODGQ.js", imports: ["/build/_shared/chunk-GB6PMBQ4.js", "/build/_shared/chunk-SIVC3CNK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-TQNH5PL7.js", imports: ["/build/_shared/chunk-4M7HPT62.js", "/build/_shared/chunk-2BFDO7HF.js", "/build/_shared/chunk-SIVC3CNK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-SDTRFVND.js", imports: ["/build/_shared/chunk-4M7HPT62.js", "/build/_shared/chunk-2BFDO7HF.js", "/build/_shared/chunk-SIVC3CNK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "1ba65527", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710534784252 }, url: "/build/manifest-1BA65527.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

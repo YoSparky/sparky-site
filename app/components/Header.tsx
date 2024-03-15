@@ -3,6 +3,7 @@ import sparkyLogo from "../assets/sparkyLogo.png";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ModalContext } from "~/root";
 import { Transition } from "react-transition-group";
+import Arrow from '~/components/icons/Arrow';
 
 export default function Header() {  
   const toggleModal = useContext(ModalContext);
@@ -48,21 +49,28 @@ export default function Header() {
             ...transitionStyles[state]
           }}
           ref={headerRef}
-          className={`${(headerVisible && headerRef?.current?.scrollHeight < currentOffset) && `bg-ivory shadow`} py-4 fixed left-0 w-screen z-10 transition duration-500 top-0`}
+          className={`${(headerVisible && headerRef?.current?.scrollHeight < currentOffset) && `shadow`} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`}
         >
+          <div className="container items-center text-center font-urbanist pb-4 announcement">
+            <button 
+              className="inline-flex justify-center items-center gap-3" 
+              onClick={() => toggleModal ? toggleModal() : null}
+            >
+              Let our team of eCommerce experts help your store grow <Arrow className="w-3" />
+            </button>
+          </div>
+          <hr className="pt-0.5 mb-5 border-t-0 border-b"></hr>
           <div className="container grid grid-cols-3 items-center">
             <Link title="home" to="/">
               <img className="w-24 md:w-32" src={sparkyLogo} />
             </Link>
             <div className="text-center text-sm"></div>
             <nav className="menu flex justify-end">
-              <Link to={{
-                pathname: `portfolio`
-              }}>
-                Work
-              </Link>
-              <button className="btn" onClick={() => toggleModal ? toggleModal() : null}>
-                Contact
+              <button 
+                className="font-urbanist border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
+                onClick={() => toggleModal ? toggleModal() : null}
+              >
+                Let's Talk
               </button>
             </nav>
           </div>

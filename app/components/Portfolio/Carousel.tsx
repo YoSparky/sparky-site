@@ -2,13 +2,12 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { register } from 'swiper/element/bundle';
 import { Arrow } from '../icons';
 
-register();
-
 export function Carousel({ content } : { content: { image: string | null, caption: string | null }[] | null } ) {  
   const swiperElRef = useRef(null);
   const [currentIndex, setIndex] = useState(0);
   const [isSliding, setSlidingState] = useState(false);
   const id = useId();
+  register();
   
   useEffect(() => {
     const swiper = swiperElRef.current;

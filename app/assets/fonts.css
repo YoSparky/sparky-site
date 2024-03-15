@@ -53,3 +53,11 @@
   font-display: swap;
   src: url('./WEB/Arnold_v0.3-Italic.woff');
 }
+
+@font-face {
+  font-family: 'Urbanist';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('./Urbanist-VariableFont_wght.ttf');
+}
