@@ -30,10 +30,10 @@ export default function FeaturedPortfolio() {
         },
       },
       spaceBetween: 8,
-      slidesPerView: 3,
+      slidesPerView: 1,
       breakpoints: {
         768: {
-          slidesPerView: 1,
+          slidesPerView: 3,
         },
       },
     };
