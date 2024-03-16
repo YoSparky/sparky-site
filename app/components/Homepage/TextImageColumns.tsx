@@ -1,4 +1,4 @@
-import Image from '../../assets/TextImageAsset.png';
+import Image from '../../assets/sparkyos.png';
 
 export default function TextImageColumns() {  
   return (
