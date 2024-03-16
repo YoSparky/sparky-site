@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-3WB2WYMD.css";
+var tailwind_default = "/build/_assets/tailwind-SIL5RAW5.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-Z3RQ654O.css";
@@ -8341,7 +8341,7 @@ function FeaturedPortfolio() {
         }
       },
       spaceBetween: 8,
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       breakpoints: {
         768: {
           slidesPerView: 3
@@ -8431,7 +8431,7 @@ function FeaturedPortfolio() {
       "button",
       {
         onClick: () => swiperRef.current.swiper.slidePrev(),
-        className: `left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? "hidden" : "flex"}`,
+        className: `left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 max-md:hidden ${buttonStyles} ${isBeginning ? "hidden" : "md:flex"}`,
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
@@ -8462,7 +8462,7 @@ function FeaturedPortfolio() {
       "button",
       {
         onClick: () => swiperRef.current.swiper.slideNext(),
-        className: `right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? "hidden" : "flex"}`,
+        className: `right-[calc(10%+32px)] md:right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? "hidden" : "flex"}`,
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
             fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
@@ -9472,7 +9472,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-Y3YYAK2D.js", imports: ["/build/_shared/chunk-G6NWCPJJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-2ZAZU7EU.js", imports: ["/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-N3BZNS6U.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-77ZR3T47.js", imports: ["/build/_shared/chunk-N3BZNS6U.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-HTXATZ7M.js", imports: ["/build/_shared/chunk-MLMPOCZQ.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-WDAUMOXZ.js", imports: ["/build/_shared/chunk-MLMPOCZQ.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "89c0a74e", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710547795551 }, url: "/build/manifest-89C0A74E.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-SYLVTDCU.js", imports: ["/build/_shared/chunk-VELE66TK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-LF5OOPH3.js", imports: ["/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-PERWTYF2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-U7BXGTR2.js", imports: ["/build/_shared/chunk-PERWTYF2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-RXSS62SS.js", imports: ["/build/_shared/chunk-VNWB6SJG.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-TPPA2TNF.js", imports: ["/build/_shared/chunk-VNWB6SJG.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "d2df4ab6", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710548311470 }, url: "/build/manifest-D2DF4AB6.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
