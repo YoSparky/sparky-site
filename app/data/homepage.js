@@ -26,6 +26,46 @@ import rebuyLogo from '../assets/rebuy_logo_white.svg';
 import tapcartLogo from '../assets/tapcart-logo.svg';
 import visuallyLogo from '../assets/visually-lgoo.png';
 
+// portfolio slider images x 6
+import fortysevenStory from '../assets/47-main.png';
+import ghostStory from '../assets/ghost-main.png';
+import heydudeStory from '../assets/heydude-main.jpg';
+import legendsStory from '../assets/legends-main.png';
+import winkStory from '../assets/wink-main.png';
+import yorkStory from '../assets/york-main.png';
+
+export const portfolioSlider = [
+  {
+    title: 'Heydude',
+    link: 'https://www.heydude.com/',
+    image: heydudeStory
+  },
+  {
+    title: '\'47 Brand',
+    link: 'https://www.47brand.com/',
+    image: fortysevenStory
+  },
+  {
+    title: 'Legends',
+    link: 'https://www.legends.com/',
+    image: legendsStory
+  },
+  {
+    title: 'Ghost',
+    link: 'https://www.ghostlifestyle.com/',
+    image: ghostStory
+  },
+  {
+    title: 'York Athletics',
+    link: 'https://yorkathleticsmfg.com/',
+    image: yorkStory
+  },
+  {
+    title: 'Wink',
+    link: 'https://winkscrubs.com/',
+    image: winkStory
+  }
+]
 
 export const portfolioListItems = [
   {

@@ -1,7 +1,6 @@
 // @ts-nocheck
-import { Link } from "@remix-run/react";
 import { useId, useRef, useEffect, useState } from "react";
-import caseStudies from '../../data/case-studies';
+import { portfolioSlider } from '../../data/homepage';
 import { register } from 'swiper/element/bundle';
 
 register();
@@ -31,10 +30,10 @@ export default function FeaturedPortfolio() {
         },
       },
       spaceBetween: 8,
-      slidesPerView: 3.1,
+      slidesPerView: 3,
       breakpoints: {
         768: {
-          slidesPerView: 1.1,
+          slidesPerView: 1,
         },
       },
     };
@@ -71,17 +70,26 @@ export default function FeaturedPortfolio() {
     <div className="overflow-hidden">
       <div className="pt-5 pb-16 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible">
         <swiper-container init="false" ref={swiperRef}>
-        {caseStudies.map((caseStudy) => {
+        {portfolioSlider.map((caseStudy) => {
             const caseStudyKey = useId();
-            if (!caseStudy?.portfolioBanner) return;
+            if (!caseStudy?.image) return;
             return (
               <swiper-slide key={caseStudyKey}>
-                <div className="block relative rounded-md overflow-hidden">
+                <div className="block relative rounded-md overflow-hidden group">
                   <img 
-                    className="block aspect-[432/540] object-cover object-center" 
-                    src={caseStudy.portfolioBanner.image} 
-                    alt={caseStudy.portfolioBanner.caption ?? ''} 
+                    className="block aspect-[432/540] object-cover object-center scale-100 group-hover:scale-105 origin-center transition-all duration-500" 
+                    src={caseStudy.image} 
+                    loading="lazy"
+                    alt={caseStudy.title ?? ''} 
                   />
+                  <a
+                    href={caseStudy.link} 
+                    target="_blank"
+                    style={{ backgroundImage: 'linear-gradient(to bottom, rgba(63, 73, 73, 0) -12%, #3f494a 92%)' }} 
+                    className="absolute top-0 left-0 flex items-end h-full w-full p-7"
+                  >
+                    <strong className="text-[40px] text-white">{caseStudy.title}</strong>
+                  </a>
                 </div>
               </swiper-slide>
             )
@@ -89,13 +97,13 @@ export default function FeaturedPortfolio() {
         </swiper-container>
         <button 
           onClick={() => swiperRef.current.swiper.slidePrev()}
-          className={`left-0 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? 'hidden' : 'flex'}`}
+          className={`left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? 'hidden' : 'flex'}`}
         >
           <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
         </button>
         <button 
           onClick={() => swiperRef.current.swiper.slideNext()}
-          className={`right-0 ${buttonStyles} ${isEnd ? 'hidden' : 'flex'}`}
+          className={`right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? 'hidden' : 'flex'}`}
         >
           <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
         </button>

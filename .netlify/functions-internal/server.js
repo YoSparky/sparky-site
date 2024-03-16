@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-6FFVL27C.css";
+var tailwind_default = "/build/_assets/tailwind-3WB2WYMD.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-Z3RQ654O.css";
@@ -7856,162 +7856,6 @@ function Hero() {
 
 // app/components/Homepage/FeaturedPortfolio.tsx
 var import_react21 = require("react");
-var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime");
-register();
-function FeaturedPortfolio() {
-  let swiperRef = (0, import_react21.useRef)(null), [isEnd, setIsEnd] = (0, import_react21.useState)(!1), [isBeginning, setIsBeginning] = (0, import_react21.useState)(!0);
-  (0, import_react21.useEffect)(() => {
-    register();
-    let params = {
-      injectStyles: [
-        `
-        .swiper {
-          overflow: visible;
-        }
-        `
-      ],
-      on: {
-        slideChange(s) {
-          setIsEnd(s.isEnd), setIsBeginning(s.isBeginning);
-        }
-      },
-      spaceBetween: 8,
-      slidesPerView: 3.1,
-      breakpoints: {
-        768: {
-          slidesPerView: 1.1
-        }
-      }
-    };
-    Object.assign(swiperRef.current, params), swiperRef.current.initialize(), setIsEnd(swiperRef.current.swiper.isEnd);
-  }, []);
-  let buttonStyles = `
-    z-[1]
-    h-16 
-    w-16
-    transform 
-    -translate-y-1/2 
-    items-center 
-    justify-center 
-    absolute 
-    top-1/2 
-    rounded-full 
-    transition 
-    duration-200
-    flex
-    bg-white
-    p-5
-    hover:bg-black
-    hover:text-white
-  `;
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "pt-5 pb-16 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("swiper-container", { init: "false", ref: swiperRef, children: case_studies_default.map((caseStudy) => {
-      let caseStudyKey = (0, import_react21.useId)();
-      if (caseStudy != null && caseStudy.portfolioBanner)
-        return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "block relative rounded-md overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
-          "img",
-          {
-            className: "block aspect-[432/540] object-cover object-center",
-            src: caseStudy.portfolioBanner.image,
-            alt: caseStudy.portfolioBanner.caption ?? ""
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 80,
-            columnNumber: 19
-          },
-          this
-        ) }, void 0, !1, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 79,
-          columnNumber: 17
-        }, this) }, caseStudyKey, !1, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 78,
-          columnNumber: 15
-        }, this);
-    }) }, void 0, !1, {
-      fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-      lineNumber: 73,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
-      "button",
-      {
-        onClick: () => swiperRef.current.swiper.slidePrev(),
-        className: `left-0 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? "hidden" : "flex"}`,
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 94,
-            columnNumber: 189
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 94,
-            columnNumber: 221
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 94,
-          columnNumber: 11
-        }, this)
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-        lineNumber: 90,
-        columnNumber: 9
-      },
-      this
-    ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
-      "button",
-      {
-        onClick: () => swiperRef.current.swiper.slideNext(),
-        className: `right-0 ${buttonStyles} ${isEnd ? "hidden" : "flex"}`,
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 100,
-            columnNumber: 189
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
-            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-            lineNumber: 100,
-            columnNumber: 221
-          }, this)
-        ] }, void 0, !0, {
-          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-          lineNumber: 100,
-          columnNumber: 11
-        }, this)
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-        lineNumber: 96,
-        columnNumber: 9
-      },
-      this
-    )
-  ] }, void 0, !0, {
-    fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-    lineNumber: 72,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
-    lineNumber: 71,
-    columnNumber: 5
-  }, this);
-}
-
-// app/components/PortfolioList.tsx
-var import_react22 = require("react");
 
 // app/assets/fortyseven.png
 var fortyseven_default = "/build/_assets/fortyseven-5ELHC4ZR.png";
@@ -8085,8 +7929,57 @@ var tapcart_logo_default = "/build/_assets/tapcart-logo-KC3SEZVD.svg";
 // app/assets/visually-lgoo.png
 var visually_lgoo_default = "/build/_assets/visually-lgoo-GTGPNXPD.png";
 
+// app/assets/47-main.png
+var main_default = "/build/_assets/47-main-LFNG4OZR.png";
+
+// app/assets/ghost-main.png
+var ghost_main_default = "/build/_assets/ghost-main-TIJA6UVK.png";
+
+// app/assets/heydude-main.jpg
+var heydude_main_default = "/build/_assets/heydude-main-LQOSSZDA.jpg";
+
+// app/assets/legends-main.png
+var legends_main_default = "/build/_assets/legends-main-SYBLOWAG.png";
+
+// app/assets/wink-main.png
+var wink_main_default = "/build/_assets/wink-main-E6P7E7WB.png";
+
+// app/assets/york-main.png
+var york_main_default = "/build/_assets/york-main-6ZWBISH7.png";
+
 // app/data/homepage.js
-var portfolioListItems = [
+var portfolioSlider = [
+  {
+    title: "Heydude",
+    link: "https://www.heydude.com/",
+    image: heydude_main_default
+  },
+  {
+    title: "'47 Brand",
+    link: "https://www.47brand.com/",
+    image: main_default
+  },
+  {
+    title: "Legends",
+    link: "https://www.legends.com/",
+    image: legends_main_default
+  },
+  {
+    title: "Ghost",
+    link: "https://www.ghostlifestyle.com/",
+    image: ghost_main_default
+  },
+  {
+    title: "York Athletics",
+    link: "https://yorkathleticsmfg.com/",
+    image: york_main_default
+  },
+  {
+    title: "Wink",
+    link: "https://winkscrubs.com/",
+    image: wink_main_default
+  }
+], portfolioListItems = [
   {
     title: "Heydude",
     link: "https://www.heydude.com/",
@@ -8427,7 +8320,188 @@ var portfolioListItems = [
   }
 ];
 
+// app/components/Homepage/FeaturedPortfolio.tsx
+var import_jsx_dev_runtime23 = require("react/jsx-dev-runtime");
+register();
+function FeaturedPortfolio() {
+  let swiperRef = (0, import_react21.useRef)(null), [isEnd, setIsEnd] = (0, import_react21.useState)(!1), [isBeginning, setIsBeginning] = (0, import_react21.useState)(!0);
+  (0, import_react21.useEffect)(() => {
+    register();
+    let params = {
+      injectStyles: [
+        `
+        .swiper {
+          overflow: visible;
+        }
+        `
+      ],
+      on: {
+        slideChange(s) {
+          setIsEnd(s.isEnd), setIsBeginning(s.isBeginning);
+        }
+      },
+      spaceBetween: 8,
+      slidesPerView: 3,
+      breakpoints: {
+        768: {
+          slidesPerView: 1
+        }
+      }
+    };
+    Object.assign(swiperRef.current, params), swiperRef.current.initialize(), setIsEnd(swiperRef.current.swiper.isEnd);
+  }, []);
+  let buttonStyles = `
+    z-[1]
+    h-16 
+    w-16
+    transform 
+    -translate-y-1/2 
+    items-center 
+    justify-center 
+    absolute 
+    top-1/2 
+    rounded-full 
+    transition 
+    duration-200
+    flex
+    bg-white
+    p-5
+    hover:bg-black
+    hover:text-white
+  `;
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "pt-5 pb-16 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("swiper-container", { init: "false", ref: swiperRef, children: portfolioSlider.map((caseStudy) => {
+      let caseStudyKey = (0, import_react21.useId)();
+      if (caseStudy != null && caseStudy.image)
+        return /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("swiper-slide", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("div", { className: "block relative rounded-md overflow-hidden group", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
+            "img",
+            {
+              className: "block aspect-[432/540] object-cover object-center scale-100 group-hover:scale-105 origin-center transition-all duration-500",
+              src: caseStudy.image,
+              loading: "lazy",
+              alt: caseStudy.title ?? ""
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+              lineNumber: 79,
+              columnNumber: 19
+            },
+            this
+          ),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
+            "a",
+            {
+              href: caseStudy.link,
+              target: "_blank",
+              style: { backgroundImage: "linear-gradient(to bottom, rgba(63, 73, 73, 0) -12%, #3f494a 92%)" },
+              className: "absolute top-0 left-0 flex items-end h-full w-full p-7",
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("strong", { className: "text-[40px] text-white", children: caseStudy.title }, void 0, !1, {
+                fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+                lineNumber: 91,
+                columnNumber: 21
+              }, this)
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+              lineNumber: 85,
+              columnNumber: 19
+            },
+            this
+          )
+        ] }, void 0, !0, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 78,
+          columnNumber: 17
+        }, this) }, caseStudyKey, !1, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 77,
+          columnNumber: 15
+        }, this);
+    }) }, void 0, !1, {
+      fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+      lineNumber: 72,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
+      "button",
+      {
+        onClick: () => swiperRef.current.swiper.slidePrev(),
+        className: `left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 ${buttonStyles} ${isBeginning ? "hidden" : "flex"}`,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
+            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+            lineNumber: 102,
+            columnNumber: 189
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
+            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+            lineNumber: 102,
+            columnNumber: 221
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 102,
+          columnNumber: 11
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+        lineNumber: 98,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)(
+      "button",
+      {
+        onClick: () => swiperRef.current.swiper.slideNext(),
+        className: `right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? "hidden" : "flex"}`,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("svg", { viewBox: "0 0 16 16", height: "100%", width: "100%", focusable: "false", role: "img", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg", class: "StyledIconBase-sc-ea9ulj-0 hRnJPC", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("title", { children: "ChevronRight icon" }, void 0, !1, {
+            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+            lineNumber: 108,
+            columnNumber: 189
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("path", { fillRule: "evenodd", d: "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" }, void 0, !1, {
+            fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+            lineNumber: 108,
+            columnNumber: 221
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+          lineNumber: 108,
+          columnNumber: 11
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+        lineNumber: 104,
+        columnNumber: 9
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+    lineNumber: 71,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
+    lineNumber: 70,
+    columnNumber: 5
+  }, this);
+}
+
 // app/components/PortfolioList.tsx
+var import_react22 = require("react");
 var import_jsx_dev_runtime24 = require("react/jsx-dev-runtime");
 function PortfolioList() {
   let toggleModal = (0, import_react22.useContext)(ModalContext);
@@ -9398,7 +9472,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-MGRKJ3QY.js", imports: ["/build/_shared/chunk-IQIWY2KW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-OVBBRE4X.js", imports: ["/build/_shared/chunk-2BFDO7HF.js", "/build/_shared/chunk-WR6CWRPG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-AWMC423T.js", imports: ["/build/_shared/chunk-WR6CWRPG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-QOEL766X.js", imports: ["/build/_shared/chunk-JLXZVE5C.js", "/build/_shared/chunk-2BFDO7HF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-WAS6UEJ3.js", imports: ["/build/_shared/chunk-JLXZVE5C.js", "/build/_shared/chunk-2BFDO7HF.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "2b5c8a2f", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710546556376 }, url: "/build/manifest-2B5C8A2F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-Y3YYAK2D.js", imports: ["/build/_shared/chunk-G6NWCPJJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-W6HYHEK7.js", imports: ["/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-N3BZNS6U.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-77ZR3T47.js", imports: ["/build/_shared/chunk-N3BZNS6U.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-HTXATZ7M.js", imports: ["/build/_shared/chunk-MLMPOCZQ.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-WDAUMOXZ.js", imports: ["/build/_shared/chunk-MLMPOCZQ.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "50dc7af9", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710547624203 }, url: "/build/manifest-50DC7AF9.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
