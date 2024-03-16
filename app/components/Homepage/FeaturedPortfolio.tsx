@@ -1,40 +1,112 @@
-import { Link } from "@remix-run/react";
-import HeydudePortfolioImage from '../../assets/HeyDude-Portfolio.png';
-import LegendsPortfolioImage from '../../assets/Legends-Portfolio.png';
+// @ts-nocheck
+import { useId, useRef, useEffect, useState } from "react";
+import { portfolioSlider } from '../../data/homepage';
+import { register } from 'swiper/element/bundle';
+
+register();
 
 export default function FeaturedPortfolio() {  
+  const swiperRef = useRef(null);
+  const [isEnd, setIsEnd] = useState(false);
+  const [isBeginning, setIsBeginning] = useState(true);
+
+  useEffect(() => {
+    // Register Swiper web component
+    register();
+    
+    // Object with parameters
+    const params = {
+      injectStyles: [
+        `
+        .swiper {
+          overflow: visible;
+        }
+        `,
+      ],
+      on: {
+        slideChange(s) {
+          setIsEnd(s.isEnd);
+          setIsBeginning(s.isBeginning);
+        },
+      },
+      spaceBetween: 8,
+      slidesPerView: 1.2,
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+      },
+    };
+
+    // Assign it to swiper element
+    Object.assign(swiperRef.current, params);
+
+    // initialize swiper
+    swiperRef.current.initialize();
+    setIsEnd(swiperRef.current.swiper.isEnd);
+  }, []);
+
+  const buttonStyles = `
+    z-[1]
+    h-16 
+    w-16
+    transform 
+    -translate-y-1/2 
+    items-center 
+    justify-center 
+    absolute 
+    top-1/2 
+    rounded-full 
+    transition 
+    duration-200
+    flex
+    bg-white
+    p-5
+    hover:bg-black
+    hover:text-white
+  `;
+  
   return (
-    <div className="pt-5 pb-10 md:py-10">
-      <div className="right-edge-container flex flex-col justify-center gap-5 lg:gap-7 py-5 md:py-10">
-        <span className="text-sm">Latest Work</span>
-        <div className="grid gap-10 md:gap-16 lg:grid-cols-2 lg:gap-5">
-          <div className="flex flex-col max-lg:pr-4">
-            <Link className="flex flex-col" to="/portfolio/heydude">
-              <img className="block bg-mix-blend-multiply" src={HeydudePortfolioImage} />
-              <strong className="block text-shadow h2 transform -translate-y-[65%] -ml-1 leading-none">Hey Dude</strong>
-            </Link>
-            <ul className="flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm">
-              <li>Shopify Plus Migration</li>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
-            <div className="pt-96 mt-auto hidden lg:block">
-              <Link className="block button w-max" to="/portfolio">View More Work</Link>
-            </div>
-          </div>
-          <div className="flex flex-col">
-            <Link className="flex flex-col" to="/portfolio/heydude">
-              <img className="block lg:mt-[70%]" src={LegendsPortfolioImage} />
-              <strong className="block text-shadow h2 transform -translate-y-[65%] -ml-1 leading-none">Legends</strong>
-            </Link>
-            <ul className="flex flex-wrap lg:border border-current lg:w-max max-lg:text-center max-lg:gap-1 [&_li]:max-lg:border [&_li:not(:last-of-type)]:lg:border-r [&_li]:border-current [&_li]:p-4 text-sm">
-              <li>Shopify Plus Migration</li>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
-          </div>
-          <Link className="block lg:hidden button w-max" to="/portfolio">View More Work</Link>
-        </div>
+    <div className="overflow-hidden">
+      <div className="pt-5 pb-16 md:py-10 [&_.swiper-button-disabled]:!hidden relative container overflow-visible">
+        <swiper-container init="false" ref={swiperRef}>
+        {portfolioSlider.map((caseStudy) => {
+            const caseStudyKey = useId();
+            if (!caseStudy?.image) return;
+            return (
+              <swiper-slide key={caseStudyKey}>
+                <div className="block relative rounded-md overflow-hidden group">
+                  <img 
+                    className="block aspect-[432/540] object-cover object-center scale-100 group-hover:scale-105 origin-center transition-all duration-500" 
+                    src={caseStudy.image} 
+                    loading="lazy"
+                    alt={caseStudy.title ?? ''} 
+                  />
+                  <a
+                    href={caseStudy.link} 
+                    target="_blank"
+                    style={{ backgroundImage: 'linear-gradient(to bottom, rgba(63, 73, 73, 0) -12%, #3f494a 92%)' }} 
+                    className="absolute top-0 left-0 flex items-end h-full w-full p-7"
+                  >
+                    <strong className="text-[40px] text-white">{caseStudy.title}</strong>
+                  </a>
+                </div>
+              </swiper-slide>
+            )
+          })}
+        </swiper-container>
+        <button 
+          onClick={() => swiperRef.current.swiper.slidePrev()}
+          className={`left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 max-md:hidden ${buttonStyles} ${isBeginning ? 'hidden' : 'md:flex'}`}
+        >
+          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+        </button>
+        <button 
+          onClick={() => swiperRef.current.swiper.slideNext()}
+          className={`right-[calc(10%+32px)] md:right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? 'hidden' : 'flex'}`}
+        >
+          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+        </button>
       </div>
     </div>
   )

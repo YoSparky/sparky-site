@@ -1,13 +1,11 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import Hero from "~/components/Homepage/Hero";
 import FeaturedPortfolio from "~/components/Homepage/FeaturedPortfolio";
-import FeaturedPartners from "~/components/Homepage/FeaturedPartners";
 import PortfolioList from "~/components/PortfolioList";
-import PortfolioSlider from "~/components/PortfolioSlider";
-import OfferingsAccordion from "~/components/OfferingsAccordion";
-import Marquee from "~/components/Marquee";
 import Footer from "~/components/Footer/Footer";
-import backgroundShapes from '../assets/homepage-svg-background.svg';
+import Offerings from "~/components/Offerings";
+import TextImageColumns from "~/components/Homepage/TextImageColumns";
+import FeaturedPartners from "~/components/Homepage/FeaturedPartners";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -18,14 +16,13 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ backgroundImage: `url(${backgroundShapes})` }} className="bg-ivory bg-[length:_100%_auto] bg-no-repeat bg-top w-screen max-md:overflow-x-hidden">
+    <div className="homepage">
       <Hero />
       <FeaturedPortfolio />
-      <FeaturedPartners />
       <PortfolioList />
-      <PortfolioSlider />
-      <OfferingsAccordion />
-      <Marquee />
+      <Offerings />
+      <TextImageColumns />
+      <FeaturedPartners />
       <Footer />
     </div>
   );
