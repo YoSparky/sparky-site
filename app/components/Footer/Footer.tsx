@@ -8,7 +8,7 @@ export default function Footer() {
     <>
       <div className="bg-white py-16 md:py-52">
         <div className="container flex flex-col items-center justify-center gap-6 md:gap-14">  
-          <strong className="text-3xl md:text-[54px] font-semibold leading-[1.37] text-center">Take your Shopify site to <br/> the next level today.</strong> 
+          <strong className="text-3xl md:text-[54px] font-semibold leading-[1.37] text-center max-w-[550px]">Take your Shopify site to the next level today.</strong> 
           <button 
             className="font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
             onClick={() => toggleModal ? toggleModal() : null}

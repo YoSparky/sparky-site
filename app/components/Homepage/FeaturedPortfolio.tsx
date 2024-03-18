@@ -88,7 +88,7 @@ export default function FeaturedPortfolio() {
                     style={{ backgroundImage: 'linear-gradient(to bottom, rgba(63, 73, 73, 0) -12%, #3f494a 92%)' }} 
                     className="absolute top-0 left-0 flex items-end h-full w-full p-7"
                   >
-                    <strong className="text-[40px] text-white">{caseStudy.title}</strong>
+                    <strong className="text-2xl md:text-[40px] text-white">{caseStudy.title}</strong>
                   </a>
                 </div>
               </swiper-slide>

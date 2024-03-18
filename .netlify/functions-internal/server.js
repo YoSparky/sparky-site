@@ -144,7 +144,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-IALN2DHB.css";
+var tailwind_default = "/build/_assets/tailwind-ACAUYDFQ.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-Z3RQ654O.css";
@@ -198,10 +198,11 @@ var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
 function Header() {
   let toggleModal = (0, import_react3.useContext)(ModalContext), headerRef = (0, import_react3.useRef)(null), [prevOffset, setPrevOffset] = (0, import_react3.useState)(0), [currentOffset, setCurrentOffset] = (0, import_react3.useState)(0), [headerVisible, setHeaderVisibility] = (0, import_react3.useState)(!0);
   (0, import_react3.useEffect)(() => {
+    var _a;
     let onScroll2 = () => {
       setPrevOffset(currentOffset), setCurrentOffset(window.scrollY);
     };
-    return window.removeEventListener("scroll", onScroll2), window.addEventListener("scroll", onScroll2, { passive: !0 }), currentOffset < prevOffset || currentOffset === 0 ? setHeaderVisibility(!0) : setHeaderVisibility(!1), () => window.removeEventListener("scroll", onScroll2);
+    return window.removeEventListener("scroll", onScroll2), window.addEventListener("scroll", onScroll2, { passive: !0 }), currentOffset < prevOffset || currentOffset <= ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.offsetHeight) / 2 ? setHeaderVisibility(!0) : setHeaderVisibility(!1), () => window.removeEventListener("scroll", onScroll2);
   }, [currentOffset, prevOffset, headerRef]);
   let transitionStyles = {
     entering: {},
@@ -220,7 +221,7 @@ function Header() {
           ...transitionStyles[state]
         },
         ref: headerRef,
-        className: `${headerVisible && ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.scrollHeight) < currentOffset && "shadow"} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`,
+        className: `${headerVisible && ((_a = headerRef == null ? void 0 : headerRef.current) == null ? void 0 : _a.scrollHeight) / 2 < currentOffset && "shadow"} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`,
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "container items-center text-center font-NeueHaasGroteskDisplay pb-4 announcement", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
             "button",
@@ -272,7 +273,7 @@ function Header() {
             /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("nav", { className: "menu flex justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
               "button",
               {
-                className: "font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200",
+                className: "whitespace-nowrap font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200",
                 onClick: () => toggleModal ? toggleModal() : null,
                 children: "Let's Talk"
               },
@@ -8398,7 +8399,7 @@ function FeaturedPortfolio() {
               target: "_blank",
               style: { backgroundImage: "linear-gradient(to bottom, rgba(63, 73, 73, 0) -12%, #3f494a 92%)" },
               className: "absolute top-0 left-0 flex items-end h-full w-full p-7",
-              children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("strong", { className: "text-[40px] text-white", children: caseStudy.title }, void 0, !1, {
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime23.jsxDEV)("strong", { className: "text-2xl md:text-[40px] text-white", children: caseStudy.title }, void 0, !1, {
                 fileName: "app/components/Homepage/FeaturedPortfolio.tsx",
                 lineNumber: 91,
                 columnNumber: 21
@@ -8507,7 +8508,7 @@ function PortfolioList() {
   let toggleModal = (0, import_react22.useContext)(ModalContext);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "bg-[#141414] text-white w-full py-10 md:py-20", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "container", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex items-center justify-between py-10", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("span", { className: "font-body text-2xl", children: "Notable Merchants" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("span", { className: "font-body text-lg md:text-2xl", children: "Notable Merchants" }, void 0, !1, {
         fileName: "app/components/PortfolioList.tsx",
         lineNumber: 12,
         columnNumber: 11
@@ -8515,7 +8516,7 @@ function PortfolioList() {
       /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
         "button",
         {
-          className: "font-NeueHaasGroteskDisplay text-white cursor-pointer text-sm",
+          className: "font-NeueHaasGroteskDisplay text-white cursor-pointer text-sm whitespace-nowrap",
           onClick: () => toggleModal ? toggleModal() : null,
           children: "Become a Client"
         },
@@ -8591,15 +8592,7 @@ function Footer2() {
   let toggleModal = (0, import_react23.useContext)(ModalContext);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)(import_jsx_dev_runtime25.Fragment, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "bg-white py-16 md:py-52", children: /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("div", { className: "container flex flex-col items-center justify-center gap-6 md:gap-14", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("strong", { className: "text-3xl md:text-[54px] font-semibold leading-[1.37] text-center", children: [
-        "Take your Shopify site to ",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("br", {}, void 0, !1, {
-          fileName: "app/components/Footer/Footer.tsx",
-          lineNumber: 11,
-          columnNumber: 122
-        }, this),
-        " the next level today."
-      ] }, void 0, !0, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime25.jsxDEV)("strong", { className: "text-3xl md:text-[54px] font-semibold leading-[1.37] text-center max-w-[550px]", children: "Take your Shopify site to the next level today." }, void 0, !1, {
         fileName: "app/components/Footer/Footer.tsx",
         lineNumber: 11,
         columnNumber: 11
@@ -8779,20 +8772,17 @@ var import_jsx_dev_runtime27 = require("react/jsx-dev-runtime");
 function TextImageColumns() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("section", { className: "md:right-edge-container grid md:grid-cols-2 pt-14 gap-9 md:py-28 md:gap-16", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "flex flex-col text-center items-center justify-center gap-6 md:gap-12 max-md:container", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("h1", { className: "text-3xl md:text-[54px] font-semibold leading-[1.37]", children: [
-        "50% Agency,",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("br", {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("div", { className: "inline-flex flex-col gap-4", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("h1", { className: "text-3xl md:text-[54px] font-semibold leading-[1.37]", children: "Software as a Service" }, void 0, !1, {
           fileName: "app/components/Homepage/TextImageColumns.tsx",
           lineNumber: 8,
-          columnNumber: 22
+          columnNumber: 11
         }, this),
-        "50% Platform,",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("br", {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("span", { className: "md:text-2xl font-body", children: "50% Agency, 50% Platform, 100% Ecomm" }, void 0, !1, {
           fileName: "app/components/Homepage/TextImageColumns.tsx",
-          lineNumber: 9,
-          columnNumber: 24
-        }, this),
-        "100% EComm"
+          lineNumber: 11,
+          columnNumber: 11
+        }, this)
       ] }, void 0, !0, {
         fileName: "app/components/Homepage/TextImageColumns.tsx",
         lineNumber: 7,
@@ -8800,7 +8790,7 @@ function TextImageColumns() {
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime27.jsxDEV)("p", { className: "text-xl leading-normal max-w-[577px]", children: "Our proprietary software, Sparky OS, enables us to maximize our investments in senior eCommerce talent and avoid administrative bloat commonly experienced with agencies; this leads to the most growth-minded, merchant-friendly service model without any hourly rates, scope creep, or fluff." }, void 0, !1, {
         fileName: "app/components/Homepage/TextImageColumns.tsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
@@ -8820,7 +8810,7 @@ function TextImageColumns() {
       !1,
       {
         fileName: "app/components/Homepage/TextImageColumns.tsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 7
       },
       this
@@ -9472,7 +9462,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-BOA65QVA.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-EA6YIWAS.js", "/build/_shared/chunk-V4LHCM22.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4XWF2J73.js", imports: ["/build/_shared/chunk-MAVVXGT2.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-RI2FQWB6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-LM3TFS2U.js", imports: ["/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-2QMYJYOJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-INOEITHH.js", imports: ["/build/_shared/chunk-2QMYJYOJ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-CONVNTSR.js", imports: ["/build/_shared/chunk-ONRFVD4E.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-ZM3STVXH.js", imports: ["/build/_shared/chunk-ONRFVD4E.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "1352f490", hmr: { runtime: "/build/_shared/chunk-V4LHCM22.js", timestamp: 1710552102472 }, url: "/build/manifest-1352F490.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-KTDD4SLU.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-UB6LSHQ7.js", "/build/_shared/chunk-LARFAIKH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VYQICDVJ.js", imports: ["/build/_shared/chunk-DR4RMUGQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-7GWQLLSR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-BIPL4OWZ.js", imports: ["/build/_shared/chunk-HL4F7YTV.js", "/build/_shared/chunk-IPWQ4XBK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-DOB3UC7N.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-PCLGIQH5.js", imports: ["/build/_shared/chunk-IPWQ4XBK.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-IBIJXK3H.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-YUMUH6UP.js", imports: ["/build/_shared/chunk-FGSQIYSD.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-43MHQBM5.js", imports: ["/build/_shared/chunk-FGSQIYSD.js", "/build/_shared/chunk-HL4F7YTV.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "1189d070", hmr: { runtime: "/build/_shared/chunk-LARFAIKH.js", timestamp: 1710781306506 }, url: "/build/manifest-1189D070.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

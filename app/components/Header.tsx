@@ -21,7 +21,7 @@ export default function Header() {
     window.removeEventListener('scroll', onScroll);
     window.addEventListener('scroll', onScroll, { passive: true });
     
-    if (currentOffset < prevOffset || currentOffset === 0) {
+    if (currentOffset < prevOffset || currentOffset <= (headerRef?.current?.offsetHeight / 2)) {
       setHeaderVisibility(true);
     } else {
       setHeaderVisibility(false);
@@ -49,7 +49,7 @@ export default function Header() {
             ...transitionStyles[state]
           }}
           ref={headerRef}
-          className={`${(headerVisible && headerRef?.current?.scrollHeight < currentOffset) && `shadow`} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`}
+          className={`${(headerVisible && (headerRef?.current?.scrollHeight / 2) < currentOffset) && `shadow`} bg-white py-4 fixed left-0 w-screen z-10 transition duration-500 top-0 flex flex-col`}
         >
           <div className="container items-center text-center font-NeueHaasGroteskDisplay pb-4 announcement">
             <button 
@@ -67,7 +67,7 @@ export default function Header() {
             <div className="text-center text-sm"></div>
             <nav className="menu flex justify-end">
               <button 
-                className="font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
+                className="whitespace-nowrap font-NeueHaasGroteskDisplay border border-black text-black bg-transparent py-4 px-8 rounded-[3px] text-sm hover:bg-black hover:text-white transition duration-200" 
                 onClick={() => toggleModal ? toggleModal() : null}
               >
                 Let's Talk

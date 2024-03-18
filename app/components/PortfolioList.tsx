@@ -9,9 +9,9 @@ export default function PortfolioList() {
     <div className="bg-[#141414] text-white w-full py-10 md:py-20">
       <div className="container">
         <div className="flex items-center justify-between py-10">
-          <span className="font-body text-2xl">Notable Merchants</span>
+          <span className="font-body text-lg md:text-2xl">Notable Merchants</span>
           <button 
-            className="font-NeueHaasGroteskDisplay text-white cursor-pointer text-sm" 
+            className="font-NeueHaasGroteskDisplay text-white cursor-pointer text-sm whitespace-nowrap" 
             onClick={() => toggleModal ? toggleModal() : null}
           >
             Become a Client
