@@ -6,7 +6,7 @@ export default function FeaturedPartners() {
     <div className="bg-[#141414] text-white w-full py-10 md:py-20">
       <div className="container">
         <div className="flex items-center justify-between py-5 md:py-10">
-          <span className="font-body text-2xl">Partners</span>
+          <span className="font-body text-xl md:text-2xl">Partners</span>
         </div>
         <ul className="grid grid-cols-2 md:grid-cols-4 border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md overflow-hidden">
           {partnerListItems.map(({ title, logo }) => (
