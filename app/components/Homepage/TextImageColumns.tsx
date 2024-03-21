@@ -6,7 +6,7 @@ export default function TextImageColumns() {
       <div className="flex flex-col text-center items-center justify-center gap-6 md:gap-12 max-md:container">
         <div className="inline-flex flex-col gap-4">
           <h1 className="text-3xl md:text-[54px] font-semibold leading-[1.37]">
-            Software as a Service
+            Service as a Software™
           </h1>
           <span className="md:text-2xl font-body">50% Agency, 50% Platform, 100% Ecomm</span>
         </div>
