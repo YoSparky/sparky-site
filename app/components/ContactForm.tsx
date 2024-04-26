@@ -1,29 +1,11 @@
 import { Arrow } from "~/components/icons";
-import { Accordion } from "~/components/Accordion";
-import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
+import { FormEvent, useCallback, useRef, useState } from "react";
 import { Form } from "@remix-run/react";
 import contact_form_data from '~/data/contact';
 
 export default function ContactForm() {
   const [currently_active, setCurrentlyActive] = useState(`brand`);
-  const [brand_type, setBrandType] = useState(``);
-  const [looking_to, setLookingTo] = useState(``);
-  const [livesOn, setLivesOn] = useState(``);
-
-  const section_map: { [key: string]: { value: string, action: Function } } = {
-    brand: {
-      value: brand_type,
-      action: setBrandType,
-    },
-    "looking-to": {
-      value: looking_to,
-      action: setLookingTo,
-    },
-    "lives-on": {
-      value: livesOn,
-      action: setLivesOn,
-    },
-  };
+  const [form_state, setFormState] = useState<any>({});
 
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -33,9 +15,6 @@ export default function ContactForm() {
     event.preventDefault();
     setSubmitting(true);
     const form_data = new FormData(event.currentTarget as HTMLFormElement);
-    if (brand_type) { form_data.append(`brand_type`, brand_type); }
-    if (looking_to) { form_data.append(`looking_to`, looking_to); }
-    if (livesOn) { form_data.append(`livesOn`, livesOn); }
     
     await fetch(`https://usebasin.com/f/840caf1493b3`, {
       method: `post`,
@@ -43,29 +22,28 @@ export default function ContactForm() {
     });
     setSubmitting(false);
     setSubmitted(true);
-  }, [brand_type, looking_to, livesOn]);
-
-  const advanceSection = useCallback((label: string) => {
-    const sections = Object.keys(section_map);
-    const section_index = sections.indexOf(currently_active);
-    const next_section = sections[section_index+1];
-    section_map[currently_active].action(label);
-
-    if (next_section) {
-      setCurrentlyActive(next_section);
-    } else {
-      setCurrentlyActive(``);
-      first_name_ref.current?.focus();
-    }
-  }, [currently_active, section_map, first_name_ref]);
+  }, []);
 
   const resetForm = useCallback(() => {
     setCurrentlyActive(``);
-    setBrandType(``);
-    setLookingTo(``);
-    setLivesOn(``);
+    setFormState({});
     setSubmitted(false);
   }, []);
+
+  const makeSelection = useCallback((section: string, field_value: string) => {
+    setFormState({
+      ...form_state,
+      [section]: field_value,
+    });
+  }, [form_state]);
+
+  const checkCondition = useCallback((condition?: string) => {
+    if (condition) {
+      const [section, valid_values] = condition.split(`.`);
+      return !valid_values.includes(form_state[section]);
+    }
+    return false;
+  }, [form_state]);
 
   return (
    <div className="md:pl-16">
@@ -77,45 +55,86 @@ export default function ContactForm() {
       </div>
     ) : (
       <Form onSubmit={handleSubmit}>
-        {contact_form_data.map((section) => (
-          <Accordion
-            id={section.section}
-            isOpen={section.section === currently_active}
-            label={section.label.replace(section.label_replace, section_map[section.section].value || section.label_replace)}
-            toggleAccordion={setCurrentlyActive}
-          >
-            <ul className="options pt-6 pb-11">
-              {section.options.map((option) => (
-                <li>
-                  <label className="radio-wrap">
-                    <input
-                      type="radio"
-                      value={option.value}
-                      name={section.section}
-                      onClick={() => advanceSection(option.label)}
-                      defaultChecked={section_map[section.section].value === option.label}
-                    />
-                    <span>{option.value}</span>
-                  </label>
-                </li>
-              ))}
-            </ul>
-          </Accordion>
-        ))}
+        {contact_form_data.map((section) => {
+          const is_hidden = checkCondition(section.condition);
+          return (
+            <div
+              key={section.name}
+              hidden={is_hidden}
+            >
+              <h3 className="text-3xl md:text-3xl font-black relative py-2 font-NeueHaasGroteskDisplay">{section.label}</h3>
+              <div>
+                {section.type === `radio` && section.options?.map((option, index) => {
+                  return (
+                    <label
+                      key={`radio-${index}`}
+                      className="radio-wrap"
+                    >
+                      <input
+                        type="radio"
+                        value={option.value}
+                        name={!is_hidden ? section.name : ``}
+                        onClick={() => makeSelection(section.name, option.id)}
+                        required={section.required && !is_hidden}
+                      />
+                      <span className="tracking-wide">{option.label}</span>
+                    </label>
+                  );
+                })}
+                {section.type === `textarea` && (
+                  <textarea
+                    name={!is_hidden ? section.name : ``}
+                    rows={section.rows}
+                    className="w-full border border-current px-6 py-5"
+                    required={section.required}
+                  />
+                )}
+              </div>
+            </div>
+          );
+        })}
 
-        <div className="grid md:grid-cols-3 my-5">
+        <div className="grid md:grid-cols-12 my-5">
           <input
             ref={first_name_ref}
-            className="border border-current -mb-[1px] md:-mr-[1px]"
+            className="border border-current md:col-span-4 -mb-[1px] md:-mr-[1px]"
             type="text"
             id="fname"
             name="fname"
             placeholder="First Name"
             required
           />
-          <input className="border border-current -mb-[1px] md:-mr-[1px]" type="text" id="lname" name="lname" placeholder="Last Name" required />
-          <input className="border border-current -mb-[1px]" type="text" id="company" name="company" placeholder="Company" required />
-          <input className="border border-current md:col-span-3" type="email" id="email" name="email" placeholder="Email Address" required />
+          <input
+            className="border border-current md:col-span-4 -mb-[1px] md:-mr-[1px]"
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            className="border border-current md:col-span-4 -mb-[1px]"
+            type="text"
+            id="company"
+            name="company"
+            placeholder="Company"
+            required
+          />
+          <input
+            className="border border-current md:col-span-6 md:-mr-[1px]"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            className="border border-current md:col-span-6"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone"
+          />
         </div>
 
         <div>
