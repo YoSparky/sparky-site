@@ -4,7 +4,6 @@ import { Form } from "@remix-run/react";
 import contact_form_data from '~/data/contact';
 
 export default function ContactForm() {
-  const [currently_active, setCurrentlyActive] = useState(`brand`);
   const [form_state, setFormState] = useState<any>({});
 
   const [submitting, setSubmitting] = useState(false);
@@ -25,7 +24,6 @@ export default function ContactForm() {
   }, []);
 
   const resetForm = useCallback(() => {
-    setCurrentlyActive(``);
     setFormState({});
     setSubmitted(false);
   }, []);
