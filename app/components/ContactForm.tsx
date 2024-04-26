@@ -45,7 +45,7 @@ export default function ContactForm() {
 
   return (
    <div className="md:pl-16">
-    <div className="title pb-11">SLIDE INTO OUR CRMs</div>
+    <div className="pb-11">SLIDE INTO OUR CRMs</div>
     {submitted ? (
       <div className="text-center">
         <p className="h2">Thank you for your submission!</p>

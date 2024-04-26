@@ -167,7 +167,7 @@
   }
   
   .radio-wrap {
-    @apply relative px-4 py-3 rounded-[3px] border border-current mr-2 mb-2 inline-flex items-center gap-4 w-max cursor-pointer transition duration-200 hover:bg-energyYellow grayscale-0;
+    @apply relative px-4 py-3 rounded-[3px] border border-current mr-2 mb-2 inline-flex items-center gap-4 w-max cursor-pointer transition duration-200 hover:bg-energyYellow grayscale-0 has-[input:checked]:bg-energyYellow;
   }
   .radio-wrap input {
     @apply relative w-4 h-4 block after:transition after:duration-200 after:absolute after:border after:border-current after:top-0 after:left-0 after:h-full after:w-full after:rounded-full after:bg-none checked:after:bg-tuatara;

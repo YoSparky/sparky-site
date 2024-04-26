@@ -128,7 +128,7 @@ __export(root_exports, {
 });
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-6K4JBWFF.css";
+var tailwind_default = "/build/_assets/tailwind-SQDSFOBD.css";
 
 // app/assets/fonts.css
 var fonts_default = "/build/_assets/fonts-SJCIDDRQ.css";
@@ -545,17 +545,8 @@ var contact_default = [
     ]
   },
   {
-    name: "project-details",
-    label: "Project Details",
-    condition: "what-do-you-need.redesign-build&replatform",
-    type: "textarea",
-    required: !1,
-    rows: 5
-  },
-  {
-    name: "additional-details",
-    label: "Additional Details",
-    condition: "what-do-you-need.optimization&retainer",
+    name: "details",
+    label: "Details",
     type: "textarea",
     required: !1,
     rows: 5
@@ -565,7 +556,7 @@ var contact_default = [
 // app/components/ContactForm.tsx
 var import_jsx_runtime8 = require("react/jsx-runtime");
 function ContactForm() {
-  let [currently_active, setCurrentlyActive] = (0, import_react5.useState)("brand"), [form_state, setFormState] = (0, import_react5.useState)({}), [submitting, setSubmitting] = (0, import_react5.useState)(!1), [submitted, setSubmitted] = (0, import_react5.useState)(!1), first_name_ref = (0, import_react5.useRef)(null), handleSubmit = (0, import_react5.useCallback)(async (event2) => {
+  let [form_state, setFormState] = (0, import_react5.useState)({}), [submitting, setSubmitting] = (0, import_react5.useState)(!1), [submitted, setSubmitted] = (0, import_react5.useState)(!1), first_name_ref = (0, import_react5.useRef)(null), handleSubmit = (0, import_react5.useCallback)(async (event2) => {
     event2.preventDefault(), setSubmitting(!0);
     let form_data = new FormData(event2.currentTarget);
     await fetch("https://usebasin.com/f/840caf1493b3", {
@@ -573,7 +564,7 @@ function ContactForm() {
       body: form_data
     }), setSubmitting(!1), setSubmitted(!0);
   }, []), resetForm = (0, import_react5.useCallback)(() => {
-    setCurrentlyActive(""), setFormState({}), setSubmitted(!1);
+    setFormState({}), setSubmitted(!1);
   }, []), makeSelection = (0, import_react5.useCallback)((section, field_value) => {
     setFormState({
       ...form_state,
@@ -587,7 +578,7 @@ function ContactForm() {
     return !1;
   }, [form_state]);
   return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "md:pl-16", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "title pb-11", children: "SLIDE INTO OUR CRMs" }),
+    /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("div", { className: "pb-11", children: "SLIDE INTO OUR CRMs" }),
     submitted ? /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "text-center", children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("p", { className: "h2", children: "Thank you for your submission!" }),
       /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("button", { className: "button--secondary my-5", onClick: resetForm, children: "Send Another" })
@@ -7912,7 +7903,7 @@ function Index4() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-JI64AUKH.js", imports: ["/build/_shared/chunk-NPVKMBEQ.js", "/build/_shared/chunk-GDLBX7ER.js", "/build/_shared/chunk-Q3IECNXJ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-F4T7ZFEX.js", imports: ["/build/_shared/chunk-EE2IS6R6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-MPRPCM2Z.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-G6FO2BAZ.js", imports: ["/build/_shared/chunk-RNNG2IQT.js", "/build/_shared/chunk-GGVPIROO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-5VKNHNVY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-CS74H2O7.js", imports: ["/build/_shared/chunk-GGVPIROO.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-66TNCGMJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-T6NG5RDV.js", imports: ["/build/_shared/chunk-5VCN46LX.js", "/build/_shared/chunk-RNNG2IQT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-APKVZTJV.js", imports: ["/build/_shared/chunk-5VCN46LX.js", "/build/_shared/chunk-RNNG2IQT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "75d20754", hmr: void 0, url: "/build/manifest-75D20754.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-JI64AUKH.js", imports: ["/build/_shared/chunk-NPVKMBEQ.js", "/build/_shared/chunk-GDLBX7ER.js", "/build/_shared/chunk-Q3IECNXJ.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3WZJTBZ7.js", imports: ["/build/_shared/chunk-HBBFFPYP.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$": { id: "routes/$", parentId: "root", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/$-MPRPCM2Z.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-SV5R4SXN.js", imports: ["/build/_shared/chunk-RNNG2IQT.js", "/build/_shared/chunk-HS5ARIBW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/checklist": { id: "routes/checklist", parentId: "root", path: "checklist", index: void 0, caseSensitive: void 0, module: "/build/routes/checklist-5VKNHNVY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar": { id: "routes/elevar", parentId: "root", path: "elevar", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-HPUGKXDC.js", imports: ["/build/_shared/chunk-HS5ARIBW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/elevar-summit": { id: "routes/elevar-summit", parentId: "root", path: "elevar-summit", index: void 0, caseSensitive: void 0, module: "/build/routes/elevar-summit-66TNCGMJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio.$client": { id: "routes/portfolio.$client", parentId: "root", path: "portfolio/:client", index: void 0, caseSensitive: void 0, module: "/build/routes/portfolio.$client-CVBDGCKB.js", imports: ["/build/_shared/chunk-X25XH4PG.js", "/build/_shared/chunk-RNNG2IQT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/portfolio._index": { id: "routes/portfolio._index", parentId: "root", path: "portfolio", index: !0, caseSensitive: void 0, module: "/build/routes/portfolio._index-ZFLWE667.js", imports: ["/build/_shared/chunk-X25XH4PG.js", "/build/_shared/chunk-RNNG2IQT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "354327e1", hmr: void 0, url: "/build/manifest-354327E1.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
