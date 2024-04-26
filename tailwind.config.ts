@@ -19,7 +19,7 @@ export default {
       },
       fontFamily: {
         title: 'Mint Grotesk',
-        body: 'Arnold',
+        body: 'neue-haas-grotesk-display',
         NeueHaasGroteskDisplay: 'neue-haas-grotesk-display'
       }
     },

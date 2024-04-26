@@ -58,7 +58,7 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
               [&.transition-entered]:translate-x-0
               [&.transition-exited]:translate-x-full
               translate-x-full
-              bg-halfColonialWhite
+              bg-white
               container
               transition-all
               duration-500
@@ -76,9 +76,12 @@ export const Modal = ({ children, modalState, closeModal }: ModalProps) => {
             `}
           >
             <div className="flex items-center justify-end sticky top-0 z-10">
-              <div className="md:transform md:rotate-90 md:translate-x-1/2 md:origin-left bg-halfColonialWhite">
-                <button className="button" onClick={() => closeModal()}>
-                  x | Close
+              <div className="md:transform md:rotate-90 md:translate-x-1/2 md:origin-left bg-white">
+                <button
+                  className="button pl-8 relative before:absolute before:content-['x'] before:left-4 before:top-1/2 before:leading-none before:-translate-y-1/2"
+                  onClick={() => closeModal()}
+                >
+                  Close
                 </button>
               </div>
             </div>

@@ -99,13 +99,13 @@ export default function FeaturedPortfolio() {
           onClick={() => swiperRef.current.swiper.slidePrev()}
           className={`left-4 -translate-x-1/2 [&_svg]:transform [&_svg]:rotate-180 max-md:hidden ${buttonStyles} ${isBeginning ? 'hidden' : 'md:flex'}`}
         >
-          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
         </button>
         <button 
           onClick={() => swiperRef.current.swiper.slideNext()}
           className={`right-[calc(10%+32px)] md:right-4 translate-x-1/2 ${buttonStyles} ${isEnd ? 'hidden' : 'flex'}`}
         >
-          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
+          <svg viewBox="0 0 16 16" height="100%" width="100%" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" className="StyledIconBase-sc-ea9ulj-0 hRnJPC"><title>ChevronRight icon</title><path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path></svg>
         </button>
       </div>
     </div>

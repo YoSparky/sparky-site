@@ -1,83 +1,178 @@
 export default [
   {
-    section: `brand`,
-    label: `I am a ... brand`,
-    label_replace: `a ...`,
+    name: `what-do-you-need`,
+    label: `What do you need?`,
+    type: `radio`,
+    required: true,
     options: [
       {
-        value: `Start-up`,
-        label: `a start-up`,
+        id: `redesign-build`,
+        value: `Shopify Plus Website Redesign & Build`,
+        label: `Shopify Plus Website Redesign & Build`
       },
       {
-        value: `Early Stage`,
-        label: `an early stage`,
+        id: `replatform`,
+        value: `Platform Migration to Shopify`,
+        label: `Platform Migration to Shopify`
       },
       {
-        value: `Established`,
-        label: `an established`,
+        id: `optimization`,
+        value: `Optimization and/or Enhancements`,
+        label: `Optimization and/or Enhancements`
+      },
+      {
+        id: `retainer`,
+        value: `Day-to-day development services`,
+        label: `Day-to-day development services`
+      },
+      {
+        id: `other`,
+        value: `Other/Not sure`,
+        label: `Other/Not sure`
+      },
+    ]
+  },
+  {
+    name: `project-timeline`,
+    label: `Project Timeline`,
+    condition: `what-do-you-need.redesign-build&replatform`,
+    type: `radio`,
+    required: true,
+    options: [
+      {
+        id: `0-3`,
+        value: `0-3 months`,
+        label: `0-3 months`
+      },
+      {
+        id: `3-6`,
+        value: `3-6 months`,
+        label: `3-6 months`
+      },
+      {
+        id: `6-12`,
+        value: `6-12 months`,
+        label: `6-12 months`
+      },
+      {
+        id: `other`,
+        value: `Other/Not sure`,
+        label: `Other/Not sure`
       },
     ],
   },
   {
-    section: `looking-to`,
-    label: `looking to ... site`,
-    label_replace: `...`,
+    name: `decision-timeline`,
+    label: `Decision Timeline`,
+    condition: `what-do-you-need.optimization&retainer`,
+    type: `radio`,
+    required: true,
     options: [
       {
-        value: `Launch a new`,
-        label: `launch a new`,
+        id: `less-1`,
+        value: `Less than 1 month`,
+        label: `Less than 1 month`
       },
       {
-        value: `Re-design my current`,
-        label: `redesign my current`,
+        id: `1-3`,
+        value: `1-3 months`,
+        label: `1-3 months`
       },
       {
-        value: `Re-platform my`,
-        label: `re-platform my`,
+        id: `6-12`,
+        value: `6-12 months`,
+        label: `6-12 months`
       },
       {
-        value: `Optimize my`,
-        label: `optimize my`,
-      },
-      {
-        value: `Add something to my`,
-        label: `add something to my`,
-      },
-      {
-        value: `Create a headless`,
-        label: `create a headless`,
+        id: `other`,
+        value: `Other/Not sure`,
+        label: `Other/Not sure`
       },
     ],
   },
   {
-    section: `lives-on`,
-    label: `that lives on ...`,
-    label_replace: `...`,
+    name: `project-budget`,
+    label: `Project Budget`,
+    condition: `what-do-you-need.redesign-build&replatform`,
+    type: `radio`,
+    required: true,
     options: [
       {
-        value: `Shopify`,
-        label: `Shopify`,
+        id: `20-50`,
+        value: `$20,000 - $50,000`,
+        label: `$20,000 - $50,000`
       },
       {
-        value: `Salesforce Commerce Cloud`,
-        label: `Salesforce Commerce Cloud`,
+        id: `50-100`,
+        value: `$50,000 - $100,000`,
+        label: `$50,000 - $100,000`
       },
       {
-        value: `Magento`,
-        label: `Magento`,
+        id: `100-200`,
+        value: `$100,000 - $200,000`,
+        label: `$100,000 - $200,000`
       },
       {
-        value: `Hybrid`,
-        label: `Hybrid`,
+        id: `200-300`,
+        value: `$200,000 - $300,000`,
+        label: `$200,000 - $300,000`
       },
       {
-        value: `WooCommerce`,
-        label: `WooCommerce`,
+        id: `300+`,
+        value: `$300,000 +`,
+        label: `$300,000 +`
       },
       {
-        value: `a different platform`,
-        label: `a different platform`,
+        id: `other`,
+        value: `Other/Not sure`,
+        label: `Other/Not sure`
       },
     ],
-  }
-];
+  },
+  {
+    name: `monthly-budget`,
+    label: `Monthly Budget`,
+    condition: `what-do-you-need.optimization&retainer`,
+    type: `radio`,
+    required: true,
+    options: [
+      {
+        id: `under-5`,
+        value: `Less than $5,000`,
+        label: `Less than $5,000`
+      },
+      {
+        id: `5-10`,
+        value: `$5,000 - $10,000`,
+        label: `$5,000 - $10,000`
+      },
+      {
+        id: `10-20`,
+        value: `$10,000 - $20,000`,
+        label: `$10,000 - $20,000`
+      },
+      {
+        id: `20-50`,
+        value: `$20,000 - $50,000`,
+        label: `$20,000 - $50,000`
+      },
+      {
+        id: `50+`,
+        value: `$50,000 +`,
+        label: `$50,000 +`
+      },
+      {
+        id: `other`,
+        value: `Other/Not sure`,
+        label: `Other/Not sure`
+      },
+    ],
+  },
+  {
+    name: `details`,
+    label: `Details`,
+    type: `textarea`,
+    required: false,
+    rows: 5,
+  },
+]

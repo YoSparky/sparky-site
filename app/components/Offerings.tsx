@@ -25,7 +25,7 @@ export default function Offerings() {
           {offerings.map(({ title, listItems }) => {
             const id = useId();
             return (
-              <div className="bg-[#141414] rounded-md p-9 md:p-11 flex flex-col gap-6 md:gap-[30px]">
+              <div key={id} className="bg-[#141414] rounded-md p-9 md:p-11 flex flex-col gap-6 md:gap-[30px]">
                 <strong className="font-body text-lg md:text-2xl">{title}</strong>
                 <ul 
                   className="border border-[#2c2c2c] bg-[#2c2c2c] gap-px rounded-md flex flex-col overflow-hidden" 

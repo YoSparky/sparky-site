@@ -67,6 +67,7 @@
   }
   
   input[type="text"],
+  input[type="tel"],
   input[type="email"] {
     @apply px-6 py-5 bg-transparent;
   }
@@ -113,11 +114,11 @@
   }
   
   .button {
-    @apply rounded-full px-4 py-2 border border-current transition duration-200 hover:bg-energyYellow text-sm;
+    @apply rounded-[3px] px-4 py-2 border border-current transition duration-200 hover:bg-energyYellow text-sm;
   }
   
   .button--secondary {
-    @apply button border border-tuatara bg-tuatara text-energyYellow hover:text-tuatara hover:bg-energyYellow;
+    @apply button border border-tuatara bg-tuatara text-white hover:text-tuatara hover:bg-energyYellow;
   }
   .button--secondary:disabled {
     @apply hover:pointer-events-none hover:bg-tuatara hover:text-energyYellow;
@@ -166,10 +167,10 @@
   }
   
   .radio-wrap {
-    @apply relative px-4 py-3 rounded-full border border-current flex items-center gap-4 w-max cursor-pointer transition duration-200 hover:bg-energyYellow grayscale-0;
+    @apply relative px-4 py-3 rounded-[3px] border border-current mr-2 mb-2 inline-flex items-center gap-4 w-max cursor-pointer transition duration-200 hover:bg-energyYellow grayscale-0 has-[input:checked]:bg-energyYellow;
   }
   .radio-wrap input {
-    @apply relative w-4 h-4 block after:transition after:duration-200 after:absolute after:border after:border-current after:top-0 after:left-0 after:h-full after:w-full after:rounded-full after:bg-halfColonialWhite checked:after:bg-tuatara;
+    @apply relative w-4 h-4 block after:transition after:duration-200 after:absolute after:border after:border-current after:top-0 after:left-0 after:h-full after:w-full after:rounded-full after:bg-none checked:after:bg-tuatara;
   }
   .options {
     @apply flex flex-col gap-4;
