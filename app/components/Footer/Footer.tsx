@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react";
 import { useContext } from "react";
 import { ModalContext } from "~/root";
 
@@ -21,8 +22,9 @@ export default function Footer() {
         <hr className="border-0 border-b border-current" />
       </div>
       <div className="bg-white py-16 text-xs">
-        <div className="container flex flex-col gap-14 relative">
+        <div className="container flex justify-between gap-14 relative">
           <span>© {new Date().getFullYear()} / Sparky / Operating Worldwide</span>
+          <Link to={{ pathname: `/privacy-policy` }}>Privacy Policy</Link>
         </div>
       </div>
     </>
